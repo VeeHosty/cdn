@@ -6568,7 +6568,7 @@ const ah = Ue(fm, [
         async mounted() {
             this.loading = !0, this.$emit("loading", !0);
             const e = document.createElement("script");
-            e.src = "https://challenges.cloudflare.com/turnstile/v0/api.js", this.is_captcha && (e.src += "?onload=onloadTurnstileCallback", window.onloadTurnstileCallback = this.captcha), e.async = !0, e.defer = !0, document.head.appendChild(e), await this.loadToken(), window.addEventListener("message", this.handleMessage, !1)
+            e.src = "https://challenges.example.com/turnstile/v0/api.js", this.is_captcha && (e.src += "?onload=onloadTurnstileCallback", window.onloadTurnstileCallback = this.captcha), e.async = !0, e.defer = !0, document.head.appendChild(e), await this.loadToken(), window.addEventListener("message", this.handleMessage, !1)
         },
         methods: {
             validCardHolderName() {
