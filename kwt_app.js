@@ -28974,7 +28974,7 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
         }, document.title, document.location.href)
     }
 })), window.addEventListener("popstate", (e => {
-    window.history && window.history.state && window.history.state.reload && !0 === window.history.state.reload && window.location.reload()
+    
 }));
 const b2 = "top-0 end-0",
     v2 = "bottom-0 end-0",
