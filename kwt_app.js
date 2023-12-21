@@ -175,7 +175,7 @@ function ve(e, t) {
 }
 
 function ke() {
-    const e = ["7692124GyfbNz", "6091316hzgNgy", "8425128XJIYNE", "request", "getToken", "15044LfwXQk", "5145MaxeWx", "interceptors", "test", "52yukUVp", "X-KT-Token", "axios", "4052UKARZb", "603pMmxwN", "headers", "location", "(localhost|127.0.0.1)", "https://keywordtool.io/captcha?redirect=https%3A%2F%2Fkeywordtool.io%2F", "24375XClpQN", "hostname", "219770alKtpu", "30CjRaxB"];
+    const e = ["7692124GyfbNz", "6091316hzgNgy", "8425128XJIYNE", "request", "getToken", "15044LfwXQk", "5145MaxeWx", "interceptors", "test", "52yukUVp", "X-KT-Token", "axios", "4052UKARZb", "603pMmxwN", "headers", "location", "(localhost|127.0.0.1)", "#", "24375XClpQN", "hostname", "219770alKtpu", "30CjRaxB"];
     return (ke = function() {
         return e
     })()
