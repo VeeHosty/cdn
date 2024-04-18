@@ -114,7 +114,7 @@ const ye = {},
         }))
     },
     we = {
-        getToken: () => "81565fe1-c3fb-4bc6-a77f-a6aa08939696"
+        getToken: () => "e60837a1-4299-433a-bbca-1282f2d77d78"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
