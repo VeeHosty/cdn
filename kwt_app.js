@@ -114,7 +114,7 @@ const ye = {},
         }))
     },
     we = {
-        getToken: () => "e60837a1-4299-433a-bbca-1282f2d77d78"
+        getToken: () => "5359cfef-1708-43d3-8dc5-7c2f6055f07a"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -9294,7 +9294,7 @@ const up = Ue({
                     if ("posts" == e && !this.current_permissions.show_posts_data) return !1;
                     this.copy_type != e && (this.change_copy_selected = !0, this.copy_type = e);
                     let n = "\n";
-                    if (this.selected.length) var r = [...new Set(this.selected)];
+                    if ("keyword" == e && (2 == this.search_engine && (n = ",\n", 7 == this.current_tab && (n = " ")), 9 == this.search_engine && 7 == this.current_tab && (n = " "), 7 == this.search_engine && (n = " ")), this.selected.length) var r = [...new Set(this.selected)];
                     else r = null;
                     if (this.change_copy_selected) {
                         var s = {
