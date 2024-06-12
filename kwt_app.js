@@ -170,7 +170,7 @@ const ft = {},
         }))
     },
     vt = {
-        getToken: () => "71dc9525-6c6f-4f76-8173-201486c60836"
+        getToken: () => "68f9e83b-dd62-4d92-bc5f-557cb919305d"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -9088,7 +9088,7 @@ const Np = Ut({
                 this.selected = e ? this.all_keywords : []
             },
             async select(e) {
-                this.loading || this.selected.push(e)
+                this.loading || 0 == this.selected.includes(e) && this.selected.push(e)
             },
             async deselect(e) {
                 this.loading || (this.selected = this.selected.filter((t => t !== e)))
@@ -10916,6 +10916,13 @@ const Ky = Ut(Dy, [
                 required: !1,
                 default: function() {}
             },
+            selected_keywords: {
+                type: Array,
+                required: !0,
+                default: function() {
+                    return []
+                }
+            },
             keywords: {
                 type: Array,
                 required: !0,
@@ -10980,13 +10987,16 @@ const Ky = Ut(Dy, [
         },
         data: () => ({
             selected: [],
-            selected_all: !1
+            selected_all: !1,
+            selected_resetted: !0
         }),
         mounted() {
             this.initPopover()
         },
         updated() {
-            this.initPopover()
+            this.initPopover(), this.$nextTick((() => {
+                0 != this.selected.length || this.selected_resetted || (this.selected = this.selected_keywords), this.selected_resetted = !0
+            }))
         },
         beforeUnmount() {
             this.$nextTick((() => {
@@ -11018,7 +11028,7 @@ const Ky = Ut(Dy, [
                 return this.selected.toString().split(",").indexOf(t) >= 0
             },
             change_select_keyword(e, t) {
-                this.loading || (t.target.checked ? this.$emit("select", e) : this.$emit("deselect", e))
+                this.loading || (t.target.checked ? this.$emit("select", e) : this.$emit("deselect", e), this.selected_resetted = !0)
             },
             toggle_select_keyword(e) {
                 if (this.loading) return;
@@ -11028,7 +11038,7 @@ const Ky = Ut(Dy, [
                 this.loading || (e.target.checked ? (this.selected = this.all_keywords, this.$emit("all", !0)) : (this.selected = [], this.$emit("all", !1)))
             },
             sort(e) {
-                this.$emit("sort", e)
+                this.$emit("sort", e), this.selected_resetted = !1
             },
             embed(e, t) {
                 this.$emit("embed", e, t)
@@ -14252,8 +14262,9 @@ const YS = Ut(zC, [
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"]))])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"]))])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(ee, {
                 loading: e.loading,
@@ -15386,8 +15397,9 @@ const XT = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(Y, {
                 loading: e.loading,
@@ -16098,6 +16110,13 @@ const Cq = Ut(wF, [
                 required: !1,
                 default: function() {}
             },
+            selected_keywords: {
+                type: Array,
+                required: !0,
+                default: function() {
+                    return []
+                }
+            },
             keywords: {
                 type: Array,
                 required: !0,
@@ -16158,13 +16177,16 @@ const Cq = Ut(wF, [
         data: () => ({
             selected: [],
             selected_all: !1,
-            devices_breakdown: null
+            devices_breakdown: null,
+            selected_resetted: !0
         }),
         mounted() {
             this.initPopover()
         },
         updated() {
-            this.initPopover()
+            this.initPopover(), this.$nextTick((() => {
+                0 != this.selected.length || this.selected_resetted || (this.selected = this.selected_keywords), this.selected_resetted = !0
+            }))
         },
         beforeUnmount() {
             this.$nextTick((() => {
@@ -16196,7 +16218,7 @@ const Cq = Ut(wF, [
                 return this.selected.toString().split(",").indexOf(t) >= 0
             },
             change_select_keyword(e, t) {
-                this.loading || (t.target.checked ? this.$emit("select", e) : this.$emit("deselect", e))
+                this.loading || (t.target.checked ? this.$emit("select", e) : this.$emit("deselect", e), this.selected_resetted = !0)
             },
             toggle_select_keyword(e) {
                 if (this.loading) return;
@@ -16206,7 +16228,7 @@ const Cq = Ut(wF, [
                 this.loading || (e.target.checked ? (this.selected = this.all_keywords, this.$emit("all", !0)) : (this.selected = [], this.$emit("all", !1)))
             },
             sort(e) {
-                this.$emit("sort", e)
+                this.$emit("sort", e), this.selected_resetted = !1
             },
             embed(e, t) {
                 this.$emit("embed", e, t)
@@ -17607,8 +17629,9 @@ const tU = Ut(pL, [
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(N, {
                 loading: e.loading,
@@ -18336,8 +18359,9 @@ const lA = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(z, {
                 loading: e.loading,
@@ -19161,8 +19185,9 @@ const mP = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(X, {
                 loading: e.loading,
@@ -20027,8 +20052,9 @@ const q$ = Ut(JP, [
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
                     onEmbed: o.embed,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "onEmbed", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "onEmbed", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(G, {
                 loading: e.loading,
@@ -21308,8 +21334,9 @@ const DH = Ut(sI, [
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(X, {
                 loading: e.loading,
@@ -21928,8 +21955,9 @@ const Aj = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(z, {
                 loading: e.loading,
@@ -22566,8 +22594,9 @@ const LW = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(z, {
                 loading: e.loading,
@@ -23655,8 +23684,9 @@ const QO = Ut(YW, [
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(Z, {
                 loading: e.loading,
@@ -24329,8 +24359,9 @@ const ZB = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(z, {
                 loading: e.loading,
@@ -25035,8 +25066,9 @@ const eR = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(z, {
                 loading: e.loading,
@@ -25673,8 +25705,9 @@ const XR = Ut({
                     current_free_results: e.current_free_results,
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid"])])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["device_breakdown_data", "loading", "current_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "user_is_paid", "selected_keywords"])])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics"]), E(z, {
                 loading: e.loading,
@@ -26833,8 +26866,9 @@ const DJ = Ut(yK, [
                     selected_language_name: e.selected_language_name,
                     current_free_results: e.current_free_results,
                     routes: e.routes,
-                    search_engine_name: e.search_engine_name
-                }, null, 8, ["loading", "current_tab", "current_sub_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "delete_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name"])) : (b(), x(z, {
+                    search_engine_name: e.search_engine_name,
+                    selected_keywords: e.selected
+                }, null, 8, ["loading", "current_tab", "current_sub_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "delete_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "selected_keywords"])) : (b(), x(z, {
                     key: 1,
                     loading: e.loading,
                     current_tab: e.current_tab,
@@ -26864,8 +26898,9 @@ const DJ = Ut(yK, [
                     routes: e.routes,
                     search_engine_name: e.search_engine_name,
                     has_top_page_bid: e.summaries.has_top_page_bid,
-                    user_is_paid: e.user_is_paid
-                }, null, 8, ["loading", "current_tab", "current_sub_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "delete_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "has_top_page_bid", "user_is_paid"]))])),
+                    user_is_paid: e.user_is_paid,
+                    selected_keywords: e.selected
+                }, null, 8, ["loading", "current_tab", "current_sub_tab", "current_permissions", "show_upsell", "upsell_message", "keywords", "all_keywords", "onSort", "sort_by", "sort_direction", "allow_keyword_basket", "add_basket", "delete_basket", "search_engine", "keyword", "has_metrics", "current_metrics_currency", "onAll", "onSelect", "onDeselect", "selected_language_name", "current_free_results", "routes", "search_engine_name", "has_top_page_bid", "user_is_paid", "selected_keywords"]))])),
                 _: 1
             }, 8, ["loading", "has_keywords", "has_metrics", "current_filter_is_on"]), e.loading || e.has_all_error || e.has_keywords ? T("", !0) : (b(), g("div", xJ, [S("div", CJ, [S("div", SJ, [S("div", TJ, [S("h2", FJ, v(e.trans.get("Your Keyword Basket is empty")), 1), o.search_url ? (b(), g("p", {
                 key: 0,
@@ -30109,7 +30144,7 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
         }, document.title, document.location.href)
     }
 })), window.addEventListener("popstate", (e => {
-   
+    
 }));
 const N0 = "top-0 end-0",
     R0 = "bottom-0 end-0",
