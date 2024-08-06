@@ -167,7 +167,7 @@ const bt = {},
         }))
     },
     kt = {
-        getToken: () => "94d39690-4c79-4fed-a8d6-f30fbd01de60"
+        getToken: () => "3c62e99f-c8bf-4bf2-92d6-1aeb32048c0f"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -2515,7 +2515,7 @@ const Do = At(Co, [["render", function(e, t, r, s, a, o) {
                 max_api_requests_allocated: 5e3,
                 current_date: new Date,
                 update_date_id: null,
-                billing_card: this.existing_cards[0]
+                billing_card: this.existing_cards[0] ?? null
             }
         },
         computed: {
@@ -6736,7 +6736,7 @@ const Ih = At(Xm, [["render", function(e, t, r, s, a, o) {
         data() {
             return {
                 stripe_token: "",
-                billing_card: this.existing_cards[0],
+                billing_card: this.existing_cards[0] ?? null,
                 card_number: null,
                 card_expiry: null,
                 card_cvc: null,
@@ -6794,7 +6794,7 @@ const Ih = At(Xm, [["render", function(e, t, r, s, a, o) {
             stripe_token: {
                 async handler(e) {
                     var t;
-                    e && (this.is_subscribe && "" != this.customer_id && "" != (null == (t = this.billing_card) ? void 0 : t.number) ? this.loading = !1 : this.bindElements())
+                    e && (this.is_subscribe && "" != this.customer_id && "" != (null == (t = this.billing_card) ? void 0 : t.number) && null != this.billing_card ? this.loading = !1 : this.bindElements())
                 },
                 deep: !0
             },
@@ -7019,7 +7019,7 @@ const Ih = At(Xm, [["render", function(e, t, r, s, a, o) {
             async checkout() {
                 var e;
                 if (this.hideError(), this.stripe_token)
-                    if (this.is_subscribe && "" != this.customer_id && "" != (null == (e = this.billing_card) ? void 0 : e.number)) {
+                    if (this.is_subscribe && "" != this.customer_id && "" != (null == (e = this.billing_card) ? void 0 : e.number) && null != this.billing_card) {
                         this.loading = !0, this.process = !0;
                         try {
                             var t = {
@@ -7036,7 +7036,8 @@ const Ih = At(Xm, [["render", function(e, t, r, s, a, o) {
                                     daily_limit: this.daily_limit,
                                     skip_trial: this.skip_trial,
                                     main_url: this.main_url,
-                                    payment_method_id: this.billing_card.id
+                                    payment_method_id: this.billing_card.id,
+                                    customer_id: this.customer_id
                                 },
                                 r = await axios.post(this.process_url, t, {
                                     headers: {
@@ -7093,7 +7094,8 @@ const Ih = At(Xm, [["render", function(e, t, r, s, a, o) {
                                     daily_limit: this.daily_limit,
                                     free_trial: this.free_trial,
                                     main_url: this.main_url,
-                                    payment_method_id: this.payment_method_id
+                                    payment_method_id: this.payment_method_id,
+                                    customer_id: this.customer_id
                                 };
                                 t = {
                                     "Content-Type": "application/json"
@@ -7426,7 +7428,7 @@ const Op = At(Hh, [["render", function(e, t, r, s, a, o) {
         method: "post",
         "accept-charset": "UTF-8",
         class: "checkout-form-stripe checkout-form"
-    }, [r.is_subscribe && "" != r.customer_id && "" != (null == (i = a.billing_card) ? void 0 : i.number) ? (b(), g("div", jh, [S("div", Vh, [S("label", Wh, [A(v(e.trans.get("Payment Method")) + " ", 1), Oh]), S("div", Bh, [S("div", Nh, [S("div", Rh, [S("div", Kh, [S("div", Jh, [S("div", null, ["Visa" == a.billing_card.brand ? (b(), g("img", zh)) : T("", !0), "Mastercard" == a.billing_card.brand ? (b(), g("img", Gh)) : T("", !0), "American Express" == a.billing_card.brand ? (b(), g("img", Yh)) : T("", !0), "JCB" == a.billing_card.brand ? (b(), g("img", Zh)) : T("", !0)]), S("div", Xh, v(a.billing_card.brand) + " •••• " + v(a.billing_card.last4), 1)]), S("div", Qh, [S("span", ep, [E(n, {
+    }, [r.is_subscribe && "" != r.customer_id && "" != (null == (i = a.billing_card) ? void 0 : i.number) && null != a.billing_card ? (b(), g("div", jh, [S("div", Vh, [S("label", Wh, [A(v(e.trans.get("Payment Method")) + " ", 1), Oh]), S("div", Bh, [S("div", Nh, [S("div", Rh, [S("div", Kh, [S("div", Jh, [S("div", null, ["Visa" == a.billing_card.brand ? (b(), g("img", zh)) : T("", !0), "Mastercard" == a.billing_card.brand ? (b(), g("img", Gh)) : T("", !0), "American Express" == a.billing_card.brand ? (b(), g("img", Yh)) : T("", !0), "JCB" == a.billing_card.brand ? (b(), g("img", Zh)) : T("", !0)]), S("div", Xh, v(a.billing_card.brand) + " •••• " + v(a.billing_card.last4), 1)]), S("div", Qh, [S("span", ep, [E(n, {
         class: "me-1 mb-1",
         style: {
             width: "20px",
@@ -28158,7 +28160,7 @@ const _X = At({
             total_keywords: r.total_keywords,
             selected: r.selected,
             allow_keyword_basket: r.allow_keyword_basket,
-            allow_delete: r.allow_delete,
+            allow_delete: r.altlow_delete,
             has_error: r.has_error,
             has_all_error: r.has_all_error
         }, null, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "allow_delete", "has_error", "has_all_error"]), S("div", cX, [ie(e.$slots, "dropdown-menu-item")])])])
@@ -29798,7 +29800,7 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
         }, document.title, document.location.href)
     }
 })), window.addEventListener("popstate", (e => {
-
+ 
 }));
 const L0 = "top-0 end-0",
     U0 = "bottom-0 end-0",
@@ -29966,8 +29968,8 @@ const V0 = ge({
                     s[n] = s[l], s[l] = c, t = (o + i) % 6101918
                 }
                 return s.join("")
-            }
-         }(),
+            }  
+        }(),
         function() {
             function e(e) {
                 for (var t = 2392111, r = e.length, s = [], a = 0; a < r; a++) s[a] = e.charAt(a);
@@ -29995,7 +29997,7 @@ const V0 = ge({
                 }
                 return s.join("")
             }
-        }()
+         }()
     },
     async created() {
         Tt("loading", (e => {
