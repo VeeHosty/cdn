@@ -29802,7 +29802,7 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
         }, document.title, document.location.href)
     }
 })), window.addEventListener("popstate", (e => {
-    window.history && window.history.state && window.history.state.reload && !0 === window.history.state.reload && window.location.reload()
+   
 }));
 const L0 = "top-0 end-0",
     U0 = "bottom-0 end-0",
