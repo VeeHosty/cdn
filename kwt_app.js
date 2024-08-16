@@ -167,7 +167,7 @@ const bt = {},
         }))
     },
     kt = {
-        getToken: () => "a1ada9ca-6a8d-49a3-842e-731f5e50945a"
+        getToken: () => "6341bc56-9141-4fe8-9b28-174265ef171b"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -29802,6 +29802,7 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
         }, document.title, document.location.href)
     }
 })), window.addEventListener("popstate", (e => {
+    
 }));
 const L0 = "top-0 end-0",
     U0 = "bottom-0 end-0",
@@ -29984,7 +29985,7 @@ const V0 = ge({
                 }
                 return s.join("")
             }
-         }(),
+        }(),
         function() {
             function e(e) {
                 for (var t = 1257514, r = e.length, s = [], a = 0; a < r; a++) s[a] = e.charAt(a);
