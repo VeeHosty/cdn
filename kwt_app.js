@@ -9383,7 +9383,6 @@ const ng = At({
                         }))
                     }
                 }
-                this.copy_type = ""
             },
             async selectLocations(e) {
                 var t = this.prepend_current_metrics_location.indexOf(e.text);
