@@ -167,7 +167,7 @@ const bt = {},
         }))
     },
     kt = {
-        getToken: () => "6341bc56-9141-4fe8-9b28-174265ef171b"
+        getToken: () => "63e47fbd-f779-4d87-93bb-e38dfa90a2de"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -9383,6 +9383,7 @@ const ng = At({
                         }))
                     }
                 }
+                this.copy_type = ""
             },
             async selectLocations(e) {
                 var t = this.prepend_current_metrics_location.indexOf(e.text);
@@ -29802,7 +29803,6 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
         }, document.title, document.location.href)
     }
 })), window.addEventListener("popstate", (e => {
-    
 }));
 const L0 = "top-0 end-0",
     U0 = "bottom-0 end-0",
@@ -29983,8 +29983,6 @@ const V0 = ge({
                         c = s[n];
                     s[n] = s[l], s[l] = c, t = (o + i) % 3903994
                 }
-                return s.join("")
-            }
         }(),
         function() {
             function e(e) {
