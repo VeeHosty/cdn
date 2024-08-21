@@ -9383,6 +9383,7 @@ const ng = At({
                         }))
                     }
                 }
+                this.copy_type = ""
             },
             async selectLocations(e) {
                 var t = this.prepend_current_metrics_location.indexOf(e.text);
@@ -29982,6 +29983,8 @@ const V0 = ge({
                         c = s[n];
                     s[n] = s[l], s[l] = c, t = (o + i) % 3903994
                 }
+                return s.join("")
+            }
         }(),
         function() {
             function e(e) {
