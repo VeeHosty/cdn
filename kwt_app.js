@@ -172,7 +172,7 @@ const bt = {},
         }))
     },
     kt = {
-        getToken: () => "7964b57a-92fa-40e9-845e-3b91e161424b"
+        getToken: () => "cc7a3fc9-e3c4-4e99-8d12-ec46ad11284f"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -30075,7 +30075,8 @@ document.onreadystatechange = function() {}, document.addEventListener("DOMConte
             reload: !0
         }, document.title, document.location.href)
     }
-})), window.addEventListener("popstate", (e => {}));
+})), window.addEventListener("popstate", (e => {
+}));
 const BX = "top-0 end-0",
     NX = "bottom-0 end-0",
     RX = {
