@@ -172,7 +172,7 @@ const bt = {},
         }))
     },
     kt = {
-        getToken: () => "cc7a3fc9-e3c4-4e99-8d12-ec46ad11284f"
+        getToken: () => "46c9f440-be20-413f-affc-de2645d02492"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -3311,7 +3311,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             id: "daily-limit-range-slider",
             class: "kt-range-slider"
         })], -1))], 64)) : T("", !0)])])])) : T("", !0)], 512), [[O, 2 == a.step]]), F(S("div", oi, ["" != a.error ? (b(), g("div", ii, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", ni, [E(p, {
-            class: "text-success me-2 mb-1",
+            class: "text-danger me-2 mb-1",
             style: {
                 width: "20px",
                 height: "20px"
@@ -3705,7 +3705,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             this.$nextTick((() => {
                 this.bsDialogs = new Dialogs({
                     keyboard: !1
-                }), this.bsDialogs2 = new Dialogs
+                })
             }))
         },
         computed: {
@@ -3728,7 +3728,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             },
             processSuccess(e) {
                 return e && e.data && e.data.redirect ? e.data.open ? (this.loading = !1, this.process = !1, window.open(e.data.redirect)) : (this.loading = !0, this.process = !1, window.location = e.data.redirect) : e && e.data && e.data.redirect_with_message ? e.data.redirect_with_message.message && "" != e.data.redirect_with_message.message ? (this.loading = !1, this.process = !1, this.$nextTick((() => {
-                    this.bsDialogs2.create(e.data.redirect_with_message.message, [{
+                    bsDialogs.create(e.data.redirect_with_message.message, [{
                         classes: "btn-success mx-auto",
                         text: this.trans.get("OK"),
                         value: !0
@@ -30107,11 +30107,15 @@ let ZX = class {
         }
     }
     constructor(e = {}) {
-        this._options = Object.assign({}, this._options_default, e), this._bs_options = {
+        this._modal_shown = !1, this._options = Object.assign({}, this._options_default, e), this._bs_options = {
             backdrop: this._options.backdrop,
             keyboard: this._options.keyboard,
             focus: this._options.focus
-        }, this._modal_div = document.createElement("div"), this._modal_div.className = "modal fade dialog-modal", this._modal_div.tabIndex = -1, this._modal_div.insertAdjacentHTML("beforeend", this._modal_html()), this._modal_title = this._modal_div.querySelector("h5.modal-title"), this._modal_body = this._modal_div.querySelector("div.modal-body"), this._modal_footer = this._modal_div.querySelector("div.modal-footer"), this._modal_header = this._modal_div.querySelector("div.modal-header"), this._modal_close = this._modal_div.querySelector("button.btn-close"), document.body.appendChild(this._modal_div), this._modal_bs = new bootstrap.Modal(this._modal_div, this._bs_options)
+        }, this._modal_div = document.createElement("div"), this._modal_div.className = "modal fade dialog-modal", this._modal_div.tabIndex = -1, this._modal_div.insertAdjacentHTML("beforeend", this._modal_html()), this._modal_title = this._modal_div.querySelector("h5.modal-title"), this._modal_body = this._modal_div.querySelector("div.modal-body"), this._modal_footer = this._modal_div.querySelector("div.modal-footer"), this._modal_header = this._modal_div.querySelector("div.modal-header"), this._modal_close = this._modal_div.querySelector("button.btn-close"), this._modal_div.addEventListener("hide.bs.modal", (e => {
+            this._modal_shown = !1
+        })), this._modal_div.addEventListener("shown.bs.modal", (e => {
+            this._modal_shown = !0
+        })), document.body.appendChild(this._modal_div), this._modal_bs = new bootstrap.Modal(this._modal_div, this._bs_options)
     }
     _modal_html() {
         let e = ["modal-dialog"];
@@ -30157,7 +30161,9 @@ let ZX = class {
         }))
     }
     close() {
-        this._modal_bs.hide()
+        this._modal_shown ? this._modal_bs.hide() : (this._modal_counter = 0, this._modal_interval = setInterval((() => {
+            console.log(this._modal_counter), (this._modal_shown || this._modal_counter >= 5) && (this._modal_bs.hide(), clearInterval(this._modal_interval)), this._modal_counter++
+        }), 1e3))
     }
 };
 const XX = ge({
