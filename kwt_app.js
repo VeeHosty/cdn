@@ -30493,8 +30493,7 @@ RX.config.globalProperties.trans = new yt({
     var e = document.querySelector(".device-xl");
     return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length)
 }, RX.config.globalProperties.csv_instagram_onblur = e => {
-    e.target.value = e.target.value.toLowerCase().replace(/#/g, "").replace(/[\n,]+$/, "").split(/[\n,]+/).map((e => "#" + e.replace(/\s+/g, ""))).filter(((e, t, r) => r.indexOf(e) === t)).join("\n")
-}, RX.directive("autofocus", {
+    e.target.value = e.target.value.toLowerCase().replace(/#/g, "").replace(/[\n,]+$/, "").split(/[\n,]+/).map((e => e.startsWith("#") ? e : `#${e}`)).filter(((e, t, r) => r.indexOf(e) === t)).join("\n")}, RX.directive("autofocus", {
     updated: (e, t) => {
         (void 0 === t.value || t.value) && e.focus()
     }
