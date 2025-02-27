@@ -46,8 +46,8 @@ import {
     y as H,
     z as j,
     A as W,
-    B as V,
-    E as O,
+    B as O,
+    E as V,
     G as N,
     H as B,
     I as R,
@@ -100,8 +100,8 @@ import {
     av as He,
     aw as je,
     ax as We,
-    ay as Ve,
-    az as Oe,
+    ay as Oe,
+    az as Ve,
     aA as Ne,
     aB as Be,
     aC as Re,
@@ -172,7 +172,7 @@ const bt = {},
         }))
     },
     vt = {
-        getToken: () => "62758e77-22b7-428a-8ee9-63460df2cf8d"
+        getToken: () => "1d035302-286b-4eda-a453-c31c2300c6f2"
     };
 window._ = r, window.Popper = s, window.bootstrap = {
     Carousel: i,
@@ -609,8 +609,8 @@ const It = At(Pt, [["render", function(e, t, r, s, a, o) {
     Wt = {
         class: "list-inline-item"
     },
-    Vt = ["data-href"],
-    Ot = {
+    Ot = ["data-href"],
+    Vt = {
         class: "list-inline-item"
     },
     Nt = ["data-url", "data-text", "data-lang"],
@@ -653,7 +653,7 @@ const Rt = At({
             "data-layout": "button_count",
             "data-size": "small",
             "data-mobile-iframe": "true"
-        }, null, 8, Vt)]), S("li", Ot, [S("a", {
+        }, null, 8, Ot)]), S("li", Vt, [S("a", {
             href: "https://twitter.com/intent/tweet",
             class: "twitter-share-button",
             "data-url": r.shareUrl,
@@ -1297,10 +1297,10 @@ const Ar = At({
     },
     jr = ["for"],
     Wr = ["id", "placeholder"],
-    Vr = {
+    Or = {
         class: "col-12 col-md-12 col-lg-5"
     },
-    Or = ["for"],
+    Vr = ["for"],
     Nr = {
         class: "col col-lg-1 my-1"
     },
@@ -1357,10 +1357,10 @@ const Kr = At({
             required: "",
             spellcheck: !1,
             type: "text"
-        }, null, 42, Wr), [[E, e.current_keyword], [c, e.do_autofocus]])]), S("div", Vr, [S("label", {
+        }, null, 42, Wr), [[E, e.current_keyword], [c, e.do_autofocus]])]), S("div", Or, [S("label", {
             class: "visually-hidden",
             for: "search-form-bing-country-language-" + e.type
-        }, k(e.trans.get("Country / Language")), 9, Or), M(n, {
+        }, k(e.trans.get("Country / Language")), 9, Vr), M(n, {
             dusk: "bing-location-language",
             location_country_only: e.location_country_only
         }, null, 8, ["location_country_only"])]), S("div", Nr, [S("button", {
@@ -1744,10 +1744,10 @@ const Ds = At({
         class: "col-3 col-md-2 col-lg-2 my-1 me-n1px"
     },
     Ws = ["for"],
-    Vs = {
+    Os = {
         class: "col my-1 me-lg-n1px"
     },
-    Os = ["for"],
+    Vs = ["for"],
     Ns = ["id", "placeholder"],
     Bs = ["for"],
     Rs = {
@@ -1785,10 +1785,10 @@ const zs = At({
         }, k(e.trans.get("Category")), 9, Ws), M(i, {
             dusk: "etsy-category",
             preoptions: r.categories
-        }, null, 8, ["preoptions"])]), S("div", Vs, [S("label", {
+        }, null, 8, ["preoptions"])]), S("div", Os, [S("label", {
             class: "visually-hidden",
             for: "search-etsy-keyword-" + e.type
-        }, k(e.trans.get("Keyword")), 9, Os), F(S("input", {
+        }, k(e.trans.get("Keyword")), 9, Vs), F(S("input", {
             "onUpdate:modelValue": t[0] || (t[0] = t => e.current_keyword = t),
             onPaste: t[1] || (t[1] = (...t) => e.paste && e.paste(...t)),
             autocapitalize: "off",
@@ -2175,8 +2175,8 @@ const Ia = At({
     Wa = {
         class: "col my-1"
     },
-    Va = ["for"],
-    Oa = ["id", "placeholder"],
+    Oa = ["for"],
+    Va = ["id", "placeholder"],
     Na = ["for"],
     Ba = {
         class: "col col-lg-1 my-1"
@@ -2209,7 +2209,7 @@ const Ja = At({
         }, null, -1)), S("div", ja, [S("div", Wa, [S("label", {
             class: "visually-hidden",
             for: "search-form-tiktok-keyword-" + e.type
-        }, k(e.trans.get("Keyword")), 9, Va), F(S("input", {
+        }, k(e.trans.get("Keyword")), 9, Oa), F(S("input", {
             "onUpdate:modelValue": t[0] || (t[0] = t => e.current_keyword = t),
             onPaste: t[1] || (t[1] = (...t) => e.paste && e.paste(...t)),
             autocapitalize: "off",
@@ -2223,7 +2223,7 @@ const Ja = At({
             required: "",
             spellcheck: !1,
             type: "text"
-        }, null, 42, Oa), [[E, e.current_keyword], [c, e.do_autofocus]])]), S("div", {
+        }, null, 42, Va), [[E, e.current_keyword], [c, e.do_autofocus]])]), S("div", {
             class: f(["col-12 col-md-12", e.language_dropdown_only ? "col-lg-3" : "col-lg-5"])
         }, [S("label", {
             class: "visually-hidden",
@@ -2258,7 +2258,7 @@ const Ja = At({
             ExclamationCircleIcon: $,
             ArrowLeftIcon: j,
             ChevronDownIcon: W,
-            ChevronUpIcon: V
+            ChevronUpIcon: O
         },
         props: {
             default_plan: {
@@ -2808,7 +2808,7 @@ const Ja = At({
         }
     },
     Ga = {
-        class: "my-4 checkout-form"
+        class: "my-2 checkout-form"
     },
     Ya = {
         class: "row"
@@ -2933,10 +2933,10 @@ const Ja = At({
     },
     jo = ["disabled"],
     Wo = ["disabled"],
-    Vo = {
+    Oo = {
         class: "col-12 col-md-8"
     },
-    Oo = {
+    Vo = {
         class: "row mb-0"
     },
     No = {
@@ -3021,127 +3021,133 @@ const Ja = At({
         class: "form-label"
     },
     yi = {
-        class: "d-flex justify-content-between mb-3"
+        class: "d-flex justify-content-between align-items-stretch mb-3"
     },
     wi = {
         class: "w-50 me-2"
     },
     fi = ["disabled"],
     bi = {
+        key: 0
+    },
+    ki = {
         class: "w-50 ms-2"
     },
-    ki = ["disabled"],
-    vi = {
+    vi = ["disabled"],
+    xi = {
+        key: 0
+    },
+    Ci = {
         key: 3,
         class: "row my-4"
     },
-    xi = {
+    Si = {
         class: "col"
     },
-    Ci = ["disabled"],
-    Si = ["disabled"],
-    Ti = {
+    Ti = ["disabled"],
+    Fi = ["disabled"],
+    qi = {
         key: 4,
         class: "row my-4"
     },
-    Fi = {
+    Mi = {
         class: "col"
     },
-    qi = ["disabled"],
-    Mi = {
-        key: 0
-    },
-    Ei = {
-        class: "col-12 col-md-4"
-    },
+    Ei = ["disabled"],
     Li = {
         key: 0
     },
     Ui = {
-        key: 1
+        class: "col-12 col-md-4"
     },
     Ai = {
-        class: "card bg-light border-0 mb-4"
+        key: 0
     },
     Pi = {
-        class: "card-header bg-light d-flex align-items-center lh-base border-0 pb-0 mt-2"
+        key: 1
     },
     $i = {
-        class: "card-body"
+        class: "card bg-light border-0 mb-4"
     },
     Di = {
+        class: "card-header bg-light d-flex align-items-center lh-base border-0 pb-0 mt-2"
+    },
+    Ii = {
+        class: "card-body"
+    },
+    Hi = {
         key: 0,
         class: "mb-1 text-end"
     },
-    Ii = {
-        class: "badge bg-success text-uppercase"
-    },
-    Hi = {
-        class: "d-flex justify-content-between"
-    },
     ji = {
-        class: "text-muted"
+        class: "badge bg-success text-uppercase"
     },
     Wi = {
         class: "d-flex justify-content-between"
     },
-    Vi = {
-        class: "d-flex justify-content-between"
-    },
     Oi = {
+        class: "text-muted"
+    },
+    Vi = {
         class: "d-flex justify-content-between"
     },
     Ni = {
         class: "d-flex justify-content-between"
     },
     Bi = {
-        class: "d-flex justify-content-between fw-bold"
+        class: "d-flex justify-content-between"
     },
     Ri = {
+        class: "d-flex justify-content-between"
+    },
+    Ki = {
+        class: "d-flex justify-content-between fw-bold"
+    },
+    Ji = {
         key: 0,
         class: "d-flex justify-content-between fw-bold"
     },
-    Ki = {
-        class: "my-0"
-    },
-    Ji = {
-        class: "my-0"
-    },
     zi = {
+        class: "my-0"
+    },
+    Gi = {
+        class: "my-0"
+    },
+    Yi = {
         key: 1,
         class: "d-flex justify-content-between"
     },
-    Gi = {
-        class: "fw-bold my-0 me-1"
-    },
-    Yi = {
-        class: "fw-bold my-0"
-    },
     Zi = {
-        key: 2,
-        class: "d-flex justify-content-between"
+        class: "fw-bold my-0 me-1"
     },
     Xi = {
         class: "fw-bold my-0"
     },
     Qi = {
-        class: "fw-bold my-0"
+        key: 2,
+        class: "d-flex justify-content-between"
     },
     en = {
+        class: "fw-bold my-0"
+    },
+    tn = {
+        class: "fw-bold my-0"
+    },
+    rn = {
         key: 5,
         class: "my-4"
     },
-    tn = {
+    sn = {
         key: 0
     },
-    rn = ["innerHTML"],
-    sn = ["innerHTML"],
-    an = ["data-bs-title", "data-bs-content"],
-    on = {
+    an = ["innerHTML"],
+    on = ["innerHTML"],
+    nn = ["data-bs-title", "data-bs-content"],
+    ln = {
         key: 1
     },
-    nn = ["innerHTML"];
-const ln = At(za, [["render", function(e, t, r, s, a, o) {
+    cn = ["innerHTML"];
+const _n = At(za, [["render", function(e, t, r, s, a, o) {
         var i, n, l, c, _, d;
         const u = v("loading-section"),
             m = v("arrow-left-icon"),
@@ -3155,7 +3161,8 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
         return b(), g("div", null, [a.process ? T("", !0) : (b(), x(u, {
             key: 0,
             loading: a.loading
-        }, null, 8, ["loading"])), S("button", {
+        }, null, 8, ["loading"])), 3 !== a.step ? (b(), g("button", {
+            key: 1,
             class: "btn btn-light",
             onClick: t[0] || (t[0] = (...e) => o.back && o.back(...e))
         }, [M(m, {
@@ -3164,7 +3171,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
                 width: "20px",
                 height: "20px"
             }
-        }), A(" " + k(e.trans.get("Back")), 1)]), S("div", Ga, [S("div", Ya, [S("div", Za, ["" == a.subscription_note || !o.is_upgrade && !o.is_addon || 0 != o.is_change_period || r.is_trial_user ? "" == a.subscription_note || r.allow_subscription ? T("", !0) : (b(), g("div", eo, [S("div", {
+        }), A(" " + k(e.trans.get("Back")), 1)])) : T("", !0), S("div", Ga, [S("div", Ya, [S("div", Za, ["" == a.subscription_note || !o.is_upgrade && !o.is_addon || 0 != o.is_change_period || r.is_trial_user ? "" == a.subscription_note || r.allow_subscription ? T("", !0) : (b(), g("div", eo, [S("div", {
             innerHTML: a.subscription_note
         }, null, 8, to)])) : (b(), g("div", Xa, [S("div", {
             innerHTML: a.subscription_note
@@ -3235,11 +3242,11 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
         }, null, 8, Fo)])) : T("", !0)]), S("button", {
             disabled: a.loading || !r.allow_subscription,
             type: "submit",
-            class: "btn btn-block btn-primary btn-lg continue-email-button"
+            class: "btn btn-block btn-primary btn-lg fw-bold continue-email-button"
         }, k(e.trans.get("Create Keyword Tool Account")), 9, qo), S("small", {
             innerHTML: a.term,
             class: "d-block mt-3 text-muted"
-        }, null, 8, Mo)], 32)], 512), [[O, 1 == a.step]]), F(S("div", Eo, [o.account_price > 0 ? (b(), g("div", Lo, [S("div", Uo, [S("div", Ao, [S("div", Po, [S("h5", null, k(e.trans.get("Additional User Accounts")), 1)])]), S("div", $o, [S("div", Do, [S("p", {
+        }, null, 8, Mo)], 32)], 512), [[V, 1 == a.step]]), F(S("div", Eo, [o.account_price > 0 ? (b(), g("div", Lo, [S("div", Uo, [S("div", Ao, [S("div", Po, [S("h5", null, k(e.trans.get("Additional User Accounts")), 1)])]), S("div", $o, [S("div", Do, [S("p", {
             innerHTML: e.trans.get(":plan comes with <strong>:count</strong> user accounts. Select this add-on if you need more.", {
                 plan: a.plan.plan_shortname,
                 count: a.plan.child_account
@@ -3264,7 +3271,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             class: "col-12"
         }, [S("hr", {
             class: "mt-4"
-        })], -1)), S("div", Vo, [S("div", Oo, [S("label", No, k(e.trans.get("Total Number Of User Accounts")), 1), S("div", Bo, [M(h, {
+        })], -1)), S("div", Oo, [S("div", Vo, [S("label", No, k(e.trans.get("Total Number Of User Accounts")), 1), S("div", Bo, [M(h, {
             disabled: a.loading || !r.allow_subscription,
             options: o.child_account_list,
             settings: {},
@@ -3310,7 +3317,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
         }, [S("div", {
             id: "daily-limit-range-slider",
             class: "kt-range-slider"
-        })], -1))], 64)) : T("", !0)])])])) : T("", !0)], 512), [[O, 2 == a.step]]), F(S("div", oi, ["" != a.error ? (b(), g("div", ii, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", ni, [M(p, {
+        })], -1))], 64)) : T("", !0)])])])) : T("", !0)], 512), [[V, 2 == a.step]]), F(S("div", oi, ["" != a.error ? (b(), g("div", ii, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", ni, [M(p, {
             class: "text-danger me-2 mb-1",
             style: {
                 width: "20px",
@@ -3334,9 +3341,11 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             onClick: t[9] || (t[9] = e => {
                 a.payment_method = "visa_master", a.payment_ready = !1
             }),
-            class: f(["btn btn-block visa-master-option", ["visa_master" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
-        }, [t[34] || (t[34] = S("img", {
-            class: "checkout-form-payment-method-visa border border-white me-1",
+            class: f(["btn btn-block visa-master-option py-2 d-flex flex-column align-items-center justify-content-center text-center w-100 h-100", ["visa_master" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
+        }, [t[34] || (t[34] = S("span", {
+            class: "d-flex flex-nowrap align-items-center justify-content-center flex-grow-1"
+        }, [S("img", {
+            class: "checkout-form-payment-method-visa me-1",
             src: "/images/payment-method-visa.png",
             width: "96",
             height: "60",
@@ -3346,8 +3355,8 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[35] || (t[35] = S("img", {
-            class: "checkout-form-payment-method-mastercard border border-white me-1",
+        }), S("img", {
+            class: "checkout-form-payment-method-mastercard me-1",
             src: "/images/payment-method-mastercard.png",
             width: "96",
             height: "60",
@@ -3357,15 +3366,17 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[36] || (t[36] = S("br", null, null, -1)), S("small", null, k(e.trans.get("Visa or Mastercard")), 1)], 10, fi)]), S("div", bi, [S("button", {
+        })], -1)), e.$isMobile() ? T("", !0) : (b(), g("small", bi, k(e.trans.get("Visa or Mastercard")), 1))], 10, fi)]), S("div", ki, [S("button", {
             disabled: a.loading || !r.allow_subscription || "" != r.customer_id && "" != (null == (l = a.billing_card) ? void 0 : l.number),
             type: "button",
             onClick: t[10] || (t[10] = e => {
                 a.payment_method = "amex", a.payment_ready = !1
             }),
-            class: f(["btn btn-block amex-option", ["amex" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
-        }, [t[37] || (t[37] = S("img", {
-            class: "checkout-form-payment-method-amex border border-white me-1",
+            class: f(["btn btn-block amex-option py-2 d-flex flex-column align-items-center justify-content-center text-center w-100 h-100", ["amex" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
+        }, [t[35] || (t[35] = S("span", {
+            class: "d-flex flex-nowrap align-items-center justify-content-center flex-grow-1"
+        }, [S("img", {
+            class: "checkout-form-payment-method-amex me-1",
             src: "/images/payment-method-amex.png",
             width: "96",
             height: "60",
@@ -3375,8 +3386,8 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[38] || (t[38] = S("img", {
-            class: "checkout-form-payment-method-unionpay border border-white me-1",
+        }), S("img", {
+            class: "checkout-form-payment-method-unionpay me-1",
             src: "/images/payment-method-unionpay.png",
             width: "96",
             height: "60",
@@ -3386,8 +3397,8 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[39] || (t[39] = S("img", {
-            class: "checkout-form-payment-method-jcb border border-white me-1",
+        }), S("img", {
+            class: "checkout-form-payment-method-jcb me-1",
             src: "/images/payment-method-jcb.png",
             width: "96",
             height: "60",
@@ -3397,7 +3408,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[40] || (t[40] = S("br", null, null, -1)), S("small", null, k(e.trans.get("American Express, UnionPay or JCB")), 1)], 10, ki)])])], 512)), [[O, 2 != r.payment_source && ("" == r.customer_id || "" == (null == (c = a.billing_card) ? void 0 : c.number) || !o.is_change_period)]]), "" != r.customer_id && 2 == r.payment_source ? (b(), x(C, {
+        })], -1)), e.$isMobile() ? T("", !0) : (b(), g("small", xi, k(e.trans.get("American Express, UnionPay or JCB")), 1))], 10, vi)])])], 512)), [[V, 2 != r.payment_source && ("" == r.customer_id || "" == (null == (c = a.billing_card) ? void 0 : c.number) || !o.is_change_period)]]), "" != r.customer_id && 2 == r.payment_source ? (b(), x(C, {
             key: 1,
             dusk: "payment-method",
             ref: "form",
@@ -3509,38 +3520,38 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             allow_multiple_card: r.allow_multiple_card,
             max_card_count: r.max_card_count,
             main_url: r.main_url
-        }, null, 8, ["onHideError", "onShowError", "onProcessSuccess", "onProcessDueAmount", "onProcessSubscriptionNote", "plan", "payment_method", "currency", "billing_id", "default_payment_source", "user_country", "customer_id", "existing_cards", "name", "email", "token_url", "due_amount_url", "process_url", "routes", "allow_subscription", "is_captcha", "due_amount", "child_account", "daily_limit", "subscription_id", "free_trial", "skip_trial", "hide_form", "allow_multiple_card", "max_card_count", "main_url"]))])])])], 512), [[O, 3 == a.step]]), t[41] || (t[41] = S("br", null, null, -1)), 2 == a.step ? (b(), g("div", vi, [S("div", xi, [o.is_pro ? (b(), g("button", {
+        }, null, 8, ["onHideError", "onShowError", "onProcessSuccess", "onProcessDueAmount", "onProcessSubscriptionNote", "plan", "payment_method", "currency", "billing_id", "default_payment_source", "user_country", "customer_id", "existing_cards", "name", "email", "token_url", "due_amount_url", "process_url", "routes", "allow_subscription", "is_captcha", "due_amount", "child_account", "daily_limit", "subscription_id", "free_trial", "skip_trial", "hide_form", "allow_multiple_card", "max_card_count", "main_url"]))])])])], 512), [[V, 3 == a.step]]), 2 == a.step ? (b(), g("div", Ci, [S("div", Si, [o.is_pro ? (b(), g("button", {
             key: 0,
             disabled: a.loading || 0 == o.validateStep2() || !r.allow_subscription || r.default_child_account == a.max_child_allocated || o.is_addon && r.default_child_account == a.child_account,
             type: "button",
             onClick: t[23] || (t[23] = e => o.step2()),
-            class: "btn btn-block btn-primary btn-lg continue-payment-button"
-        }, k(e.trans.get("Continue To Payment")), 9, Ci)) : o.is_api ? (b(), g("button", {
+            class: "btn btn-block btn-primary btn-lg fw-bold continue-payment-button"
+        }, k(e.trans.get("Continue To Payment")), 9, Ti)) : o.is_api ? (b(), g("button", {
             key: 1,
             disabled: a.loading || 0 == o.validateStep2() || !r.allow_subscription || r.default_daily_limit == a.max_api_requests_allocated || o.is_addon && r.default_daily_limit == a.daily_limit,
             type: "button",
             onClick: t[24] || (t[24] = e => o.step2()),
-            class: "btn btn-block btn-primary btn-lg continue-payment-button"
-        }, k(e.trans.get("Continue To Payment")), 9, Si)) : T("", !0)])])) : 3 == a.step ? (b(), g("div", Ti, [S("div", Fi, [S("button", {
+            class: "btn btn-block btn-primary btn-lg fw-bold continue-payment-button"
+        }, k(e.trans.get("Continue To Payment")), 9, Fi)) : T("", !0)])])) : 3 == a.step ? (b(), g("div", qi, [S("div", Mi, [S("button", {
             disabled: "" == r.customer_id && 0 == a.payment_ready || a.loading || 0 == o.validateStep3() || !r.allow_subscription,
             type: "button",
             onClick: t[25] || (t[25] = e => o.step3()),
-            class: "btn btn-block btn-primary btn-lg subscription-button"
-        }, [o.is_free_trial ? (b(), g("strong", Mi, k(e.trans.get("Start :days-Day Free Trial", {
+            class: "btn btn-block btn-primary btn-lg fw-bold subscription-button"
+        }, [o.is_free_trial ? (b(), g("strong", Li, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
         })), 1)) : o.is_change_period || o.is_upgrade || o.is_addon || r.is_trial_user && !o.is_skip_trial ? (b(), g(y, {
             key: 1
         }, [A(k(e.trans.get("Update Subscription")), 1)], 64)) : (b(), g(y, {
             key: 2
-        }, [A(k(e.trans.get("Start My Subscription")), 1)], 64))], 8, qi)])])) : T("", !0)], 64)) : T("", !0)]), S("div", Ei, [r.allow_subscription ? (b(), g(y, {
+        }, [A(k(e.trans.get("Start My Subscription")), 1)], 64))], 8, Ei)])])) : T("", !0)], 64)) : T("", !0)]), S("div", Ui, [r.allow_subscription ? (b(), g(y, {
             key: 0
-        }, [1 == a.step ? (b(), g("div", Li, t[42] || (t[42] = [S("blockquote", {
+        }, [1 == a.step ? (b(), g("div", Ai, t[36] || (t[36] = [S("blockquote", {
             class: "content-quote-1 blockquote mt-3 mt-lg-4 position-relative ps-5 clearfix"
         }, [S("span", {
             class: "position-absolute lh-1 top-0 start-0 display-1 ms-2 text-warning"
         }, "“"), S("strong", null, "KeywordTool.io"), A(" has enabled us to quickly "), S("strong", null, "identify SEO growth opportunities"), A(", do keyword research at scale, and gather data at different geo levels. "), S("footer", {
             class: "blockquote-footer mt-1"
-        }, "Luis Rodriguez - Global Growth SEO Lead - Uber")], -1)]))) : 2 == a.step || 3 == a.step ? (b(), g("div", Ui, [S("div", Ai, [S("h5", Pi, k(e.trans.get("Billing Summary")), 1), S("div", $i, [S("div", null, [M(L, {
+        }, "Luis Rodriguez - Global Growth SEO Lead - Uber")], -1)]))) : 2 == a.step || 3 == a.step ? (b(), g("div", Pi, [S("div", $i, [S("h5", Di, k(e.trans.get("Billing Summary")), 1), S("div", Ii, [S("div", null, [M(L, {
             class: "justify-content-end",
             disabled: "" != r.customer_id && 2 == r.payment_source || !r.allow_subscription || o.is_change_period,
             "left-title": e.trans.get("Monthly Billing"),
@@ -3548,7 +3559,7 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             name: "period_yearly",
             toggled: a.period_yearly,
             onToggle: t[26] || (t[26] = e => a.period_yearly = e)
-        }, null, 8, ["disabled", "left-title", "right-title", "toggled"])]), a.period_yearly ? (b(), g("div", Di, [S("span", Ii, k(e.trans.get("Save :percentage", {
+        }, null, 8, ["disabled", "left-title", "right-title", "toggled"])]), a.period_yearly ? (b(), g("div", Hi, [S("span", ji, k(e.trans.get("Save :percentage", {
             percentage: "20%"
         })), 1)])) : T("", !0), "" == r.user_id && r.allow_subscription ? (b(), x(P, {
             key: 1,
@@ -3557,30 +3568,30 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             onSelect: t[27] || (t[27] = e => a.currency = e),
             default_currency: a.currency,
             label: e.trans.get("Billing Currency")
-        }, null, 8, ["disabled", "default_currency", "label"])) : T("", !0), t[48] || (t[48] = S("hr", null, null, -1)), S("div", null, [S("div", Hi, [S("div", null, k(a.plan.plan_shortname), 1), S("div", null, k(e.$filters.digit(a.plan.price[a.currency], o.currency_symbol)), 1)]), S("small", ji, k(a.plan.price_term[a.currency]), 1)]), o.addon_user_amount > 0 ? (b(), g(y, {
+        }, null, 8, ["disabled", "default_currency", "label"])) : T("", !0), t[42] || (t[42] = S("hr", null, null, -1)), S("div", null, [S("div", Wi, [S("div", null, k(a.plan.plan_shortname), 1), S("div", null, k(e.$filters.digit(a.plan.price[a.currency], o.currency_symbol)), 1)]), S("small", Oi, k(a.plan.price_term[a.currency]), 1)]), o.addon_user_amount > 0 ? (b(), g(y, {
             key: 2
-        }, [t[43] || (t[43] = S("hr", null, null, -1)), S("div", Wi, [S("div", null, k(e.trans.get("Additional User Accounts")), 1), S("div", null, k(e.$filters.digit(o.addon_user_amount, o.currency_symbol)), 1)])], 64)) : T("", !0), o.addon_quota_amount > 0 ? (b(), g(y, {
+        }, [t[37] || (t[37] = S("hr", null, null, -1)), S("div", Vi, [S("div", null, k(e.trans.get("Additional User Accounts")), 1), S("div", null, k(e.$filters.digit(o.addon_user_amount, o.currency_symbol)), 1)])], 64)) : T("", !0), o.addon_quota_amount > 0 ? (b(), g(y, {
             key: 3
-        }, [t[44] || (t[44] = S("hr", null, null, -1)), S("div", Vi, [S("div", null, k(e.trans.get("Additional API Requests")), 1), S("div", null, k(e.$filters.digit(o.addon_quota_amount, o.currency_symbol)), 1)])], 64)) : T("", !0), t[49] || (t[49] = S("hr", null, null, -1)), a.discount_amount > 0 ? (b(), g(y, {
+        }, [t[38] || (t[38] = S("hr", null, null, -1)), S("div", Ni, [S("div", null, k(e.trans.get("Additional API Requests")), 1), S("div", null, k(e.$filters.digit(o.addon_quota_amount, o.currency_symbol)), 1)])], 64)) : T("", !0), t[43] || (t[43] = S("hr", null, null, -1)), a.discount_amount > 0 ? (b(), g(y, {
             key: 4
-        }, [S("div", Oi, [S("div", null, k(e.trans.get("Discount")), 1), S("div", null, k(e.$filters.digit(a.discount_amount, o.currency_symbol)), 1)]), t[45] || (t[45] = S("hr", null, null, -1))], 64)) : T("", !0), S("div", null, [o.is_free_trial || (o.is_change_period || o.is_upgrade || o.is_addon) && r.is_trial_user && !o.is_skip_trial ? (b(), g(y, {
+        }, [S("div", Bi, [S("div", null, k(e.trans.get("Discount")), 1), S("div", null, k(e.$filters.digit(a.discount_amount, o.currency_symbol)), 1)]), t[39] || (t[39] = S("hr", null, null, -1))], 64)) : T("", !0), S("div", null, [o.is_free_trial || (o.is_change_period || o.is_upgrade || o.is_addon) && r.is_trial_user && !o.is_skip_trial ? (b(), g(y, {
             key: 0
-        }, [S("div", Ni, [S("div", null, k(e.trans.get("Total After Trial")), 1), S("div", null, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)]), S("div", Bi, [S("div", null, k(e.trans.get("Due Today")), 1), S("div", null, k(e.$filters.digit(0, o.currency_symbol)), 1)])], 64)) : (b(), g(y, {
+        }, [S("div", Ri, [S("div", null, k(e.trans.get("Total After Trial")), 1), S("div", null, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)]), S("div", Ki, [S("div", null, k(e.trans.get("Due Today")), 1), S("div", null, k(e.$filters.digit(0, o.currency_symbol)), 1)])], 64)) : (b(), g(y, {
             key: 1
-        }, [o.is_skip_trial ? (b(), g("div", Ri, [S("div", null, [S("p", Ki, k(e.trans.get("Due Today")), 1)]), S("div", null, [S("p", Ji, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])])) : r.existing_plan_amount > 0 ? (b(), g("div", zi, [S("div", null, [S("p", Gi, k(e.trans.get("New Billing Amount")), 1)]), S("div", null, [S("p", Yi, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)) + " / " + k(a.period_yearly ? e.trans.get("year") : e.trans.get("month")), 1)])])) : (b(), g("div", Zi, [S("div", null, [S("p", Xi, k(e.trans.get("Due Now")), 1)]), S("div", null, [S("p", Qi, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])]))], 64))]), 3 == a.step ? (b(), g("div", en, [o.is_free_trial ? (b(), g("small", tn, ["VN" == r.user_country ? (b(), g("span", {
+        }, [o.is_skip_trial ? (b(), g("div", Ji, [S("div", null, [S("p", zi, k(e.trans.get("Due Today")), 1)]), S("div", null, [S("p", Gi, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])])) : r.existing_plan_amount > 0 ? (b(), g("div", Yi, [S("div", null, [S("p", Zi, k(e.trans.get("New Billing Amount")), 1)]), S("div", null, [S("p", Xi, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)) + " / " + k(a.period_yearly ? e.trans.get("year") : e.trans.get("month")), 1)])])) : (b(), g("div", Qi, [S("div", null, [S("p", en, k(e.trans.get("Due Now")), 1)]), S("div", null, [S("p", tn, k(e.$filters.digit(o.grand_total_amount, o.currency_symbol)), 1)])]))], 64))]), 3 == a.step ? (b(), g("div", rn, [o.is_free_trial ? (b(), g("small", sn, ["VN" == r.user_country ? (b(), g("span", {
             key: 0,
             innerHTML: e.trans.get("You will be charged <strong>:due_amount</strong> after your free trial ends on :trial_end_date.", {
                 due_amount: e.$filters.digit(o.due_amount, o.currency_symbol),
                 trial_end_date: e.$filters.date(o.trial_end_date)
             })
-        }, null, 8, rn)) : (b(), g(y, {
+        }, null, 8, an)) : (b(), g(y, {
             key: 1
         }, [S("span", {
             innerHTML: e.trans.get("You will be charged <strong>:due_amount</strong> after your free trial ends on :trial_end_date. See our", {
                 due_amount: e.$filters.digit(o.due_amount, o.currency_symbol),
                 trial_end_date: e.$filters.date(o.trial_end_date)
             })
-        }, null, 8, sn), t[46] || (t[46] = A()), S("span", {
+        }, null, 8, on), t[40] || (t[40] = A()), S("span", {
             class: "text-primary fw-bold cursor-pointer",
             "data-bs-title": e.trans.get(":day-Day Money Back Guarantee", {
                 day: a.refundable_day
@@ -3594,12 +3605,12 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             "data-bs-trigger": "hover focus"
         }, k(e.trans.get(":day-Day Money Back Guarantee", {
             day: a.refundable_day
-        })), 9, an), t[47] || (t[47] = A(". "))], 64))])) : o.is_change_period || o.is_upgrade || o.is_addon || r.is_trial_user && !o.is_skip_trial ? (b(), g("small", on)) : (b(), g("small", {
+        })), 9, nn), t[41] || (t[41] = A(". "))], 64))])) : o.is_change_period || o.is_upgrade || o.is_addon || r.is_trial_user && !o.is_skip_trial ? (b(), g("small", ln)) : (b(), g("small", {
             key: 2,
             innerHTML: e.trans.get("Your subscription will start immediately. All the following payments will be automatically deducted using your preferred payment method. You can cancel your subscription at any time.")
-        }, null, 8, nn))])) : T("", !0)])])])) : T("", !0)], 64)) : T("", !0)])])])])
+        }, null, 8, cn))])) : T("", !0)])])])) : T("", !0)], 64)) : T("", !0)])])])])
     }]]),
-    cn = {
+    dn = {
         components: {
             ExclamationCircleIcon: $,
             LockClosedIcon: N,
@@ -3744,104 +3755,103 @@ const ln = At(za, [["render", function(e, t, r, s, a, o) {
             }
         }
     },
-    _n = {
+    un = {
         key: 1,
         class: "alert alert-danger my-3",
         role: "alert",
         id: "error-alert"
     },
-    dn = {
+    mn = {
         class: "w-1 align-top"
     },
-    un = ["innerHTML"],
-    mn = {
+    hn = ["innerHTML"],
+    pn = {
         key: 2,
         class: "alert alert-success my-3",
         role: "alert",
         id: "success-alert"
     },
-    hn = {
+    gn = {
         class: "w-1 align-top"
     },
-    pn = {
+    yn = {
         class: "row"
     },
-    gn = {
+    wn = {
         class: "col-12 col-md-12"
     },
-    yn = {
+    fn = {
         class: "card overflow-hidden"
     },
-    wn = {
+    bn = {
         class: "card-body"
     },
-    fn = {
+    kn = {
         id: "form-group-name",
         class: "mb-3"
     },
-    bn = {
+    vn = {
         class: "form-label",
         for: "name"
     },
-    kn = ["placeholder"],
-    vn = {
+    xn = ["placeholder"],
+    Cn = {
         id: "form-group-email",
         class: "mb-4"
     },
-    xn = {
+    Sn = {
         class: "form-label",
         for: "email"
     },
-    Cn = ["placeholder"],
-    Sn = {
+    Tn = ["placeholder"],
+    Fn = {
         class: "mb-3"
     },
-    Tn = {
+    qn = {
         class: "form-label"
     },
-    Fn = {
-        class: "d-flex justify-content-between mb-3"
+    Mn = {
+        class: "d-flex justify-content-between align-items-stretch mb-3"
     },
-    qn = {
-        class: "w-50 me-2"
-    },
-    Mn = ["disabled"],
     En = {
-        class: "w-50 ms-2"
+        class: "w-50 me-2"
     },
     Ln = ["disabled"],
     Un = {
-        class: "mb-3 d-flex justify-content-between"
+        key: 0
     },
     An = {
+        class: "w-50 ms-2"
+    },
+    Pn = ["disabled"],
+    $n = {
+        key: 0
+    },
+    Dn = {
+        class: "mb-3 d-flex justify-content-between"
+    },
+    In = {
         class: "d-flex justify-content-end mb-0"
     },
-    Pn = {
+    Hn = {
         class: "mx-1"
     },
-    $n = ["disabled"],
-    Dn = {
-        class: "mx-1"
-    },
-    In = ["disabled"],
-    Hn = ["disabled"],
-    jn = {
-        class: "d-flex justify-content-between align-items-center"
-    },
+    jn = ["disabled"],
     Wn = {
-        class: "text-muted"
-    };
-const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
+        class: "mx-1"
+    },
+    On = ["disabled"],
+    Vn = ["disabled"];
+const Nn = At(dn, [["render", function(e, t, r, s, a, o) {
         const i = v("loading-section"),
             n = v("exclamation-circle-icon"),
             l = v("check-circle-icon"),
             c = v("stripe-payment"),
-            _ = v("vue-toggle"),
-            d = v("lock-closed-icon");
+            _ = v("vue-toggle");
         return b(), g("div", null, [a.process ? T("", !0) : (b(), x(i, {
             key: 0,
             loading: a.loading
-        }, null, 8, ["loading"])), "" != a.error ? (b(), g("div", _n, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", dn, [M(n, {
+        }, null, 8, ["loading"])), "" != a.error ? (b(), g("div", un, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", mn, [M(n, {
             class: "text-success me-2 mb-1",
             style: {
                 width: "20px",
@@ -3849,19 +3859,19 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
             }
         })]), S("td", {
             innerHTML: a.error
-        }, null, 8, un)])])])])) : "" != a.success ? (b(), g("div", mn, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", hn, [M(l, {
+        }, null, 8, hn)])])])])) : "" != a.success ? (b(), g("div", pn, [S("table", null, [S("tbody", null, [S("tr", null, [S("td", gn, [M(l, {
             class: "me-1 mb-1",
             style: {
                 width: "20px",
                 height: "20px"
             }
-        })]), S("td", null, k(a.success), 1)])])])])) : T("", !0), S("div", pn, [S("div", gn, [S("div", yn, [S("div", wn, [S("form", {
+        })]), S("td", null, k(a.success), 1)])])])])) : T("", !0), S("div", yn, [S("div", wn, [S("div", fn, [S("div", bn, [S("form", {
             onSubmit: t[16] || (t[16] = U((() => {}), ["prevent"])),
             id: "card-form",
             class: "card-form"
         }, [r.on_behalf ? (b(), g(y, {
             key: 0
-        }, [S("div", fn, [S("label", bn, [A(k(e.trans.get("Name")) + " ", 1), t[17] || (t[17] = S("span", {
+        }, [S("div", kn, [S("label", vn, [A(k(e.trans.get("Name")) + " ", 1), t[17] || (t[17] = S("span", {
             class: "text-danger"
         }, "*", -1))]), F(S("input", {
             type: "text",
@@ -3872,7 +3882,7 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
             placeholder: e.trans.get("e.g. John"),
             required: "",
             readonly: ""
-        }, null, 8, kn), [[E, a.name]])]), S("div", vn, [S("label", xn, [A(k(e.trans.get("Email")) + " ", 1), t[18] || (t[18] = S("span", {
+        }, null, 8, xn), [[E, a.name]])]), S("div", Cn, [S("label", Sn, [A(k(e.trans.get("Email")) + " ", 1), t[18] || (t[18] = S("span", {
             class: "text-danger"
         }, "*", -1))]), F(S("input", {
             type: "email",
@@ -3883,7 +3893,7 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
             placeholder: e.trans.get("e.g. your@email.com"),
             required: "",
             readonly: ""
-        }, null, 8, Cn), [[E, a.email]])])], 64)) : (b(), g(y, {
+        }, null, 8, Tn), [[E, a.email]])])], 64)) : (b(), g(y, {
             key: 1
         }, [F(S("input", {
             type: "hidden",
@@ -3893,17 +3903,19 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
             type: "hidden",
             "onUpdate:modelValue": t[3] || (t[3] = e => a.email = e),
             name: "email"
-        }, null, 512), [[E, a.email]])], 64)), S("div", Sn, [S("label", Tn, [A(k(e.trans.get("Select Card Type")) + " ", 1), t[19] || (t[19] = S("span", {
+        }, null, 512), [[E, a.email]])], 64)), S("div", Fn, [S("label", qn, [A(k(e.trans.get("Select Card Type")) + " ", 1), t[19] || (t[19] = S("span", {
             class: "text-danger"
-        }, "*", -1))]), S("div", Fn, [S("div", qn, [S("button", {
+        }, "*", -1))]), S("div", Mn, [S("div", En, [S("button", {
             disabled: a.loading,
             type: "button",
             onClick: t[4] || (t[4] = e => {
                 a.payment_method = "visa_master", a.has_error = !1
             }),
-            class: f(["btn btn-block visa-master-option", ["visa_master" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
-        }, [t[20] || (t[20] = S("img", {
-            class: "checkout-form-payment-method-visa border border-white me-1",
+            class: f(["btn btn-block visa-master-option py-2 d-flex flex-column align-items-center justify-content-center text-center w-100 h-100", ["visa_master" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
+        }, [t[20] || (t[20] = S("span", {
+            class: "d-flex flex-nowrap align-items-center justify-content-center flex-grow-1"
+        }, [S("img", {
+            class: "checkout-form-payment-method-visa me-1",
             src: "/images/payment-method-visa.png",
             width: "96",
             height: "60",
@@ -3913,8 +3925,8 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[21] || (t[21] = S("img", {
-            class: "checkout-form-payment-method-mastercard border border-white me-1",
+        }), S("img", {
+            class: "checkout-form-payment-method-mastercard me-1",
             src: "/images/payment-method-mastercard.png",
             width: "96",
             height: "60",
@@ -3924,15 +3936,17 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[22] || (t[22] = S("br", null, null, -1)), S("small", null, k(e.trans.get("Visa or Mastercard")), 1)], 10, Mn)]), S("div", En, [S("button", {
+        })], -1)), e.$isMobile() ? T("", !0) : (b(), g("small", Un, k(e.trans.get("Visa or Mastercard")), 1))], 10, Ln)]), S("div", An, [S("button", {
             disabled: a.loading,
             type: "button",
             onClick: t[5] || (t[5] = e => {
                 a.payment_method = "amex", a.has_error = !1
             }),
-            class: f(["btn btn-block amex-option", ["amex" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
-        }, [t[23] || (t[23] = S("img", {
-            class: "checkout-form-payment-method-amex border border-white me-1",
+            class: f(["btn btn-block amex-option py-2 d-flex flex-column align-items-center justify-content-center text-center w-100 h-100", ["amex" == a.payment_method ? "btn-primary" : "btn-outline-primary"]])
+        }, [t[21] || (t[21] = S("span", {
+            class: "d-flex flex-nowrap align-items-center justify-content-center flex-grow-1"
+        }, [S("img", {
+            class: "checkout-form-payment-method-amex me-1",
             src: "/images/payment-method-amex.png",
             width: "96",
             height: "60",
@@ -3942,8 +3956,8 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[24] || (t[24] = S("img", {
-            class: "checkout-form-payment-method-unionpay border border-white me-1",
+        }), S("img", {
+            class: "checkout-form-payment-method-unionpay me-1",
             src: "/images/payment-method-unionpay.png",
             width: "96",
             height: "60",
@@ -3953,8 +3967,8 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[25] || (t[25] = S("img", {
-            class: "checkout-form-payment-method-jcb border border-white me-1",
+        }), S("img", {
+            class: "checkout-form-payment-method-jcb me-1",
             src: "/images/payment-method-jcb.png",
             width: "96",
             height: "60",
@@ -3964,7 +3978,7 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
                 width: "auto",
                 "max-height": "21px"
             }
-        }, null, -1)), t[26] || (t[26] = S("br", null, null, -1)), S("small", null, k(e.trans.get("American Express, UnionPay or JCB")), 1)], 10, Ln)])]), "amex" == a.payment_method ? (b(), x(c, {
+        })], -1)), e.$isMobile() ? T("", !0) : (b(), g("small", $n, k(e.trans.get("American Express, UnionPay or JCB")), 1))], 10, Pn)])]), "amex" == a.payment_method ? (b(), x(c, {
             key: 0,
             dusk: "payment-method",
             ref: "form",
@@ -4016,38 +4030,32 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
             process_url: r.process_url,
             is_captcha: r.is_captcha,
             main_url: o.set_main_url
-        }, null, 8, ["onHideError", "onShowError", "onProcessSuccess", "access_token", "payment_method", "billing_id", "card_id", "default_payment_source", "customer_id", "billing_card", "name", "email", "primary_payment", "token_url", "due_amount_url", "process_url", "is_captcha", "main_url"]))]), S("div", Un, [S("div", null, [r.default_primary_payment ? T("", !0) : (b(), x(_, {
+        }, null, 8, ["onHideError", "onShowError", "onProcessSuccess", "access_token", "payment_method", "billing_id", "card_id", "default_payment_source", "customer_id", "billing_card", "name", "email", "primary_payment", "token_url", "due_amount_url", "process_url", "is_captcha", "main_url"]))]), S("div", Dn, [S("div", null, [r.default_primary_payment ? T("", !0) : (b(), x(_, {
             key: 0,
             "right-title": e.trans.get("Set as primary payment method"),
             name: "primary_payment",
             toggled: a.primary_payment,
             onToggle: t[12] || (t[12] = e => a.primary_payment = e)
-        }, null, 8, ["right-title", "toggled"]))]), S("div", null, [S("div", An, [S("div", Pn, [S("a", {
+        }, null, 8, ["right-title", "toggled"]))]), S("div", null, [S("div", In, [S("div", Hn, [S("a", {
             href: "javascript:",
             onClick: t[13] || (t[13] = t => e.$root.redirect(o.set_main_url)),
             disabled: a.loading || a.has_error,
             class: "btn btn btn-light"
-        }, k(e.trans.get("Cancel")), 9, $n)]), S("div", Dn, [r.customer_id && r.card_id ? (b(), g("button", {
+        }, k(e.trans.get("Cancel")), 9, jn)]), S("div", Wn, [r.customer_id && r.card_id ? (b(), g("button", {
             key: 0,
             disabled: a.loading || a.has_error,
             onClick: t[14] || (t[14] = e => o.submit()),
             type: "button",
             class: "btn btn btn-primary update-card-button"
-        }, k(e.trans.get("Update Now")), 9, In)) : (b(), g("button", {
+        }, k(e.trans.get("Update Now")), 9, On)) : (b(), g("button", {
             key: 1,
             disabled: a.loading || a.has_error,
             onClick: t[15] || (t[15] = e => o.submit()),
             type: "button",
             class: "btn btn-block btn btn-primary add-card-button"
-        }, k(e.trans.get("Add Now")), 9, Hn))])])])]), S("div", jn, [S("small", Wn, [M(d, {
-            class: "mb-1 me-1",
-            style: {
-                width: "20px",
-                height: "20px"
-            }
-        }), A(" " + k(e.trans.get("We use Stripe to handle payments and card information securely. Stripe is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])], 32)])])])])])
+        }, k(e.trans.get("Add Now")), 9, Vn))])])])])], 32)])])])])])
     }]]),
-    On = {
+    Bn = {
         components: {
             CheckIcon: I
         },
@@ -4140,49 +4148,43 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
             }
         }
     },
-    Nn = {
+    Rn = {
         class: "mb-3 row row-eq-height"
     },
-    Bn = {
+    Kn = {
         class: "card h-100"
     },
-    Rn = {
+    Jn = {
         key: 0,
         class: "card-header p-1 text-center bg-transparent border-0 d-none d-md-block"
     },
-    Kn = {
+    zn = {
         class: "card-body"
     },
-    Jn = {
+    Gn = {
         class: "card-title pricing-card-title fw-bolder"
     },
-    zn = {
+    Yn = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    Gn = {
-        key: 1,
-        href: "#",
-        class: "btn btn-lg btn-block btn-primary disabled"
-    },
-    Yn = ["href"],
     Zn = {
-        key: 3,
+        key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
     Xn = ["href"],
     Qn = {
-        class: "mt-1 text-center fw-bold"
+        key: 3,
+        href: "#",
+        class: "btn btn-lg btn-block btn-primary disabled"
     },
     el = ["href"],
-    tl = ["href"],
-    rl = {
-        class: "align-text-top"
+    tl = {
+        class: "mt-1 text-center fw-bold"
     },
-    sl = {
-        class: "align-text-top"
-    },
+    rl = ["href"],
+    sl = ["href"],
     al = {
         class: "align-text-top"
     },
@@ -4190,45 +4192,45 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
         class: "align-text-top"
     },
     il = {
-        class: "card h-100"
+        class: "align-text-top"
     },
     nl = {
-        class: "my-0 fw-normal text-uppercase"
+        class: "align-text-top"
     },
     ll = {
-        class: "card-body"
+        class: "card h-100"
     },
     cl = {
-        class: "card-title pricing-card-title fw-bolder"
+        class: "my-0 fw-normal text-uppercase"
     },
     _l = {
+        class: "card-body"
+    },
+    dl = {
+        class: "card-title pricing-card-title fw-bolder"
+    },
+    ul = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    dl = {
+    ml = {
         key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    ul = ["href"],
-    ml = {
+    hl = ["href"],
+    pl = {
         key: 3,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    hl = ["href"],
-    pl = ["href"],
-    gl = {
+    gl = ["href"],
+    yl = ["href"],
+    wl = {
         class: "mt-1 text-center fw-bold"
     },
-    yl = ["href"],
-    wl = ["href"],
-    fl = {
-        class: "align-text-top"
-    },
-    bl = {
-        class: "align-text-top"
-    },
+    fl = ["href"],
+    bl = ["href"],
     kl = {
         class: "align-text-top"
     },
@@ -4242,233 +4244,239 @@ const Vn = At(cn, [["render", function(e, t, r, s, a, o) {
         class: "align-text-top"
     },
     Sl = {
-        class: "card h-100"
+        class: "align-text-top"
     },
     Tl = {
+        class: "align-text-top"
+    },
+    Fl = {
+        class: "card h-100"
+    },
+    ql = {
         key: 0,
         class: "card-header p-1 text-center bg-transparent border-0 d-none d-md-block"
     },
-    Fl = {
+    Ml = {
         class: "card-body"
     },
-    ql = {
+    El = {
         class: "card-title pricing-card-title fw-bolder"
     },
-    Ml = {
+    Ll = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    El = {
+    Ul = {
         key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    Ll = ["href"],
-    Ul = ["href"],
     Al = ["href"],
-    Pl = {
+    Pl = ["href"],
+    $l = ["href"],
+    Dl = {
         class: "mt-1 text-center fw-bold"
     },
-    $l = ["href"],
-    Dl = ["href"],
-    Il = {
-        class: "align-text-top"
-    },
-    Hl = {
-        class: "align-text-top"
-    },
+    Il = ["href"],
+    Hl = ["href"],
     jl = {
         class: "align-text-top"
     },
     Wl = {
         class: "align-text-top"
     },
-    Vl = {
+    Ol = {
         class: "align-text-top"
     },
-    Ol = {
+    Vl = {
         class: "align-text-top"
     },
     Nl = {
         class: "align-text-top"
     },
     Bl = {
-        class: "card h-100"
+        class: "align-text-top"
     },
     Rl = {
-        class: "my-0 fw-normal text-uppercase"
+        class: "align-text-top"
     },
     Kl = {
-        class: "card-body"
+        class: "card h-100"
     },
     Jl = {
-        class: "card-title pricing-card-title fw-bolder"
+        class: "my-0 fw-normal text-uppercase"
     },
     zl = {
+        class: "card-body"
+    },
+    Gl = {
+        class: "card-title pricing-card-title fw-bolder"
+    },
+    Yl = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    Gl = {
-        key: 1,
-        href: "#",
-        class: "btn btn-lg btn-block btn-primary disabled"
-    },
-    Yl = ["href"],
     Zl = {
-        key: 3,
+        key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
     Xl = ["href"],
     Ql = {
-        class: "mt-1 text-center fw-bold"
+        key: 3,
+        href: "#",
+        class: "btn btn-lg btn-block btn-primary disabled"
     },
     ec = ["href"],
-    tc = ["href"],
-    rc = {
-        class: "align-text-top"
+    tc = {
+        class: "mt-1 text-center fw-bold"
     },
-    sc = ["innerHTML"],
+    rc = ["href"],
+    sc = ["href"],
     ac = {
         class: "align-text-top"
     },
     oc = ["innerHTML"],
     ic = {
+        class: "align-text-top"
+    },
+    nc = ["innerHTML"],
+    lc = {
         class: "card h-100"
     },
-    nc = {
+    cc = {
         key: 0,
         class: "card-header p-1 text-center bg-transparent border-0 d-none d-md-block"
     },
-    lc = {
+    _c = {
         class: "card-body"
     },
-    cc = {
+    dc = {
         class: "card-title pricing-card-title fw-bolder"
     },
-    _c = {
+    uc = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    dc = {
+    mc = {
         key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    uc = ["href"],
-    mc = {
+    hc = ["href"],
+    pc = {
         key: 3,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    hc = ["href"],
-    pc = ["href"],
-    gc = {
+    gc = ["href"],
+    yc = ["href"],
+    wc = {
         class: "mt-1 text-center fw-bold"
     },
-    yc = ["href"],
-    wc = ["href"],
-    fc = {
-        class: "align-text-top"
-    },
-    bc = ["innerHTML"],
+    fc = ["href"],
+    bc = ["href"],
     kc = {
         class: "align-text-top"
     },
     vc = ["innerHTML"],
     xc = {
+        class: "align-text-top"
+    },
+    Cc = ["innerHTML"],
+    Sc = {
         class: "card h-100"
     },
-    Cc = {
+    Tc = {
         key: 0,
         class: "card-header p-1 text-center bg-transparent border-0 d-none d-md-block"
     },
-    Sc = {
+    Fc = {
         class: "card-body"
     },
-    Tc = {
+    qc = {
         class: "card-title pricing-card-title fw-bolder"
     },
-    Fc = {
+    Mc = {
         key: 0,
         class: "mt-n1 text-muted"
     },
-    qc = {
+    Ec = {
         key: 1,
         href: "#",
         class: "btn btn-lg btn-block btn-primary disabled"
     },
-    Mc = ["href"],
-    Ec = ["href"],
     Lc = ["href"],
-    Uc = {
+    Uc = ["href"],
+    Ac = ["href"],
+    Pc = {
         class: "mt-1 text-center fw-bold"
     },
-    Ac = ["href"],
-    Pc = ["href"],
-    $c = {
-        class: "align-text-top"
-    },
-    Dc = ["innerHTML"],
+    $c = ["href"],
+    Dc = ["href"],
     Ic = {
         class: "align-text-top"
     },
     Hc = ["innerHTML"],
     jc = {
+        class: "align-text-top"
+    },
+    Wc = ["innerHTML"],
+    Oc = {
         key: 0,
         class: "content-custom-quote my-4"
     },
-    Wc = {
+    Vc = {
         class: "content-body"
     },
-    Vc = {
-        class: "row"
-    },
-    Oc = {
-        class: "col-sm-12 col-md-12 col-lg-10"
-    },
     Nc = {
-        class: "card text-center"
+        class: "row"
     },
     Bc = {
-        class: "card-body"
+        class: "col-sm-12 col-md-12 col-lg-10"
     },
     Rc = {
-        class: "card-title"
+        class: "card text-center"
     },
     Kc = {
-        class: "row"
+        class: "card-body"
     },
     Jc = {
-        class: "col-12 text-center"
+        class: "card-title"
     },
     zc = {
-        class: "card-text"
+        class: "row"
     },
     Gc = {
         class: "col-12 text-center"
     },
-    Yc = ["href"];
-const Zc = At(On, [["render", function(e, t, r, s, a, o) {
+    Yc = {
+        class: "card-text"
+    },
+    Zc = {
+        class: "col-12 text-center"
+    },
+    Xc = ["href"];
+const Qc = At(Bn, [["render", function(e, t, r, s, a, o) {
         const i = v("check-icon");
         return b(), g("div", {
             class: f(["signup-table", ["signup-table-" + r.period, "signup-table-" + r.type]])
-        }, [S("div", Nn, ["pro" == r.type ? (b(), g(y, {
+        }, [S("div", Rn, ["pro" == r.type ? (b(), g(y, {
             key: 0
         }, [!r.plan || r.allow_subscribe || !r.allow_subscribe && "probasic" == o.plan_code ? (b(), g("div", {
             key: 0,
             class: f([{
                 "col-md-4": r.allow_subscribe
             }, "probasic col-12 order-2 order-md-1 mb-3"])
-        }, [S("div", Bn, [r.allow_subscribe ? (b(), g("div", Rn, t[0] || (t[0] = [S("p", {
+        }, [S("div", Kn, [r.allow_subscribe ? (b(), g("div", Jn, t[0] || (t[0] = [S("p", {
             class: "my-0 fw-normal text-uppercase"
-        }, " ", -1)]))) : T("", !0), S("div", Kn, [r.allow_subscribe ? (b(), g(y, {
+        }, " ", -1)]))) : T("", !0), S("div", zn, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [t[2] || (t[2] = S("h4", null, "Pro Basic", -1)), S("h3", Jn, k(o.price_term("pro_basic_v2")), 1), "yearly" == r.period ? (b(), g("p", zn, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "probasic" == o.plan_code ? (b(), g("a", Gn, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+        }, [t[2] || (t[2] = S("h4", null, "Pro Basic", -1)), S("h3", Gn, k(o.price_term("pro_basic_v2")), 1), "yearly" == r.period ? (b(), g("p", Yn, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "probasic" == o.plan_code ? (b(), g("a", Zn, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
             key: 2,
             href: o.checkout("pro_basic_v2", !0),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Change Plan")), 9, Yn)) : "proplus" == o.plan_code || "probusiness" == o.plan_code ? (b(), g("a", Zn, k(e.trans.get("Not Available")), 1)) : (b(), g(y, {
+        }, k(e.trans.get("Change Plan")), 9, Xn)) : "proplus" == o.plan_code || "probusiness" == o.plan_code ? (b(), g("a", Qn, k(e.trans.get("Not Available")), 1)) : (b(), g(y, {
             key: 4
         }, [r.allow_free_trial ? (b(), g(y, {
             key: 0
@@ -4477,13 +4485,13 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: "btn btn-lg btn-block btn-primary m-1 fw-bold"
         }, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
-        })), 9, Xn), S("p", Qn, [t[1] || (t[1] = A("or ")), S("a", {
+        })), 9, el), S("p", tl, [t[1] || (t[1] = A("or ")), S("a", {
             href: o.checkout("pro_basic_v2")
-        }, k(e.trans.get("subscribe now")), 9, el)])], 64)) : (b(), g("a", {
+        }, k(e.trans.get("subscribe now")), 9, rl)])], 64)) : (b(), g("a", {
             key: 1,
             href: o.checkout("pro_basic_v2"),
-            class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Subscribe Now")), 9, tl))], 64)), t[3] || (t[3] = S("hr", {
+            class: "btn btn-lg btn-block btn-primary fw-bold"
+        }, k(e.trans.get("Subscribe Now")), 9, sl))], 64)), t[3] || (t[3] = S("hr", {
             class: "my-4"
         }, null, -1))], 64)) : T("", !0), S("ul", {
             class: f(["list-unstyled my-0", {
@@ -4493,7 +4501,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", rl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", al, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4503,7 +4511,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", sl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", ol, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4513,7 +4521,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", al, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", il, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4523,7 +4531,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", ol, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", nl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4536,25 +4544,25 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f(["proplus col-12 order-1 order-md-2 mb-3", {
                 "border-primary col-md-4": r.allow_subscribe
             }])
-        }, [S("div", il, [r.allow_subscribe ? (b(), g("div", {
+        }, [S("div", ll, [r.allow_subscribe ? (b(), g("div", {
             key: 0,
             class: f(["card-header p-1 text-center", {
                 "bg-primary border-primary text-white": r.allow_subscribe,
                 "bg-transparent border-0": !r.allow_subscribe
             }])
-        }, [S("p", nl, [r.allow_subscribe ? (b(), g(y, {
+        }, [S("p", cl, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [A(k(e.trans.get("Most Popular Plan")), 1)], 64)) : T("", !0)])], 2)) : T("", !0), S("div", ll, [r.allow_subscribe ? (b(), g(y, {
+        }, [A(k(e.trans.get("Most Popular Plan")), 1)], 64)) : T("", !0)])], 2)) : T("", !0), S("div", _l, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [t[5] || (t[5] = S("h4", null, "Pro Plus", -1)), S("h3", cl, k(o.price_term("pro_plus_v2")), 1), "yearly" == r.period ? (b(), g("p", _l, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "proplus" == o.plan_code ? (b(), g("a", dl, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+        }, [t[5] || (t[5] = S("h4", null, "Pro Plus", -1)), S("h3", dl, k(o.price_term("pro_plus_v2")), 1), "yearly" == r.period ? (b(), g("p", ul, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "proplus" == o.plan_code ? (b(), g("a", ml, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
             key: 2,
             href: o.checkout("pro_plus_v2", !0),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Change Plan")), 9, ul)) : "probusiness" == o.plan_code ? (b(), g("a", ml, k(e.trans.get("Not Available")), 1)) : "probasic" == o.plan_code ? (b(), g("a", {
+        }, k(e.trans.get("Change Plan")), 9, hl)) : "probusiness" == o.plan_code ? (b(), g("a", pl, k(e.trans.get("Not Available")), 1)) : "probasic" == o.plan_code ? (b(), g("a", {
             key: 4,
             href: o.checkout("pro_plus_v2"),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Upgrade Now")), 9, hl)) : (b(), g(y, {
+        }, k(e.trans.get("Upgrade Now")), 9, gl)) : (b(), g(y, {
             key: 5
         }, [r.allow_free_trial ? (b(), g(y, {
             key: 0
@@ -4563,13 +4571,13 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: "btn btn-lg btn-block btn-primary m-1 fw-bold"
         }, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
-        })), 9, pl), S("p", gl, [t[4] || (t[4] = A("or ")), S("a", {
+        })), 9, yl), S("p", wl, [t[4] || (t[4] = A("or ")), S("a", {
             href: o.checkout("pro_plus_v2")
-        }, k(e.trans.get("subscribe now")), 9, yl)])], 64)) : (b(), g("a", {
+        }, k(e.trans.get("subscribe now")), 9, fl)])], 64)) : (b(), g("a", {
             key: 1,
             href: o.checkout("pro_plus_v2"),
-            class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Subscribe Now")), 9, wl))], 64)), t[6] || (t[6] = S("hr", {
+            class: "btn btn-lg btn-block btn-primary fw-bold"
+        }, k(e.trans.get("Subscribe Now")), 9, bl))], 64)), t[6] || (t[6] = S("hr", {
             class: "my-4"
         }, null, -1))], 64)) : T("", !0), S("ul", {
             class: f(["list-unstyled my-0", {
@@ -4579,7 +4587,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", fl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", kl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4589,7 +4597,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", bl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", vl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4599,7 +4607,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", kl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", xl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4609,7 +4617,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", vl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Cl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4619,7 +4627,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", xl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Sl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4629,7 +4637,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Cl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Tl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4642,19 +4650,19 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f([{
                 "col-md-4": r.allow_subscribe
             }, "probusiness col-12 order-3 order-md-3 mb-3"])
-        }, [S("div", Sl, [r.allow_subscribe ? (b(), g("div", Tl, t[7] || (t[7] = [S("p", {
+        }, [S("div", Fl, [r.allow_subscribe ? (b(), g("div", ql, t[7] || (t[7] = [S("p", {
             class: "my-0 fw-normal text-uppercase"
-        }, " ", -1)]))) : T("", !0), S("div", Fl, [r.allow_subscribe ? (b(), g(y, {
+        }, " ", -1)]))) : T("", !0), S("div", Ml, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [t[9] || (t[9] = S("h4", null, "Pro Business", -1)), S("h3", ql, k(o.price_term("pro_business_v2")), 1), "yearly" == r.period ? (b(), g("p", Ml, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "probusiness" == o.plan_code ? (b(), g("a", El, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+        }, [t[9] || (t[9] = S("h4", null, "Pro Business", -1)), S("h3", El, k(o.price_term("pro_business_v2")), 1), "yearly" == r.period ? (b(), g("p", Ll, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "probusiness" == o.plan_code ? (b(), g("a", Ul, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
             key: 2,
             href: o.checkout("pro_business_v2", !0),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Change Plan")), 9, Ll)) : "probasic" == o.plan_code || "proplus" == o.plan_code ? (b(), g("a", {
+        }, k(e.trans.get("Change Plan")), 9, Al)) : "probasic" == o.plan_code || "proplus" == o.plan_code ? (b(), g("a", {
             key: 3,
             href: o.checkout("pro_business_v2"),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Upgrade Now")), 9, Ul)) : (b(), g(y, {
+        }, k(e.trans.get("Upgrade Now")), 9, Pl)) : (b(), g(y, {
             key: 4
         }, [r.allow_free_trial ? (b(), g(y, {
             key: 0
@@ -4663,13 +4671,13 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: "btn btn-lg btn-block btn-primary m-1 fw-bold"
         }, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
-        })), 9, Al), S("p", Pl, [t[8] || (t[8] = A("or ")), S("a", {
+        })), 9, $l), S("p", Dl, [t[8] || (t[8] = A("or ")), S("a", {
             href: o.checkout("pro_business_v2")
-        }, k(e.trans.get("subscribe now")), 9, $l)])], 64)) : (b(), g("a", {
+        }, k(e.trans.get("subscribe now")), 9, Il)])], 64)) : (b(), g("a", {
             key: 1,
             href: o.checkout("pro_business_v2"),
-            class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Subscribe Now")), 9, Dl))], 64)), t[10] || (t[10] = S("hr", {
+            class: "btn btn-lg btn-block btn-primary fw-bold"
+        }, k(e.trans.get("Subscribe Now")), 9, Hl))], 64)), t[10] || (t[10] = S("hr", {
             class: "my-4"
         }, null, -1))], 64)) : T("", !0), S("ul", {
             class: f(["list-unstyled my-0", {
@@ -4679,7 +4687,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Il, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", jl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4689,7 +4697,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Hl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Wl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4699,7 +4707,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", jl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Ol, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4709,7 +4717,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Wl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Vl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4719,7 +4727,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Vl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Nl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4729,7 +4737,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Ol, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Bl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4741,7 +4749,7 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
-        }, [S("table", null, [S("tr", null, [S("td", Nl, [M(i, {
+        }, [S("table", null, [S("tr", null, [S("td", Rl, [M(i, {
             class: "text-success me-1 mb-1",
             style: {
                 width: "20px",
@@ -4756,21 +4764,21 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: f([{
                 "col-md-4": r.allow_subscribe
             }, "apilite col-12 order-1 order-md-1 mb-3"])
-        }, [S("div", Bl, [r.allow_subscribe ? (b(), g("div", {
+        }, [S("div", Kl, [r.allow_subscribe ? (b(), g("div", {
             key: 0,
             class: f(["card-header p-1 text-center", {
                 "bg-primary border-primary text-white": r.allow_subscribe,
                 "bg-transparent border-0": !r.allow_subscribe
             }])
-        }, [S("p", Rl, [r.allow_subscribe ? (b(), g(y, {
+        }, [S("p", Jl, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [A(k(e.trans.get("Most Popular Plan")), 1)], 64)) : T("", !0)])], 2)) : T("", !0), S("div", Kl, [r.allow_subscribe ? (b(), g(y, {
+        }, [A(k(e.trans.get("Most Popular Plan")), 1)], 64)) : T("", !0)])], 2)) : T("", !0), S("div", zl, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [t[12] || (t[12] = S("h4", null, "API Lite", -1)), S("h3", Jl, k(o.price_term("api_v2_lite_v2")), 1), "yearly" == r.period ? (b(), g("p", zl, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apilite" == o.plan_code ? (b(), g("a", Gl, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+        }, [t[12] || (t[12] = S("h4", null, "API Lite", -1)), S("h3", Gl, k(o.price_term("api_v2_lite_v2")), 1), "yearly" == r.period ? (b(), g("p", Yl, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apilite" == o.plan_code ? (b(), g("a", Zl, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
             key: 2,
             href: o.checkout("api_v2_lite_v2", !0),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Change Plan")), 9, Yl)) : "apibasic" == o.plan_code || "apiplus" == o.plan_code ? (b(), g("a", Zl, k(e.trans.get("Not Available")), 1)) : (b(), g(y, {
+        }, k(e.trans.get("Change Plan")), 9, Xl)) : "apibasic" == o.plan_code || "apiplus" == o.plan_code ? (b(), g("a", Ql, k(e.trans.get("Not Available")), 1)) : (b(), g(y, {
             key: 4
         }, [r.allow_free_trial ? (b(), g(y, {
             key: 0
@@ -4779,33 +4787,19 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: "btn btn-lg btn-block btn-primary m-1 fw-bold"
         }, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
-        })), 9, Xl), S("p", Ql, [t[11] || (t[11] = A("or ")), S("a", {
+        })), 9, ec), S("p", tc, [t[11] || (t[11] = A("or ")), S("a", {
             href: o.checkout("api_v2_lite_v2")
-        }, k(e.trans.get("subscribe now")), 9, ec)])], 64)) : (b(), g("a", {
+        }, k(e.trans.get("subscribe now")), 9, rc)])], 64)) : (b(), g("a", {
             key: 1,
             href: o.checkout("api_v2_lite_v2"),
-            class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Subscribe Now")), 9, tc))], 64)), t[13] || (t[13] = S("hr", {
+            class: "btn btn-lg btn-block btn-primary fw-bold"
+        }, k(e.trans.get("Subscribe Now")), 9, sc))], 64)), t[13] || (t[13] = S("hr", {
             class: "my-4"
         }, null, -1))], 64)) : T("", !0), S("ul", {
             class: f(["list-unstyled my-0", {
                 row: !r.allow_subscribe
             }])
         }, [S("li", {
-            class: f({
-                "col-sm-6": !r.allow_subscribe
-            })
-        }, [S("table", null, [S("tr", null, [S("td", rc, [M(i, {
-            class: "text-success me-1 mb-1",
-            style: {
-                width: "20px",
-                height: "20px"
-            }
-        })]), S("td", null, [S("span", {
-            innerHTML: e.trans.get("<strong>:count API requests</strong> / 24 hours", {
-                count: e.$filters.digit(100)
-            })
-        }, null, 8, sc)])])])], 2), S("li", {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
@@ -4816,27 +4810,41 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             }
         })]), S("td", null, [S("span", {
+            innerHTML: e.trans.get("<strong>:count API requests</strong> / 24 hours", {
+                count: e.$filters.digit(100)
+            })
+        }, null, 8, oc)])])])], 2), S("li", {
+            class: f({
+                "col-sm-6": !r.allow_subscribe
+            })
+        }, [S("table", null, [S("tr", null, [S("td", ic, [M(i, {
+            class: "text-success me-1 mb-1",
+            style: {
+                width: "20px",
+                height: "20px"
+            }
+        })]), S("td", null, [S("span", {
             innerHTML: e.trans.get("Get Data for <strong>:count keywords</strong> every 24 hours", {
                 count: e.$filters.digit(1e5)
             })
-        }, null, 8, oc)])])])], 2)], 2)])])], 2)) : T("", !0), !r.plan || r.allow_subscribe || !r.allow_subscribe && "apibasic" == o.plan_code ? (b(), g("div", {
+        }, null, 8, nc)])])])], 2)], 2)])])], 2)) : T("", !0), !r.plan || r.allow_subscribe || !r.allow_subscribe && "apibasic" == o.plan_code ? (b(), g("div", {
             key: 1,
             class: f([{
                 "col-md-4": r.allow_subscribe
             }, "apibasic col-12 order-2 order-md-2 mb-3"])
-        }, [S("div", ic, [r.allow_subscribe ? (b(), g("div", nc, t[14] || (t[14] = [S("p", {
+        }, [S("div", lc, [r.allow_subscribe ? (b(), g("div", cc, t[14] || (t[14] = [S("p", {
             class: "my-0 fw-normal text-uppercase"
-        }, " ", -1)]))) : T("", !0), S("div", lc, [r.allow_subscribe ? (b(), g(y, {
+        }, " ", -1)]))) : T("", !0), S("div", _c, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [t[16] || (t[16] = S("h4", null, "API Basic", -1)), S("h3", cc, k(o.price_term("api_v2_basic_v2")), 1), "yearly" == r.period ? (b(), g("p", _c, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apibasic" == o.plan_code ? (b(), g("a", dc, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+        }, [t[16] || (t[16] = S("h4", null, "API Basic", -1)), S("h3", dc, k(o.price_term("api_v2_basic_v2")), 1), "yearly" == r.period ? (b(), g("p", uc, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apibasic" == o.plan_code ? (b(), g("a", mc, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
             key: 2,
             href: o.checkout("api_v2_basic_v2", !0),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Change Plan")), 9, uc)) : "apiplus" == o.plan_code ? (b(), g("a", mc, k(e.trans.get("Not Available")), 1)) : "apilite" == o.plan_code ? (b(), g("a", {
+        }, k(e.trans.get("Change Plan")), 9, hc)) : "apiplus" == o.plan_code ? (b(), g("a", pc, k(e.trans.get("Not Available")), 1)) : "apilite" == o.plan_code ? (b(), g("a", {
             key: 4,
             href: o.checkout("api_v2_basic_v2"),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Upgrade Now")), 9, hc)) : (b(), g(y, {
+        }, k(e.trans.get("Upgrade Now")), 9, gc)) : (b(), g(y, {
             key: 5
         }, [r.allow_free_trial ? (b(), g(y, {
             key: 0
@@ -4845,33 +4853,19 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: "btn btn-lg btn-block btn-primary m-1 fw-bold"
         }, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
-        })), 9, pc), S("p", gc, [t[15] || (t[15] = A("or ")), S("a", {
+        })), 9, yc), S("p", wc, [t[15] || (t[15] = A("or ")), S("a", {
             href: o.checkout("api_v2_basic_v2")
-        }, k(e.trans.get("subscribe now")), 9, yc)])], 64)) : (b(), g("a", {
+        }, k(e.trans.get("subscribe now")), 9, fc)])], 64)) : (b(), g("a", {
             key: 1,
             href: o.checkout("api_v2_basic_v2"),
-            class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Subscribe Now")), 9, wc))], 64)), t[17] || (t[17] = S("hr", {
+            class: "btn btn-lg btn-block btn-primary fw-bold"
+        }, k(e.trans.get("Subscribe Now")), 9, bc))], 64)), t[17] || (t[17] = S("hr", {
             class: "my-4"
         }, null, -1))], 64)) : T("", !0), S("ul", {
             class: f(["list-unstyled my-0", {
                 row: !r.allow_subscribe
             }])
         }, [S("li", {
-            class: f({
-                "col-sm-6": !r.allow_subscribe
-            })
-        }, [S("table", null, [S("tr", null, [S("td", fc, [M(i, {
-            class: "text-success me-1 mb-1",
-            style: {
-                width: "20px",
-                height: "20px"
-            }
-        })]), S("td", null, [S("span", {
-            innerHTML: e.trans.get("<strong>:count API requests</strong> / 24 hours", {
-                count: e.$filters.digit(400)
-            })
-        }, null, 8, bc)])])])], 2), S("li", {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
@@ -4882,27 +4876,41 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             }
         })]), S("td", null, [S("span", {
+            innerHTML: e.trans.get("<strong>:count API requests</strong> / 24 hours", {
+                count: e.$filters.digit(400)
+            })
+        }, null, 8, vc)])])])], 2), S("li", {
+            class: f({
+                "col-sm-6": !r.allow_subscribe
+            })
+        }, [S("table", null, [S("tr", null, [S("td", xc, [M(i, {
+            class: "text-success me-1 mb-1",
+            style: {
+                width: "20px",
+                height: "20px"
+            }
+        })]), S("td", null, [S("span", {
             innerHTML: e.trans.get("Get Data for <strong>:count keywords</strong> every 24 hours", {
                 count: e.$filters.digit(4e5)
             })
-        }, null, 8, vc)])])])], 2)], 2)])])], 2)) : T("", !0), !r.plan || r.allow_subscribe || !r.allow_subscribe && "apiplus" == o.plan_code ? (b(), g("div", {
+        }, null, 8, Cc)])])])], 2)], 2)])])], 2)) : T("", !0), !r.plan || r.allow_subscribe || !r.allow_subscribe && "apiplus" == o.plan_code ? (b(), g("div", {
             key: 2,
             class: f(["apiplus col-12 order-3 order-md-3 mb-3", {
                 "border-primary col-md-4": r.allow_subscribe
             }])
-        }, [S("div", xc, [r.allow_subscribe ? (b(), g("div", Cc, t[18] || (t[18] = [S("p", {
+        }, [S("div", Sc, [r.allow_subscribe ? (b(), g("div", Tc, t[18] || (t[18] = [S("p", {
             class: "my-0 fw-normal text-uppercase"
-        }, " ", -1)]))) : T("", !0), S("div", Sc, [r.allow_subscribe ? (b(), g(y, {
+        }, " ", -1)]))) : T("", !0), S("div", Fc, [r.allow_subscribe ? (b(), g(y, {
             key: 0
-        }, [t[20] || (t[20] = S("h4", null, "API Plus", -1)), S("h3", Tc, k(o.price_term("api_v2_plus_v2")), 1), "yearly" == r.period ? (b(), g("p", Fc, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apiplus" == o.plan_code ? (b(), g("a", qc, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
+        }, [t[20] || (t[20] = S("h4", null, "API Plus", -1)), S("h3", qc, k(o.price_term("api_v2_plus_v2")), 1), "yearly" == r.period ? (b(), g("p", Mc, k(e.trans.get("billed every 12 months")), 1)) : T("", !0), "apiplus" == o.plan_code ? (b(), g("a", Ec, k(e.trans.get("Current Plan")), 1)) : r.is_trial_user ? (b(), g("a", {
             key: 2,
             href: o.checkout("api_v2_plus_v2", !0),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Change Plan")), 9, Mc)) : "apilite" == o.plan_code || "apibasic" == o.plan_code ? (b(), g("a", {
+        }, k(e.trans.get("Change Plan")), 9, Lc)) : "apilite" == o.plan_code || "apibasic" == o.plan_code ? (b(), g("a", {
             key: 3,
             href: o.checkout("api_v2_plus_v2"),
             class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Upgrade Now")), 9, Ec)) : (b(), g(y, {
+        }, k(e.trans.get("Upgrade Now")), 9, Uc)) : (b(), g(y, {
             key: 4
         }, [r.allow_free_trial ? (b(), g(y, {
             key: 0
@@ -4911,33 +4919,19 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
             class: "btn btn-lg btn-block btn-primary m-1 fw-bold"
         }, k(e.trans.get("Start :days-Day Free Trial", {
             days: r.free_trial_days
-        })), 9, Lc), S("p", Uc, [t[19] || (t[19] = A("or ")), S("a", {
+        })), 9, Ac), S("p", Pc, [t[19] || (t[19] = A("or ")), S("a", {
             href: o.checkout("api_v2_plus_v2")
-        }, k(e.trans.get("subscribe now")), 9, Ac)])], 64)) : (b(), g("a", {
+        }, k(e.trans.get("subscribe now")), 9, $c)])], 64)) : (b(), g("a", {
             key: 1,
             href: o.checkout("api_v2_plus_v2"),
-            class: "btn btn-lg btn-block btn-primary"
-        }, k(e.trans.get("Subscribe Now")), 9, Pc))], 64)), t[21] || (t[21] = S("hr", {
+            class: "btn btn-lg btn-block btn-primary fw-bold"
+        }, k(e.trans.get("Subscribe Now")), 9, Dc))], 64)), t[21] || (t[21] = S("hr", {
             class: "my-4"
         }, null, -1))], 64)) : T("", !0), S("ul", {
             class: f(["list-unstyled my-0", {
                 row: !r.allow_subscribe
             }])
         }, [S("li", {
-            class: f({
-                "col-sm-6": !r.allow_subscribe
-            })
-        }, [S("table", null, [S("tr", null, [S("td", $c, [M(i, {
-            class: "text-success me-1 mb-1",
-            style: {
-                width: "20px",
-                height: "20px"
-            }
-        })]), S("td", null, [S("span", {
-            innerHTML: e.trans.get("<strong>:count API requests</strong> / 24 hours", {
-                count: e.$filters.digit(800)
-            })
-        }, null, 8, Dc)])])])], 2), S("li", {
             class: f({
                 "col-sm-6": !r.allow_subscribe
             })
@@ -4948,21 +4942,35 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             }
         })]), S("td", null, [S("span", {
+            innerHTML: e.trans.get("<strong>:count API requests</strong> / 24 hours", {
+                count: e.$filters.digit(800)
+            })
+        }, null, 8, Hc)])])])], 2), S("li", {
+            class: f({
+                "col-sm-6": !r.allow_subscribe
+            })
+        }, [S("table", null, [S("tr", null, [S("td", jc, [M(i, {
+            class: "text-success me-1 mb-1",
+            style: {
+                width: "20px",
+                height: "20px"
+            }
+        })]), S("td", null, [S("span", {
             innerHTML: e.trans.get("Get Data for <strong>:count keywords</strong> every 24 hours", {
                 count: e.$filters.digit(8e5)
             })
-        }, null, 8, Hc)])])])], 2)], 2)])])], 2)) : T("", !0)], 64)) : T("", !0)]), r.allow_subscribe ? (b(), g("div", jc, [S("div", Wc, [S("div", Vc, [t[22] || (t[22] = S("div", {
+        }, null, 8, Wc)])])])], 2)], 2)])])], 2)) : T("", !0)], 64)) : T("", !0)]), r.allow_subscribe ? (b(), g("div", Oc, [S("div", Vc, [S("div", Nc, [t[22] || (t[22] = S("div", {
             class: "col-lg-1 d-none d-lg-block"
-        }, null, -1)), S("div", Oc, [S("div", Nc, [S("div", Bc, [S("h5", Rc, k(e.trans.get("Can Not Find A Match? Get Custom Quote")), 1), S("div", Kc, [S("div", Jc, [S("p", zc, k(e.trans.get("Contact our team, and we will tailor a special :plan plan to serve your unique requirements.", {
+        }, null, -1)), S("div", Bc, [S("div", Rc, [S("div", Kc, [S("h5", Jc, k(e.trans.get("Can Not Find A Match? Get Custom Quote")), 1), S("div", zc, [S("div", Gc, [S("p", Yc, k(e.trans.get("Contact our team, and we will tailor a special :plan plan to serve your unique requirements.", {
             plan: "api" == r.type ? "Keyword Tool API" : "Keyword Tool Pro"
-        })), 1)]), S("div", Gc, [S("a", {
+        })), 1)]), S("div", Zc, [S("a", {
             href: o.checkout("custom"),
             class: "btn btn-primary mt-3"
-        }, k(e.trans.get("Contact Us")), 9, Yc)])])])])]), t[23] || (t[23] = S("div", {
+        }, k(e.trans.get("Contact Us")), 9, Xc)])])])])]), t[23] || (t[23] = S("div", {
             class: "col-lg-1 d-none d-lg-block"
         }, null, -1))])])])) : T("", !0)], 2)
     }]]),
-    Xc = {
+    e_ = {
         data: () => ({
             period_yearly: !0,
             currency: "USD",
@@ -5042,59 +5050,59 @@ const Zc = At(On, [["render", function(e, t, r, s, a, o) {
         mounted() {},
         methods: {}
     },
-    Qc = {
+    t_ = {
         class: "mb-4 mt-2 row"
     },
-    e_ = {
+    r_ = {
         class: "col"
     },
-    t_ = {
-        class: "row justify-content-end justify-content-md-center"
-    },
-    r_ = {
-        class: "col-5 col-sm-auto"
-    },
     s_ = {
-        class: "col-2 col-sm-auto px-0"
+        class: "row justify-content-end justify-content-md-center"
     },
     a_ = {
         class: "col-5 col-sm-auto"
     },
     o_ = {
-        class: "col-12 col-sm-auto px-0"
+        class: "col-2 col-sm-auto px-0"
     },
     i_ = {
-        class: "float-end float-sm-start mx-2 badge bg-success fs-6 text-uppercase"
+        class: "col-5 col-sm-auto"
     },
     n_ = {
-        class: "col-12 col-md-auto"
+        class: "col-12 col-sm-auto px-0"
     },
     l_ = {
+        class: "float-end float-sm-start mx-2 badge bg-success fs-6 text-uppercase"
+    },
+    c_ = {
+        class: "col-12 col-md-auto"
+    },
+    __ = {
         class: "d-flex justify-content-end align-items-center mt-4 mt-md-auto"
     };
-const c_ = At(Xc, [["render", function(e, t, r, s, a, o) {
+const d_ = At(e_, [["render", function(e, t, r, s, a, o) {
         const i = v("vue-toggle"),
             n = v("select-currency"),
             l = v("subscription-plan");
         return b(), g("div", {
             class: f(["signup-form", ["signup-form-" + a.period, "signup-form-" + r.type]])
-        }, [S("div", Qc, [S("div", e_, [S("div", t_, [S("div", r_, [S("span", {
+        }, [S("div", t_, [S("div", r_, [S("div", s_, [S("div", a_, [S("span", {
             class: f(["fw-bold text-truncate", {
                 "text-muted": a.period_yearly
             }])
-        }, k(e.trans.get("Monthly Billing")), 3)]), S("div", s_, [M(i, {
+        }, k(e.trans.get("Monthly Billing")), 3)]), S("div", o_, [M(i, {
             class: "subscription-period-option justify-content-center",
             name: "period_yearly",
             disabled: r.lock_period,
             toggled: a.period_yearly,
             onToggle: t[0] || (t[0] = e => a.period_yearly = e)
-        }, null, 8, ["disabled", "toggled"])]), S("div", a_, [S("span", {
+        }, null, 8, ["disabled", "toggled"])]), S("div", i_, [S("span", {
             class: f(["fw-bold text-truncate", {
                 "text-muted": !a.period_yearly
             }])
-        }, k(e.trans.get("Annual Billing")), 3)]), S("div", o_, [S("span", i_, k(e.trans.get("Save :percentage", {
+        }, k(e.trans.get("Annual Billing")), 3)]), S("div", n_, [S("span", l_, k(e.trans.get("Save :percentage", {
             percentage: "20%"
-        })), 1)])])]), S("div", n_, [S("div", l_, [r.lock_currency ? T("", !0) : (b(), x(n, {
+        })), 1)])])]), S("div", c_, [S("div", __, [r.lock_currency ? T("", !0) : (b(), x(n, {
             key: 0,
             onSelect: t[1] || (t[1] = e => a.currency = e),
             default_currency: a.currency,
@@ -5114,7 +5122,7 @@ const c_ = At(Xc, [["render", function(e, t, r, s, a, o) {
             free_trial_days: r.free_trial_days
         }, null, 8, ["type", "plan", "plans", "allow_subscribe", "lock_currency", "currency", "period", "query", "url", "allow_free_trial", "is_trial_user", "free_trial_days"])], 2)
     }]]),
-    __ = {
+    u_ = {
         components: {
             ArrowLeftIcon: j,
             XMarkIcon: B
@@ -5248,200 +5256,200 @@ const c_ = At(Xc, [["render", function(e, t, r, s, a, o) {
             }
         }
     },
-    d_ = {
+    m_ = {
         key: 0,
         class: "page-title mt-2 mb-4 my-lg-4 text-center"
     },
-    u_ = {
+    h_ = {
         key: 1,
         class: "page-title mt-2 mb-4 my-lg-4 text-center"
     },
-    m_ = ["action"],
-    h_ = {
+    p_ = ["action"],
+    g_ = {
         class: "step-1-section row justify-content-center"
     },
-    p_ = {
+    y_ = {
         class: "col-auto text-center"
     },
-    g_ = {
+    w_ = {
         class: "fw-bold"
     },
-    y_ = {
+    f_ = {
         class: "list-unstyled text-start m-3 m-md-5"
     },
-    w_ = ["innerHTML"],
-    f_ = ["innerHTML"],
     b_ = ["innerHTML"],
     k_ = ["innerHTML"],
-    v_ = {
+    v_ = ["innerHTML"],
+    x_ = ["innerHTML"],
+    C_ = {
         class: "fw-bold"
     },
-    x_ = {
+    S_ = {
         class: "step-2-section"
     },
-    C_ = {
+    T_ = {
         class: "row"
     },
-    S_ = {
+    F_ = {
         class: "col"
     },
-    T_ = {
+    q_ = {
         class: "mb-3"
     },
-    F_ = {
-        class: "form-label"
-    },
-    q_ = ["value"],
     M_ = {
-        for: "pro_plan",
-        class: "form-check-label"
+        class: "form-label"
     },
     E_ = ["value"],
     L_ = {
+        for: "pro_plan",
+        class: "form-check-label"
+    },
+    U_ = ["value"],
+    A_ = {
         for: "api_plan",
         class: "form-check-label"
     },
-    U_ = {
+    P_ = {
         key: 0,
         class: "invalid-feedback"
     },
-    A_ = {
+    $_ = {
         class: "row"
     },
-    P_ = {
+    D_ = {
         class: "col"
     },
-    $_ = {
-        class: "mb-3"
-    },
-    D_ = {
-        class: "form-check"
-    },
     I_ = {
-        for: "reason-1",
-        class: "form-check-label"
+        class: "mb-3"
     },
     H_ = {
         class: "form-check"
     },
     j_ = {
-        for: "reason-2",
+        for: "reason-1",
         class: "form-check-label"
     },
     W_ = {
         class: "form-check"
     },
-    V_ = {
-        for: "reason-3",
+    O_ = {
+        for: "reason-2",
         class: "form-check-label"
     },
-    O_ = {
+    V_ = {
         class: "form-check"
     },
     N_ = {
-        for: "reason-4",
+        for: "reason-3",
         class: "form-check-label"
     },
     B_ = {
         class: "form-check"
     },
     R_ = {
-        for: "reason-5",
+        for: "reason-4",
         class: "form-check-label"
     },
     K_ = {
         class: "form-check"
     },
     J_ = {
-        for: "reason-6",
+        for: "reason-5",
         class: "form-check-label"
     },
     z_ = {
+        class: "form-check"
+    },
+    G_ = {
+        for: "reason-6",
+        class: "form-check-label"
+    },
+    Y_ = {
         key: 0,
         class: "invalid-feedback"
     },
-    G_ = {
+    Z_ = {
         class: "row"
     },
-    Y_ = {
+    X_ = {
         class: "col"
     },
-    Z_ = {
+    Q_ = {
         class: "mb-3"
     },
-    X_ = {
+    ed = {
         for: "explanation",
         class: "form-label fw-bold"
     },
-    Q_ = ["placeholder"],
-    ed = {
+    td = ["placeholder"],
+    rd = {
         class: "float-end"
     },
-    td = {
+    sd = {
         key: 0,
         class: "invalid-feedback"
     },
-    rd = {
+    ad = {
         key: 1,
         class: "invalid-feedback"
     },
-    sd = {
+    od = {
         class: "step-3-section"
     },
-    ad = {
+    id = {
         class: "text-center"
     },
-    od = {
+    nd = {
         key: 0,
         class: "my-2 d-flex flex-row"
     },
-    id = {
+    ld = {
         class: "me-2"
     },
-    nd = ["innerHTML"],
-    ld = {
+    cd = ["innerHTML"],
+    _d = {
         class: "fw-bold"
     },
-    cd = {
+    dd = {
         class: "my-2 d-flex flex-row"
     },
-    _d = {
-        class: "me-2"
-    },
-    dd = ["innerHTML"],
     ud = {
-        class: "my-2 d-flex flex-row"
-    },
-    md = {
         class: "me-2"
     },
-    hd = ["innerHTML"],
+    md = ["innerHTML"],
+    hd = {
+        class: "my-2 d-flex flex-row"
+    },
     pd = {
+        class: "me-2"
+    },
+    gd = ["innerHTML"],
+    yd = {
         class: "row"
     },
-    gd = {
+    wd = {
         class: "col"
     },
-    yd = {
+    fd = {
         class: "mb-3 my-2"
     },
-    wd = {
+    bd = {
         for: "confirm_delete",
         class: "form-label fw-bold"
     },
-    fd = ["innerHTML"],
-    bd = ["placeholder"],
-    kd = {
+    kd = ["innerHTML"],
+    vd = ["placeholder"],
+    xd = {
         key: 0,
         class: "invalid-feedback"
     },
-    vd = {
+    Cd = {
         class: "mb-3 my-4 text-center"
     },
-    xd = ["disabled"],
-    Cd = ["disabled"],
-    Sd = ["disabled"];
-const Td = At(__, [["render", function(e, t, r, s, a, o) {
+    Sd = ["disabled"],
+    Td = ["disabled"],
+    Fd = ["disabled"];
+const qd = At(u_, [["render", function(e, t, r, s, a, o) {
         const i = v("arrow-left-icon"),
             n = v("x-mark-icon"),
             l = v("vue-toggle");
@@ -5454,7 +5462,7 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
                 width: "20px",
                 height: "20px"
             }
-        }), A(" " + k(e.trans.get("Back")), 1)]), o.is_free_trial ? (b(), g("h4", d_, k(e.trans.get("Cancel Free Trial Subscription")), 1)) : (b(), g("h4", u_, k(e.trans.get("Keyword Tool Subscription Cancellation")), 1)), S("form", {
+        }), A(" " + k(e.trans.get("Back")), 1)]), o.is_free_trial ? (b(), g("h4", m_, k(e.trans.get("Cancel Free Trial Subscription")), 1)) : (b(), g("h4", h_, k(e.trans.get("Keyword Tool Subscription Cancellation")), 1)), S("form", {
             enctype: "multipart/form-data",
             onSubmit: t[20] || (t[20] = U(((...e) => o.submit && o.submit(...e)), ["prevent"])),
             action: r.submit_url,
@@ -5462,7 +5470,7 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
             method: "post",
             id: "cancel-form",
             "accept-charset": "UTF-8"
-        }, [F(S("div", h_, [S("div", p_, [S("p", g_, k(e.trans.get("Upon canceling your subscription, you will lose:")), 1), S("ul", y_, [S("li", null, [M(n, {
+        }, [F(S("div", g_, [S("div", y_, [S("p", w_, k(e.trans.get("Upon canceling your subscription, you will lose:")), 1), S("ul", f_, [S("li", null, [M(n, {
             class: "mb-1 me-2 text-danger",
             style: {
                 width: "20px",
@@ -5472,22 +5480,6 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
             innerHTML: e.trans.get("Access to <strong>ALL :plan</strong> features", {
                 plan: r.checked_api && r.api_role ? "Keyword Tool API" : "Keyword Tool Pro"
             })
-        }, null, 8, w_)]), S("li", null, [M(n, {
-            class: "mb-1 me-2 text-danger",
-            style: {
-                width: "20px",
-                height: "20px"
-            }
-        }), S("span", {
-            innerHTML: e.trans.get("<strong>ALL</strong> your account <strong>information</strong> and settings")
-        }, null, 8, f_)]), S("li", null, [M(n, {
-            class: "mb-1 me-2 text-danger",
-            style: {
-                width: "20px",
-                height: "20px"
-            }
-        }), S("span", {
-            innerHTML: e.trans.get("<strong>ALL</strong> payment details on file, which will be <strong>deleted</strong>")
         }, null, 8, b_)]), S("li", null, [M(n, {
             class: "mb-1 me-2 text-danger",
             style: {
@@ -5495,8 +5487,24 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             }
         }), S("span", {
+            innerHTML: e.trans.get("<strong>ALL</strong> your account <strong>information</strong> and settings")
+        }, null, 8, k_)]), S("li", null, [M(n, {
+            class: "mb-1 me-2 text-danger",
+            style: {
+                width: "20px",
+                height: "20px"
+            }
+        }), S("span", {
+            innerHTML: e.trans.get("<strong>ALL</strong> payment details on file, which will be <strong>deleted</strong>")
+        }, null, 8, v_)]), S("li", null, [M(n, {
+            class: "mb-1 me-2 text-danger",
+            style: {
+                width: "20px",
+                height: "20px"
+            }
+        }), S("span", {
             innerHTML: e.trans.get("<strong>ALL</strong> invited account users will be <strong>removed</strong>")
-        }, null, 8, k_)])]), S("p", v_, k(e.trans.get("This action is irreversible. Do you wish to proceed?")), 1)])], 512), [[O, 1 == a.step]]), F(S("div", x_, [S("p", null, k(e.trans.get("We are sorry to see you go. To help us improve, could you please let us know why you are cancelling your Keyword Tool subscription? Your feedback will help us make Keyword Tool better for you and others.")), 1), F(S("div", C_, [S("div", S_, [S("div", T_, [S("label", F_, [A(k(e.trans.get("Which Subscription Would You Like To Cancel?")) + " ", 1), t[21] || (t[21] = S("span", {
+        }, null, 8, x_)])]), S("p", C_, k(e.trans.get("This action is irreversible. Do you wish to proceed?")), 1)])], 512), [[V, 1 == a.step]]), F(S("div", S_, [S("p", null, k(e.trans.get("We are sorry to see you go. To help us improve, could you please let us know why you are cancelling your Keyword Tool subscription? Your feedback will help us make Keyword Tool better for you and others.")), 1), F(S("div", T_, [S("div", F_, [S("div", q_, [S("label", M_, [A(k(e.trans.get("Which Subscription Would You Like To Cancel?")) + " ", 1), t[21] || (t[21] = S("span", {
             class: "text-danger"
         }, "*", -1))]), F(S("div", {
             class: f(["form-check", {
@@ -5509,7 +5517,7 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
             name: "subscriptions[]",
             type: "checkbox",
             value: r.pro_role
-        }, null, 8, q_), [[q, a.subscriptions]]), S("label", M_, k(r.pro_role_name), 1)], 2), [[O, r.show_pro_checkbox]]), F(S("div", {
+        }, null, 8, E_), [[q, a.subscriptions]]), S("label", L_, k(r.pro_role_name), 1)], 2), [[V, r.show_pro_checkbox]]), F(S("div", {
             class: f(["form-check", {
                 "is-invalid": a.subscriptions.length <= 0
             }])
@@ -5520,55 +5528,55 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
             name: "subscriptions[]",
             type: "checkbox",
             value: r.api_role
-        }, null, 8, E_), [[q, a.subscriptions]]), S("label", L_, k(r.api_role_name), 1)], 2), [[O, r.show_api_checkbox]]), a.subscriptions.length <= 0 ? (b(), g("div", U_, k(e.trans.get("Please select a subscription that you wish to cancel.")), 1)) : T("", !0)])])], 512), [[O, r.show_pro_checkbox || r.show_api_checkbox]]), S("div", A_, [S("div", P_, [S("div", $_, [S("label", {
+        }, null, 8, U_), [[q, a.subscriptions]]), S("label", A_, k(r.api_role_name), 1)], 2), [[V, r.show_api_checkbox]]), a.subscriptions.length <= 0 ? (b(), g("div", P_, k(e.trans.get("Please select a subscription that you wish to cancel.")), 1)) : T("", !0)])])], 512), [[V, r.show_pro_checkbox || r.show_api_checkbox]]), S("div", $_, [S("div", D_, [S("div", I_, [S("label", {
             class: f(["form-label", {
                 "is-invalid": a.reasons.length <= 0
             }])
         }, [A(k(e.trans.get("Which of the following best describes your reason(s) for cancelling Keyword Tool subscription? You can select one or more of the options below:")) + " ", 1), t[22] || (t[22] = S("span", {
             class: "text-danger"
-        }, "*", -1))], 2), S("div", D_, [F(S("input", {
+        }, "*", -1))], 2), S("div", H_, [F(S("input", {
             id: "reason-1",
             "onUpdate:modelValue": t[3] || (t[3] = e => a.reasons = e),
             class: "form-check-input reasons-checkbox",
             name: "reasons[]",
             value: "not_enough_functionality",
             type: "checkbox"
-        }, null, 512), [[q, a.reasons]]), S("label", I_, k(e.trans.get("Not enough functionality")), 1)]), S("div", H_, [F(S("input", {
+        }, null, 512), [[q, a.reasons]]), S("label", j_, k(e.trans.get("Not enough functionality")), 1)]), S("div", W_, [F(S("input", {
             id: "reason-2",
             "onUpdate:modelValue": t[4] || (t[4] = e => a.reasons = e),
             class: "form-check-input reasons-checkbox",
             name: "reasons[]",
             value: "performance_issues",
             type: "checkbox"
-        }, null, 512), [[q, a.reasons]]), S("label", j_, k(e.trans.get("Performance issues")), 1)]), S("div", W_, [F(S("input", {
+        }, null, 512), [[q, a.reasons]]), S("label", O_, k(e.trans.get("Performance issues")), 1)]), S("div", V_, [F(S("input", {
             id: "reason-3",
             "onUpdate:modelValue": t[5] || (t[5] = e => a.reasons = e),
             class: "form-check-input reasons-checkbox",
             name: "reasons[]",
             value: "the_price_is_too_high",
             type: "checkbox"
-        }, null, 512), [[q, a.reasons]]), S("label", V_, k(e.trans.get("The price is too high")), 1)]), S("div", O_, [F(S("input", {
+        }, null, 512), [[q, a.reasons]]), S("label", N_, k(e.trans.get("The price is too high")), 1)]), S("div", B_, [F(S("input", {
             id: "reason-4",
             "onUpdate:modelValue": t[6] || (t[6] = e => a.reasons = e),
             class: "form-check-input reasons-checkbox",
             name: "reasons[]",
             value: "found_another_alternative",
             type: "checkbox"
-        }, null, 512), [[q, a.reasons]]), S("label", N_, k(e.trans.get("I have found another alternative")), 1)]), S("div", B_, [F(S("input", {
+        }, null, 512), [[q, a.reasons]]), S("label", R_, k(e.trans.get("I have found another alternative")), 1)]), S("div", K_, [F(S("input", {
             id: "reason-5",
             "onUpdate:modelValue": t[7] || (t[7] = e => a.reasons = e),
             class: "form-check-input reasons-checkbox",
             name: "reasons[]",
             value: "not_used_often_enough",
             type: "checkbox"
-        }, null, 512), [[q, a.reasons]]), S("label", R_, k(e.trans.get("The tool was not used often enough")), 1)]), S("div", K_, [F(S("input", {
+        }, null, 512), [[q, a.reasons]]), S("label", J_, k(e.trans.get("The tool was not used often enough")), 1)]), S("div", z_, [F(S("input", {
             id: "reason-6",
             "onUpdate:modelValue": t[8] || (t[8] = e => a.reasons = e),
             class: "form-check-input reasons-checkbox",
             name: "reasons[]",
             value: "others",
             type: "checkbox"
-        }, null, 512), [[q, a.reasons]]), S("label", J_, k(e.trans.get("Others")), 1)]), a.validating_reasons && a.reasons.length <= 0 ? (b(), g("div", z_, k(e.trans.get("Please provide answers for the required questions.")), 1)) : T("", !0)])])]), S("div", G_, [S("div", Y_, [S("div", Z_, [S("label", X_, [A(k(e.trans.get("If none of the previous options describe your reason for cancelling the subscription, please let us know if there is something else that you can share with us. We value your feedback and would appreciate any information you can provide to help us improve our services.")) + " ", 1), t[23] || (t[23] = S("span", {
+        }, null, 512), [[q, a.reasons]]), S("label", G_, k(e.trans.get("Others")), 1)]), a.validating_reasons && a.reasons.length <= 0 ? (b(), g("div", Y_, k(e.trans.get("Please provide answers for the required questions.")), 1)) : T("", !0)])])]), S("div", Z_, [S("div", X_, [S("div", Q_, [S("label", ed, [A(k(e.trans.get("If none of the previous options describe your reason for cancelling the subscription, please let us know if there is something else that you can share with us. We value your feedback and would appreciate any information you can provide to help us improve our services.")) + " ", 1), t[23] || (t[23] = S("span", {
             class: "text-danger"
         }, "*", -1))]), F(S("textarea", {
             id: "explanation",
@@ -5581,33 +5589,33 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
                 "is-invalid": a.validating_explaination && (a.explanation.length <= 0 || a.explanation.length > a.explanation_max_char)
             }]),
             required: ""
-        }, null, 10, Q_), [[E, a.explanation, void 0, {
+        }, null, 10, td), [[E, a.explanation, void 0, {
             trim: !0
-        }]]), S("p", ed, k(a.explanation.length) + " / " + k(a.explanation_max_char) + " " + k(e.trans.get("characters")), 1), a.explanation.length <= 0 ? (b(), g("div", td, k(e.trans.get("Additional Reason is required.")), 1)) : T("", !0), a.explanation.length > a.explanation_max_char ? (b(), g("div", rd, k(e.trans.get("Additional Reason cannot exceed :count characters.", {
+        }]]), S("p", rd, k(a.explanation.length) + " / " + k(a.explanation_max_char) + " " + k(e.trans.get("characters")), 1), a.explanation.length <= 0 ? (b(), g("div", sd, k(e.trans.get("Additional Reason is required.")), 1)) : T("", !0), a.explanation.length > a.explanation_max_char ? (b(), g("div", ad, k(e.trans.get("Additional Reason cannot exceed :count characters.", {
             count: a.explanation_max_char
-        })), 1)) : T("", !0)])])])], 512), [[O, 2 == a.step]]), F(S("div", sd, [S("p", ad, k(e.trans.get("We are sorry to see you go. We hope you will consider using Keyword Tool again in the future")), 1), o.skip_delete_account ? (b(), g("div", od, [S("div", id, [M(l, {
+        })), 1)) : T("", !0)])])])], 512), [[V, 2 == a.step]]), F(S("div", od, [S("p", id, k(e.trans.get("We are sorry to see you go. We hope you will consider using Keyword Tool again in the future")), 1), o.skip_delete_account ? (b(), g("div", nd, [S("div", ld, [M(l, {
             class: "term2-checkbox",
             name: "term2",
             onToggle: t[10] || (t[10] = e => a.term2 = e)
         })]), S("div", {
             innerHTML: e.trans.get("I acknowledge that my subscription will be <strong>automatically canceled</strong>")
-        }, null, 8, nd)])) : (b(), g(y, {
+        }, null, 8, cd)])) : (b(), g(y, {
             key: 1
-        }, [S("p", ld, k(e.trans.get("To delete your account, please confirm the following:")), 1), S("div", cd, [S("div", _d, [M(l, {
+        }, [S("p", _d, k(e.trans.get("To delete your account, please confirm the following:")), 1), S("div", dd, [S("div", ud, [M(l, {
             class: "term1-checkbox",
             name: "term1",
             onToggle: t[11] || (t[11] = e => a.term1 = e)
         })]), S("div", {
             innerHTML: e.trans.get("I acknowledge and understand that my account settings and any other data associated with my account will be <strong>permanently deleted</strong>")
-        }, null, 8, dd)]), S("div", ud, [S("div", md, [M(l, {
+        }, null, 8, md)]), S("div", hd, [S("div", pd, [M(l, {
             class: "term2-checkbox",
             name: "term2",
             onToggle: t[12] || (t[12] = e => a.term2 = e)
         })]), S("div", {
             innerHTML: e.trans.get("I acknowledge that my subscription will be <strong>automatically canceled</strong>")
-        }, null, 8, hd)]), F(S("div", null, [S("div", pd, [S("div", gd, [S("div", yd, [S("label", wd, [S("span", {
+        }, null, 8, gd)]), F(S("div", null, [S("div", yd, [S("div", wd, [S("div", fd, [S("label", bd, [S("span", {
             innerHTML: e.trans.get('Confirm By Typing <strong translate=no>"delete my account"</strong> Below')
-        }, null, 8, fd), t[24] || (t[24] = A()), t[25] || (t[25] = S("span", {
+        }, null, 8, kd), t[24] || (t[24] = A()), t[25] || (t[25] = S("span", {
             class: "text-danger"
         }, "*", -1))]), F(S("input", {
             onKeyup: t[13] || (t[13] = L(U(((...e) => o.step3 && o.step3(...e)), ["prevent"]), ["enter"])),
@@ -5621,9 +5629,9 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
                 "is-valid": a.validating_confirm_delete && a.confirm_delete == e.trans.get("delete my account")
             }]),
             required: ""
-        }, null, 42, bd), [[E, a.confirm_delete, void 0, {
+        }, null, 42, vd), [[E, a.confirm_delete, void 0, {
             trim: !0
-        }]]), a.confirm_delete.toLowerCase() != e.trans.get("delete my account") ? (b(), g("div", kd, k(e.trans.get("Confirmation sentence incorrect.")), 1)) : T("", !0)])])])], 512), [[O, a.term1 && a.term2]])], 64))], 512), [[O, 3 == a.step]]), S("div", vd, ["" != r.pause_url ? (b(), g("button", {
+        }]]), a.confirm_delete.toLowerCase() != e.trans.get("delete my account") ? (b(), g("div", xd, k(e.trans.get("Confirmation sentence incorrect.")), 1)) : T("", !0)])])])], 512), [[V, a.term1 && a.term2]])], 64))], 512), [[V, 3 == a.step]]), S("div", Cd, ["" != r.pause_url ? (b(), g("button", {
             key: 0,
             type: "button",
             class: "btn btn-primary pause-button my-1 me-2",
@@ -5639,88 +5647,88 @@ const Td = At(__, [["render", function(e, t, r, s, a, o) {
             disabled: 0 == o.validate(),
             class: "btn btn-danger cancel-button my-1",
             onClick: t[17] || (t[17] = e => o.step1())
-        }, k(e.trans.get("Proceed With Cancellation")), 9, xd)) : 2 == a.step ? (b(), g("button", {
+        }, k(e.trans.get("Proceed With Cancellation")), 9, Sd)) : 2 == a.step ? (b(), g("button", {
             key: 3,
             type: "button",
             disabled: 0 == o.validate(),
             class: "btn btn-danger cancel-button my-1",
             onClick: t[18] || (t[18] = e => o.step2())
-        }, k(e.trans.get("Proceed With Cancellation")), 9, Cd)) : 3 == a.step ? (b(), g("button", {
+        }, k(e.trans.get("Proceed With Cancellation")), 9, Td)) : 3 == a.step ? (b(), g("button", {
             key: 4,
             type: "button",
             disabled: 0 == o.validate(),
             class: "btn btn-danger cancel-button my-1",
             onClick: t[19] || (t[19] = e => o.step3())
-        }, k(e.trans.get("Cancel Subscription")), 9, Sd)) : T("", !0)])], 40, m_)], 64)
+        }, k(e.trans.get("Cancel Subscription")), 9, Fd)) : T("", !0)])], 40, p_)], 64)
     }]]),
-    Fd = {
+    Md = {
         class: "page-title mt-2 mb-4 my-lg-4"
     },
-    qd = ["action"],
-    Md = {
+    Ed = ["action"],
+    Ld = {
         class: "mb-3"
     },
-    Ed = {
+    Ud = {
         class: "form-label"
     },
-    Ld = ["value"],
-    Ud = {
+    Ad = ["value"],
+    Pd = {
         class: "row"
     },
-    Ad = {
+    $d = {
         class: "col-auto my-3 pe-0"
     },
-    Pd = {
+    Dd = {
         class: "col-auto my-3 px-0"
     },
-    $d = {
-        class: "col-auto my-3 px-0"
-    },
-    Dd = ["min"],
     Id = {
-        key: 0,
-        class: "text-danger"
+        class: "col-auto my-3 px-0"
     },
-    Hd = {
-        key: 1,
-        class: "text-danger"
-    },
+    Hd = ["min"],
     jd = {
-        key: 2,
+        key: 0,
         class: "text-danger"
     },
     Wd = {
-        class: "mb-3"
-    },
-    Vd = {
-        class: "form-label"
-    },
-    Od = ["value"],
-    Nd = {
-        class: "row"
-    },
-    Bd = {
-        class: "col-auto my-3 pe-0"
-    },
-    Rd = {
-        class: "col-auto my-3 px-0"
-    },
-    Kd = {
-        class: "col-auto my-3 px-0"
-    },
-    Jd = {
-        key: 0,
-        class: "text-muted"
-    },
-    zd = {
         key: 1,
         class: "text-danger"
     },
+    Od = {
+        key: 2,
+        class: "text-danger"
+    },
+    Vd = {
+        class: "mb-3"
+    },
+    Nd = {
+        class: "form-label"
+    },
+    Bd = ["value"],
+    Rd = {
+        class: "row"
+    },
+    Kd = {
+        class: "col-auto my-3 pe-0"
+    },
+    Jd = {
+        class: "col-auto my-3 px-0"
+    },
+    zd = {
+        class: "col-auto my-3 px-0"
+    },
     Gd = {
+        key: 0,
+        class: "text-muted"
+    },
+    Yd = {
+        key: 1,
+        class: "text-danger"
+    },
+    Zd = {
         class: "mb-3 my-4"
     },
-    Yd = ["disabled"];
-const Zd = At({
+    Xd = ["disabled"];
+const Qd = At({
     components: {
         ArrowLeftIcon: j
     },
@@ -5794,34 +5802,34 @@ const Zd = At({
             width: "20px",
             height: "20px"
         }
-    }), A(" " + k(e.trans.get("Back")), 1)]), S("h4", Fd, k(e.trans.get("Pause Subscription")), 1), S("p", null, k(e.trans.get("When your subscription is paused, you will not be able to access any features and will not be charged. Your subscription will automatically resume after duration ends.")), 1), S("form", {
+    }), A(" " + k(e.trans.get("Back")), 1)]), S("h4", Md, k(e.trans.get("Pause Subscription")), 1), S("p", null, k(e.trans.get("When your subscription is paused, you will not be able to access any features and will not be charged. Your subscription will automatically resume after duration ends.")), 1), S("form", {
         enctype: "multipart/form-data",
         action: r.submit_url,
         role: "form",
         method: "post",
         id: "pause-form",
         "accept-charset": "UTF-8"
-    }, [S("div", Md, [S("label", Ed, [A(k(e.trans.get("When Would You Like To Pause?")) + " ", 1), t[11] || (t[11] = S("span", {
+    }, [S("div", Ld, [S("label", Ud, [A(k(e.trans.get("When Would You Like To Pause?")) + " ", 1), t[11] || (t[11] = S("span", {
         class: "text-danger"
     }, "*", -1))]), S("input", {
         value: r.subscription_id,
         type: "hidden",
         id: "subscription_id",
         name: "subscription_id"
-    }, null, 8, Ld), F(S("input", {
+    }, null, 8, Ad), F(S("input", {
         "onUpdate:modelValue": t[1] || (t[1] = e => a.pause_type = e),
         type: "hidden",
         id: "pause_type",
         name: "pause_type"
-    }, null, 512), [[E, a.pause_type]]), S("div", Ud, [S("div", Ad, [S("button", {
+    }, null, 512), [[E, a.pause_type]]), S("div", Pd, [S("div", $d, [S("button", {
         type: "button",
         class: f(["btn me-2 immediately-pause-option", ["immediately" == a.pause_type ? "btn-outline-primary" : "btn-outline-secondary"]]),
         onClick: t[2] || (t[2] = e => a.pause_type = "immediately")
-    }, k(e.trans.get("Immediately")), 3)]), S("div", Pd, [S("button", {
+    }, k(e.trans.get("Immediately")), 3)]), S("div", Dd, [S("button", {
         type: "button",
         class: f(["btn me-2 scheduled-pause-option", ["scheduled" == a.pause_type ? "btn-outline-primary" : "btn-outline-secondary"]]),
         onClick: t[3] || (t[3] = e => a.pause_type = "scheduled")
-    }, k(e.trans.get("On Scheduled Date")), 3)]), S("div", $d, ["scheduled" == a.pause_type ? F((b(), g("input", {
+    }, k(e.trans.get("On Scheduled Date")), 3)]), S("div", Id, ["scheduled" == a.pause_type ? F((b(), g("input", {
         key: 0,
         class: "form-control w-auto",
         type: "date",
@@ -5829,11 +5837,11 @@ const Zd = At({
         name: "start_date",
         id: "start_date",
         min: o.getMinDate()
-    }, null, 8, Dd)), [[E, a.start_date]]) : T("", !0)])]), a.validating_pause_type ? (b(), g(y, {
+    }, null, 8, Hd)), [[E, a.start_date]]) : T("", !0)])]), a.validating_pause_type ? (b(), g(y, {
         key: 0
-    }, [a.pause_type.length <= 0 ? (b(), g("p", Id, k(e.trans.get("Please choose when would you like to pause.")), 1)) : "scheduled" == a.pause_type && "" == a.start_date ? (b(), g("p", Hd, k(e.trans.get("Please set a scheduled date you like to pause.")), 1)) : "scheduled" == a.pause_type && new Date >= new Date(this.start_date) ? (b(), g("p", jd, k(e.trans.get("Scheduled date must be more than current :date.", {
+    }, [a.pause_type.length <= 0 ? (b(), g("p", jd, k(e.trans.get("Please choose when would you like to pause.")), 1)) : "scheduled" == a.pause_type && "" == a.start_date ? (b(), g("p", Wd, k(e.trans.get("Please set a scheduled date you like to pause.")), 1)) : "scheduled" == a.pause_type && new Date >= new Date(this.start_date) ? (b(), g("p", Od, k(e.trans.get("Scheduled date must be more than current :date.", {
         date: (new Date).toLocaleDateString("en-US")
-    })), 1)) : T("", !0)], 64)) : T("", !0)]), S("div", Wd, [S("label", Vd, [A(k(e.trans.get("Choose The Duration")) + " ", 1), t[12] || (t[12] = S("span", {
+    })), 1)) : T("", !0)], 64)) : T("", !0)]), S("div", Vd, [S("label", Nd, [A(k(e.trans.get("Choose The Duration")) + " ", 1), t[12] || (t[12] = S("span", {
         class: "text-danger"
     }, "*", -1))]), t[13] || (t[13] = S("br", null, null, -1)), F(S("input", {
         "onUpdate:modelValue": t[5] || (t[5] = e => a.duration = e),
@@ -5845,19 +5853,19 @@ const Zd = At({
         id: "end_date",
         name: "end_date",
         value: o.end_date ? o.end_date.toISOString() : ""
-    }, null, 8, Od), S("div", Nd, [S("div", Bd, [S("button", {
+    }, null, 8, Bd), S("div", Rd, [S("div", Kd, [S("button", {
         type: "button",
         class: f(["btn me-2 one-month-duration", [1 == a.duration ? "btn-outline-primary" : "btn-outline-secondary"]]),
         onClick: t[6] || (t[6] = e => a.duration = 1)
     }, k(e.trans.get(":count Month", {
         count: 1
-    })), 3)]), S("div", Rd, [S("button", {
+    })), 3)]), S("div", Jd, [S("button", {
         type: "button",
         class: f(["btn me-2 two-month-duration", [2 == a.duration ? "btn-outline-primary" : "btn-outline-secondary"]]),
         onClick: t[7] || (t[7] = e => a.duration = 2)
     }, k(e.trans.get(":count Months", {
         count: 2
-    })), 3)]), S("div", Kd, [S("button", {
+    })), 3)]), S("div", zd, [S("button", {
         type: "button",
         class: f(["btn me-2 three-month-duration", [3 == a.duration ? "btn-outline-primary" : "btn-outline-secondary"]]),
         onClick: t[8] || (t[8] = e => a.duration = 3)
@@ -5865,9 +5873,9 @@ const Zd = At({
         count: 3
     })), 3)])]), a.validating_end_date ? (b(), g(y, {
         key: 0
-    }, [o.end_date ? (b(), g("p", Jd, k(e.trans.get("End date is :date.", {
+    }, [o.end_date ? (b(), g("p", Gd, k(e.trans.get("End date is :date.", {
         date: e.$filters.date(o.end_date)
-    })), 1)) : (b(), g("p", zd, k(e.trans.get("Please choose duration would you like to pause.")), 1))], 64)) : T("", !0)]), S("div", Gd, [S("button", {
+    })), 1)) : (b(), g("p", Yd, k(e.trans.get("Please choose duration would you like to pause.")), 1))], 64)) : T("", !0)]), S("div", Zd, [S("button", {
         type: "button",
         class: "btn btn-outline-dark me-2",
         onClick: t[9] || (t[9] = (...e) => o.main && o.main(...e))
@@ -5876,9 +5884,9 @@ const Zd = At({
         class: "btn btn-primary pause-button",
         disabled: 0 == o.validate(),
         onClick: t[10] || (t[10] = e => o.submit())
-    }, k(e.trans.get("Pause My Subscription")), 9, Yd)])], 8, qd)], 64)
+    }, k(e.trans.get("Pause My Subscription")), 9, Xd)])], 8, Ed)], 64)
 }]]);
-const Xd = At({
+const eu = At({
         emits: ["loading", "process"],
         props: {
             next_action_token: {
@@ -5966,7 +5974,7 @@ const Xd = At({
             loading: a.loading
         }, null, 8, ["loading"]))
     }]]),
-    Qd = {
+    tu = {
         components: {
             ExclamationCircleIcon: $,
             LockClosedIcon: N
@@ -6408,101 +6416,101 @@ const Xd = At({
             }
         }
     },
-    eu = {
+    ru = {
         key: 0,
         class: "checkout-form-current-card-details my-3"
     },
-    tu = {
+    su = {
         class: "row"
     },
-    ru = {
+    au = {
         key: 0,
         class: "checkout-form-current-card-number mb-3 col-md-12"
     },
-    su = {
+    ou = {
         class: "form-label",
         for: "card-holder-name-braintree"
     },
-    au = ["value"],
-    ou = {
+    iu = ["value"],
+    nu = {
         class: "checkout-form-current-card-number mb-3 col-md-8"
     },
-    iu = {
+    lu = {
         class: "form-label",
         for: "card-number-braintree"
     },
-    nu = ["value"],
-    lu = {
+    cu = ["value"],
+    _u = {
         class: "checkout-form-current-card-expiration-date mb-3 col-md-4"
     },
-    cu = {
+    du = {
         class: "form-label",
         for: "card-expiry-braintree"
     },
-    _u = ["value"],
-    du = {
+    uu = ["value"],
+    mu = {
         key: 1,
         class: "checkout-form-new-payment-details"
     },
-    uu = {
+    hu = {
         key: 0,
         class: "alert alert-danger",
         role: "alert"
     },
-    mu = {
+    pu = {
         class: "w-1 align-top"
     },
-    hu = {
+    gu = {
         class: "checkout-form-card-holder mb-3 position-relative"
     },
-    pu = {
+    yu = {
         class: "form-label",
         for: "card-holder-name-braintree"
     },
-    gu = {
+    wu = {
         key: 0,
         class: "invalid-feedback"
     },
-    yu = {
+    fu = {
         class: "checkout-form-card-number mb-3 position-relative"
     },
-    wu = {
+    bu = {
         class: "form-label",
         for: "card-number-braintree"
     },
-    fu = {
+    ku = {
         key: 0,
         class: "invalid-feedback"
-    },
-    bu = {
-        class: "checkout-form-card-expiration-date row"
-    },
-    ku = {
-        class: "mb-3 col-md-6"
     },
     vu = {
-        class: "form-label",
-        for: "card-expiry-braintree"
+        class: "checkout-form-card-expiration-date row"
     },
     xu = {
-        key: 0,
-        class: "invalid-feedback"
+        class: "mb-3 col-md-6"
     },
     Cu = {
-        class: "checkout-form-card-cvv mb-3 col-md-6"
+        class: "form-label",
+        for: "card-expiry-braintree"
     },
     Su = {
         key: 0,
         class: "invalid-feedback"
     },
     Tu = {
+        class: "checkout-form-card-cvv mb-3 col-md-6"
+    },
+    Fu = {
+        key: 0,
+        class: "invalid-feedback"
+    },
+    qu = {
         key: 2,
         class: "d-flex justify-content-between align-items-center"
     },
-    Fu = {
+    Mu = {
         class: "text-muted"
     };
-const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
+const Eu = At(tu, [["render", function(e, t, r, s, a, o) {
         var i;
         const n = v("exclamation-circle-icon"),
             l = v("lock-closed-icon");
@@ -6513,7 +6521,7 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             method: "post",
             "accept-charset": "UTF-8",
             class: "checkout-form-braintree checkout-form"
-        }, [r.is_subscribe && "" != r.customer_id && "" != (null == (i = a.billing_card) ? void 0 : i.number) ? (b(), g("div", eu, [S("div", tu, [a.billing_card.name && "" != a.billing_card.name ? (b(), g("div", ru, [S("label", su, [A(k(e.trans.get("Name On Card")) + " ", 1), t[3] || (t[3] = S("span", {
+        }, [r.is_subscribe && "" != r.customer_id && "" != (null == (i = a.billing_card) ? void 0 : i.number) ? (b(), g("div", ru, [S("div", su, [a.billing_card.name && "" != a.billing_card.name ? (b(), g("div", au, [S("label", ou, [A(k(e.trans.get("Name On Card")) + " ", 1), t[3] || (t[3] = S("span", {
             class: "text-danger"
         }, "*", -1))]), S("input", {
             maxlength: "24",
@@ -6521,27 +6529,27 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             value: a.billing_card.name,
             type: "text",
             class: "checkout-form-current-card-holder-name-value form-control form-control"
-        }, null, 8, au)])) : T("", !0), S("div", ou, [S("label", iu, [A(k(e.trans.get("Card Number")) + " " + k("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express)") + " ", 1), t[4] || (t[4] = S("span", {
+        }, null, 8, iu)])) : T("", !0), S("div", nu, [S("label", lu, [A(k(e.trans.get("Card Number")) + " " + k("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express)") + " ", 1), t[4] || (t[4] = S("span", {
             class: "text-danger"
         }, "*", -1))]), S("input", {
             disabled: "disabled",
             value: a.billing_card.number,
             type: "text",
             class: "checkout-form-current-card-number-value form-control form-control"
-        }, null, 8, nu)]), S("div", lu, [S("label", cu, [A(k(e.trans.get("Expiration")) + " ", 1), t[5] || (t[5] = S("span", {
+        }, null, 8, cu)]), S("div", _u, [S("label", du, [A(k(e.trans.get("Expiration")) + " ", 1), t[5] || (t[5] = S("span", {
             class: "text-danger"
         }, "*", -1))]), S("input", {
             disabled: "disabled",
             value: a.billing_card.expired,
             type: "text",
             class: "checkout-form-current-card-expiration-date-value form-control form-control"
-        }, null, 8, _u)])])])) : (b(), g("div", du, [a.hasError ? (b(), g("div", uu, [S("table", null, [S("tbody", null, [S("td", mu, [M(n, {
+        }, null, 8, uu)])])])) : (b(), g("div", mu, [a.hasError ? (b(), g("div", hu, [S("table", null, [S("tbody", null, [S("td", pu, [M(n, {
             class: "text-success me-2 mb-1",
             style: {
                 width: "20px",
                 height: "20px"
             }
-        })]), S("td", null, k(e.trans.get("Please verify that you have entered the correct payment details.")), 1)])])])) : T("", !0), S("div", hu, [S("label", pu, [A(k(e.trans.get("Name On Card")) + " ", 1), t[6] || (t[6] = S("span", {
+        })]), S("td", null, k(e.trans.get("Please verify that you have entered the correct payment details.")), 1)])])])) : T("", !0), S("div", gu, [S("label", yu, [A(k(e.trans.get("Name On Card")) + " ", 1), t[6] || (t[6] = S("span", {
             class: "text-danger"
         }, "*", -1))]), F(S("input", {
             maxlength: "24",
@@ -6555,17 +6563,17 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             required: ""
         }, null, 34), [[E, a.card_holder_name, void 0, {
             trim: !0
-        }]]), a.validating_card_holder_name && 0 == a.valid_card_holder_name ? (b(), g("div", gu, k(e.trans.get("Card holder name is required")), 1)) : T("", !0)]), S("div", yu, [S("label", wu, [A(k(e.trans.get("Card Number")) + " " + k("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express)") + " ", 1), t[7] || (t[7] = S("span", {
+        }]]), a.validating_card_holder_name && 0 == a.valid_card_holder_name ? (b(), g("div", wu, k(e.trans.get("Card holder name is required")), 1)) : T("", !0)]), S("div", fu, [S("label", bu, [A(k(e.trans.get("Card Number")) + " " + k("visa_master" == r.payment_method ? "(Visa or Mastercard)" : "(American Express)") + " ", 1), t[7] || (t[7] = S("span", {
             class: "text-danger"
         }, "*", -1))]), t[8] || (t[8] = S("div", {
             id: "card-number-braintree",
             class: "checkout-form-card-number-value form-control form-control"
-        }, null, -1)), 0 == a.valid_card_number ? (b(), g("div", fu, k(e.trans.get("Sorry, the provided card number appears to be invalid.")), 1)) : T("", !0)]), F(S("div", bu, [S("div", ku, [S("label", vu, [A(k(e.trans.get("Expiration")) + " ", 1), t[9] || (t[9] = S("span", {
+        }, null, -1)), 0 == a.valid_card_number ? (b(), g("div", ku, k(e.trans.get("Sorry, the provided card number appears to be invalid.")), 1)) : T("", !0)]), F(S("div", vu, [S("div", xu, [S("label", Cu, [A(k(e.trans.get("Expiration")) + " ", 1), t[9] || (t[9] = S("span", {
             class: "text-danger"
         }, "*", -1))]), t[10] || (t[10] = S("div", {
             id: "card-expiry-braintree",
             class: "checkout-form-card-expiration-date-value form-control form-control"
-        }, null, -1)), 0 == a.valid_card_expiry ? (b(), g("div", xu, k(e.trans.get("Card expiry is invalid.")), 1)) : T("", !0)]), S("div", Cu, [t[11] || (t[11] = S("label", {
+        }, null, -1)), 0 == a.valid_card_expiry ? (b(), g("div", Su, k(e.trans.get("Card expiry is invalid.")), 1)) : T("", !0)]), S("div", Tu, [t[11] || (t[11] = S("label", {
             class: "form-label",
             for: "card-cvv-braintree"
         }, [A("CVV "), S("span", {
@@ -6573,7 +6581,7 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
         }, "*")], -1)), t[12] || (t[12] = S("div", {
             id: "card-cvv-braintree",
             class: "checkout-form-card-cvv-value form-control form-control"
-        }, null, -1)), 0 == a.valid_card_cvv ? (b(), g("div", Su, k(e.trans.get("Card CVV is invalid.")), 1)) : T("", !0)])], 512), [[O, a.validating_card_number && a.valid_card_number]])])), r.is_subscribe ? (b(), g("div", Tu, [S("small", Fu, [M(l, {
+        }, null, -1)), 0 == a.valid_card_cvv ? (b(), g("div", Fu, k(e.trans.get("Card CVV is invalid.")), 1)) : T("", !0)])], 512), [[V, a.validating_card_number && a.valid_card_number]])])), r.is_subscribe ? (b(), g("div", qu, [S("small", Mu, [M(l, {
             class: "mb-1 me-1",
             style: {
                 width: "20px",
@@ -6581,12 +6589,12 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             }
         }), A(" " + k(e.trans.get("We use Braintree to handle payments and card information securely. Braintree is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])) : T("", !0)], 32)])
     }]]),
-    Mu = {
+    Lu = {
         components: {
             ExclamationCircleIcon: $,
             LockClosedIcon: N,
             ChevronDownIcon: W,
-            ChevronUpIcon: V,
+            ChevronUpIcon: O,
             PlusIcon: R,
             CheckIcon: I,
             EllipsisHorizontalIcon: K
@@ -7185,28 +7193,28 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             window.removeEventListener("message", this.handleMessage, !1), this.removeCaptcha(), this.unbindElements()
         }
     },
-    Eu = {
+    Uu = {
         key: 0,
         class: "checkout-form-current-card-details my-3"
     },
-    Lu = {
+    Au = {
         class: "form-row"
     },
-    Uu = {
+    Pu = {
         class: "form-label",
         for: "payment-method-stripe"
     },
-    Au = {
+    $u = {
         class: "accordion mb-3",
         id: "payment-method-accordion"
     },
-    Pu = {
+    Du = {
         class: "accordion-item"
     },
-    $u = {
+    Iu = {
         class: "accordion-body mt-n1px"
     },
-    Du = {
+    Hu = {
         class: "collapsible d-flex justify-content-between",
         role: "button",
         "data-bs-toggle": "collapse",
@@ -7215,10 +7223,10 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
         "aria-expanded": "true",
         id: "payment-method-cards-header"
     },
-    Iu = {
+    ju = {
         class: "d-flex"
     },
-    Hu = {
+    Wu = {
         key: 0,
         class: "credit-card-visa",
         src: "/images/credit-card-visa.png",
@@ -7226,105 +7234,12 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
         height: "360",
         alt: "Visa",
         title: "Visa",
-        style: {
-            width: "auto",
-            "max-height": "24px"
-        }
-    },
-    ju = {
-        key: 1,
-        class: "credit-card-mastercard",
-        src: "/images/credit-card-mastercard.png",
-        width: "640",
-        height: "360",
-        alt: "Mastercard",
-        title: "Mastercard",
-        style: {
-            width: "auto",
-            "max-height": "24px"
-        }
-    },
-    Wu = {
-        key: 2,
-        class: "credit-card-amex",
-        src: "/images/credit-card-amex.png",
-        width: "640",
-        height: "360",
-        alt: "American Express",
-        title: "American Express",
-        style: {
-            width: "auto",
-            "max-height": "24px"
-        }
-    },
-    Vu = {
-        key: 3,
-        class: "credit-card-jcb",
-        src: "/images/credit-card-jcb.png",
-        width: "640",
-        height: "360",
-        alt: "JCB",
-        title: "JCB",
         style: {
             width: "auto",
             "max-height": "24px"
         }
     },
     Ou = {
-        key: 4,
-        class: "credit-card-unionpay",
-        src: "/images/credit-card-unionpay.png",
-        width: "640",
-        height: "360",
-        alt: "UnionPay",
-        title: "UnionPay",
-        style: {
-            width: "auto",
-            "max-height": "24px"
-        }
-    },
-    Nu = {
-        class: "ms-3"
-    },
-    Bu = {
-        class: "fw-bold"
-    },
-    Ru = {
-        class: "chevron-up-icon"
-    },
-    Ku = {
-        class: "chevron-down-icon"
-    },
-    Ju = {
-        id: "payment-method-cards-section",
-        class: "my-2 collapse",
-        "aria-labelledby": "payment-method-cards-header",
-        "data-bs-parent": "#payment-method-accordion"
-    },
-    zu = ["innerHTML"],
-    Gu = ["innerHTML"],
-    Yu = {
-        class: "form-radio-check"
-    },
-    Zu = ["id", "value", "checked"],
-    Xu = ["for"],
-    Qu = {
-        class: "d-flex"
-    },
-    em = {
-        key: 0,
-        class: "credit-card-visa",
-        src: "/images/credit-card-visa.png",
-        width: "640",
-        height: "360",
-        alt: "Visa",
-        title: "Visa",
-        style: {
-            width: "auto",
-            "max-height": "24px"
-        }
-    },
-    tm = {
         key: 1,
         class: "credit-card-mastercard",
         src: "/images/credit-card-mastercard.png",
@@ -7337,7 +7252,7 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             "max-height": "24px"
         }
     },
-    rm = {
+    Vu = {
         key: 2,
         class: "credit-card-amex",
         src: "/images/credit-card-amex.png",
@@ -7350,7 +7265,7 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             "max-height": "24px"
         }
     },
-    sm = {
+    Nu = {
         key: 3,
         class: "credit-card-jcb",
         src: "/images/credit-card-jcb.png",
@@ -7363,7 +7278,7 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             "max-height": "24px"
         }
     },
-    am = {
+    Bu = {
         key: 4,
         class: "credit-card-unionpay",
         src: "/images/credit-card-unionpay.png",
@@ -7376,51 +7291,137 @@ const qu = At(Qd, [["render", function(e, t, r, s, a, o) {
             "max-height": "24px"
         }
     },
-    om = {
+    Ru = {
         class: "ms-3"
     },
+    Ku = {
+        class: "fw-bold"
+    },
+    Ju = {
+        class: "chevron-up-icon"
+    },
+    zu = {
+        class: "chevron-down-icon"
+    },
+    Gu = {
+        id: "payment-method-cards-section",
+        class: "my-2 collapse",
+        "aria-labelledby": "payment-method-cards-header",
+        "data-bs-parent": "#payment-method-accordion"
+    },
+    Yu = ["innerHTML"],
+    Zu = ["innerHTML"],
+    Xu = {
+        class: "form-radio-check"
+    },
+    Qu = ["id", "value", "checked"],
+    em = ["for"],
+    tm = {
+        class: "d-flex"
+    },
+    rm = {
+        key: 0,
+        class: "credit-card-visa",
+        src: "/images/credit-card-visa.png",
+        width: "640",
+        height: "360",
+        alt: "Visa",
+        title: "Visa",
+        style: {
+            width: "auto",
+            "max-height": "24px"
+        }
+    },
+    sm = {
+        key: 1,
+        class: "credit-card-mastercard",
+        src: "/images/credit-card-mastercard.png",
+        width: "640",
+        height: "360",
+        alt: "Mastercard",
+        title: "Mastercard",
+        style: {
+            width: "auto",
+            "max-height": "24px"
+        }
+    },
+    am = {
+        key: 2,
+        class: "credit-card-amex",
+        src: "/images/credit-card-amex.png",
+        width: "640",
+        height: "360",
+        alt: "American Express",
+        title: "American Express",
+        style: {
+            width: "auto",
+            "max-height": "24px"
+        }
+    },
+    om = {
+        key: 3,
+        class: "credit-card-jcb",
+        src: "/images/credit-card-jcb.png",
+        width: "640",
+        height: "360",
+        alt: "JCB",
+        title: "JCB",
+        style: {
+            width: "auto",
+            "max-height": "24px"
+        }
+    },
     im = {
-        class: "ms-auto d-flex align-items-center"
+        key: 4,
+        class: "credit-card-unionpay",
+        src: "/images/credit-card-unionpay.png",
+        width: "640",
+        height: "360",
+        alt: "UnionPay",
+        title: "UnionPay",
+        style: {
+            width: "auto",
+            "max-height": "24px"
+        }
     },
     nm = {
+        class: "ms-3"
+    },
+    lm = {
+        class: "ms-auto d-flex align-items-center"
+    },
+    cm = {
         key: 0,
         class: "btn-group"
     },
-    lm = {
+    _m = {
         type: "button",
         class: "btn btn-link p-0 card-actions",
         "data-bs-toggle": "dropdown",
         "aria-haspopup": "true",
         "aria-expanded": "false"
     },
-    cm = {
+    dm = {
         class: "dropdown-menu dropdown-menu-end"
     },
-    _m = ["onClick"],
-    dm = {
+    um = ["onClick"],
+    mm = {
         key: 2
     },
-    um = {
+    hm = {
         key: 1,
         class: "checkout-form-new-payment-details"
     },
-    mm = {
+    pm = {
         key: 0,
         class: "alert alert-danger",
         role: "alert"
     },
-    hm = {
+    gm = {
         class: "w-1 align-top"
     },
-    pm = {
-        key: 2,
-        class: "d-flex justify-content-between align-items-center mt-2"
-    },
-    gm = {
-        class: "text-muted"
-    },
     ym = ["width", "src"];
-const wm = At(Mu, [["render", function(e, t, r, s, a, o) {
+const wm = At(Lu, [["render", function(e, t, r, s, a, o) {
     var i;
     const n = v("chevron-up-icon"),
         l = v("chevron-down-icon"),
@@ -7428,8 +7429,7 @@ const wm = At(Mu, [["render", function(e, t, r, s, a, o) {
         _ = v("ellipsis-horizontal-icon"),
         d = v("plus-icon"),
         u = v("exclamation-circle-icon"),
-        m = v("lock-closed-icon"),
-        h = v("modal");
+        m = v("modal");
     return b(), g("div", null, [t[7] || (t[7] = S("div", {
         id: "cf-turnstile"
     }, null, -1)), F(S("form", {
@@ -7439,38 +7439,38 @@ const wm = At(Mu, [["render", function(e, t, r, s, a, o) {
         method: "post",
         "accept-charset": "UTF-8",
         class: "checkout-form-stripe checkout-form"
-    }, [r.is_subscribe && "" != r.customer_id && "" != (null == (i = a.billing_card) ? void 0 : i.number) && null != a.billing_card ? (b(), g("div", Eu, [S("div", Lu, [S("label", Uu, [A(k(e.trans.get("Payment Method")) + " ", 1), t[3] || (t[3] = S("span", {
+    }, [r.is_subscribe && "" != r.customer_id && "" != (null == (i = a.billing_card) ? void 0 : i.number) && null != a.billing_card ? (b(), g("div", Uu, [S("div", Au, [S("label", Pu, [A(k(e.trans.get("Payment Method")) + " ", 1), t[3] || (t[3] = S("span", {
         class: "text-danger"
-    }, "*", -1))]), S("div", Au, [S("div", Pu, [S("div", $u, [S("div", Du, [S("div", Iu, [S("div", null, ["Visa" == a.billing_card.brand ? (b(), g("img", Hu)) : T("", !0), "Mastercard" == a.billing_card.brand ? (b(), g("img", ju)) : T("", !0), "American Express" == a.billing_card.brand ? (b(), g("img", Wu)) : T("", !0), "JCB" == a.billing_card.brand ? (b(), g("img", Vu)) : T("", !0), "Union Pay" == a.billing_card.brand ? (b(), g("img", Ou)) : T("", !0)]), S("div", Nu, k(a.billing_card.brand) + " •••• " + k(a.billing_card.last4), 1)]), S("div", Bu, [S("span", Ru, [M(n, {
+    }, "*", -1))]), S("div", $u, [S("div", Du, [S("div", Iu, [S("div", Hu, [S("div", ju, [S("div", null, ["Visa" == a.billing_card.brand ? (b(), g("img", Wu)) : T("", !0), "Mastercard" == a.billing_card.brand ? (b(), g("img", Ou)) : T("", !0), "American Express" == a.billing_card.brand ? (b(), g("img", Vu)) : T("", !0), "JCB" == a.billing_card.brand ? (b(), g("img", Nu)) : T("", !0), "Union Pay" == a.billing_card.brand ? (b(), g("img", Bu)) : T("", !0)]), S("div", Ru, k(a.billing_card.brand) + " •••• " + k(a.billing_card.last4), 1)]), S("div", Ku, [S("span", Ju, [M(n, {
         class: "me-1 mb-1",
         style: {
             width: "20px",
             height: "20px"
         }
-    })]), S("span", Ku, [M(l, {
+    })]), S("span", zu, [M(l, {
         class: "me-1 mb-1",
         style: {
             width: "20px",
             height: "20px"
         }
-    })])])]), S("div", Ju, [t[5] || (t[5] = S("hr", null, null, -1)), r.existing_cards.length > 1 ? (b(), g("small", {
+    })])])]), S("div", Gu, [t[5] || (t[5] = S("hr", null, null, -1)), r.existing_cards.length > 1 ? (b(), g("small", {
         key: 0,
         innerHTML: e.trans.get("Available payment methods"),
         class: "text-muted"
-    }, null, 8, zu)) : (b(), g("small", {
+    }, null, 8, Yu)) : (b(), g("small", {
         key: 1,
         innerHTML: e.trans.get("Available payment method"),
         class: "text-muted"
-    }, null, 8, Gu)), (b(!0), g(y, null, w(a.current_existing_cards, (s => (b(), g("div", Yu, [S("input", {
+    }, null, 8, Zu)), (b(!0), g(y, null, w(a.current_existing_cards, (s => (b(), g("div", Xu, [S("input", {
         type: "radio",
         id: s.id,
         name: "payment_method_card",
         value: s.id,
         checked: !0 === s.default,
         onChange: t[0] || (t[0] = (...e) => o.cardSelectOption && o.cardSelectOption(...e))
-    }, null, 40, Zu), S("label", {
+    }, null, 40, Qu), S("label", {
         for: s.id
-    }, [S("div", Qu, [S("div", null, ["Visa" == s.brand ? (b(), g("img", em)) : T("", !0), "Mastercard" == s.brand ? (b(), g("img", tm)) : T("", !0), "American Express" == s.brand ? (b(), g("img", rm)) : T("", !0), "JCB" == s.brand ? (b(), g("img", sm)) : T("", !0), "Union Pay" == s.brand ? (b(), g("img", am)) : T("", !0)]), S("div", om, k(s.brand) + " •••• " + k(s.last4), 1), S("div", im, [S("div", {
+    }, [S("div", tm, [S("div", null, ["Visa" == s.brand ? (b(), g("img", rm)) : T("", !0), "Mastercard" == s.brand ? (b(), g("img", sm)) : T("", !0), "American Express" == s.brand ? (b(), g("img", am)) : T("", !0), "JCB" == s.brand ? (b(), g("img", om)) : T("", !0), "Union Pay" == s.brand ? (b(), g("img", im)) : T("", !0)]), S("div", nm, k(s.brand) + " •••• " + k(s.last4), 1), S("div", lm, [S("div", {
         class: "me-2",
         style: J(a.billing_card.id !== s.id ? "display: none;" : "")
     }, [M(c, {
@@ -7479,16 +7479,16 @@ const wm = At(Mu, [["render", function(e, t, r, s, a, o) {
             height: "20px"
         },
         class: "text-primary"
-    })], 4), r.allow_multiple_card && !0 !== s.default ? (b(), g("div", nm, [S("button", lm, [S("span", null, [M(_, {
+    })], 4), r.allow_multiple_card && !0 !== s.default ? (b(), g("div", cm, [S("button", _m, [S("span", null, [M(_, {
         style: {
             width: "20px",
             height: "20px"
         }
-    })])]), S("div", cm, [S("a", {
+    })])]), S("div", dm, [S("a", {
         href: "javascript:",
         onClick: e => o.cardDelete(s),
         class: "dropdown-item delete-card"
-    }, k(e.trans.get("Delete")), 9, _m)])])) : T("", !0)])])], 8, Xu)])))), 256)), r.allow_multiple_card && a.current_existing_cards.length < r.max_card_count ? (b(), g("div", dm, [t[4] || (t[4] = S("hr", null, null, -1)), S("a", {
+    }, k(e.trans.get("Delete")), 9, um)])])) : T("", !0)])])], 8, em)])))), 256)), r.allow_multiple_card && a.current_existing_cards.length < r.max_card_count ? (b(), g("div", mm, [t[4] || (t[4] = S("hr", null, null, -1)), S("a", {
         href: "javascript:void(0)",
         class: "d-flex align-items-center",
         onClick: t[1] || (t[1] = t => e.$root.open_modal("card_modal"))
@@ -7498,7 +7498,7 @@ const wm = At(Mu, [["render", function(e, t, r, s, a, o) {
             width: "20px",
             height: "20px"
         }
-    }), A(" " + k(e.trans.get("Add credit / debit card")), 1)])])) : T("", !0)])])])])])])) : (b(), g("div", um, [a.hasError ? (b(), g("div", mm, [S("table", null, [S("tbody", null, [S("td", hm, [M(u, {
+    }), A(" " + k(e.trans.get("Add credit / debit card")), 1)])])) : T("", !0)])])])])])])) : (b(), g("div", hm, [a.hasError ? (b(), g("div", pm, [S("table", null, [S("tbody", null, [S("td", gm, [M(u, {
         class: "text-success me-2 mb-1",
         style: {
             width: "20px",
@@ -7506,13 +7506,7 @@ const wm = At(Mu, [["render", function(e, t, r, s, a, o) {
         }
     })]), S("td", null, k(e.trans.get("Please verify that you have entered the correct payment details.")), 1)])])])) : T("", !0), t[6] || (t[6] = S("div", {
         id: "payment-element"
-    }, null, -1))])), r.is_subscribe ? (b(), g("div", pm, [S("small", gm, [M(m, {
-        class: "mb-1 me-1",
-        style: {
-            width: "20px",
-            height: "20px"
-        }
-    }), A(" " + k(e.trans.get("We use Stripe to handle payments and card information securely. Stripe is a Validated Level 1 PCI DSS Compliant Service Provider. All pages on our website are secured with modern SSL/TLS encryption.")), 1)])])) : T("", !0)], 544), [[O, !r.hide_form]]), a.secure_url ? (b(), x(h, {
+    }, null, -1))]))], 544), [[V, !r.hide_form]]), a.secure_url ? (b(), x(m, {
         key: 0,
         width: e.$isMobile() ? "290px" : "425px",
         height: "450px"
@@ -10063,7 +10057,7 @@ const Wm = At({
             style: J(o.customStyles)
         }, null, 8, ["data", "options", "id", "height", "width", "class", "style"])
     }]]),
-    Vm = {
+    Om = {
         components: {
             "pie-chart": Wm,
             Cog8ToothIcon: Y,
@@ -10167,7 +10161,7 @@ const Wm = At({
             }
         }
     },
-    Om = {
+    Vm = {
         class: "row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-6"
     },
     Nm = {
@@ -10334,11 +10328,11 @@ const Wm = At({
         key: 1,
         class: "search-results-summary-low-top-page-bid-value text-blur h3"
     },
-    Vh = {
+    Oh = {
         key: 0,
         class: "row"
     },
-    Oh = {
+    Vh = {
         class: "col"
     },
     Nh = {
@@ -10429,14 +10423,14 @@ const Wm = At({
     hp = {
         class: "row mt-2"
     };
-const pp = At(Vm, [["render", function(e, t, r, s, a, o) {
+const pp = At(Om, [["render", function(e, t, r, s, a, o) {
         const i = v("information-circle-icon"),
             n = v("arrow-long-up-icon"),
             l = v("arrow-long-down-icon"),
             c = v("cog8-tooth-icon"),
             _ = v("bar-chart"),
             d = v("pie-chart");
-        return b(), g("div", null, [S("div", Om, [S("div", Nm, [2 == r.current_tab || 5 == r.current_tab ? (b(), g("div", Bm, k(e.trans.get("Total Related Keywords")), 1)) : 3 == r.current_tab ? (b(), g("div", Rm, k(e.trans.get("Total Questions")), 1)) : 6 == r.current_tab ? (b(), g("div", Km, k(e.trans.get("Total Prepositions")), 1)) : 7 == r.current_tab ? (b(), g("div", Jm, k(e.trans.get("Total Hashtags")), 1)) : 10 == r.current_tab ? (b(), g("div", zm, k(e.trans.get("Total People")), 1)) : 11 == r.current_tab ? (b(), g("div", Gm, k(e.trans.get("Total Products")), 1)) : (b(), g("div", Ym, k(e.trans.get("Total Keywords")), 1)), S("div", Zm, [r.summaries.search_total_keywords_format ? (b(), g("span", Xm, k(r.summaries.search_total_keywords_format), 1)) : (b(), g("span", Qm, k(e.$filters.digit(r.summaries.total_keywords)), 1))])]), S("div", eh, [r.current_permissions.show_search_volume_column ? (b(), g("div", th, [S("div", rh, [A(k(e.trans.get("Total Search Volume")) + " ", 1), S("i", {
+        return b(), g("div", null, [S("div", Vm, [S("div", Nm, [2 == r.current_tab || 5 == r.current_tab ? (b(), g("div", Bm, k(e.trans.get("Total Related Keywords")), 1)) : 3 == r.current_tab ? (b(), g("div", Rm, k(e.trans.get("Total Questions")), 1)) : 6 == r.current_tab ? (b(), g("div", Km, k(e.trans.get("Total Prepositions")), 1)) : 7 == r.current_tab ? (b(), g("div", Jm, k(e.trans.get("Total Hashtags")), 1)) : 10 == r.current_tab ? (b(), g("div", zm, k(e.trans.get("Total People")), 1)) : 11 == r.current_tab ? (b(), g("div", Gm, k(e.trans.get("Total Products")), 1)) : (b(), g("div", Ym, k(e.trans.get("Total Keywords")), 1)), S("div", Zm, [r.summaries.search_total_keywords_format ? (b(), g("span", Xm, k(r.summaries.search_total_keywords_format), 1)) : (b(), g("span", Qm, k(e.$filters.digit(r.summaries.total_keywords)), 1))])]), S("div", eh, [r.current_permissions.show_search_volume_column ? (b(), g("div", th, [S("div", rh, [A(k(e.trans.get("Total Search Volume")) + " ", 1), S("i", {
             "data-bs-toggle": "popover-sv-summary",
             "data-bs-placement": "bottom",
             "data-bs-content": e.trans.get("Total Search Volume is the sum of Search Volume values for keywords that were found."),
@@ -10507,7 +10501,7 @@ const pp = At(Vm, [["render", function(e, t, r, s, a, o) {
             "data-bs-toggle": "popover-sv-summary",
             "data-bs-placement": "bottom",
             "data-bs-trigger": "hover focus"
-        }, "-", 8, jh)]))])) : (b(), g("div", Wh, "8.88"))])]), r.summaries.low_top_page_bid && r.summaries.high_top_page_bid ? (b(), g("div", Vh, [S("div", Oh, [r.current_permissions.show_high_top_page_bid_data ? (b(), g("div", Nh, [r.summaries.high_top_page_bid ? (b(), g("div", Bh, k(r.summaries.high_top_page_bid_format) + " (" + k(e.trans.get("High")) + ")", 1)) : (b(), g("div", Rh, [S("span", {
+        }, "-", 8, jh)]))])) : (b(), g("div", Wh, "8.88"))])]), r.summaries.low_top_page_bid && r.summaries.high_top_page_bid ? (b(), g("div", Oh, [S("div", Vh, [r.current_permissions.show_high_top_page_bid_data ? (b(), g("div", Nh, [r.summaries.high_top_page_bid ? (b(), g("div", Bh, k(r.summaries.high_top_page_bid_format) + " (" + k(e.trans.get("High")) + ")", 1)) : (b(), g("div", Rh, [S("span", {
             class: "cursor-help",
             "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
             "data-bs-toggle": "popover-sv-summary",
@@ -10906,7 +10900,7 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             },
             class: "mb-1"
-        })], 10, $p)) : T("", !0)], 544), [[O, a.showicon]])])], 40, qp)])
+        })], 10, $p)) : T("", !0)], 544), [[V, a.showicon]])])], 40, qp)])
     }]]),
     Ip = {
         components: {
@@ -11145,11 +11139,11 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
         class: "col-checkbox w-1"
     },
     Wp = ["disabled"],
-    Vp = {
+    Op = {
         key: 0,
         class: "col-profile-pic"
     },
-    Op = {
+    Vp = {
         class: "col-keywords"
     },
     Np = {
@@ -11304,11 +11298,11 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
         key: 0
     },
     Wg = ["data-bs-content"],
-    Vg = {
+    Og = {
         key: 18,
         class: "col-high-top-page-bid d-none d-md-table-cell"
     },
-    Og = {
+    Vg = {
         class: "table-head"
     },
     Ng = {
@@ -11454,11 +11448,11 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
         key: 2,
         class: "col-language"
     },
-    Vy = {
+    Oy = {
         key: 0,
         class: "badge bg-secondary"
     },
-    Oy = {
+    Vy = {
         key: 1,
         class: "text-secondary"
     },
@@ -11633,8 +11627,8 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
         key: 1,
         class: "text-secondary"
     },
-    Vw = ["data-bs-content"],
-    Ow = {
+    Ow = ["data-bs-content"],
+    Vw = {
         key: 1,
         class: "text-blur"
     },
@@ -11805,10 +11799,10 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
         key: 1,
         class: "text-blur"
     },
-    Vf = {
+    Of = {
         key: 0
     },
-    Of = {
+    Vf = {
         key: 1,
         class: "text-blur"
     },
@@ -11982,11 +11976,11 @@ const Dp = At(Fp, [["render", function(e, t, r, s, a, o) {
     Wb = {
         key: 0
     },
-    Vb = {
+    Ob = {
         key: 1,
         class: "text-secondary"
     },
-    Ob = ["data-bs-content"],
+    Vb = ["data-bs-content"],
     Nb = {
         key: 1,
         class: "text-blur"
@@ -12070,9 +12064,9 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
             "onUpdate:modelValue": t[0] || (t[0] = e => a.selected_all = e),
             onClick: t[1] || (t[1] = e => o.toggle_all_keyword(e)),
             disabled: r.loading || r.all_keywords.length <= 0
-        }, null, 8, Wp), [[q, a.selected_all]])]), r.current_permissions.show_profile_pic_column ? (b(), g("th", Vp, t[28] || (t[28] = [S("span", {
+        }, null, 8, Wp), [[q, a.selected_all]])]), r.current_permissions.show_profile_pic_column ? (b(), g("th", Op, t[28] || (t[28] = [S("span", {
             class: "table-head"
-        }, null, -1)]))) : T("", !0), S("th", Op, [S("span", {
+        }, null, -1)]))) : T("", !0), S("th", Vp, [S("span", {
             class: "cursor-pointer",
             onClick: t[2] || (t[2] = e => o.sort("keywords"))
         }, ["keywords" == r.sort_by ? (b(), g(y, {
@@ -12571,7 +12565,7 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             },
             class: "mb-1 ms-1"
-        })], 8, Wg)])])) : T("", !0), 12 != r.search_engine && r.current_permissions.show_high_top_page_bid_column || 12 == r.search_engine && r.current_permissions.show_high_top_page_bid_column && r.has_top_page_bid ? (b(), g("th", Vg, [S("span", {
+        })], 8, Wg)])])) : T("", !0), 12 != r.search_engine && r.current_permissions.show_high_top_page_bid_column || 12 == r.search_engine && r.current_permissions.show_high_top_page_bid_column && r.has_top_page_bid ? (b(), g("th", Og, [S("span", {
             class: "cursor-pointer",
             onClick: t[19] || (t[19] = e => r.current_permissions.show_high_top_page_bid_data ? o.sort("highTopPageBid") : "")
         }, [r.current_permissions.show_high_top_page_bid_data ? (b(), g(y, {
@@ -12592,7 +12586,7 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             },
             class: "mb-1 ms-1"
-        })) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0), S("span", Og, [A(k(e.trans.get("Top of Page Bid (High Range)")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g("span", Ng, "(" + k(r.current_metrics_currency) + ")", 1)) : T("", !0)])]), S("span", null, [S("i", {
+        })) : T("", !0)], 64)) : T("", !0)], 64)) : T("", !0), S("span", Vg, [A(k(e.trans.get("Top of Page Bid (High Range)")) + " ", 1), r.current_permissions.show_currency_data && r.current_metrics_currency ? (b(), g("span", Ng, "(" + k(r.current_metrics_currency) + ")", 1)) : T("", !0)])]), S("span", null, [S("i", {
             "data-bs-content": e.trans.get("Top of Page Bid (High Range) shows the higher range of what Google Ads advertisers have historically paid for a keyword's top of page bid."),
             "data-bs-toggle": "popover-sv-result",
             "data-bs-placement": "bottom",
@@ -12855,7 +12849,7 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
             key: 0
         }, [r.current_permissions.show_language_data && !s.blur_metrics_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
             key: 0
-        }, ["" !== s.language && null !== s.language ? (b(), g("span", Vy, k(s.language_format), 1)) : (b(), g("span", Oy, [S("span", {
+        }, ["" !== s.language && null !== s.language ? (b(), g("span", Oy, k(s.language_format), 1)) : (b(), g("span", Vy, [S("span", {
             class: "cursor-help",
             "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
             "data-bs-toggle": "popover-sv-result",
@@ -12972,7 +12966,7 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
             "data-bs-toggle": "popover-sv-result",
             "data-bs-placement": "bottom",
             "data-bs-trigger": "hover focus"
-        }, "-", 8, Vw)]))], 64)) : (b(), g("span", Ow, "88,888"))], 64)) : (b(), g(y, {
+        }, "-", 8, Ow)]))], 64)) : (b(), g("span", Vw, "88,888"))], 64)) : (b(), g(y, {
             key: 1
         }, [r.has_metrics ? (b(), g(y, {
             key: 0
@@ -13079,7 +13073,7 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
             key: 1
         }, [r.has_metrics ? (b(), g(y, {
             key: 0
-        }, [r.user_is_paid ? (b(), g("span", Vf, "...")) : (b(), g("span", Of, "88%"))], 64)) : (b(), g("span", Nf, "..."))], 64))])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("td", Bf, [(r.current_permissions.show_search_volume_data && !s.blur_metrics_data || l < r.current_free_results && !s.has_null) && "" !== s.search_volume_trend && null !== s.search_volume_trend ? (b(), x(d, {
+        }, [r.user_is_paid ? (b(), g("span", Of, "...")) : (b(), g("span", Vf, "88%"))], 64)) : (b(), g("span", Nf, "..."))], 64))])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("td", Bf, [(r.current_permissions.show_search_volume_data && !s.blur_metrics_data || l < r.current_free_results && !s.has_null) && "" !== s.search_volume_trend && null !== s.search_volume_trend ? (b(), x(d, {
             key: 0,
             data: s.search_volume_trend_mini_chart,
             keyword_id: s.id,
@@ -13183,13 +13177,13 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
             key: 0
         }, [r.current_permissions.show_is_private_data && !s.blur_metrics_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
             key: 0
-        }, ["" !== s.is_private && null !== s.is_private ? (b(), g("span", Wb, k(o.format_boolean_filter(s.is_private)), 1)) : (b(), g("span", Vb, [S("span", {
+        }, ["" !== s.is_private && null !== s.is_private ? (b(), g("span", Wb, k(o.format_boolean_filter(s.is_private)), 1)) : (b(), g("span", Ob, [S("span", {
             class: "cursor-help",
             "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
             "data-bs-toggle": "popover-sv-result",
             "data-bs-placement": "bottom",
             "data-bs-trigger": "hover focus"
-        }, "-", 8, Ob)]))], 64)) : (b(), g("span", Nb, "8.88"))], 64)) : (b(), g(y, {
+        }, "-", 8, Vb)]))], 64)) : (b(), g("span", Nb, "8.88"))], 64)) : (b(), g(y, {
             key: 1
         }, [r.has_metrics ? (b(), g(y, {
             key: 0
@@ -13416,10 +13410,10 @@ const dk = At(Ip, [["render", function(e, t, r, s, a, o) {
     Wk = {
         key: 0
     },
-    Vk = {
+    Ok = {
         class: "col-checkbox w-1"
     },
-    Ok = ["id", "value", "onChange", "disabled"],
+    Vk = ["id", "value", "onChange", "disabled"],
     Nk = ["onClick"],
     Bk = {
         class: "row"
@@ -13579,11 +13573,11 @@ const Iv = {
     Wv = {
         class: "search-results-settings-display-price-label"
     },
-    Vv = {
+    Ov = {
         key: 0,
         class: "search-results-settings-display-price-value"
     },
-    Ov = {
+    Vv = {
         key: 1,
         class: "search-results-settings-display-price-value"
     },
@@ -13791,14 +13785,14 @@ const qx = At({
                     class: f({
                         "table-active": o.is_selected(s)
                     })
-                }, [S("td", Vk, [F(S("input", {
+                }, [S("td", Ok, [F(S("input", {
                     id: s.id,
                     type: "checkbox",
                     value: s.keyword_source,
                     "onUpdate:modelValue": t[6] || (t[6] = e => a.selected = e),
                     onChange: e => o.change_select_keyword(s.keyword_source, e),
                     disabled: r.loading
-                }, null, 40, Ok), [[q, a.selected]])]), S("td", {
+                }, null, 40, Vk), [[q, a.selected]])]), S("td", {
                     class: "col-product-name cursor-pointer d-sm-none d-md-block",
                     onClick: e => o.toggle_select_keyword(s.keyword_source)
                 }, [S("div", Bk, [S("div", Rk, [S("figure", Kk, [s.img ? (b(), g("img", {
@@ -14015,7 +14009,7 @@ const qx = At({
             H = v("search-results-settings-modal-competition"),
             j = v("search-results-settings-filter-positive-keywords"),
             W = v("search-results-settings-filter-negative-keywords"),
-            V = v("alert-pro-upsell"),
+            O = v("alert-pro-upsell"),
             N = v("search-results-settings-admin-settings"),
             B = v("search-results-settings-modal"),
             R = v("search-results-tabs"),
@@ -14078,7 +14072,7 @@ const qx = At({
             show_current_filter_competition_max: e.show_current_filter_competition_max
         }, null, 8, ["onClearFilter", "current_permissions", "show_current_filter_competition_min", "show_current_filter_competition_max"])), e.current_permissions.show_product_data ? (b(), g(y, {
             key: 2
-        }, [e.show_current_filter_price_min > 0 || e.show_current_filter_price_max > 0 ? (b(), g("button", jv, [S("strong", Wv, k(e.trans.get("Price")) + ":", 1), e.show_current_filter_price_min > 0 && e.show_current_filter_price_max > 0 ? (b(), g("span", Vv, k(e.$filters.decimal(e.show_current_filter_price_min)) + " " + k(e.trans.get("to")) + " " + k(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : e.show_current_filter_price_min > 0 && !e.show_current_filter_price_max ? (b(), g("span", Ov, k(e.trans.get("more than")) + " " + k(e.$filters.decimal(e.show_current_filter_price_min)), 1)) : !e.show_current_filter_price_min && e.show_current_filter_price_max > 0 ? (b(), g("span", Nv, k(e.trans.get("less than")) + " " + k(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : T("", !0), S("a", {
+        }, [e.show_current_filter_price_min > 0 || e.show_current_filter_price_max > 0 ? (b(), g("button", jv, [S("strong", Wv, k(e.trans.get("Price")) + ":", 1), e.show_current_filter_price_min > 0 && e.show_current_filter_price_max > 0 ? (b(), g("span", Ov, k(e.$filters.decimal(e.show_current_filter_price_min)) + " " + k(e.trans.get("to")) + " " + k(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : e.show_current_filter_price_min > 0 && !e.show_current_filter_price_max ? (b(), g("span", Vv, k(e.trans.get("more than")) + " " + k(e.$filters.decimal(e.show_current_filter_price_min)), 1)) : !e.show_current_filter_price_min && e.show_current_filter_price_max > 0 ? (b(), g("span", Nv, k(e.trans.get("less than")) + " " + k(e.$filters.decimal(e.show_current_filter_price_max)), 1)) : T("", !0), S("a", {
             onClick: t[0] || (t[0] = t => e.clearFilter("price")),
             class: "search-results-settings-display-price-remove ms-1 text-decoration-none",
             href: "javascript:;"
@@ -14184,7 +14178,7 @@ const qx = At({
                 name: "price_max",
                 type: "text",
                 class: "form-control"
-            }, null, 512), [[de, e.decimal_format], [E, e.current_filter_price_max]])])])) : T("", !0)])]), 11 != e.current_tab ? (b(), x(V, {
+            }, null, 512), [[de, e.decimal_format], [E, e.current_filter_price_max]])])])) : T("", !0)])]), 11 != e.current_tab ? (b(), x(O, {
                 key: 2,
                 current_permissions: e.current_permissions,
                 routes: e.routes
@@ -14248,7 +14242,7 @@ const qx = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", Cx, [M(Q, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", Cx, [M(Q, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -14936,8 +14930,8 @@ const Hx = At({
         }
     },
     Wx = ["value"],
-    Vx = ["value"],
-    Ox = {
+    Ox = ["value"],
+    Vx = {
         key: 2,
         class: "row"
     },
@@ -14977,7 +14971,7 @@ const Yx = At({
         name: "metrics_currency",
         type: "hidden",
         value: e.currency
-    }, null, 8, Vx)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", Ox, [S("div", Nx, [S("div", Bx, [S("label", Rx, k(e.trans.get("Country")), 1), M(i, {
+    }, null, 8, Ox)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", Vx, [S("div", Nx, [S("div", Bx, [S("label", Rx, k(e.trans.get("Country")), 1), M(i, {
         options: e.current_country_list,
         settings: e.country_settings,
         class: "check-search-volume-amazon-settings-country-value",
@@ -15187,7 +15181,7 @@ const EC = At({
             H = v("search-results-settings-filter-negative-keywords"),
             j = v("alert-pro-upsell"),
             W = v("search-results-settings-admin-settings"),
-            V = v("search-results-settings-modal"),
+            O = v("search-results-settings-modal"),
             N = v("search-results-tabs"),
             B = v("has-error"),
             R = v("suggest-page-reload"),
@@ -15258,7 +15252,7 @@ const EC = At({
             show_current_split_negative_keywords: e.show_current_split_negative_keywords,
             show_display_filter_negative_keywords: e.show_display_filter_negative_keywords,
             onClearFilter: e.clearFilter
-        }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), M(V, {
+        }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), M(O, {
             onResetFilter: e.resetFilter,
             onApplyFilter: e.applyFilter,
             filter_counter: e.filter_counter,
@@ -15396,7 +15390,7 @@ const EC = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", qC, [M(G, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", qC, [M(G, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -15580,10 +15574,10 @@ const IC = At({
         key: 2,
         class: "row"
     },
-    VC = {
+    OC = {
         class: "col-12"
     },
-    OC = {
+    VC = {
         class: "check-search-volume-settings-country mb-3"
     },
     NC = {
@@ -15616,7 +15610,7 @@ const zC = At({
         name: "metrics_currency",
         type: "hidden",
         value: e.currency
-    }, null, 8, jC)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", WC, [S("div", VC, [S("div", OC, [S("label", NC, k(e.trans.get("Country")), 1), M(i, {
+    }, null, 8, jC)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", WC, [S("div", OC, [S("div", VC, [S("label", NC, k(e.trans.get("Country")), 1), M(i, {
         options: e.current_country_list,
         settings: e.country_settings,
         class: "check-search-volume-settings-country-value",
@@ -15883,10 +15877,10 @@ const GC = At({
     WS = {
         class: "col my-1"
     },
-    VS = {
+    OS = {
         key: 0
     },
-    OS = {
+    VS = {
         class: "search-results-summary-average-competition-label"
     },
     NS = ["data-bs-content"],
@@ -16004,7 +15998,7 @@ const rT = At(YC, [["render", function(e, t, r, s, a, o) {
             "data-bs-toggle": "popover-sv-summary",
             "data-bs-placement": "bottom",
             "data-bs-trigger": "hover focus"
-        }, "-", 8, HS)]))])) : (b(), g("div", jS, "8.88"))])) : T("", !0)])) : T("", !0), S("div", WS, [r.current_permissions.show_competition_column ? (b(), g("div", VS, [S("div", OS, [A(k(e.trans.get("Average Competition")) + " ", 1), S("i", {
+        }, "-", 8, HS)]))])) : (b(), g("div", jS, "8.88"))])) : T("", !0)])) : T("", !0), S("div", WS, [r.current_permissions.show_competition_column ? (b(), g("div", OS, [S("div", VS, [A(k(e.trans.get("Average Competition")) + " ", 1), S("i", {
             "data-bs-content": e.trans.get("Average Competition is the average of Competition values for keywords that were found."),
             "data-bs-toggle": "popover-sv-summary",
             "data-bs-placement": "bottom",
@@ -16383,11 +16377,11 @@ const rT = At(YC, [["render", function(e, t, r, s, a, o) {
         class: "table-head"
     },
     WT = ["data-bs-content"],
-    VT = {
+    OT = {
         key: 4,
         class: "col-trend d-none d-md-table-cell"
     },
-    OT = {
+    VT = {
         key: 0
     },
     NT = {
@@ -16531,11 +16525,11 @@ const rT = At(YC, [["render", function(e, t, r, s, a, o) {
         key: 1,
         class: "col-language"
     },
-    VF = {
+    OF = {
         key: 0,
         class: "badge bg-secondary"
     },
-    OF = {
+    VF = {
         key: 1,
         class: "text-secondary"
     },
@@ -16709,8 +16703,8 @@ const rT = At(YC, [["render", function(e, t, r, s, a, o) {
         key: 1,
         class: "text-secondary"
     },
-    Vq = ["data-bs-content"],
-    Oq = {
+    Oq = ["data-bs-content"],
+    Vq = {
         key: 1,
         class: "text-blur"
     },
@@ -16878,10 +16872,10 @@ const Kq = At(sT, [["render", function(e, t, r, s, a, o) {
                 height: "20px"
             },
             class: "mb-1 ms-1"
-        })], 8, WT)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", VT, [S("span", {
+        })], 8, WT)])])) : T("", !0), r.current_permissions.show_search_volume_column ? (b(), g("th", OT, [S("span", {
             class: "cursor-pointer",
             onClick: t[7] || (t[7] = e => r.current_permissions.show_search_volume_data ? o.sort("searchVolumeTrend") : "")
-        }, [r.current_permissions.show_search_volume_data ? (b(), g("span", OT, ["searchVolumeTrend" == r.sort_by ? (b(), g("span", NT, ["Asc" == r.sort_direction ? (b(), g("span", BT, [M(i, {
+        }, [r.current_permissions.show_search_volume_data ? (b(), g("span", VT, ["searchVolumeTrend" == r.sort_by ? (b(), g("span", NT, ["Asc" == r.sort_direction ? (b(), g("span", BT, [M(i, {
             style: {
                 width: "20px",
                 height: "20px"
@@ -17061,7 +17055,7 @@ const Kq = At(sT, [["render", function(e, t, r, s, a, o) {
             key: 0
         }, [r.current_permissions.show_language_data && !s.blur_metrics_data || l < r.current_free_results && !s.has_null ? (b(), g(y, {
             key: 0
-        }, ["" !== s.language && null !== s.language ? (b(), g("span", VF, k(s.language_format), 1)) : (b(), g("span", OF, [S("span", {
+        }, ["" !== s.language && null !== s.language ? (b(), g("span", OF, k(s.language_format), 1)) : (b(), g("span", VF, [S("span", {
             class: "cursor-help",
             "data-bs-content": e.trans.get("Unfortunately, there is no data available for this keyword at the moment."),
             "data-bs-toggle": "popover-sv-result",
@@ -17186,7 +17180,7 @@ const Kq = At(sT, [["render", function(e, t, r, s, a, o) {
             "data-bs-toggle": "popover-sv-result",
             "data-bs-placement": "bottom",
             "data-bs-trigger": "hover focus"
-        }, "-", 8, Vq)]))], 64)) : (b(), g("span", Oq, "88,888"))], 64)) : (b(), g(y, {
+        }, "-", 8, Oq)]))], 64)) : (b(), g("span", Vq, "88,888"))], 64)) : (b(), g(y, {
             key: 1
         }, [r.has_metrics ? (b(), g(y, {
             key: 0
@@ -17376,7 +17370,7 @@ const Kq = At(sT, [["render", function(e, t, r, s, a, o) {
         key: 3,
         class: "mb-4"
     };
-const VM = At({
+const OM = At({
         mixins: [jm],
         components: {
             "bing-search-volume-summary": rT,
@@ -17493,7 +17487,7 @@ const VM = At({
             H = v("search-results-tabs"),
             j = v("has-error"),
             W = v("suggest-page-reload"),
-            V = v("bing-search-volume-summary"),
+            O = v("bing-search-volume-summary"),
             N = v("show-upsell"),
             B = v("bing-search-volume-result"),
             R = v("search-results-table-wrapper"),
@@ -17677,7 +17671,7 @@ const VM = At({
             current_tab: e.current_tab
         }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), M(W, {
             suggest_page_reload: e.suggest_page_reload
-        }, null, 8, ["suggest_page_reload"]), F(S("div", PM, [S("div", $M, [M(V, {
+        }, null, 8, ["suggest_page_reload"]), F(S("div", PM, [S("div", $M, [M(O, {
             loading: e.loading,
             current_tab: e.current_tab,
             summaries: e.summaries,
@@ -17691,7 +17685,7 @@ const VM = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", DM, [M(R, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", DM, [M(R, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -17778,7 +17772,7 @@ const VM = At({
             _: 1
         }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
     }]]),
-    OM = {
+    VM = {
         class: "row g-0 me-lg-n1px"
     },
     NM = {
@@ -17805,7 +17799,7 @@ const RM = At({
         methods: {}
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
-        return b(), g("div", OM, [S("div", NM, [M(i, {
+        return b(), g("div", VM, [S("div", NM, [M(i, {
             disabled: e.loading,
             id: "country_" + e.id,
             options: e.locations_options,
@@ -18090,8 +18084,8 @@ const hE = At({
     WE = {
         class: "col-12"
     },
-    VE = ["innerHTML"],
     OE = ["innerHTML"],
+    VE = ["innerHTML"],
     NE = {
         class: "search-results-summary card my-4 bg-light"
     },
@@ -18224,7 +18218,7 @@ const zE = At({
             H = v("search-results-settings-admin-settings"),
             j = v("search-results-settings-modal"),
             W = v("search-results-tabs"),
-            V = v("has-error"),
+            O = v("has-error"),
             N = v("suggest-page-reload"),
             B = v("google-search-volume-summary"),
             R = v("show-upsell"),
@@ -18377,12 +18371,12 @@ const zE = At({
                     innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                         count_free: 5
                     })
-                }, null, 8, VE)])),
+                }, null, 8, OE)])),
                 linktext: C((() => [S("span", {
                     innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                         count_pro: "2,000"
                     })
-                }, null, 8, OE)])),
+                }, null, 8, VE)])),
                 _: 1
             }, 8, ["current_permissions", "routes"]), M(H, {
                 current_permissions: e.current_permissions,
@@ -18401,7 +18395,7 @@ const zE = At({
             tabs: e.tabs,
             current_tab: e.current_tab,
             loading: e.loading
-        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(V, {
+        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(O, {
             key: 0,
             user_is_paid: e.user_is_paid,
             has_metrics: e.has_metrics,
@@ -18423,7 +18417,7 @@ const zE = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", RE, [M(J, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", RE, [M(J, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -18821,10 +18815,10 @@ const mL = At({
     WL = {
         class: "row"
     },
-    VL = {
+    OL = {
         class: "col-12"
     },
-    OL = {
+    VL = {
         class: "row"
     },
     NL = {
@@ -19001,7 +18995,7 @@ const tU = At({
             H = v("search-results-settings-modal-bing-competition"),
             j = v("search-results-settings-modal-competition"),
             W = v("search-results-settings-filter-positive-keywords"),
-            V = v("search-results-settings-filter-negative-keywords"),
+            O = v("search-results-settings-filter-negative-keywords"),
             N = v("search-results-settings-filter-exclude-seed-keyword"),
             B = v("alert-pro-upsell"),
             R = v("search-results-settings-admin-settings"),
@@ -19174,7 +19168,7 @@ const tU = At({
                 }]),
                 "onUpdate:modelValue": t[14] || (t[14] = t => e.current_filter_high_top_page_bid_max = t),
                 name: "high_top_page_bid_max"
-            }, null, 2), [[_e, e.high_top_page_bid_format], [E, e.current_filter_high_top_page_bid_max]])])])) : T("", !0)])])) : T("", !0)], 64)) : T("", !0), S("div", WL, [S("div", VL, [M(W, {
+            }, null, 2), [[_e, e.high_top_page_bid_format], [E, e.current_filter_high_top_page_bid_max]])])])) : T("", !0)])])) : T("", !0)], 64)) : T("", !0), S("div", WL, [S("div", OL, [M(W, {
                 onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                 current_remain_filter_keywords: e.current_remain_filter_keywords,
                 error_fields: e.error_fields,
@@ -19183,7 +19177,7 @@ const tU = At({
                 "onUpdate:current_filter_keywords": t[15] || (t[15] = t => e.current_filter_keywords = t),
                 current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                 "onUpdate:current_filter_keywords_partial_match": t[16] || (t[16] = t => e.current_filter_keywords_partial_match = t)
-            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", OL, [S("div", NL, [M(V, {
+            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", VL, [S("div", NL, [M(O, {
                 onCheckDuplicate: e.checkDuplicate,
                 current_remain_negative_keywords: e.current_remain_negative_keywords,
                 error_fields: e.error_fields,
@@ -19249,7 +19243,7 @@ const tU = At({
             search_engine: e.search_engine,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "search_engine", "current_permissions", "free_trial_days"]))])) : T("", !0)], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", YL, [M(Q, {
+        }, null, 8, ["routes", "selected_language_name", "search_engine", "current_permissions", "free_trial_days"]))])) : T("", !0)], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", YL, [M(Q, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -19703,11 +19697,11 @@ const PU = At({
     WU = {
         class: "row"
     },
-    VU = {
+    OU = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    OU = {
+    VU = {
         key: 1,
         class: "col-12 col-md-6"
     },
@@ -19874,7 +19868,7 @@ const oA = At({
             H = v("alert-pro-upsell"),
             j = v("search-results-settings-admin-settings"),
             W = v("search-results-settings-modal"),
-            V = v("search-results-tabs"),
+            O = v("search-results-tabs"),
             N = v("has-error"),
             B = v("suggest-page-reload"),
             R = v("google-search-volume-summary"),
@@ -19953,12 +19947,12 @@ const oA = At({
         }, {
             content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                 key: 0
-            }, [S("div", IU, [S("div", HU, [S("h5", jU, k(e.trans.get("Search Volume Settings")), 1)])]), S("div", WU, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", VU, [M(q, {
+            }, [S("div", IU, [S("div", HU, [S("h5", jU, k(e.trans.get("Search Volume Settings")), 1)])]), S("div", WU, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", OU, [M(q, {
                 current_network_list: e.current_network_list,
                 current_metrics_network: e.current_metrics_network,
                 "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", OU, [M(E, {
+            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", VU, [M(E, {
                 current_currency_list: e.current_currency_list,
                 current_metrics_currency: e.current_metrics_currency,
                 "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
@@ -20043,7 +20037,7 @@ const oA = At({
                 reset_all_metrics_url: e.current_reset_all_metrics_url
             }, null, 8, ["current_permissions", "current_filter_keyword_result_period", "current_keyword_result_periods", "search_engine", "current_tab", "reset_keywords_url", "reset_latest_metrics_url", "reset_all_metrics_url"])])),
             _: 1
-        }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), M(V, {
+        }, 8, ["onResetFilter", "onApplyFilter", "filter_counter", "onClonedDataOnShownModal", "onRestoreClonedDataOnHideModal"])]), M(O, {
             onApplyTab: o.applyTab,
             tabs: e.tabs,
             current_tab: e.current_tab,
@@ -20070,7 +20064,7 @@ const oA = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", sA, [M(z, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", sA, [M(z, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -20359,10 +20353,10 @@ const oA = At({
         key: 1,
         class: "text-danger"
     },
-    VA = {
+    OA = {
         key: 2
     },
-    OA = {
+    VA = {
         key: 0
     },
     NA = {
@@ -20532,12 +20526,12 @@ const PP = {
         key: 2,
         class: "search-results-settings-display-posts-value"
     },
-    VP = {
+    OP = {
         key: 0,
         type: "button",
         class: "btn-search-results-settings-display-full-name btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    OP = {
+    VP = {
         class: "search-results-settings-display-full-name-label"
     },
     NP = {
@@ -20701,10 +20695,10 @@ const PP = {
         class: "form-check disabled"
     },
     W$ = ["checked"],
-    V$ = {
+    O$ = {
         class: "row"
     },
-    O$ = {
+    V$ = {
         class: "col-12"
     },
     N$ = {
@@ -20804,7 +20798,7 @@ const lD = At({
                         height: "24px"
                     },
                     class: "mb-1 ms-1"
-                }), A(" " + k(r.summaries.search_volume_trend_format), 1)])) : (b(), g("span", VA, [0 == r.summaries.search_volume_trend ? (b(), g("span", OA)) : T("", !0), A(" " + k(r.summaries.search_volume_trend_format), 1)]))])) : (b(), g("div", NA, [S("span", {
+                }), A(" " + k(r.summaries.search_volume_trend_format), 1)])) : (b(), g("span", OA, [0 == r.summaries.search_volume_trend ? (b(), g("span", VA)) : T("", !0), A(" " + k(r.summaries.search_volume_trend_format), 1)]))])) : (b(), g("div", NA, [S("span", {
                     class: "cursor-help",
                     "data-bs-content": e.trans.get("Sorry, Google does not provide data for these keywords at the moment."),
                     "data-bs-toggle": "popover-sv-summary",
@@ -21018,7 +21012,7 @@ const lD = At({
             H = v("search-results-settings-modal-competition"),
             j = v("search-results-settings-filter-positive-keywords"),
             W = v("search-results-settings-filter-negative-keywords"),
-            V = v("tag-input"),
+            O = v("tag-input"),
             N = v("search-results-settings-admin-settings"),
             B = v("search-results-settings-modal"),
             R = v("search-results-tabs"),
@@ -21093,7 +21087,7 @@ const lD = At({
             onClearFilter: e.clearFilter
         }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"]), e.current_permissions.show_full_name_data ? (b(), g(y, {
             key: 3
-        }, [e.show_current_split_filter_full_name ? (b(), g("button", VP, [S("strong", OP, k(e.trans.get("Full Name")) + ":", 1), S("span", NP, k(e.show_current_split_filter_full_name), 1), S("a", {
+        }, [e.show_current_split_filter_full_name ? (b(), g("button", OP, [S("strong", VP, k(e.trans.get("Full Name")) + ":", 1), S("span", NP, k(e.show_current_split_filter_full_name), 1), S("a", {
             class: "search-results-settings-display-full-name-remove ms-1 text-decoration-none",
             href: "javascript:",
             onClick: t[1] || (t[1] = t => e.clearFilter("full_name", "all"))
@@ -21260,7 +21254,7 @@ const lD = At({
             }, null, 8, W$), [[se, e.current_filter_is_verified]]), t[34] || (t[34] = S("label", {
                 class: "form-check-label",
                 for: "is-verified-no"
-            }, " No ", -1))])])])])) : T("", !0), S("div", V$, [S("div", O$, [M(j, {
+            }, " No ", -1))])])])])) : T("", !0), S("div", O$, [S("div", V$, [M(j, {
                 onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                 current_remain_filter_keywords: e.current_remain_filter_keywords,
                 error_fields: e.error_fields,
@@ -21275,7 +21269,7 @@ const lD = At({
                 error_fields: e.error_fields,
                 current_negative_keywords: e.current_negative_keywords,
                 "onUpdate:current_negative_keywords": t[25] || (t[25] = t => e.current_negative_keywords = t)
-            }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), e.current_permissions.show_full_name_column && e.current_permissions.show_full_name_data ? (b(), g("div", R$, [S("div", K$, [S("div", J$, [S("label", z$, k(e.trans.get("Find Full Name Within Search Results")), 1), M(V, {
+            }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), e.current_permissions.show_full_name_column && e.current_permissions.show_full_name_data ? (b(), g("div", R$, [S("div", K$, [S("div", J$, [S("label", z$, k(e.trans.get("Find Full Name Within Search Results")), 1), M(O, {
                 "model-value": e.current_filter_full_name,
                 "onUpdate:modelValue": t[26] || (t[26] = t => e.current_filter_full_name = t),
                 name: "filter_full_name",
@@ -21352,7 +21346,7 @@ const lD = At({
                 })
             }, null, 8, aD))])),
             _: 1
-        }, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])) : T("", !0)], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", oD, [M(Z, {
+        }, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])) : T("", !0)], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", oD, [M(Z, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -21645,11 +21639,11 @@ const TD = At({
         key: 2,
         class: "row"
     },
-    VD = {
+    OD = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    OD = {
+    VD = {
         key: 1,
         class: "col-12 col-md-6"
     },
@@ -21768,7 +21762,7 @@ const oI = At({
             H = v("search-results-settings-admin-settings"),
             j = v("search-results-settings-modal"),
             W = v("search-results-tabs"),
-            V = v("has-error"),
+            O = v("has-error"),
             N = v("suggest-page-reload"),
             B = v("google-search-volume-summary"),
             R = v("show-upsell"),
@@ -21850,12 +21844,12 @@ const oI = At({
                 options: e.current_currency_list,
                 settings: {},
                 disabled: 4 == e.current_tab
-            }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", WD, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", VD, [M(f, {
+            }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", WD, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", OD, [M(f, {
                 current_network_list: e.current_network_list,
                 current_metrics_network: e.current_metrics_network,
                 "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", OD, [M(q, {
+            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", VD, [M(q, {
                 current_currency_list: e.current_currency_list,
                 current_metrics_currency: e.current_metrics_currency,
                 "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
@@ -21945,7 +21939,7 @@ const oI = At({
             tabs: e.tabs,
             current_tab: e.current_tab,
             loading: e.loading
-        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(V, {
+        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(O, {
             key: 0,
             user_is_paid: e.user_is_paid,
             has_metrics: e.has_metrics,
@@ -21967,7 +21961,7 @@ const oI = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", sI, [M(J, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", sI, [M(J, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -22286,10 +22280,10 @@ const CI = At({
         key: 1,
         class: "col-12 col-md-6"
     },
-    VI = {
+    OI = {
         class: "row"
     },
-    OI = {
+    VI = {
         class: "col"
     },
     NI = {
@@ -22401,7 +22395,7 @@ const sH = At({
             H = v("search-results-settings-admin-settings"),
             j = v("search-results-settings-modal"),
             W = v("search-results-tabs"),
-            V = v("has-error"),
+            O = v("has-error"),
             N = v("suggest-page-reload"),
             B = v("google-search-volume-summary"),
             R = v("show-upsell"),
@@ -22493,7 +22487,7 @@ const sH = At({
                 current_metrics_currency: e.current_metrics_currency,
                 "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", VI, [S("div", OI, [S("h5", NI, k(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", BI, [S("div", RI, [M(E, {
+            }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", OI, [S("div", VI, [S("h5", NI, k(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", BI, [S("div", RI, [M(E, {
                 current_permissions: e.current_permissions,
                 search_volume_format: e.search_volume_format,
                 error_fields: e.error_fields,
@@ -22578,7 +22572,7 @@ const sH = At({
             tabs: e.tabs,
             current_tab: e.current_tab,
             loading: e.loading
-        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(V, {
+        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(O, {
             key: 0,
             user_is_paid: e.user_is_paid,
             has_metrics: e.has_metrics,
@@ -22600,7 +22594,7 @@ const sH = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", tH, [M(J, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", tH, [M(J, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -22912,11 +22906,11 @@ const kH = At({
     WH = {
         class: "search-results-settings-display-video-count-label"
     },
-    VH = {
+    OH = {
         key: 0,
         class: "search-results-settings-display-video-count-value"
     },
-    OH = {
+    VH = {
         key: 1,
         class: "search-results-settings-display-video-count-value"
     },
@@ -23100,11 +23094,11 @@ const kH = At({
     Wj = {
         class: "input-group-text rounded-0 border-start-0 border-end-0"
     },
-    Vj = {
+    Oj = {
         key: 4,
         class: "col-12 col-md-6"
     },
-    Oj = {
+    Vj = {
         class: "search-results-settings-modal-digg-count mb-3"
     },
     Nj = {
@@ -23266,7 +23260,7 @@ const kW = At({
             H = v("search-results-settings-filter-positive-keywords"),
             j = v("search-results-settings-filter-negative-keywords"),
             W = v("alert-pro-upsell"),
-            V = v("search-results-settings-admin-settings"),
+            O = v("search-results-settings-admin-settings"),
             N = v("search-results-settings-modal"),
             B = v("search-results-tabs"),
             R = v("has-error"),
@@ -23313,7 +23307,7 @@ const kW = At({
             href: "javascript:;"
         }, "×")])) : T("", !0)], 64)) : T("", !0), e.current_permissions.show_video_count_data ? (b(), g(y, {
             key: 3
-        }, [e.show_current_filter_video_count_min > 0 || e.show_current_filter_video_count_max > 0 ? (b(), g("button", jH, [S("strong", WH, k(e.trans.get("Videos")) + ":", 1), e.show_current_filter_video_count_min > 0 && e.show_current_filter_video_count_max > 0 ? (b(), g("span", VH, k(e.$filters.digit(e.show_current_filter_video_count_min)) + " " + k(e.trans.get("to")) + " " + k(e.$filters.digit(e.show_current_filter_video_count_max)), 1)) : e.show_current_filter_video_count_min > 0 && !e.show_current_filter_video_count_max ? (b(), g("span", OH, k(e.trans.get("more than")) + " " + k(e.$filters.digit(e.show_current_filter_video_count_min)), 1)) : !e.show_current_filter_video_count_min && e.show_current_filter_video_count_max > 0 ? (b(), g("span", NH, k(e.trans.get("less than")) + " " + k(e.$filters.digit(e.show_current_filter_video_count_max)), 1)) : T("", !0), S("a", {
+        }, [e.show_current_filter_video_count_min > 0 || e.show_current_filter_video_count_max > 0 ? (b(), g("button", jH, [S("strong", WH, k(e.trans.get("Videos")) + ":", 1), e.show_current_filter_video_count_min > 0 && e.show_current_filter_video_count_max > 0 ? (b(), g("span", OH, k(e.$filters.digit(e.show_current_filter_video_count_min)) + " " + k(e.trans.get("to")) + " " + k(e.$filters.digit(e.show_current_filter_video_count_max)), 1)) : e.show_current_filter_video_count_min > 0 && !e.show_current_filter_video_count_max ? (b(), g("span", VH, k(e.trans.get("more than")) + " " + k(e.$filters.digit(e.show_current_filter_video_count_min)), 1)) : !e.show_current_filter_video_count_min && e.show_current_filter_video_count_max > 0 ? (b(), g("span", NH, k(e.trans.get("less than")) + " " + k(e.$filters.digit(e.show_current_filter_video_count_max)), 1)) : T("", !0), S("a", {
             onClick: t[3] || (t[3] = t => e.clearFilter("video_count")),
             class: "search-results-settings-display-video-count-remove ms-1 text-decoration-none",
             href: "javascript:;"
@@ -23468,7 +23462,7 @@ const kW = At({
                 }]),
                 "onUpdate:modelValue": t[16] || (t[16] = t => e.current_filter_video_count_max = t),
                 name: "video_count_max"
-            }, null, 2), [[le, e.integer_format], [E, e.current_filter_video_count_max]])])])])) : T("", !0), e.current_permissions.show_digg_count_data ? (b(), g("div", Vj, [S("div", Oj, [S("label", Nj, k(e.trans.get("Diggs")), 1), S("div", Bj, [F(S("input", {
+            }, null, 2), [[le, e.integer_format], [E, e.current_filter_video_count_max]])])])])) : T("", !0), e.current_permissions.show_digg_count_data ? (b(), g("div", Oj, [S("div", Vj, [S("label", Nj, k(e.trans.get("Diggs")), 1), S("div", Bj, [F(S("input", {
                 placeholder: "min",
                 type: "text",
                 class: f(["form-control", {
@@ -23601,7 +23595,7 @@ const kW = At({
                     })
                 }, null, 8, pW)])),
                 _: 1
-            }, 8, ["current_permissions", "routes"]), M(V, {
+            }, 8, ["current_permissions", "routes"]), M(O, {
                 current_permissions: e.current_permissions,
                 current_filter_keyword_result_period: e.current_filter_keyword_result_period,
                 "onUpdate:current_filter_keyword_result_period": t[36] || (t[36] = t => e.current_filter_keyword_result_period = t),
@@ -23640,7 +23634,7 @@ const kW = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", wW, [M(Y, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", wW, [M(Y, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -23880,10 +23874,10 @@ const jW = At({
     WW = {
         class: "search-results-settings my-2"
     },
-    VW = {
+    OW = {
         class: "search-results-settings-display mx-n1"
     },
-    OW = {
+    VW = {
         key: 0,
         class: "row"
     },
@@ -23921,65 +23915,65 @@ const jW = At({
         key: 2,
         class: "row"
     },
-    eV = {
+    eO = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    tV = {
+    tO = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    rV = {
+    rO = {
         class: "row"
     },
-    sV = {
+    sO = {
         class: "col"
     },
-    aV = {
+    aO = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    oV = {
+    oO = {
         key: 1,
         class: "row"
     },
-    iV = {
+    iO = {
         class: "col-12 col-md-6"
     },
-    nV = {
+    nO = {
         class: "col-12 col-md-6"
     },
-    lV = {
+    lO = {
         class: "row"
     },
-    cV = {
+    cO = {
         class: "col-12"
     },
-    _V = {
+    _O = {
         class: "row"
     },
-    dV = {
+    dO = {
         class: "col-12"
     },
-    uV = ["innerHTML"],
-    mV = ["innerHTML"],
-    hV = {
+    uO = ["innerHTML"],
+    mO = ["innerHTML"],
+    hO = {
         class: "search-results-summary card my-4 bg-light"
     },
-    pV = {
+    pO = {
         class: "card-body"
     },
-    gV = {
+    gO = {
         class: "search-results-keywords my-3"
     },
-    yV = {
+    yO = {
         key: 0,
         class: "mb-4"
     },
-    wV = {
+    wO = {
         key: 1,
         class: "mb-4"
     };
-const fV = At({
+const fO = At({
         mixins: [jm],
         components: {
             "google-search-volume-summary": pp,
@@ -24111,7 +24105,7 @@ const fV = At({
             H = v("search-results-settings-admin-settings"),
             j = v("search-results-settings-modal"),
             W = v("search-results-tabs"),
-            V = v("has-error"),
+            O = v("has-error"),
             N = v("suggest-page-reload"),
             B = v("google-search-volume-summary"),
             R = v("show-upsell"),
@@ -24129,7 +24123,7 @@ const fV = At({
             se = v("search-results-actions");
         return b(), g("div", null, [M(i, {
             loading: e.loading
-        }, null, 8, ["loading"]), S("div", WW, [S("div", VW, [M(n, {
+        }, null, 8, ["loading"]), S("div", WW, [S("div", OW, [M(n, {
             onClearFilter: e.clearFilter,
             current_permissions: e.current_permissions,
             show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -24181,7 +24175,7 @@ const fV = At({
         }, {
             content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                 key: 0
-            }, [e.current_permissions.show_currency_settings ? (b(), g("div", OW, [S("div", NW, [S("h5", BW, k(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", RW, [S("div", KW, [S("div", JW, [S("label", zW, k(e.trans.get("Country")), 1), S("input", {
+            }, [e.current_permissions.show_currency_settings ? (b(), g("div", VW, [S("div", NW, [S("h5", BW, k(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", RW, [S("div", KW, [S("div", JW, [S("label", zW, k(e.trans.get("Country")), 1), S("input", {
                 disabled: "disabled",
                 class: "form-control",
                 type: "text",
@@ -24193,17 +24187,17 @@ const fV = At({
                 options: e.current_currency_list,
                 settings: {},
                 disabled: 4 == e.current_tab
-            }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", QW, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", eV, [M(f, {
+            }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", QW, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", eO, [M(f, {
                 current_network_list: e.current_network_list,
                 current_metrics_network: e.current_metrics_network,
                 "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", tV, [M(q, {
+            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", tO, [M(q, {
                 current_currency_list: e.current_currency_list,
                 current_metrics_currency: e.current_metrics_currency,
                 "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", rV, [S("div", sV, [S("h5", aV, k(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", oV, [S("div", iV, [M(E, {
+            }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", rO, [S("div", sO, [S("h5", aO, k(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", oO, [S("div", iO, [M(E, {
                 current_permissions: e.current_permissions,
                 search_volume_format: e.search_volume_format,
                 error_fields: e.error_fields,
@@ -24219,7 +24213,7 @@ const fV = At({
                 "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                 current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                 "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-            }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", nV, [M(U, {
+            }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", nO, [M(U, {
                 current_permissions: e.current_permissions,
                 average_cpc_format: e.average_cpc_format,
                 error_fields: e.error_fields,
@@ -24241,7 +24235,7 @@ const fV = At({
                 "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                 current_filter_competition_max: e.current_filter_competition_max,
                 "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-            }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", lV, [S("div", cV, [M($, {
+            }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", lO, [S("div", cO, [M($, {
                 onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                 current_remain_filter_keywords: e.current_remain_filter_keywords,
                 error_fields: e.error_fields,
@@ -24250,7 +24244,7 @@ const fV = At({
                 "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                 current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                 "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", _V, [S("div", dV, [M(D, {
+            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", _O, [S("div", dO, [M(D, {
                 onCheckDuplicate: e.checkDuplicate,
                 current_remain_negative_keywords: e.current_remain_negative_keywords,
                 error_fields: e.error_fields,
@@ -24264,12 +24258,12 @@ const fV = At({
                     innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                         count_free: 5
                     })
-                }, null, 8, uV)])),
+                }, null, 8, uO)])),
                 linktext: C((() => [S("span", {
                     innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                         count_pro: "2,000"
                     })
-                }, null, 8, mV)])),
+                }, null, 8, mO)])),
                 _: 1
             }, 8, ["current_permissions", "routes"]), M(H, {
                 current_permissions: e.current_permissions,
@@ -24288,7 +24282,7 @@ const fV = At({
             tabs: e.tabs,
             current_tab: e.current_tab,
             loading: e.loading
-        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(V, {
+        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(O, {
             key: 0,
             user_is_paid: e.user_is_paid,
             has_metrics: e.has_metrics,
@@ -24296,7 +24290,7 @@ const fV = At({
             current_tab: e.current_tab
         }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), M(N, {
             suggest_page_reload: e.suggest_page_reload
-        }, null, 8, ["suggest_page_reload"]), F(S("div", hV, [S("div", pV, [M(B, {
+        }, null, 8, ["suggest_page_reload"]), F(S("div", hO, [S("div", pO, [M(B, {
             loading: e.loading,
             current_tab: e.current_tab,
             summaries: e.summaries,
@@ -24310,7 +24304,7 @@ const fV = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", gV, [M(J, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", gO, [M(J, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -24353,7 +24347,7 @@ const fV = At({
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
         }, {
-            message: C((() => [7 == e.current_tab ? (b(), g("h4", yV, k(e.trans.get("Sorry, Twitter does not provide any hashtags for your query")), 1)) : (b(), g("h4", wV, k(e.trans.get("Sorry, Twitter does not provide any keyword suggestions for your query")), 1))])),
+            message: C((() => [7 == e.current_tab ? (b(), g("h4", yO, k(e.trans.get("Sorry, Twitter does not provide any hashtags for your query")), 1)) : (b(), g("h4", wO, k(e.trans.get("Sorry, Twitter does not provide any keyword suggestions for your query")), 1))])),
             _: 1
         }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), M(G, {
             onMore: e.more,
@@ -24397,13 +24391,13 @@ const fV = At({
             _: 1
         }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
     }]]),
-    bV = {
+    bO = {
         class: "row g-0 me-lg-n1px"
     },
-    kV = {
+    kO = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const vV = At({
+const vO = At({
         mixins: [Mx],
         components: {},
         data: () => ({
@@ -24415,7 +24409,7 @@ const vV = At({
         async created() {}
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
-        return b(), g("div", bV, [S("div", kV, [M(i, {
+        return b(), g("div", bO, [S("div", kO, [M(i, {
             disabled: e.loading,
             id: "keyword_language_" + e.id,
             options: e.language_options,
@@ -24435,16 +24429,16 @@ const vV = At({
             "onUpdate:modelValue": t[2] || (t[2] = t => e.language = t)
         }, null, 512), [[E, e.language]])])])
     }]]),
-    xV = {
+    xO = {
         class: "row g-0 me-lg-n1px"
     },
-    CV = {
+    CO = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    SV = {
+    SO = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const TV = At({
+const TO = At({
         mixins: [Px],
         components: {},
         data: () => ({
@@ -24462,7 +24456,7 @@ const TV = At({
         methods: {}
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
-        return b(), g("div", xV, [S("div", CV, [M(i, {
+        return b(), g("div", xO, [S("div", CO, [M(i, {
             disabled: e.loading,
             id: "country_" + e.id,
             options: e.locations_options,
@@ -24476,7 +24470,7 @@ const TV = At({
             type: "hidden",
             name: "country",
             "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
-        }, null, 512), [[E, e.country]])]), S("div", SV, [M(i, {
+        }, null, 512), [[E, e.country]])]), S("div", SO, [M(i, {
             disabled: e.loading,
             id: "language_" + e.id,
             options: e.language_options,
@@ -24488,35 +24482,35 @@ const TV = At({
             placeholder: e.trans.get("Type a language")
         }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
     }]]),
-    FV = ["value"],
-    qV = ["value"],
-    MV = {
+    FO = ["value"],
+    qO = ["value"],
+    MO = {
         key: 2,
         class: "row"
     },
-    EV = {
+    EO = {
         class: "col-12"
     },
-    LV = {
+    LO = {
         class: "check-search-volume-settings-country mb-3"
     },
-    UV = {
+    UO = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    AV = {
+    AO = {
         key: 3,
         class: "row"
     },
-    PV = {
+    PO = {
         class: "col-12"
     },
-    $V = {
+    $O = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    DV = {
+    DO = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const IV = At({
+const IO = At({
         mixins: [jx]
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
@@ -24525,12 +24519,12 @@ const IV = At({
             name: "metrics_country",
             type: "hidden",
             value: e.country
-        }, null, 8, FV)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+        }, null, 8, FO)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
             key: 1,
             name: "metrics_currency",
             type: "hidden",
             value: e.currency
-        }, null, 8, qV)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", MV, [S("div", EV, [S("div", LV, [S("label", UV, k(e.trans.get("Country")), 1), M(i, {
+        }, null, 8, qO)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", MO, [S("div", EO, [S("div", LO, [S("label", UO, k(e.trans.get("Country")), 1), M(i, {
             options: e.current_country_list,
             settings: e.country_settings,
             class: "check-search-volume-settings-country-value",
@@ -24538,7 +24532,7 @@ const IV = At({
             "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
             "model-value": e.current_metrics_country,
             placeholder: e.trans.get("Type a country")
-        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", AV, [S("div", PV, [S("div", $V, [S("label", DV, k(e.trans.get("Currency")), 1), M(i, {
+        }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", AO, [S("div", PO, [S("div", $O, [S("label", DO, k(e.trans.get("Currency")), 1), M(i, {
             options: e.current_currency_list,
             settings: e.currency_settings,
             class: "check-search-volume-settings-currency-value",
@@ -24548,128 +24542,128 @@ const IV = At({
             placeholder: e.trans.get("Type a currency")
         }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
     }]]),
-    HV = {
+    HO = {
         class: "search-results-settings my-2"
     },
-    jV = {
+    jO = {
         class: "search-results-settings-display mx-n1"
     },
-    WV = {
+    WO = {
         key: 0,
         class: "row"
     },
-    VV = {
+    OO = {
         class: "col"
     },
-    OV = {
+    VO = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    NV = {
+    NO = {
         key: 1,
         class: "row"
     },
-    BV = {
+    BO = {
         class: "col-12 col-md-6"
     },
-    RV = {
+    RO = {
         class: "search-results-settings-modal-country mb-3"
     },
-    KV = {
+    KO = {
         class: "form-label search-results-settings-modal-country-label"
     },
-    JV = ["value"],
-    zV = {
+    JO = ["value"],
+    zO = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    GV = {
+    GO = {
         class: "search-results-settings-modal-currency mb-3"
     },
-    YV = {
+    YO = {
         class: "form-label search-results-settings-modal-currency-label"
     },
-    ZV = {
+    ZO = {
         key: 2,
         class: "row"
     },
-    XV = {
+    XO = {
         key: 0,
         class: "col-12 col-md-6"
     },
-    QV = {
+    QO = {
         key: 1,
         class: "col-12 col-md-6"
     },
-    eO = {
+    eV = {
         class: "row"
     },
-    tO = {
+    tV = {
         class: "col"
     },
-    rO = {
+    rV = {
         class: "search-results-settings-modal-header my-3 pb-1 border-bottom"
     },
-    sO = {
+    sV = {
         key: 1,
         class: "row"
     },
-    aO = {
+    aV = {
         class: "col-12 col-md-6"
     },
-    oO = {
+    oV = {
         class: "col-12 col-md-6"
     },
-    iO = {
+    iV = {
         class: "row"
     },
-    nO = {
+    nV = {
         class: "col-12"
     },
-    lO = {
+    lV = {
         class: "row"
     },
-    cO = {
+    cV = {
         class: "col-12"
     },
-    _O = {
+    _V = {
         key: 2,
         class: "row"
     },
-    dO = {
+    dV = {
         class: "col-12"
     },
-    uO = ["innerHTML"],
-    mO = ["innerHTML"],
-    hO = {
+    uV = ["innerHTML"],
+    mV = ["innerHTML"],
+    hV = {
         class: "search-results-summary card my-4 bg-light"
     },
-    pO = {
+    pV = {
         class: "card-body"
     },
-    gO = ["innerHTML"],
-    yO = ["innerHTML"],
-    wO = ["innerHTML"],
-    fO = ["innerHTML"],
-    bO = {
+    gV = ["innerHTML"],
+    yV = ["innerHTML"],
+    wV = ["innerHTML"],
+    fV = ["innerHTML"],
+    bV = {
         class: "search-results-keywords my-3"
     },
-    kO = {
+    kV = {
         key: 0,
         class: "mb-4"
     },
-    vO = {
+    vV = {
         key: 1,
         class: "mb-4"
     },
-    xO = {
+    xV = {
         key: 2,
         class: "mb-4"
     },
-    CO = {
+    CV = {
         key: 3,
         class: "mb-4"
     };
-const SO = At({
+const SV = At({
         mixins: [jm, hL],
         components: {
             "google-search-volume-summary": pp,
@@ -24811,7 +24805,7 @@ const SO = At({
             H = v("search-results-settings-filter-exclude-seed-keyword"),
             j = v("alert-pro-upsell"),
             W = v("search-results-settings-admin-settings"),
-            V = v("search-results-settings-modal"),
+            O = v("search-results-settings-modal"),
             N = v("search-results-tabs"),
             B = v("has-error"),
             R = v("suggest-page-reload"),
@@ -24831,7 +24825,7 @@ const SO = At({
             oe = v("search-results-actions");
         return b(), g("div", null, [M(i, {
             loading: e.loading
-        }, null, 8, ["loading"]), S("div", HV, [S("div", jV, ["English" == e.selected_language && 7 != e.current_tab ? (b(), x(n, {
+        }, null, 8, ["loading"]), S("div", HO, [S("div", jO, ["English" == e.selected_language && 7 != e.current_tab ? (b(), x(n, {
             key: 0,
             onClearFilter: e.clearFilter,
             current_exclude_seed_keyword: e.current_exclude_seed_keyword
@@ -24878,7 +24872,7 @@ const SO = At({
             show_current_split_negative_keywords: e.show_current_split_negative_keywords,
             show_display_filter_negative_keywords: e.show_display_filter_negative_keywords,
             onClearFilter: e.clearFilter
-        }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), M(V, {
+        }, null, 8, ["show_current_split_negative_keywords", "show_display_filter_negative_keywords", "onClearFilter"])]), M(O, {
             onResetFilter: e.resetFilter,
             onApplyFilter: e.applyFilter,
             filter_counter: e.filter_counter,
@@ -24887,29 +24881,29 @@ const SO = At({
         }, {
             content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                 key: 0
-            }, [e.current_permissions.show_currency_settings ? (b(), g("div", WV, [S("div", VV, [S("h5", OV, k(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", NV, [S("div", BV, [S("div", RV, [S("label", KV, k(e.trans.get("Country")), 1), S("input", {
+            }, [e.current_permissions.show_currency_settings ? (b(), g("div", WO, [S("div", OO, [S("h5", VO, k(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", NO, [S("div", BO, [S("div", RO, [S("label", KO, k(e.trans.get("Country")), 1), S("input", {
                 disabled: "disabled",
                 class: "form-control",
                 type: "text",
                 value: e.selected_country_language_name
-            }, null, 8, JV)])]), e.current_permissions.show_currency_settings ? (b(), g("div", zV, [S("div", GV, [S("label", YV, k(e.trans.get("Currency")), 1), M(f, {
+            }, null, 8, JO)])]), e.current_permissions.show_currency_settings ? (b(), g("div", zO, [S("div", GO, [S("label", YO, k(e.trans.get("Currency")), 1), M(f, {
                 id: "metrics_currency_selection",
                 class: "search-results-settings-modal-currency-value",
                 "model-value": e.current_metrics_currency,
                 options: e.current_currency_list,
                 settings: {},
                 disabled: 4 == e.current_tab
-            }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", ZV, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", XV, [M(q, {
+            }, null, 8, ["model-value", "options", "disabled"])])])) : T("", !0)])) : (b(), g("div", ZO, [e.current_metrics_is_estimated ? T("", !0) : (b(), g("div", XO, [M(q, {
                 current_network_list: e.current_network_list,
                 current_metrics_network: e.current_metrics_network,
                 "onUpdate:current_metrics_network": t[0] || (t[0] = t => e.current_metrics_network = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", QV, [M(E, {
+            }, null, 8, ["current_network_list", "current_metrics_network", "disabled"])])), e.current_permissions.show_currency_settings ? (b(), g("div", QO, [M(E, {
                 current_currency_list: e.current_currency_list,
                 current_metrics_currency: e.current_metrics_currency,
                 "onUpdate:current_metrics_currency": t[1] || (t[1] = t => e.current_metrics_currency = t),
                 disabled: 4 == e.current_tab
-            }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", eO, [S("div", tO, [S("h5", rO, k(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", sO, [S("div", aO, [M(L, {
+            }, null, 8, ["current_currency_list", "current_metrics_currency", "disabled"])])) : T("", !0)]))], 64)) : T("", !0), S("div", eV, [S("div", tV, [S("h5", rV, k(e.trans.get("Filter Results")), 1)])]), e.current_permissions.show_search_volume_data || e.current_permissions.show_cpc_data || e.current_permissions.show_competition_data ? (b(), g("div", sV, [S("div", aV, [M(L, {
                 current_permissions: e.current_permissions,
                 search_volume_format: e.search_volume_format,
                 error_fields: e.error_fields,
@@ -24925,7 +24919,7 @@ const SO = At({
                 "onUpdate:current_filter_search_volume_trend_min": t[4] || (t[4] = t => e.current_filter_search_volume_trend_min = t),
                 current_filter_search_volume_trend_max: e.current_filter_search_volume_trend_max,
                 "onUpdate:current_filter_search_volume_trend_max": t[5] || (t[5] = t => e.current_filter_search_volume_trend_max = t)
-            }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", oO, [M(A, {
+            }, null, 8, ["current_permissions", "search_volume_trend_format", "error_fields", "current_filter_search_volume_trend_min", "current_filter_search_volume_trend_max"])]), S("div", oV, [M(A, {
                 current_permissions: e.current_permissions,
                 average_cpc_format: e.average_cpc_format,
                 error_fields: e.error_fields,
@@ -24947,7 +24941,7 @@ const SO = At({
                 "onUpdate:current_filter_competition_min": t[9] || (t[9] = t => e.current_filter_competition_min = t),
                 current_filter_competition_max: e.current_filter_competition_max,
                 "onUpdate:current_filter_competition_max": t[10] || (t[10] = t => e.current_filter_competition_max = t)
-            }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", iO, [S("div", nO, [M(D, {
+            }, null, 8, ["current_permissions", "competition_format", "error_fields", "current_filter_competition_min", "current_filter_competition_max"]))])])) : T("", !0), S("div", iV, [S("div", nV, [M(D, {
                 onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                 current_remain_filter_keywords: e.current_remain_filter_keywords,
                 error_fields: e.error_fields,
@@ -24956,13 +24950,13 @@ const SO = At({
                 "onUpdate:current_filter_keywords": t[11] || (t[11] = t => e.current_filter_keywords = t),
                 current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                 "onUpdate:current_filter_keywords_partial_match": t[12] || (t[12] = t => e.current_filter_keywords_partial_match = t)
-            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", lO, [S("div", cO, [M(I, {
+            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", lV, [S("div", cV, [M(I, {
                 onCheckDuplicate: e.checkDuplicate,
                 current_remain_negative_keywords: e.current_remain_negative_keywords,
                 error_fields: e.error_fields,
                 current_negative_keywords: e.current_negative_keywords,
                 "onUpdate:current_negative_keywords": t[13] || (t[13] = t => e.current_negative_keywords = t)
-            }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), "English" == e.selected_language && 7 != e.current_tab ? (b(), g("div", _O, [S("div", dO, [M(H, {
+            }, null, 8, ["onCheckDuplicate", "current_remain_negative_keywords", "error_fields", "current_negative_keywords"])])]), "English" == e.selected_language && 7 != e.current_tab ? (b(), g("div", _V, [S("div", dV, [M(H, {
                 current_exclude_seed_keyword: e.current_exclude_seed_keyword,
                 "onUpdate:current_exclude_seed_keyword": t[14] || (t[14] = t => e.current_exclude_seed_keyword = t)
             }, null, 8, ["current_exclude_seed_keyword"])])])) : T("", !0), M(j, {
@@ -24973,12 +24967,12 @@ const SO = At({
                     innerHTML: e.trans.get("Need to add more than :count_free negative keywords?", {
                         count_free: 5
                     })
-                }, null, 8, uO)])),
+                }, null, 8, uV)])),
                 linktext: C((() => [S("span", {
                     innerHTML: e.trans.get("Try Keyword Tool Pro to use up to :count_pro negative keywords for every search!", {
                         count_pro: "2,000"
                     })
-                }, null, 8, mO)])),
+                }, null, 8, mV)])),
                 _: 1
             }, 8, ["current_permissions", "routes"]), M(W, {
                 current_permissions: e.current_permissions,
@@ -25005,7 +24999,7 @@ const SO = At({
             current_tab: e.current_tab
         }, null, 8, ["user_is_paid", "has_metrics", "onFetch", "current_tab"])), M(R, {
             suggest_page_reload: e.suggest_page_reload
-        }, null, 8, ["suggest_page_reload"]), F(S("div", hO, [S("div", pO, [M(K, {
+        }, null, 8, ["suggest_page_reload"]), F(S("div", hV, [S("div", pV, [M(K, {
             loading: e.loading,
             current_tab: e.current_tab,
             show_google_trends_chart: a.show_google_trends_chart,
@@ -25025,22 +25019,22 @@ const SO = At({
             lead: C((() => [S("p", {
                 class: "mb-0",
                 innerHTML: e.trans.get("Want More YouTube Views?")
-            }, null, 8, gO), S("p", {
+            }, null, 8, gV), S("p", {
                 innerHTML: e.trans.get("Use Keyword Tool Pro To Find The Most Popular YouTube Keywords!")
-            }, null, 8, yO)])),
+            }, null, 8, yV)])),
             noopener: C((() => [e.current_permissions.is_free_trial || !e.current_permissions.allow_free_trial ? (b(), g("span", {
                 key: 0,
                 class: "fw-bold",
                 innerHTML: e.trans.get("Start Subscription Now")
-            }, null, 8, wO)) : (b(), g("span", {
+            }, null, 8, wV)) : (b(), g("span", {
                 key: 1,
                 class: "fw-bold",
                 innerHTML: e.trans.get("Start :days-Day Free Trial", {
                     days: r.free_trial_days
                 })
-            }, null, 8, fO))])),
+            }, null, 8, fV))])),
             _: 1
-        }, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", bO, [M(G, {
+        }, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", bV, [M(G, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -25083,7 +25077,7 @@ const SO = At({
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
         }, {
-            message: C((() => [3 == e.current_tab ? (b(), g("h4", kO, k(e.trans.get("Sorry, YouTube does not provide any questions for your query")), 1)) : 6 == e.current_tab ? (b(), g("h4", vO, k(e.trans.get("Sorry, YouTube does not provide any prepositions for your query")), 1)) : 7 == e.current_tab ? (b(), g("h4", xO, k(e.trans.get("Sorry, YouTube does not provide any hashtags for your query")), 1)) : (b(), g("h4", CO, k(e.trans.get("Sorry, YouTube does not provide any keyword suggestions for your query")), 1))])),
+            message: C((() => [3 == e.current_tab ? (b(), g("h4", kV, k(e.trans.get("Sorry, YouTube does not provide any questions for your query")), 1)) : 6 == e.current_tab ? (b(), g("h4", vV, k(e.trans.get("Sorry, YouTube does not provide any prepositions for your query")), 1)) : 7 == e.current_tab ? (b(), g("h4", xV, k(e.trans.get("Sorry, YouTube does not provide any hashtags for your query")), 1)) : (b(), g("h4", CV, k(e.trans.get("Sorry, YouTube does not provide any keyword suggestions for your query")), 1))])),
             _: 1
         }, 8, ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"]), M(Z, {
             onMore: e.more,
@@ -25127,13 +25121,13 @@ const SO = At({
             _: 1
         }, 8, ["loading", "all_keywords", "total_keywords", "selected", "allow_keyword_basket", "has_error", "has_all_error"])])
     }]]),
-    TO = {
+    TV = {
         class: "row g-0 me-lg-n1px"
     },
-    FO = {
+    FV = {
         class: "col col-md-12 my-1 me-lg-n1px"
     };
-const qO = At({
+const qV = At({
         mixins: [Mx],
         components: {},
         data: () => ({
@@ -25145,7 +25139,7 @@ const qO = At({
         async created() {}
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
-        return b(), g("div", TO, [S("div", FO, [M(i, {
+        return b(), g("div", TV, [S("div", FV, [M(i, {
             disabled: e.loading,
             id: "keyword_language_" + e.id,
             options: e.language_options,
@@ -25165,16 +25159,16 @@ const qO = At({
             "onUpdate:modelValue": t[2] || (t[2] = t => e.language = t)
         }, null, 512), [[E, e.language]])])])
     }]]),
-    MO = {
+    MV = {
         class: "row g-0 me-lg-n1px"
     },
-    EO = {
+    EV = {
         class: "col-12 col-md-7 my-1 me-n1px"
     },
-    LO = {
+    LV = {
         class: "col col-md-5 my-1 me-lg-n1px"
     };
-const UO = At({
+const UV = At({
         mixins: [Px],
         components: {},
         data: () => ({
@@ -25192,7 +25186,7 @@ const UO = At({
         methods: {}
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
-        return b(), g("div", MO, [S("div", EO, [M(i, {
+        return b(), g("div", MV, [S("div", EV, [M(i, {
             disabled: e.loading,
             id: "country_" + e.id,
             options: e.locations_options,
@@ -25206,7 +25200,7 @@ const UO = At({
             type: "hidden",
             name: "country",
             "onUpdate:modelValue": t[1] || (t[1] = t => e.country = t)
-        }, null, 512), [[E, e.country]])]), S("div", LO, [M(i, {
+        }, null, 512), [[E, e.country]])]), S("div", LV, [M(i, {
             disabled: e.loading,
             id: "language_" + e.id,
             options: e.language_options,
@@ -25218,35 +25212,35 @@ const UO = At({
             placeholder: e.trans.get("Type a language")
         }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])])])
     }]]),
-    AO = ["value"],
-    PO = ["value"],
-    $O = {
+    AV = ["value"],
+    PV = ["value"],
+    $V = {
         key: 2,
         class: "row"
     },
-    DO = {
+    DV = {
         class: "col-12"
     },
-    IO = {
+    IV = {
         class: "check-search-volume-settings-country mb-3"
     },
-    HO = {
+    HV = {
         class: "form-label check-search-volume-settings-country-label"
     },
-    jO = {
+    jV = {
         key: 3,
         class: "row"
     },
-    WO = {
+    WV = {
         class: "col-12"
     },
-    VO = {
+    OV = {
         class: "check-search-volume-settings-currency mb-3"
     },
-    OO = {
+    VV = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const NO = At({
+const NV = At({
     mixins: [jx]
 }, [["render", function(e, t, r, s, a, o) {
     const i = v("tom-select");
@@ -25255,12 +25249,12 @@ const NO = At({
         name: "metrics_country",
         type: "hidden",
         value: e.country
-    }, null, 8, AO)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
+    }, null, 8, AV)) : T("", !0), e.permissions.show_currency_settings ? (b(), g("input", {
         key: 1,
         name: "metrics_currency",
         type: "hidden",
         value: e.currency
-    }, null, 8, PO)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", $O, [S("div", DO, [S("div", IO, [S("label", HO, k(e.trans.get("Country")), 1), M(i, {
+    }, null, 8, PV)) : T("", !0), e.current_country_list.length && e.permissions.show_search_location_settings ? (b(), g("div", $V, [S("div", DV, [S("div", IV, [S("label", HV, k(e.trans.get("Country")), 1), M(i, {
         options: e.current_country_list,
         settings: e.country_settings,
         class: "check-search-volume-settings-country-value",
@@ -25268,7 +25262,7 @@ const NO = At({
         "onUpdate:modelValue": t[0] || (t[0] = t => e.current_metrics_country = t),
         "model-value": e.current_metrics_country,
         placeholder: e.trans.get("Type a country")
-    }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", jO, [S("div", WO, [S("div", VO, [S("label", OO, k(e.trans.get("Currency")), 1), M(i, {
+    }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0), e.current_currency_list.length && e.permissions.show_currency_settings ? (b(), g("div", jV, [S("div", WV, [S("div", OV, [S("label", VV, k(e.trans.get("Currency")), 1), M(i, {
         options: e.current_currency_list,
         settings: e.currency_settings,
         class: "check-search-volume-settings-currency-value",
@@ -25278,7 +25272,7 @@ const NO = At({
         placeholder: e.trans.get("Type a currency")
     }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
 }]]);
-const BO = At({
+const BV = At({
         mixins: [Dm],
         components: {},
         props: ["preoptions"],
@@ -25306,34 +25300,34 @@ const BO = At({
             placeholder: e.trans.get("Type a category")
         }, null, 8, ["disabled", "id", "options", "settings", "model-value", "placeholder"])
     }]]),
-    RO = {
+    RV = {
         class: "search-results-settings my-2"
     },
-    KO = {
+    KV = {
         class: "search-results-settings-display mx-n1"
     },
-    JO = {
+    JV = {
         key: 0,
         class: "row"
     },
-    zO = {
+    zV = {
         class: "col"
     },
-    GO = {
+    GV = {
         class: "search-results-settings-modal-header mb-3 pb-1 border-bottom"
     },
-    YO = {
+    YV = {
         key: 1,
         class: "row"
     },
-    ZO = {
+    ZV = {
         class: "col-12 col-md-6"
     },
-    XO = {
+    XV = {
         key: 0,
         class: "search-results-settings-modal-country mb-3"
     },
-    QO = {
+    QV = {
         class: "form-label search-results-settings-modal-country-label"
     },
     eN = ["value"],
@@ -25474,7 +25468,7 @@ const xN = At({
             H = v("search-results-settings-admin-settings"),
             j = v("search-results-settings-modal"),
             W = v("search-results-tabs"),
-            V = v("has-error"),
+            O = v("has-error"),
             N = v("suggest-page-reload"),
             B = v("google-search-volume-summary"),
             R = v("show-upsell"),
@@ -25492,7 +25486,7 @@ const xN = At({
             se = v("search-results-actions");
         return b(), g("div", null, [M(i, {
             loading: e.loading
-        }, null, 8, ["loading"]), S("div", RO, [S("div", KO, [M(n, {
+        }, null, 8, ["loading"]), S("div", RV, [S("div", KV, [M(n, {
             onClearFilter: e.clearFilter,
             current_permissions: e.current_permissions,
             show_current_filter_keyword_result_period: e.show_current_filter_keyword_result_period,
@@ -25544,7 +25538,7 @@ const xN = At({
         }, {
             content: C((() => [e.current_permissions.show_search_volume_data ? (b(), g(y, {
                 key: 0
-            }, [e.current_permissions.show_currency_settings ? (b(), g("div", JO, [S("div", zO, [S("h5", GO, k(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", YO, [S("div", ZO, [4 == e.current_tab ? (b(), g("div", XO, [S("label", QO, k(e.trans.get("Country")), 1), S("input", {
+            }, [e.current_permissions.show_currency_settings ? (b(), g("div", JV, [S("div", zV, [S("h5", GV, k(e.trans.get("Search Volume Settings")), 1)])])) : T("", !0), 4 == e.current_tab ? (b(), g("div", YV, [S("div", ZV, [4 == e.current_tab ? (b(), g("div", XV, [S("label", QV, k(e.trans.get("Country")), 1), S("input", {
                 disabled: "disabled",
                 class: "form-control",
                 type: "text",
@@ -25651,7 +25645,7 @@ const xN = At({
             tabs: e.tabs,
             current_tab: e.current_tab,
             loading: e.loading
-        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(V, {
+        }, null, 8, ["onApplyTab", "tabs", "current_tab", "loading"]), e.loading || !e.has_error && !e.has_all_error ? T("", !0) : (b(), x(O, {
             key: 0,
             user_is_paid: e.user_is_paid,
             has_metrics: e.has_metrics,
@@ -25673,7 +25667,7 @@ const xN = At({
             selected_language_name: e.selected_language_name,
             current_permissions: e.current_permissions,
             free_trial_days: r.free_trial_days
-        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", kN, [M(J, {
+        }, null, 8, ["routes", "selected_language_name", "current_permissions", "free_trial_days"])) : T("", !0)])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", kN, [M(J, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics
@@ -25879,7 +25873,7 @@ const EN = At({
     WN = {
         class: "form-label check-search-volume-settings-currency-label"
     };
-const VN = At({
+const ON = At({
         mixins: [jx]
     }, [["render", function(e, t, r, s, a, o) {
         const i = v("tom-select");
@@ -25911,7 +25905,7 @@ const VN = At({
             placeholder: e.trans.get("Type a currency")
         }, null, 8, ["options", "settings", "model-value", "placeholder"])])])])) : T("", !0)])
     }]]),
-    ON = {
+    VN = {
         key: 0,
         class: "dropdown-search-engines dropdown d-lg-none d-xl-none my-2"
     },
@@ -26090,10 +26084,10 @@ const VN = At({
     WB = {
         class: "row"
     },
-    VB = {
+    OB = {
         class: "col-12"
     },
-    OB = {
+    VB = {
         class: "row"
     },
     NB = {
@@ -26535,7 +26529,7 @@ const eR = At({
             H = v("search-results-settings-modal-bing-competition"),
             j = v("search-results-settings-modal-competition"),
             W = v("search-results-settings-filter-positive-keywords"),
-            V = v("search-results-settings-filter-negative-keywords"),
+            O = v("search-results-settings-filter-negative-keywords"),
             N = v("search-results-settings-modal"),
             B = v("suggest-page-reload"),
             R = v("bing-search-volume-summary"),
@@ -26555,7 +26549,7 @@ const eR = At({
             oe = D("mask");
         return b(), g("div", null, [M(i, {
             loading: e.loading
-        }, null, 8, ["loading"]), a.current_sub_tabs ? (b(), g("div", ON, [S("a", NN, [S("span", {
+        }, null, 8, ["loading"]), a.current_sub_tabs ? (b(), g("div", VN, [S("a", NN, [S("span", {
             innerHTML: a.current_sub_tab_item.icon
         }, null, 8, BN), S("span", RN, k(a.current_sub_tab_item.title), 1)]), S("div", KN, [(b(!0), g(y, null, w(a.current_sub_tabs, ((r, s) => (b(), g("a", {
             key: s,
@@ -26753,7 +26747,7 @@ const eR = At({
                 }]),
                 "onUpdate:modelValue": t[17] || (t[17] = t => e.current_filter_high_top_page_bid_max = t),
                 name: "high_top_page_bid_max"
-            }, null, 2), [[oe, e.high_top_page_bid_format], [E, e.current_filter_high_top_page_bid_max]])])])) : T("", !0)])) : T("", !0)])) : T("", !0)], 64)) : T("", !0), S("div", WB, [S("div", VB, [M(W, {
+            }, null, 2), [[oe, e.high_top_page_bid_format], [E, e.current_filter_high_top_page_bid_max]])])])) : T("", !0)])) : T("", !0)])) : T("", !0)], 64)) : T("", !0), S("div", WB, [S("div", OB, [M(W, {
                 onCheckFilterKeywordDuplicate: e.checkFilterKeywordDuplicate,
                 current_remain_filter_keywords: e.current_remain_filter_keywords,
                 error_fields: e.error_fields,
@@ -26762,7 +26756,7 @@ const eR = At({
                 "onUpdate:current_filter_keywords": t[18] || (t[18] = t => e.current_filter_keywords = t),
                 current_filter_keywords_partial_match: e.current_filter_keywords_partial_match,
                 "onUpdate:current_filter_keywords_partial_match": t[19] || (t[19] = t => e.current_filter_keywords_partial_match = t)
-            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", OB, [S("div", NB, [M(V, {
+            }, null, 8, ["onCheckFilterKeywordDuplicate", "current_remain_filter_keywords", "error_fields", "allow_partial_match", "current_filter_keywords", "current_filter_keywords_partial_match"])])]), S("div", VB, [S("div", NB, [M(O, {
                 onCheckDuplicate: e.checkDuplicate,
                 current_remain_negative_keywords: e.current_remain_negative_keywords,
                 error_fields: e.error_fields,
@@ -26796,7 +26790,7 @@ const eR = At({
             current_filter_location: e.current_filter_location,
             current_filter_language: e.current_filter_language,
             show_settings_button: !0
-        }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_filter_currency", "current_filter_location", "current_filter_language"]))])], 512), [[O, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", KB, [M(G, {
+        }, null, 8, ["loading", "current_tab", "summaries", "pie_summaries", "show_pie_chart", "current_permissions", "current_filter_currency", "current_filter_location", "current_filter_language"]))])], 512), [[V, e.summaries && e.summaries.total_keywords > 0 && !e.summaries.hide]]), S("div", KB, [M(G, {
             loading: e.loading,
             has_keywords: e.has_keywords,
             has_metrics: e.has_metrics,
@@ -27095,7 +27089,7 @@ const kR = At({
             }
         })]), S("td", null, [S("span", {
             innerHTML: e.trans.get("It seems like it is taking too long to load. Please refresh the page to retry.")
-        }, null, 8, bR)])])])], 512)), [[O, r.suggest_page_reload]])
+        }, null, 8, bR)])])])], 512)), [[V, r.suggest_page_reload]])
     }]]),
     vR = {
         class: "row"
@@ -27131,8 +27125,8 @@ const kR = At({
     HR = ["innerHTML"],
     jR = ["href"],
     WR = ["innerHTML"],
-    VR = ["innerHTML"];
-const OR = At({
+    OR = ["innerHTML"];
+const VR = At({
         components: {
             ArrowRightEndOnRectangleIcon: ae
         },
@@ -27219,7 +27213,7 @@ const OR = At({
             innerHTML: e.trans.get("Start :days-Day Free Trial", {
                 days: r.free_trial_days
             })
-        }, null, 8, VR))]))], 8, jR)], 64)) : (b(), g(y, {
+        }, null, 8, OR))]))], 8, jR)], 64)) : (b(), g(y, {
             key: 0
         }, [S("h4", {
             class: "card-title",
@@ -27537,10 +27531,10 @@ const jK = At({
         type: "button",
         class: "btn-search-results-settings-display-average-cpc btn btn-sm btn-outline-primary disabled cursor-default my-1 mx-1"
     },
-    VK = {
+    OK = {
         class: "search-results-settings-display-average-cpc-label me-1"
     },
-    OK = {
+    VK = {
         key: 0,
         class: "search-results-settings-display-average-cpc-value"
     },
@@ -27556,7 +27550,7 @@ const RK = At({
         props: ["current_permissions", "show_current_filter_average_cpc_min", "show_current_filter_average_cpc_max"],
         data: () => ({})
     }, [["render", function(e, t, r, s, a, o) {
-        return r.current_permissions.show_cpc_data && (r.show_current_filter_average_cpc_min > 0 || r.show_current_filter_average_cpc_max > 0) ? (b(), g("button", WK, [S("strong", VK, k(e.trans.get("Average CPC")) + ":", 1), r.show_current_filter_average_cpc_min > 0 && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", OK, k(e.$filters.decimal(r.show_current_filter_average_cpc_min)) + " " + k(e.trans.get("to")) + " " + k(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : r.show_current_filter_average_cpc_min > 0 && !r.show_current_filter_average_cpc_max ? (b(), g("span", NK, k(e.trans.get("more than")) + " " + k(e.$filters.decimal(r.show_current_filter_average_cpc_min)), 1)) : !r.show_current_filter_average_cpc_min && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", BK, k(e.trans.get("less than")) + " " + k(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : T("", !0), S("a", {
+        return r.current_permissions.show_cpc_data && (r.show_current_filter_average_cpc_min > 0 || r.show_current_filter_average_cpc_max > 0) ? (b(), g("button", WK, [S("strong", OK, k(e.trans.get("Average CPC")) + ":", 1), r.show_current_filter_average_cpc_min > 0 && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", VK, k(e.$filters.decimal(r.show_current_filter_average_cpc_min)) + " " + k(e.trans.get("to")) + " " + k(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : r.show_current_filter_average_cpc_min > 0 && !r.show_current_filter_average_cpc_max ? (b(), g("span", NK, k(e.trans.get("more than")) + " " + k(e.$filters.decimal(r.show_current_filter_average_cpc_min)), 1)) : !r.show_current_filter_average_cpc_min && r.show_current_filter_average_cpc_max > 0 ? (b(), g("span", BK, k(e.trans.get("less than")) + " " + k(e.$filters.decimal(r.show_current_filter_average_cpc_max)), 1)) : T("", !0), S("a", {
             onClick: t[0] || (t[0] = t => e.$emit("clearFilter", "average_cpc")),
             class: "search-results-settings-display-average-cpc-remove ms-1 text-decoration-none",
             href: "javascript:"
@@ -27831,10 +27825,10 @@ const AJ = At({
     WJ = {
         class: "my-2"
     },
-    VJ = {
+    OJ = {
         class: "my-2"
     },
-    OJ = {
+    VJ = {
         key: 1,
         class: "search-results-empty-no-keywords-matched-filters my-4"
     },
@@ -27846,9 +27840,9 @@ const RJ = At({
         props: ["loading", "has_all_error", "has_error", "has_keywords", "has_metrics"],
         data: () => ({})
     }, [["render", function(e, t, r, s, a, o) {
-        return r.loading || r.has_all_error || r.has_error ? T("", !0) : (b(), g("div", PJ, [r.has_keywords ? r.has_keywords && !r.has_metrics ? (b(), g("div", OJ, [S("h4", NJ, k(e.trans.get("Sorry, no keywords match your filters")), 1), S("p", {
+        return r.loading || r.has_all_error || r.has_error ? T("", !0) : (b(), g("div", PJ, [r.has_keywords ? r.has_keywords && !r.has_metrics ? (b(), g("div", VJ, [S("h4", NJ, k(e.trans.get("Sorry, no keywords match your filters")), 1), S("p", {
             innerHTML: e.trans.get('Please, <a href="#" data-bs-toggle="modal" data-bs-target="#search-results-setting-modal">modify filters</a> to find more keywords.')
-        }, null, 8, BJ)])) : T("", !0) : (b(), g("div", $J, [S("div", DJ, [S("div", IJ, [ne(e.$slots, "message"), S("p", null, k(e.trans.get("Below are some tips that might help you find more keywords:")), 1), S("ul", null, [S("li", HJ, k(e.trans.get('Use fewer words in your search query. For example, "popular shoes" instead of "most popular shoes for men in my hometown";')), 1), S("li", jJ, k(e.trans.get("Check for spelling mistakes;")), 1), S("li", WJ, k(e.trans.get('Try searching for a similar term or synonym. For example, "pants" instead of "trousers";')), 1), S("li", VJ, k(e.trans.get("Please note that search engines restrict some topics.If the search term falls under a restricted topic, you might not see any keyword suggestions and/or search volume data.")), 1)]), S("p", null, k(e.trans.get("Please try again!")), 1)]), t[0] || (t[0] = ie('<div class="col-sm-12 col-lg-2"><div class="row"><div class="col-1 d-lg-none d-xl-none"></div><div class="col"><img src="/images/svg/undraw_void_3ggu.svg" class="img-void img-fluid my-3" alt="Void image"></div><div class="col-1 d-lg-none d-xl-none"></div></div></div>', 1))])]))]))
+        }, null, 8, BJ)])) : T("", !0) : (b(), g("div", $J, [S("div", DJ, [S("div", IJ, [ne(e.$slots, "message"), S("p", null, k(e.trans.get("Below are some tips that might help you find more keywords:")), 1), S("ul", null, [S("li", HJ, k(e.trans.get('Use fewer words in your search query. For example, "popular shoes" instead of "most popular shoes for men in my hometown";')), 1), S("li", jJ, k(e.trans.get("Check for spelling mistakes;")), 1), S("li", WJ, k(e.trans.get('Try searching for a similar term or synonym. For example, "pants" instead of "trousers";')), 1), S("li", OJ, k(e.trans.get("Please note that search engines restrict some topics.If the search term falls under a restricted topic, you might not see any keyword suggestions and/or search volume data.")), 1)]), S("p", null, k(e.trans.get("Please try again!")), 1)]), t[0] || (t[0] = ie('<div class="col-sm-12 col-lg-2"><div class="row"><div class="col-1 d-lg-none d-xl-none"></div><div class="col"><img src="/images/svg/undraw_void_3ggu.svg" class="img-void img-fluid my-3" alt="Void image"></div><div class="col-1 d-lg-none d-xl-none"></div></div></div>', 1))])]))]))
     }]]),
     KJ = {
         key: 0
@@ -28101,11 +28095,11 @@ const Wz = At({
             onInput: t[1] || (t[1] = t => e.$emit("update:current_filter_search_volume_max", t.target.value))
         }, null, 42, jz), [[i, r.search_volume_format]])])])) : T("", !0)
     }]]),
-    Vz = {
+    Oz = {
         key: 0,
         class: "search-results-settings-modal-trend mb-3"
     },
-    Oz = {
+    Vz = {
         class: "form-label search-results-settings-modal-trend-label"
     },
     Nz = {
@@ -28121,7 +28115,7 @@ const Jz = At({
         data: () => ({})
     }, [["render", function(e, t, r, s, a, o) {
         const i = D("mask");
-        return r.current_permissions.show_search_volume_data ? (b(), g("div", Vz, [S("label", Oz, k(e.trans.get("Trend")), 1), S("div", Nz, [F(S("input", {
+        return r.current_permissions.show_search_volume_data ? (b(), g("div", Oz, [S("label", Vz, k(e.trans.get("Trend")), 1), S("div", Nz, [F(S("input", {
             placeholder: "min",
             type: "text",
             class: f(["form-control", {
@@ -28499,10 +28493,10 @@ const WG = At({
             fill: "currentColor"
         }, null, -1)]))), A(" " + k(e.trans.get("Add to Keyword Basket")), 1)], 2)
     }]]),
-    VG = {
+    OG = {
         class: "btn-export-keywords-excel"
     };
-const OG = At({
+const VG = At({
         components: {
             DocumentArrowDownIcon: _e
         },
@@ -28523,7 +28517,7 @@ const OG = At({
             class: f(["dropdown-item", {
                 disabled: r.has_error
             }])
-        }, [S("i", VG, [M(i, {
+        }, [S("i", OG, [M(i, {
             style: {
                 width: "20px",
                 height: "20px"
@@ -28912,8 +28906,8 @@ const JG = At({
     WY = {
         class: "input-group"
     },
-    VY = ["placeholder", "value", "readonly"],
-    OY = {
+    OY = ["placeholder", "value", "readonly"],
+    VY = {
         key: 0,
         class: "input-group-text bg-white",
         id: "eye_new_password"
@@ -29147,7 +29141,7 @@ const KY = At(zG, [["render", function(e, t, r, s, a, o) {
             required: "",
             readonly: "editPassword" != a.editMode,
             onKeydown: t[18] || (t[18] = e => a.dirtyNewPassword = !0)
-        }, null, 42, VY), "editPassword" == a.editMode ? (b(), g("span", OY, [S("a", {
+        }, null, 42, OY), "editPassword" == a.editMode ? (b(), g("span", VY, [S("a", {
             href: "#",
             class: "text-dark",
             onClick: t[19] || (t[19] = e => o.showPassword(e, "new_password", "showPassword", "hidePassword")),
@@ -29437,10 +29431,10 @@ const cZ = At(JY, [["render", function(e, t, r, s, a, o) {
     WZ = {
         class: "my-2 file-message fw-bolder h5"
     },
-    VZ = {
+    OZ = {
         class: "my-2 choose-file-button"
     },
-    OZ = {
+    VZ = {
         class: "text-primary"
     },
     NZ = {
@@ -29666,7 +29660,7 @@ const GZ = At({
                 type: "file",
                 accept: ".xls,.xlsx,.csv",
                 onChange: t[3] || (t[3] = (...e) => o.handleFileUpload && o.handleFileUpload(...e))
-            }, null, 32), S("div", VZ, [t[10] || (t[10] = A("or ")), S("span", OZ, k(e.trans.get("browse")), 1)])])])]), S("div", NZ, [S("div", {
+            }, null, 32), S("div", OZ, [t[10] || (t[10] = A("or ")), S("span", VZ, k(e.trans.get("browse")), 1)])])])]), S("div", NZ, [S("div", {
                 class: "col-auto",
                 innerHTML: e.trans.get('To add users in bulk, please <a href=":link" target="_blank">download</a> and use our template file and upload it here once ready.', {
                     link: r.excel_template
@@ -30006,8 +30000,8 @@ const DX = "top-0 end-0",
     },
     jX = 1,
     WX = 2,
-    VX = 5e3,
-    OX = !0,
+    OX = 5e3,
+    VX = !0,
     NX = '<i class="p-2 me-2 rounded %TYPE%"></i>';
 let BX = class {
     get _options_default() {
@@ -30100,7 +30094,7 @@ const RX = ge({
         CheckCircleIcon: H,
         CheckIcon: I,
         ChevronDownIcon: W,
-        ChevronUpIcon: V,
+        ChevronUpIcon: O,
         ClipboardIcon: ee,
         CloudArrowUpIcon: pe,
         Cog8ToothIcon: Y,
@@ -30123,8 +30117,8 @@ const RX = ge({
         LockClosedIcon: N,
         LockOpenIcon: We,
         MagnifyingGlassIcon: P,
-        MinusCircleIcon: Ve,
-        MinusIcon: Oe,
+        MinusCircleIcon: Oe,
+        MinusIcon: Ve,
         PauseCircleIcon: Ne,
         PencilSquareIcon: de,
         PlayCircleIcon: Be,
@@ -30474,13 +30468,13 @@ RX.config.globalProperties.trans = new yt({
         ("function" == typeof queueMicrotask ? queueMicrotask : setTimeout)(s.bind(null, new Error("Unknown variable dynamic import: " + t + (t.split("/").length !== r ? ". Note that variables only represent file names one level deep." : ""))))
     }))
 })(Object.assign({
-    "./lang/cn.js": () => kt((() => import("./cn-DhBIE-6S.js")), []),
-    "./lang/en.js": () => kt((() => import("./en-CngMemqG.js")), []),
-    "./lang/es.js": () => kt((() => import("./es-DhBIE-6S.js")), []),
-    "./lang/fr.js": () => kt((() => import("./fr-DhBIE-6S.js")), []),
-    "./lang/jp.js": () => kt((() => import("./jp-DhBIE-6S.js")), []),
-    "./lang/pt.js": () => kt((() => import("./pt-DhBIE-6S.js")), []),
-    "./lang/ru.js": () => kt((() => import("./ru-DhBIE-6S.js")), [])
+    "./lang/cn.js": () => kt((() => import("./cn-B1PyvqsP.js")), []),
+    "./lang/en.js": () => kt((() => import("./en-DENN53qC.js")), []),
+    "./lang/es.js": () => kt((() => import("./es-B1PyvqsP.js")), []),
+    "./lang/fr.js": () => kt((() => import("./fr-B1PyvqsP.js")), []),
+    "./lang/jp.js": () => kt((() => import("./jp-B1PyvqsP.js")), []),
+    "./lang/pt.js": () => kt((() => import("./pt-B1PyvqsP.js")), []),
+    "./lang/ru.js": () => kt((() => import("./ru-B1PyvqsP.js")), [])
 }), `./lang/${KX}.js`, 3).then((e => {
     RX.config.globalProperties.trans.setMessages(e.default)
 })), RX.config.globalProperties.$filters = {
@@ -30493,7 +30487,8 @@ RX.config.globalProperties.trans = new yt({
     var e = document.querySelector(".device-xl");
     return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length)
 }, RX.config.globalProperties.csv_instagram_onblur = e => {
-    e.target.value = e.target.value.toLowerCase().replace(/#/g, "").replace(/[\n,]+$/, "").split(/[\n,]+/).map((e => e.startsWith("#") ? e : `#${e}`)).filter(((e, t, r) => r.indexOf(e) === t)).join("\n")}, RX.directive("autofocus", {
+    e.target.value = e.target.value.toLowerCase().replace(/#/g, "").replace(/[\n,]+$/, "").split(/[\n,]+/).map((e => "#" + e.replace(/\s+/g, ""))).filter(((e, t, r) => r.indexOf(e) === t)).join("\n")
+}, RX.directive("autofocus", {
     updated: (e, t) => {
         (void 0 === t.value || t.value) && e.focus()
     }
@@ -30501,7 +30496,7 @@ RX.config.globalProperties.trans = new yt({
     mounted: (e, t) => {
         o(t.value).mask(e)
     }
-}), RX.use(ke), RX.component("tom-select", It), RX.component("share-modal", Rt), RX.component("vue-countable", Kt), RX.component("vue-toggle", Xt), RX.component("select-currency", rr), RX.component("tag-input", _r), RX.component("google-form", xr), RX.component("youtube-form", Ar), RX.component("bing-form", Kr), RX.component("amazon-form", as), RX.component("ebay-form", hs), RX.component("app-store-form", Cs), RX.component("play-store-form", Ds), RX.component("etsy-form", zs), RX.component("instagram-form", aa), RX.component("twitter-form", ha), RX.component("pinterest-form", Ca), RX.component("google-trends-form", Ia), RX.component("tiktok-form", Ja), RX.component("checkout-form", ln), RX.component("card-form", Vn), RX.component("subscription-plan", Zc), RX.component("subscription-form", c_), RX.component("cancel-subscription-form", Td), RX.component("pause-subscription-form", Zd), RX.component("threeds-verification", Xd), RX.component("braintree-payment", qu), RX.component("stripe-payment", wm), RX.component("bar-chart", fm), RX.component("chart-js", Am), RX.component("google-trends-chart", $m), RX.component("amazon-category", Im), RX.component("amazon-keywords", qx), RX.component("amazon-language", Ux), RX.component("amazon-location-language", Hx), RX.component("amazon-search-volume-setting", Yx), RX.component("app-store-category", Zx), RX.component("app-store-keywords", EC), RX.component("app-store-language", AC), RX.component("app-store-location-language", IC), RX.component("app-store-search-volume-setting", zC), RX.component("bing-category", GC), RX.component("bing-keywords", VM), RX.component("bing-location-language", RM), RX.component("bing-search-volume-setting", hE), RX.component("ebay-keywords", zE), RX.component("ebay-language", ZE), RX.component("ebay-location-language", tL), RX.component("ebay-search-volume-setting", uL), RX.component("google-category", mL), RX.component("google-keywords", tU), RX.component("google-language", aU), RX.component("google-location-language", lU), RX.component("google-search-volume-setting", EU), RX.component("google-trends-category", LU), RX.component("google-trends-country", PU), RX.component("google-trends-keywords", oA), RX.component("instagram-keywords", lD), RX.component("instagram-language", dD), RX.component("instagram-location-language", pD), RX.component("instagram-search-volume-setting", TD), RX.component("pinterest-keywords", oI), RX.component("pinterest-language", lI), RX.component("pinterest-location-language", uI), RX.component("pinterest-search-volume-setting", xI), RX.component("play-store-category", CI), RX.component("play-store-keywords", sH), RX.component("play-store-language", iH), RX.component("play-store-location-language", _H), RX.component("play-store-search-volume-setting", kH), RX.component("tiktok-keywords", kW), RX.component("tiktok-language", CW), RX.component("tiktok-location-language", qW), RX.component("tiktok-search-volume-setting", jW), RX.component("twitter-keywords", fV), RX.component("twitter-language", vV), RX.component("twitter-location-language", TV), RX.component("twitter-search-volume-setting", IV), RX.component("youtube-keywords", SO), RX.component("youtube-language", qO), RX.component("youtube-location-language", UO), RX.component("youtube-search-volume-setting", NO), RX.component("etsy-category", BO), RX.component("etsy-keywords", xN), RX.component("etsy-language", TN), RX.component("etsy-location-language", EN), RX.component("etsy-search-volume-setting", VN), RX.component("keyword-basket", eR), RX.component("loading-section", cR), RX.component("modal", yR), RX.component("suggest-page-reload", kR), RX.component("show-upsell", OR), RX.component("alert-pro-upsell", XR), RX.component("has-error", aK), RX.component("has-more", nK), RX.component("search-results-tabs", dK), RX.component("current-metrics-network", pK), RX.component("current-metrics-location-name", fK), RX.component("current-metrics-language-name", xK), RX.component("current-filter-search-volume", MK), RX.component("current-filter-search-volume-trend", $K), RX.component("current-filter-keyword-result-period", jK), RX.component("current-filter-average-cpc", RK), RX.component("current-filter-competition", ZK), RX.component("current-filter-bing-competition", rJ), RX.component("current-split-filter-keywords", iJ), RX.component("current-split-filter-negative-keywords", _J), RX.component("current-filter-high-top-page-bid", gJ), RX.component("current-filter-low-top-page-bid", vJ), RX.component("search-results-settings-modal", AJ), RX.component("search-results-no-keyword-found", RJ), RX.component("search-results-settings-admin-settings", nz), RX.component("search-results-settings-filter-positive-keywords", yz), RX.component("search-results-settings-filter-negative-keywords", Cz), RX.component("search-results-settings-modal-search-network", Ez), RX.component("search-results-settings-modal-currency", Az), RX.component("search-results-settings-modal-search-volume", Wz), RX.component("search-results-settings-modal-search-volume-trend", Jz), RX.component("search-results-settings-modal-average-cpc", eG), RX.component("search-results-settings-modal-competition", nG), RX.component("search-results-settings-modal-bing-competition", gG), RX.component("search-results-table-wrapper", CG), RX.component("search-results-actions", qG), RX.component("dropdown-menu-item-button", DG), RX.component("dropdown-menu-item-divider", HG), RX.component("dropdown-menu-item-add-basket", WG), RX.component("dropdown-menu-item-export-excel", OG), RX.component("dropdown-menu-item-export-csv", BG), RX.component("dropdown-menu-item-copy-keywords", RG), RX.component("dropdown-menu-item-copy-keywords-all-data", KG), RX.component("dropdown-menu-item-copy-keywords-search-volume", JG), RX.component("user-account", KY), RX.component("user-billing", cZ), RX.component("user-invite-members", GZ), RX.component("user-team-members", $X), window.Sentry = ve;
+}), RX.use(ke), RX.component("tom-select", It), RX.component("share-modal", Rt), RX.component("vue-countable", Kt), RX.component("vue-toggle", Xt), RX.component("select-currency", rr), RX.component("tag-input", _r), RX.component("google-form", xr), RX.component("youtube-form", Ar), RX.component("bing-form", Kr), RX.component("amazon-form", as), RX.component("ebay-form", hs), RX.component("app-store-form", Cs), RX.component("play-store-form", Ds), RX.component("etsy-form", zs), RX.component("instagram-form", aa), RX.component("twitter-form", ha), RX.component("pinterest-form", Ca), RX.component("google-trends-form", Ia), RX.component("tiktok-form", Ja), RX.component("checkout-form", _n), RX.component("card-form", Nn), RX.component("subscription-plan", Qc), RX.component("subscription-form", d_), RX.component("cancel-subscription-form", qd), RX.component("pause-subscription-form", Qd), RX.component("threeds-verification", eu), RX.component("braintree-payment", Eu), RX.component("stripe-payment", wm), RX.component("bar-chart", fm), RX.component("chart-js", Am), RX.component("google-trends-chart", $m), RX.component("amazon-category", Im), RX.component("amazon-keywords", qx), RX.component("amazon-language", Ux), RX.component("amazon-location-language", Hx), RX.component("amazon-search-volume-setting", Yx), RX.component("app-store-category", Zx), RX.component("app-store-keywords", EC), RX.component("app-store-language", AC), RX.component("app-store-location-language", IC), RX.component("app-store-search-volume-setting", zC), RX.component("bing-category", GC), RX.component("bing-keywords", OM), RX.component("bing-location-language", RM), RX.component("bing-search-volume-setting", hE), RX.component("ebay-keywords", zE), RX.component("ebay-language", ZE), RX.component("ebay-location-language", tL), RX.component("ebay-search-volume-setting", uL), RX.component("google-category", mL), RX.component("google-keywords", tU), RX.component("google-language", aU), RX.component("google-location-language", lU), RX.component("google-search-volume-setting", EU), RX.component("google-trends-category", LU), RX.component("google-trends-country", PU), RX.component("google-trends-keywords", oA), RX.component("instagram-keywords", lD), RX.component("instagram-language", dD), RX.component("instagram-location-language", pD), RX.component("instagram-search-volume-setting", TD), RX.component("pinterest-keywords", oI), RX.component("pinterest-language", lI), RX.component("pinterest-location-language", uI), RX.component("pinterest-search-volume-setting", xI), RX.component("play-store-category", CI), RX.component("play-store-keywords", sH), RX.component("play-store-language", iH), RX.component("play-store-location-language", _H), RX.component("play-store-search-volume-setting", kH), RX.component("tiktok-keywords", kW), RX.component("tiktok-language", CW), RX.component("tiktok-location-language", qW), RX.component("tiktok-search-volume-setting", jW), RX.component("twitter-keywords", fO), RX.component("twitter-language", vO), RX.component("twitter-location-language", TO), RX.component("twitter-search-volume-setting", IO), RX.component("youtube-keywords", SV), RX.component("youtube-language", qV), RX.component("youtube-location-language", UV), RX.component("youtube-search-volume-setting", NV), RX.component("etsy-category", BV), RX.component("etsy-keywords", xN), RX.component("etsy-language", TN), RX.component("etsy-location-language", EN), RX.component("etsy-search-volume-setting", ON), RX.component("keyword-basket", eR), RX.component("loading-section", cR), RX.component("modal", yR), RX.component("suggest-page-reload", kR), RX.component("show-upsell", VR), RX.component("alert-pro-upsell", XR), RX.component("has-error", aK), RX.component("has-more", nK), RX.component("search-results-tabs", dK), RX.component("current-metrics-network", pK), RX.component("current-metrics-location-name", fK), RX.component("current-metrics-language-name", xK), RX.component("current-filter-search-volume", MK), RX.component("current-filter-search-volume-trend", $K), RX.component("current-filter-keyword-result-period", jK), RX.component("current-filter-average-cpc", RK), RX.component("current-filter-competition", ZK), RX.component("current-filter-bing-competition", rJ), RX.component("current-split-filter-keywords", iJ), RX.component("current-split-filter-negative-keywords", _J), RX.component("current-filter-high-top-page-bid", gJ), RX.component("current-filter-low-top-page-bid", vJ), RX.component("search-results-settings-modal", AJ), RX.component("search-results-no-keyword-found", RJ), RX.component("search-results-settings-admin-settings", nz), RX.component("search-results-settings-filter-positive-keywords", yz), RX.component("search-results-settings-filter-negative-keywords", Cz), RX.component("search-results-settings-modal-search-network", Ez), RX.component("search-results-settings-modal-currency", Az), RX.component("search-results-settings-modal-search-volume", Wz), RX.component("search-results-settings-modal-search-volume-trend", Jz), RX.component("search-results-settings-modal-average-cpc", eG), RX.component("search-results-settings-modal-competition", nG), RX.component("search-results-settings-modal-bing-competition", gG), RX.component("search-results-table-wrapper", CG), RX.component("search-results-actions", qG), RX.component("dropdown-menu-item-button", DG), RX.component("dropdown-menu-item-divider", HG), RX.component("dropdown-menu-item-add-basket", WG), RX.component("dropdown-menu-item-export-excel", VG), RX.component("dropdown-menu-item-export-csv", BG), RX.component("dropdown-menu-item-copy-keywords", RG), RX.component("dropdown-menu-item-copy-keywords-all-data", KG), RX.component("dropdown-menu-item-copy-keywords-search-volume", JG), RX.component("user-account", KY), RX.component("user-billing", cZ), RX.component("user-invite-members", GZ), RX.component("user-team-members", $X), window.Sentry = ve;
 let zX = document.head.querySelector('meta[name="environment"]').content;
 document.head.querySelector('meta[name="sentryjs.enabled"]').content && xe({
     app: RX,
@@ -30532,11 +30527,11 @@ document.head.querySelector('meta[name="sentryjs.enabled"]').content && xe({
         position: IX,
         type: HX.DEFAULT,
         timer: jX,
-        delay: VX,
+        delay: OX,
         defaultIconMarkup: NX,
-        animation: OX
+        animation: VX
     }) {
-        t(this, "position", DX), t(this, "type", HX.DEFAULT), t(this, "timer", jX), t(this, "delay", VX), t(this, "animation", OX), t(this, "defaultIconMarkup", NX), t(this, "templateNode", null), t(this, "toastContainer", null), this.position = e.position ?? IX, this.type = e.type ?? HX.DEFAULT, this.timer = e.timer ?? jX, this.animation = e.animation ?? OX, this.delay = e.delay ?? VX, this.defaultIconMarkup = e.defaultIconMarkup ?? NX, this.toastContainer = this.createToastContainer(), this.templateNode = this.createToastNode(), document.body.appendChild(this.toastContainer)
+        t(this, "position", DX), t(this, "type", HX.DEFAULT), t(this, "timer", jX), t(this, "delay", OX), t(this, "animation", VX), t(this, "defaultIconMarkup", NX), t(this, "templateNode", null), t(this, "toastContainer", null), this.position = e.position ?? IX, this.type = e.type ?? HX.DEFAULT, this.timer = e.timer ?? jX, this.animation = e.animation ?? VX, this.delay = e.delay ?? OX, this.defaultIconMarkup = e.defaultIconMarkup ?? NX, this.toastContainer = this.createToastContainer(), this.templateNode = this.createToastNode(), document.body.appendChild(this.toastContainer)
     }
     createToastContainer() {
         const e = btoa(this.position),
